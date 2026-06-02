@@ -17,7 +17,7 @@ import pandas as pd
 from pathlib import Path
 from loguru import logger
 
-RAW_DIR = Path("data/raw")
+RAW_DIR = Path(__file__).resolve().parents[2] / "data" / "raw"
 RAW_DIR.mkdir(parents=True, exist_ok=True)
 
 RESULTS_URL = "https://raw.githubusercontent.com/martj42/international_results/master/results.csv"
