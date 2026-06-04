@@ -1,194 +1,240 @@
-"""
-fetch_statsbomb.py
+# src/data_pipeline/fetch_statsbomb.py
+# Replaces the previous version that only cloned the repo.
+# Now extracts player-level shot/xG stats from international tournaments.
 
-Fetches xG and shot event data from StatsBomb open data via statsbombpy.
-
-Why StatsBomb:
-    Event-level shot data gives us xG per team per match — a far better
-    signal than goals scored. A team creating 3.2 xG but scoring 1 goal
-    is playing better than the scoreline shows. Our Poisson model uses
-    xG as its input, not raw goals.
-
-StatsBomb open data covers:
-    - FIFA World Cup (all tournaments)
-    - UEFA Euro
-    - Copa América
-    - La Liga, Champions League (club level — useful for player xG)
-
-Output files:
-    data/raw/statsbomb_match_xg.csv   — xG per team per match
-    data/raw/statsbomb_player_xg.csv  — xG per player across matches
-"""
-
+import os
+import json
 import pandas as pd
 from pathlib import Path
-from loguru import logger
-from statsbombpy import sb
 
-RAW_DIR = Path(__file__).resolve().parents[2] / "data" / "raw"
-RAW_DIR.mkdir(parents=True, exist_ok=True)
+# Path to the cloned StatsBomb open-data repo
+# Assumes the repo was cloned into data/statsbomb/ as per Step 1 structure
+STATSBOMB_PATH = Path("data") / "statsbomb" / "open-data" / "data"
 
-# StatsBomb competition IDs we care about
-# Find all competitions via sb.competitions()
-# We focus on World Cup (competition_id=43) and Euro (competition_id=55)
-COMPETITIONS = [
-    {"competition_id": 43,  "season_id": 106, "name": "World Cup 2022"},
-    {"competition_id": 43,  "season_id": 3,   "name": "World Cup 2018"},
-    {"competition_id": 55,  "season_id": 282, "name": "Euro 2024"},
-    {"competition_id": 55,  "season_id": 43,  "name": "Euro 2020"},
-    {"competition_id": 223, "season_id": 282, "name": "Copa America 2024"},
+# Target competitions — confirmed IDs from StatsBomb competitions.json
+# Format: (competition_id, season_id, label)
+TARGET_COMPETITIONS = [
+    (43,  106, "World Cup 2022"),
+    (43,    3, "World Cup 2018"),
+    (55,  282, "Euro 2024"),
+    (223, 282, "Copa America 2024"),
 ]
 
+# AFCON 2023 — including because it covers Morocco, Senegal, Ivory Coast,
+# Egypt, DR Congo, Cape Verde, Ghana who are all at WC 2026
+# competition_id=6 season_id=281 — verify this against competitions.json
+# if it fails we skip gracefully
+AFCON_COMPETITION = (1267, 107, "AFCON 2023")
 
-def get_available_competitions() -> pd.DataFrame:
+OUTPUT_PATH = os.path.join("data", "processed", "statsbomb_player_stats.csv")
+
+
+def load_matches(competition_id: int, season_id: int) -> list[dict]:
     """
-    Returns all competitions available in StatsBomb open data.
-    Call this to discover competition_id and season_id values.
+    Load the matches JSON for a competition/season.
+    File path pattern: data/matches/{competition_id}/{season_id}.json
     """
-    comps = sb.competitions()
-    return comps
+    matches_path = STATSBOMB_PATH / "matches" / str(competition_id) / f"{season_id}.json"
+
+    if not matches_path.exists():
+        print(f"  [WARNING] Matches file not found: {matches_path}")
+        return []
+
+    with open(matches_path, encoding="utf-8") as f:
+        return json.load(f)
 
 
-def fetch_shots_for_match(match_id: int) -> pd.DataFrame:
+def load_events_for_match(match_id: int) -> list[dict]:
     """
-    Fetches all shot events for a single match.
-
-    Args:
-        match_id: StatsBomb match ID
-
-    Returns:
-        DataFrame of shot events with xG values, or empty DataFrame if failed.
-
-    StatsBomb shot events include:
-        - location (x, y coordinates)
-        - shot.statsbomb_xg (their xG model output)
-        - shot.outcome.name (Goal, Saved, Off T, etc.)
-        - player.name
-        - team.name
-        - minute
+    Load the events JSON for a single match.
+    File path pattern: data/events/{match_id}.json
+    Each event has a 'type' field — we only want type.name == 'Shot'
     """
-    try:
-        events = sb.events(match_id=match_id)
-        shots = events[events["type"] == "Shot"].copy()
+    events_path = STATSBOMB_PATH / "events" / f"{match_id}.json"
 
-        if shots.empty:
-            return pd.DataFrame()
+    if not events_path.exists():
+        return []
 
-        # Extract the columns we need
-        # statsbombpy returns nested dicts as separate columns
-        keep_cols = [
-            "match_id", "team", "player", "minute",
-            "shot_statsbomb_xg", "shot_outcome", "location",
-        ]
+    with open(events_path, encoding="utf-8") as f:
+        events = json.load(f)
 
-        # Only keep columns that exist — statsbombpy column names vary slightly
-        available = [c for c in keep_cols if c in shots.columns]
-        shots = shots[available].copy()
-        shots["match_id"] = match_id
+    # Filter to shots only — this is the critical early filter for performance
+    # Shot events have: player.name, team.name, shot.statsbomb_xg, shot.outcome.name
+    shots = [e for e in events if e.get("type", {}).get("name") == "Shot"]
+    return shots
 
-        return shots
 
-    except Exception as e:
-        logger.warning(f"Failed to fetch shots for match {match_id}: {e}")
+def extract_shot_rows(shots: list[dict], match_id: int, competition_label: str) -> list[dict]:
+    """
+    Flatten shot events into tabular rows.
+    StatsBomb shot events have nested JSON — we extract only what we need.
+    """
+    rows = []
+    for shot in shots:
+        player = shot.get("player", {})
+        team = shot.get("team", {})
+        shot_data = shot.get("shot", {})
+
+        # shot.outcome.name can be: "Goal", "Saved", "Off T", "Post",
+        # "Blocked", "Wayward", "Saved Off Target", "Saved To Post"
+        outcome = shot_data.get("outcome", {}).get("name", "")
+        xg = shot_data.get("statsbomb_xg", None)
+
+        rows.append({
+            "match_id": match_id,
+            "competition": competition_label,
+            "player_name": player.get("name", ""),
+            "player_id": player.get("id", None),
+            "team": team.get("name", ""),
+            "xg": xg,
+            "is_goal": 1 if outcome == "Goal" else 0,
+            "outcome": outcome,
+            # shot type — header, open play, free kick, penalty
+            "shot_type": shot_data.get("type", {}).get("name", ""),
+        })
+    return rows
+
+
+def fetch_competition(competition_id: int, season_id: int, label: str) -> pd.DataFrame:
+    """
+    Load all matches for a competition, then load shots for each match.
+    Returns a DataFrame of all shot events across the competition.
+    """
+    print(f"  Processing: {label} (competition={competition_id}, season={season_id})")
+    matches = load_matches(competition_id, season_id)
+
+    if not matches:
+        print(f"  Skipping {label} — no matches found")
         return pd.DataFrame()
 
+    print(f"  Matches found: {len(matches)}")
 
-def fetch_match_xg(competition_id: int, season_id: int) -> pd.DataFrame:
+    all_rows = []
+    for match in matches:
+        match_id = match["match_id"]
+        shots = load_events_for_match(match_id)
+        rows = extract_shot_rows(shots, match_id, label)
+        all_rows.extend(rows)
+
+    print(f"  Total shot events: {len(all_rows)}")
+    return pd.DataFrame(all_rows)
+
+
+def aggregate_player_stats(df_shots: pd.DataFrame) -> pd.DataFrame:
     """
-    Fetches aggregated xG per team per match for one competition/season.
+    Aggregate shot-level rows into one row per player per competition.
+    Then further aggregate to one row per player across all competitions.
 
-    Args:
-        competition_id: StatsBomb competition ID
-        season_id: StatsBomb season ID
+    Why aggregate twice:
+    1. Per-competition: preserves tournament-level context
+    2. Cross-competition: gives overall international quality score
 
-    Returns:
-        DataFrame with columns [match_id, team, xg, goals, shots]
+    We keep both in the output — feature engineering decides which to use.
     """
-    try:
-        matches = sb.matches(competition_id=competition_id, season_id=season_id)
-    except Exception as e:
-        logger.error(f"Failed to fetch matches for competition {competition_id} season {season_id}: {e}")
+    if df_shots.empty:
         return pd.DataFrame()
 
-    logger.info(f"Processing {len(matches)} matches...")
+    # Exclude penalties from xG aggregation — same reason as Understat npxG
+    # Penalty xG is always ~0.76 regardless of the player, so it's not informative
+    df_no_pen = df_shots[df_shots["shot_type"] != "Penalty"].copy()
 
-    all_shots = []
-    for match_id in matches["match_id"]:
-        shots = fetch_shots_for_match(match_id)
-        if not shots.empty:
-            all_shots.append(shots)
-
-    if not all_shots:
-        return pd.DataFrame()
-
-    shots_df = pd.concat(all_shots, ignore_index=True)
-
-    # Aggregate xG per team per match
-    # shot_statsbomb_xg is StatsBomb's xG value per shot (0 to 1)
-    agg = shots_df.groupby(["match_id", "team"]).agg(
-        xg=("shot_statsbomb_xg", "sum"),
-        shots=("shot_statsbomb_xg", "count"),
-        goals=("shot_outcome", lambda x: (x == "Goal").sum()),
+    # Per player per competition
+    per_comp = df_no_pen.groupby(["player_id", "player_name", "team", "competition"]).agg(
+        shots=("xg", "count"),
+        xg=("xg", "sum"),
+        goals=("is_goal", "sum"),
+        xg_per_shot=("xg", "mean"),
     ).reset_index()
 
-    return agg
+    # Penalty goals (counted separately, not in xG)
+    pen_goals = df_shots[df_shots["shot_type"] == "Penalty"].groupby(
+        ["player_id", "player_name", "team", "competition"]
+    )["is_goal"].sum().reset_index().rename(columns={"is_goal": "penalty_goals"})
+
+    per_comp = per_comp.merge(pen_goals, on=["player_id", "player_name", "team", "competition"], how="left")
+    per_comp["penalty_goals"] = per_comp["penalty_goals"].fillna(0).astype(int)
+    per_comp["non_penalty_goals"] = per_comp["goals"] - per_comp["penalty_goals"]
+
+    # Round floats
+    per_comp["xg"] = per_comp["xg"].round(3)
+    per_comp["xg_per_shot"] = per_comp["xg_per_shot"].round(3)
+
+    # Cross-competition aggregate — one row per player
+    # Team = most recent team (last alphabetically by competition name is a proxy)
+    # This is imperfect but players rarely change national teams
+    overall = df_no_pen.groupby(["player_id", "player_name", "team"]).agg(
+        total_shots=("xg", "count"),
+        total_xg=("xg", "sum"),
+        total_goals=("is_goal", "sum"),
+        competitions_appeared=("competition", "nunique"),
+    ).reset_index()
+
+    overall["total_xg"] = overall["total_xg"].round(3)
+    overall["xg_per_shot_overall"] = (overall["total_xg"] / overall["total_shots"]).round(3)
+
+    return per_comp, overall
 
 
-def fetch_all_statsbomb_xg() -> tuple[pd.DataFrame, pd.DataFrame]:
-    """
-    Fetches xG data across all configured competitions.
+def run():
+    print("[fetch_statsbomb] Starting player stat extraction...")
 
-    Returns:
-        match_xg_df: xG per team per match
-        player_xg_df: xG per player aggregated across all matches
-    """
-    # First check what's actually available
-    logger.info("Checking available StatsBomb competitions...")
-    available = get_available_competitions()
-    wc_available = available[available["competition_id"] == 43]
-    logger.info(f"Available World Cup seasons:\n{wc_available[['competition_id','season_id','season_name']].to_string()}")
+    if not STATSBOMB_PATH.exists():
+        print(f"[fetch_statsbomb] ERROR: StatsBomb repo not found at {STATSBOMB_PATH}")
+        print("Run: git clone https://github.com/statsbomb/open-data.git data/statsbomb/open-data")
+        return
 
-    all_match_xg = []
-    all_shot_events = []
+    # Check AFCON competition ID — add to targets if it exists
+    competitions_path = STATSBOMB_PATH / "competitions.json"
+    targets = list(TARGET_COMPETITIONS)
 
-    for comp in COMPETITIONS:
-        cid = comp["competition_id"]
-        sid = comp["season_id"]
-        name = comp["name"]
+    if competitions_path.exists():
+        with open(competitions_path, encoding="utf-8") as f:
+            comps = json.load(f)
+        afcon_found = any(
+            c["competition_id"] == AFCON_COMPETITION[0] and c["season_id"] == AFCON_COMPETITION[1]
+            for c in comps
+        )
+        if afcon_found:
+            targets.append(AFCON_COMPETITION)
+            print(f"[fetch_statsbomb] AFCON 2023 confirmed — adding to targets")
+        else:
+            print(f"[fetch_statsbomb] AFCON 2023 not found in competitions.json — skipping")
 
-        # Verify this season exists in open data
-        exists = ((available["competition_id"] == cid) &
-                  (available["season_id"] == sid)).any()
+    # Fetch all competitions
+    all_shots = []
+    for comp_id, season_id, label in targets:
+        df = fetch_competition(comp_id, season_id, label)
+        if not df.empty:
+            all_shots.append(df)
 
-        if not exists:
-            logger.warning(f"{name} (competition={cid}, season={sid}) not in open data — skipping")
-            continue
+    if not all_shots:
+        print("[fetch_statsbomb] ERROR: No shot data extracted.")
+        return
 
-        logger.info(f"Fetching {name}...")
-        match_xg = fetch_match_xg(cid, sid)
+    df_all_shots = pd.concat(all_shots, ignore_index=True)
+    print(f"\n[fetch_statsbomb] Total shot events across all competitions: {len(df_all_shots)}")
+    print(f"[fetch_statsbomb] Unique players: {df_all_shots['player_name'].nunique()}")
 
-        if not match_xg.empty:
-            match_xg["competition"] = name
-            all_match_xg.append(match_xg)
-            logger.info(f"  {name}: {len(match_xg)} team-match records")
+    # Aggregate
+    per_comp, overall = aggregate_player_stats(df_all_shots)
 
-    if not all_match_xg:
-        logger.error("No xG data retrieved from any competition")
-        return pd.DataFrame(), pd.DataFrame()
+    print(f"[fetch_statsbomb] Per-competition rows: {len(per_comp)}")
+    print(f"[fetch_statsbomb] Overall player rows: {len(overall)}")
 
-    match_xg_df = pd.concat(all_match_xg, ignore_index=True)
+    # Save both to processed/
+    os.makedirs("data/processed", exist_ok=True)
+    per_comp.to_csv("data/processed/statsbomb_player_stats_by_comp.csv", index=False)
+    overall.to_csv(OUTPUT_PATH, index=False)
 
-    # Save
-    match_xg_path = RAW_DIR / "statsbomb_match_xg.csv"
-    match_xg_df.to_csv(match_xg_path, index=False)
-    logger.info(f"Saved match xG to {match_xg_path}")
+    print(f"[fetch_statsbomb] Saved per-comp stats to data/processed/statsbomb_player_stats_by_comp.csv")
+    print(f"[fetch_statsbomb] Saved overall stats to {OUTPUT_PATH}")
 
-    return match_xg_df
+    # Quick sanity output
+    print(f"\n[fetch_statsbomb] Top 10 by total_xg (non-penalty):")
+    print(overall.nlargest(10, "total_xg")[
+        ["player_name", "team", "total_shots", "total_xg", "total_goals", "competitions_appeared"]
+    ].to_string())
 
 
 if __name__ == "__main__":
-    match_xg = fetch_all_statsbomb_xg()
-    if not match_xg.empty:
-        print(f"\nMatch xG records: {len(match_xg)}")
-        print(match_xg.head(10).to_string(index=False))
-        print(f"\nAverage xG per team per match: {match_xg['xg'].mean():.3f}")
+    run()
