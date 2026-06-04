@@ -1,131 +1,155 @@
 """
 fetch_elo.py
 
-Calculates current Elo ratings for all national teams from historical
-international match results.
+Loads pre-tournament Elo ratings for all 48 WC 2026 teams from the
+Kaggle dataset sourced from eloratings.net (CC BY-SA 4.0).
 
-Why we calculate Elo ourselves instead of scraping:
-    - No external dependency that can break
-    - We control the K-factor and weighting per tournament type
-    - Better interview story: we understand every parameter
+Dataset: afonsofernandescruz/2026-fifa-world-cup-historical-elo-ratings
+Download: kaggle datasets download -d afonsofernandescruz/2026-fifa-world-cup-historical-elo-ratings -p data/raw --unzip
 
-Elo formula:
-    Expected score: E_a = 1 / (1 + 10^((R_b - R_a) / 400))
-    New rating:     R_a' = R_a + K * (S_a - E_a)
+Why use eloratings.net instead of calculating our own:
+    - eloratings.net is the gold standard — used by FiveThirtyEight, academic papers
+    - Their ratings go back to 1872, giving stable long-run values
+    - We calculate Elo MOMENTUM ourselves (change over last N matches)
+      because that captures recent form, which the snapshot dataset doesn't
 
-    Where:
-        R_a, R_b = current ratings of team A and B
-        S_a      = actual result (1=win, 0.5=draw, 0=loss)
-        K        = weight factor (higher for more important matches)
-        400      = scaling constant (standard Elo)
+Elo formula (for reference — used in momentum calculation):
+    E_a = 1 / (1 + 10^((R_b - R_a) / 400))
+    R_a' = R_a + K * (S_a - E_a)
 """
 
 import pandas as pd
 from pathlib import Path
-from loguru import logger
-from fetch_matches import fetch_international_results
 
+PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 RAW_DIR = Path(__file__).resolve().parents[2] / "data" / "raw"
-RAW_DIR.mkdir(parents=True, exist_ok=True)
 
-DEFAULT_ELO = 1000.0
+# Downloaded via: kaggle datasets download -d afonsofernandescruz/2026-fifa-world-cup-historical-elo-ratings
+KAGGLE_ELO_PATH = RAW_DIR / "elo_ratings_wc2026.csv"
+RESULTS_PATH = PROCESSED_DIR / "international_results.csv"
 
-K_FACTORS = {
-    "FIFA World Cup": 60,
-    "FIFA World Cup qualification": 40,
-    "UEFA Euro": 50,
-    "UEFA Euro qualification": 40,
-    "Copa América": 50,
-    "African Cup of Nations": 50,
-    "AFC Asian Cup": 50,
-    "CONCACAF Gold Cup": 40,
-    "UEFA Nations League": 40,
-    "Friendly": 20,
-}
-DEFAULT_K = 30
+# Tournament starts June 11 2026 — use latest snapshot before that date
+TOURNAMENT_START = "2026-06-11"
 
-# Actual 48 qualified teams by group — confirmed from official FIFA draw
-# Source: FIFA draw December 5, 2025, Kennedy Center Washington D.C.
-QUALIFIED_TEAMS = [
-    # Group A
-    "Mexico", "South Africa", "South Korea", "Czech Republic",
-    # Group B
-    "Canada", "Bosnia and Herzegovina", "Qatar", "Switzerland",
-    # Group C
-    "Brazil", "Morocco", "Haiti", "Scotland",
-    # Group D
-    "United States", "Paraguay", "Australia", "Turkey",
-    # Group E
-    "Germany", "Curacao", "Ivory Coast", "Ecuador",
-    # Group F
-    "Netherlands", "Japan", "Sweden", "Tunisia",
-    # Group G
-    "Belgium", "Egypt", "Iran", "New Zealand",
-    # Group H
-    "Spain", "Cape Verde", "Saudi Arabia", "Uruguay",
-    # Group I
-    "France", "Senegal", "Iraq", "Norway",
-    # Group J
-    "Argentina", "Algeria", "Austria", "Jordan",
-    # Group K
-    "Portugal", "DR Congo", "Uzbekistan", "Colombia",
-    # Group L
-    "England", "Croatia", "Ghana", "Panama",
-]
-
-# Maps team names as they appear in the historical results CSV
-# to our standard QUALIFIED_TEAMS names above.
-# The martj42 dataset uses different naming conventions for some teams.
-RESULTS_NAME_MAP = {
-    "IR Iran": "Iran",
-    "Korea Republic": "South Korea",
-    "USA": "United States",
-    "Côte d'Ivoire": "Ivory Coast",
-    "DR Congo": "DR Congo",
+# Maps eloratings.net country names to our pipeline's standardised names
+# Must match wc2026_groups.csv exactly
+ELO_NAME_MAP = {
+    "United States": "United States",
+    "South Korea": "South Korea",
+    "Ivory Coast": "Côte d'Ivoire",
     "Bosnia-Herzegovina": "Bosnia and Herzegovina",
     "Türkiye": "Turkey",
     "Czechia": "Czech Republic",
     "Curaçao": "Curacao",
     "Cabo Verde": "Cape Verde",
+    "DR Congo": "DR Congo",
+    "IR Iran": "Iran",
+    "Korea Republic": "South Korea",
 }
 
+# K-factors for Elo momentum calculation
+# Higher K = more weight on recent results
+K_FACTORS = {
+    "world_cup":        60,
+    "continental_final": 50,
+    "world_cup_qual":   40,
+    "nations_league":   40,
+    "continental_qual": 30,
+    "friendly":         20,
+    "other":            25,
+}
+DEFAULT_K = 30
+DEFAULT_ELO = 1000.0
 
-def get_k_factor(tournament: str) -> float:
-    for key, k in K_FACTORS.items():
-        if key.lower() in tournament.lower():
-            return k
-    return DEFAULT_K
+# How many recent matches to use for momentum calculation
+MOMENTUM_WINDOW = 10
 
 
-def expected_score(rating_a: float, rating_b: float) -> float:
-    return 1.0 / (1.0 + 10.0 ** ((rating_b - rating_a) / 400.0))
-
-
-def calculate_elo_ratings(df: pd.DataFrame) -> dict[str, float]:
+def load_pre_tournament_elo() -> pd.DataFrame:
     """
-    Iterates through all matches chronologically and updates Elo ratings.
-
-    Args:
-        df: Full international results DataFrame with columns:
-            date, home_team, away_team, home_score, away_score, tournament
-
-    Returns:
-        Dict mapping team name -> current Elo rating
+    Load the most recent Elo snapshot before the tournament start date.
+    Uses eloratings.net data from the Kaggle dataset.
     """
-    df = df.sort_values("date").reset_index(drop=True)
+    if not KAGGLE_ELO_PATH.exists():
+        print(f"[fetch_elo] ERROR: {KAGGLE_ELO_PATH} not found.")
+        print("Run: kaggle datasets download -d afonsofernandescruz/2026-fifa-world-cup-historical-elo-ratings -p data/raw --unzip")
+        return pd.DataFrame()
 
-    # Normalize team names using the results name map
-    df["home_team"] = df["home_team"].replace(RESULTS_NAME_MAP)
-    df["away_team"] = df["away_team"].replace(RESULTS_NAME_MAP)
+    df = pd.read_csv(KAGGLE_ELO_PATH, parse_dates=["snapshot_date"])
 
+    # Filter to snapshots before tournament start
+    pre = df[df["snapshot_date"] < TOURNAMENT_START].copy()
+
+    # Take most recent snapshot per team
+    latest = (
+        pre.sort_values("snapshot_date", ascending=False)
+        .drop_duplicates(subset=["country"], keep="first")
+        .copy()
+    )
+
+    print(f"[fetch_elo] Loaded {len(latest)} teams from eloratings.net snapshot ({latest['snapshot_date'].max().date()})")
+
+    # Rename and normalise
+    latest = latest.rename(columns={
+        "country": "team",
+        "rating":  "elo",
+        "rank":    "elo_rank",
+    })
+
+    latest["team"] = latest["team"].replace(ELO_NAME_MAP)
+
+    # Keep useful columns
+    keep = ["team", "elo", "elo_rank", "confederation", "is_host",
+            "matches_total", "wins", "losses", "draws",
+            "goals_for", "goals_against"]
+    keep = [c for c in keep if c in latest.columns]
+    latest = latest[keep].reset_index(drop=True)
+
+    return latest
+
+
+def calculate_elo_momentum(df_results: pd.DataFrame, teams: list) -> pd.DataFrame:
+    """
+    Calculate Elo momentum for each team — change in Elo over last N matches.
+
+    Why momentum matters:
+        A team rated 1900 that won their last 8 matches is more dangerous
+        than a team rated 1900 that lost their last 5. The absolute rating
+        doesn't capture this — momentum does.
+
+    Method:
+        1. Run full Elo simulation on historical results
+        2. For each team, compare their Elo after match N vs match N-MOMENTUM_WINDOW
+        3. The difference is their momentum score
+    """
+    if df_results.empty:
+        return pd.DataFrame()
+
+    # Name map for martj42 dataset
+    NAME_MAP = {
+        "IR Iran": "Iran",
+        "Korea Republic": "South Korea",
+        "USA": "United States",
+        "Côte d'Ivoire": "Côte d'Ivoire",
+        "Bosnia-Herzegovina": "Bosnia and Herzegovina",
+        "Türkiye": "Turkey",
+        "Czechia": "Czech Republic",
+        "Curaçao": "Curacao",
+        "Cabo Verde": "Cape Verde",
+    }
+
+    df = df_results.copy().sort_values("date").reset_index(drop=True)
+    df["home_team"] = df["home_team"].replace(NAME_MAP)
+    df["away_team"] = df["away_team"].replace(NAME_MAP)
+
+    # Track rating history per team: {team: [rating_after_each_match]}
     ratings = {}
+    history = {team: [] for team in teams}
 
     for _, row in df.iterrows():
         home = row["home_team"]
         away = row["away_team"]
-        home_goals = row["home_score"]
-        away_goals = row["away_score"]
-        tournament = row["tournament"]
+        tournament_type = row.get("tournament_type", "other")
 
         if home not in ratings:
             ratings[home] = DEFAULT_ELO
@@ -135,8 +159,11 @@ def calculate_elo_ratings(df: pd.DataFrame) -> dict[str, float]:
         r_home = ratings[home]
         r_away = ratings[away]
 
-        e_home = expected_score(r_home, r_away)
+        e_home = 1.0 / (1.0 + 10.0 ** ((r_away - r_home) / 400.0))
         e_away = 1.0 - e_home
+
+        home_goals = row["home_score"]
+        away_goals = row["away_score"]
 
         if home_goals > away_goals:
             s_home, s_away = 1.0, 0.0
@@ -145,59 +172,75 @@ def calculate_elo_ratings(df: pd.DataFrame) -> dict[str, float]:
         else:
             s_home, s_away = 0.5, 0.5
 
-        k = get_k_factor(tournament)
+        k = K_FACTORS.get(tournament_type, DEFAULT_K)
 
         ratings[home] = r_home + k * (s_home - e_home)
         ratings[away] = r_away + k * (s_away - e_away)
 
-    return ratings
+        # Record history for qualified teams only
+        if home in history:
+            history[home].append(ratings[home])
+        if away in history:
+            history[away].append(ratings[away])
+
+    # Compute momentum: rating after last match minus rating MOMENTUM_WINDOW matches ago
+    momentum_rows = []
+    for team in teams:
+        h = history[team]
+        if len(h) >= MOMENTUM_WINDOW:
+            momentum = h[-1] - h[-MOMENTUM_WINDOW]
+        elif len(h) > 1:
+            momentum = h[-1] - h[0]
+        else:
+            momentum = 0.0
+
+        momentum_rows.append({
+            "team": team,
+            "elo_momentum": round(momentum, 1),
+            "matches_in_data": len(h),
+        })
+
+    return pd.DataFrame(momentum_rows)
 
 
-def fetch_all_elo_ratings() -> pd.DataFrame:
-    """
-    Calculates Elo ratings from match history, filters to 48 qualified teams.
+def run():
+    print("[fetch_elo] Loading pre-tournament Elo ratings...")
 
-    Returns:
-        DataFrame with columns [team, elo, group]
-    """
-    logger.info("Loading international match history...")
-    df = fetch_international_results()
+    # --- Part 1: Absolute Elo from eloratings.net ---
+    df_elo = load_pre_tournament_elo()
+    if df_elo.empty:
+        return
 
-    logger.info("Calculating Elo ratings from match history...")
-    ratings = calculate_elo_ratings(df)
+    # --- Part 2: Elo momentum from our historical results ---
+    print("[fetch_elo] Calculating Elo momentum from match history...")
 
-    # Build full ratings DataFrame
-    all_ratings = pd.DataFrame([
-        {"team": team, "elo": round(elo, 1)}
-        for team, elo in ratings.items()
-    ])
+    if not RESULTS_PATH.exists():
+        print(f"[fetch_elo] WARNING: {RESULTS_PATH} not found — skipping momentum calculation")
+        df_final = df_elo
+    else:
+        df_results = pd.read_csv(RESULTS_PATH, parse_dates=["date"])
+        teams = df_elo["team"].tolist()
+        df_momentum = calculate_elo_momentum(df_results, teams)
 
-    # Filter to qualified teams only
-    qualified = all_ratings[all_ratings["team"].isin(QUALIFIED_TEAMS)].copy()
+        df_final = df_elo.merge(df_momentum, on="team", how="left")
+        df_final["elo_momentum"] = df_final["elo_momentum"].fillna(0.0)
 
-    # Add group column for reference
-    group_map = {}
-    groups = ["A","B","C","D","E","F","G","H","I","J","K","L"]
-    for i, team in enumerate(QUALIFIED_TEAMS):
-        group_map[team] = groups[i // 4]
+    # Sort by Elo descending
+    df_final = df_final.sort_values("elo", ascending=False).reset_index(drop=True)
 
-    qualified["group"] = qualified["team"].map(group_map)
-    qualified = qualified.sort_values("elo", ascending=False).reset_index(drop=True)
+    output_path = PROCESSED_DIR / "elo_ratings.csv"
+    df_final.to_csv(output_path, index=False)
+    print(f"[fetch_elo] Saved {len(df_final)} teams to {output_path}")
 
-    # Log which qualified teams are missing from historical data
-    missing = set(QUALIFIED_TEAMS) - set(qualified["team"].tolist())
-    if missing:
-        logger.warning(f"No historical data for: {missing}")
-        logger.warning("These teams will need Elo assigned manually or via default")
+    print(f"\n[fetch_elo] Top 10 by Elo:")
+    print(df_final.head(10)[["team", "elo", "elo_rank", "elo_momentum"]].to_string())
 
-    output_path = RAW_DIR / "elo_ratings.csv"
-    qualified.to_csv(output_path, index=False)
-    logger.info(f"Saved {len(qualified)}/48 team Elo ratings to {output_path}")
+    print(f"\n[fetch_elo] Top 5 by momentum (hottest teams right now):")
+    print(df_final.nlargest(5, "elo_momentum")[["team", "elo", "elo_momentum"]].to_string())
 
-    return qualified
+    print(f"\n[fetch_elo] Bottom 5 by momentum (coldest teams):")
+    print(df_final.nsmallest(5, "elo_momentum")[["team", "elo", "elo_momentum"]].to_string())
 
 
 if __name__ == "__main__":
-    ratings = fetch_all_elo_ratings()
-    print(f"\nAll qualified teams by Elo ({len(ratings)}/48):")
-    print(ratings.to_string(index=False))
+    run()
