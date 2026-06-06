@@ -39,8 +39,6 @@ OUTPUT_PATH = PROCESSED_DIR / "fbref_players.csv"
 FBREF_LEAGUES = [
     "NLD-Eredivisie",
     "PRT-Primeira Liga",
-    "BRA-Brasileirao",
-    "ARG-Liga Profesional",
     "USA-MLS",
     "SCO-Premiership",
     "BEL-Pro League",
