@@ -42,4 +42,4 @@ frontend/build/
 frontend/.env.local
 # Kaggle credentials
 .kaggle/
-kaggle.json
+kaggle.jsondata/raw/wc2026_squads.html  
