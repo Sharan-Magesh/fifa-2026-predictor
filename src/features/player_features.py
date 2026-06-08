@@ -395,10 +395,6 @@ def get_matchup_player_features(team_a: str, team_b: str) -> dict:
 # Run directly to validate output
 # ---------------------------------------------------------------------------
 
-import sys
-import io
-sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding="utf-8", errors="replace")
-
 if __name__ == "__main__":
     print("=== Building player quality table ===\n")
     df = build_player_quality_table()
