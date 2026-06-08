@@ -91,22 +91,22 @@ def _build_training_row(home_team: str, away_team: str,
 
         return {
             "elo_diff":           elo.get("elo_diff", 0.0),
-            "elo_momentum_diff":  elo.get("elo_momentum_diff", 0.0),
+            "elo_momentum_diff":  elo.get("momentum_diff", 0.0),
             "form_diff":          form_a.get("win_rate", 0.5) - form_b.get("win_rate", 0.5),
             "form_a":             form_a.get("win_rate", 0.5),
             "form_b":             form_b.get("win_rate", 0.5),
             "h2h_win_rate_a":     h2h.get("h2h_win_rate_a", 0.33),
             "h2h_advantage":      h2h.get("h2h_win_rate_a", 0.33) - h2h.get("h2h_win_rate_b", 0.33),
             "h2h_matches":        h2h.get("h2h_matches", 0),
-            "tournament_exp_diff": exp_a.get("tournament_experience", 0.0) - exp_b.get("tournament_experience", 0.0),
-            "wc_appearances_a":   exp_a.get("wc_appearances", 0),
-            "wc_appearances_b":   exp_b.get("wc_appearances", 0),
+            "tournament_exp_diff": exp_a.get("wc_experience_score", 0.0) - exp_b.get("wc_experience_score", 0.0),
+            "wc_appearances_a":   exp_a.get("wc_matches_played", 0),
+            "wc_appearances_b":   exp_b.get("wc_matches_played", 0),
         }
     except Exception:
         return None
 
 
-def build_training_dataset(max_rows: int = None) -> tuple:
+def build_training_dataset(max_rows: int = None, min_year: int = 2004) -> tuple:
     """
     Build X, y for training from historical international results.
 
@@ -132,6 +132,7 @@ def build_training_dataset(max_rows: int = None) -> tuple:
 
     # Filter to competitive matches only
     df = df[df["tournament_type"] != "friendly"].copy()
+    df = df[df["year"] >= min_year].copy()
     df = df[df["home_result"].isin(["W", "D", "L"])].copy()
     df = df.sort_values("date").reset_index(drop=True)
 

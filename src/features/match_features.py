@@ -72,9 +72,9 @@ def build_match_features(team_a: str, team_b: str) -> dict:
 
     # 2. Elo momentum
     # Team on a winning streak is more dangerous than static Elo suggests.
-    features["elo_momentum_a"]    = round(float(elo.get("elo_momentum_a",    0.0)), 4)
-    features["elo_momentum_b"]    = round(float(elo.get("elo_momentum_b",    0.0)), 4)
-    features["elo_momentum_diff"] = round(float(elo.get("elo_momentum_diff", 0.0)), 4)
+    features["elo_momentum_a"]    = round(float(elo.get("momentum_a", 0.0)), 4)
+    features["elo_momentum_b"]    = round(float(elo.get("momentum_b", 0.0)), 4)
+    features["elo_momentum_diff"] = round(float(elo.get("momentum_diff", 0.0)), 4)
 
     # 3. Recent form
     # Short-term form captures fitness, tactical cohesion, confidence.
@@ -97,10 +97,10 @@ def build_match_features(team_a: str, team_b: str) -> dict:
 
     # 5. Tournament experience
     # Teams used to WC pressure perform differently in knockout stages.
-    features["wc_appearances_a"]     = int(exp_a.get("wc_appearances",      0))
-    features["wc_appearances_b"]     = int(exp_b.get("wc_appearances",      0))
-    features["tournament_exp_a"]     = round(float(exp_a.get("tournament_experience", 0.0)), 4)
-    features["tournament_exp_b"]     = round(float(exp_b.get("tournament_experience", 0.0)), 4)
+    features["wc_appearances_a"]     = int(exp_a.get("wc_matches_played", 0))
+    features["wc_appearances_b"]     = int(exp_b.get("wc_matches_played", 0))
+    features["tournament_exp_a"]     = round(float(exp_a.get("wc_experience_score", 0.0)), 4)
+    features["tournament_exp_b"]     = round(float(exp_b.get("wc_experience_score", 0.0)), 4)
     features["tournament_exp_diff"]  = round(features["tournament_exp_a"] -
                                               features["tournament_exp_b"], 4)
 

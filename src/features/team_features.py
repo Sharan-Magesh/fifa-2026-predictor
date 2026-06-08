@@ -10,6 +10,45 @@ from functools import lru_cache
 
 PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 
+# Name aliases — maps squad/fixture names to Elo dataset names
+TEAM_NAME_ALIASES = {
+    "Ivory Coast":    "Côte d'Ivoire",
+    "Curaçao":        "Curacao",
+    "DR Congo":       "Congo DR",
+    "South Korea":    "Korea Republic",
+    "Iran":           "IR Iran",
+    "USA":            "United States",
+}
+
+def _resolve_team_name(team: str) -> str:
+    return TEAM_NAME_ALIASES.get(team, team)
+
+# Name aliases — maps squad/fixture names to Elo dataset names
+TEAM_NAME_ALIASES = {
+    "Ivory Coast":    "Côte d'Ivoire",
+    "Curaçao":        "Curacao",
+    "DR Congo":       "Congo DR",
+    "South Korea":    "Korea Republic",
+    "Iran":           "IR Iran",
+    "USA":            "United States",
+}
+
+def _resolve_team_name(team: str) -> str:
+    return TEAM_NAME_ALIASES.get(team, team)
+
+# Name aliases — maps squad/fixture names to Elo dataset names
+TEAM_NAME_ALIASES = {
+    "Ivory Coast":    "Côte d'Ivoire",
+    "Curaçao":        "Curacao",
+    "DR Congo":       "Congo DR",
+    "South Korea":    "Korea Republic",
+    "Iran":           "IR Iran",
+    "USA":            "United States",
+}
+
+def _resolve_team_name(team: str) -> str:
+    return TEAM_NAME_ALIASES.get(team, team)
+
 # How many recent matches to use for form calculation
 FORM_WINDOW = 10
 
@@ -72,6 +111,7 @@ def get_elo_features(team_a: str, team_b: str) -> dict:
     df_elo = load_elo()
 
     def get_team_elo(team: str) -> tuple:
+        team = TEAM_NAME_ALIASES.get(team, team)
         row = df_elo[df_elo["team"] == team]
         if row.empty:
             # Unknown team — assign average Elo
