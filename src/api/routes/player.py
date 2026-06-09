@@ -14,6 +14,7 @@ All data comes from player_features.py outputs. No live API calls at request tim
 from pathlib import Path
 from typing import Optional
 import sys
+import unicodedata
 
 import pandas as pd
 from fastapi import APIRouter, HTTPException, Query
@@ -34,18 +35,31 @@ def _load_player_scores() -> pd.DataFrame:
     return pd.read_csv(PLAYER_SCORES_PATH)
 
 
+def _deaccent(s: str) -> str:
+    """Strip diacritics: 'Mbappé' -> 'Mbappe'."""
+    return ''.join(
+        c for c in unicodedata.normalize('NFD', s)
+        if unicodedata.category(c) != 'Mn'
+    )
+
+
 def _find_player(df: pd.DataFrame, name: str) -> pd.Series:
     """
-    Case-insensitive player name lookup with partial-match fallback.
-    Name normalisation is a known pain point — this handles most mismatches.
+    Case-insensitive, accent-insensitive player name lookup with partial-match fallback.
+    Handles "Mbappe" matching "Mbappé", partial names, hyphenated names, etc.
     """
-    # Exact match first (case-insensitive)
-    exact = df[df["player"].str.strip().str.lower() == name.strip().lower()]
+    query_norm = _deaccent(name.strip()).lower()
+
+    # Build accent-stripped version of stored names once
+    stored_norm = df["player"].apply(lambda x: _deaccent(str(x).strip()).lower())
+
+    # Exact match (accent-insensitive)
+    exact = df[stored_norm == query_norm]
     if not exact.empty:
         return exact.iloc[0]
 
-    # Partial match fallback — handles "Mbappe" matching "Kylian Mbappe-Lottin"
-    partial = df[df["player"].str.lower().str.contains(name.strip().lower(), regex=False)]
+    # Partial match fallback
+    partial = df[stored_norm.str.contains(query_norm, regex=False)]
     if not partial.empty:
         return partial.iloc[0]
 
@@ -205,7 +219,8 @@ def search_player(q: str = Query(..., description="Partial player name")):
     """
     df = _load_player_scores()
 
-    matches = df[df["player"].str.lower().str.contains(q.strip().lower(), regex=False)]
+    q_norm = _deaccent(q.strip()).lower()
+    matches = df[df["player"].apply(lambda x: _deaccent(str(x)).lower()).str.contains(q_norm, regex=False)]
     matches = matches.head(10).where(pd.notnull(matches), None)
 
     cols = ["player", "team", "position"]

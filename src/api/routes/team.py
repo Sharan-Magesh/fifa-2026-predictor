@@ -140,30 +140,19 @@ def get_team(
     elo_trajectory = []
     elo_df = _load_csv_safe(ELO_PATH, "elo_ratings")
     if elo_df is not None:
-        # elo_ratings.csv might be structured as team×date or as team|date|elo rows
-        # Handle wide format (columns = dates) and long format (columns: team, date, elo)
         if "date" in elo_df.columns and "elo" in elo_df.columns:
-            # Long format
+            # Long format: one row per (team, date)
             team_elo = elo_df[elo_df["team"].str.strip().str.lower() == team_name.lower()]
             if not team_elo.empty:
                 team_elo_sorted = team_elo.sort_values("date").tail(elo_points)
                 elo_trajectory = team_elo_sorted[["date", "elo"]].to_dict(orient="records")
-        else:
-            # Wide format: index = team, columns = dates
-            elo_df_indexed = elo_df.set_index("team") if "team" in elo_df.columns else elo_df
-            matching = [
-                idx for idx in elo_df_indexed.index
-                if str(idx).strip().lower() == team_name.lower()
-            ]
-            if matching:
-                row = elo_df_indexed.loc[matching[0]]
-                # Take the last N columns as the trajectory
-                recent = row.iloc[-elo_points:] if len(row) >= elo_points else row
-                elo_trajectory = [
-                    {"date": str(date_col), "elo": float(val)}
-                    for date_col, val in recent.items()
-                    if pd.notna(val)
-                ]
+        elif "elo" in elo_df.columns:
+            # Flat snapshot format: one row per team, single current Elo value
+            team_elo = elo_df[elo_df["team"].str.strip().str.lower() == team_name.lower()]
+            if not team_elo.empty:
+                elo_val = team_elo.iloc[0]["elo"]
+                if pd.notna(elo_val):
+                    elo_trajectory = [{"date": "current", "elo": float(elo_val)}]
 
     return {
         "team":                    team_row["team"],

@@ -392,6 +392,35 @@ def get_matchup_player_features(team_a: str, team_b: str) -> dict:
 
 
 # ---------------------------------------------------------------------------
+# Pipeline entry point — called by run_pipeline.py
+# ---------------------------------------------------------------------------
+
+def run():
+    """
+    Build player quality table and save to data/processed/player_scores.csv.
+
+    Column rename before saving:
+      player_name  -> player         (API routes expect "player")
+      player_score -> composite_score (API routes expect "composite_score")
+    name_key is an internal join key and is dropped.
+    """
+    print("  [player_features] Building player quality table...")
+    df = build_player_quality_table()
+
+    out = df.rename(columns={
+        "player_name":  "player",
+        "player_score": "composite_score",
+    }).drop(columns=["name_key"], errors="ignore")
+
+    out_path = PROCESSED_DIR / "player_scores.csv"
+    out.to_csv(out_path, index=False)
+
+    print(f"  [player_features] Saved {len(out)} rows -> {out_path}")
+    print(f"  [player_features] Coverage: "
+          f"{int((out['composite_score'] > 0).sum())} players with non-zero score")
+
+
+# ---------------------------------------------------------------------------
 # Run directly to validate output
 # ---------------------------------------------------------------------------
 

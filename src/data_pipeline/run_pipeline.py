@@ -12,6 +12,7 @@ from src.data_pipeline import (
     fetch_understat,
     fetch_transfermarkt,
 )
+from src.features import player_features
 
 # Order matters:
 # 1. fetch_international_results — martj42 CSV, must run before fetch_elo
@@ -27,6 +28,7 @@ PIPELINE = [
     ("fetch_statsbomb",              fetch_statsbomb.run),
     ("fetch_understat",              fetch_understat.run),
     ("fetch_transfermarkt",          fetch_transfermarkt.run),
+    ("player_features",              player_features.run),
 ]
 
 EXPECTED_OUTPUTS = [
@@ -38,6 +40,7 @@ EXPECTED_OUTPUTS = [
     "data/processed/statsbomb_player_stats_by_comp.csv",
     "data/processed/understat_players.csv",
     "data/processed/transfermarkt_players.csv",
+    "data/processed/player_scores.csv",
 ]
 
 
