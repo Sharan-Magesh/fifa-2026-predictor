@@ -17,6 +17,7 @@ from pathlib import Path
 from functools import lru_cache
 
 from src.features.team_features import (
+    get_fifa_ranking_feature,
     get_elo_features,
     get_team_recent_form,
     get_h2h_features,
@@ -63,6 +64,13 @@ def build_match_features(team_a: str, team_b: str) -> dict:
 
     features = {}
 
+    # 0. FIFA ranking points differential
+    fifa_a = get_fifa_ranking_feature(team_a)
+    fifa_b = get_fifa_ranking_feature(team_b)
+    features["fifa_points_norm_a"]    = fifa_a["fifa_points_norm"]
+    features["fifa_points_norm_b"]    = fifa_b["fifa_points_norm"]
+    features["fifa_points_norm_diff"] = round(fifa_a["fifa_points_norm"] - fifa_b["fifa_points_norm"], 4)
+
     # 1. Elo
     # Single strongest predictor of match outcome.
     # Differential captures relative strength directly.
@@ -74,7 +82,7 @@ def build_match_features(team_a: str, team_b: str) -> dict:
     # Team on a winning streak is more dangerous than static Elo suggests.
     features["elo_momentum_a"]    = round(float(elo.get("momentum_a", 0.0)), 4)
     features["elo_momentum_b"]    = round(float(elo.get("momentum_b", 0.0)), 4)
-    features["elo_momentum_diff"] = round(float(elo.get("momentum_diff", 0.0)), 4)
+    features["elo_momentum_diff"] = round(float(elo.get("momentum_diff", 0.0)) / 100.0, 4)
 
     # 3. Recent form
     # Short-term form captures fitness, tactical cohesion, confidence.

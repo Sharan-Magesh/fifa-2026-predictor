@@ -36,7 +36,16 @@ def main():
         save_model,
     )
 
-    X, y, matches = build_training_dataset(max_rows=max_rows)
+    # Train only on high-stakes competitive matches:
+    # World Cup finals, continental finals (Euro/Copa/AFCON/Asian Cup),
+    # and UEFA/CONMEBOL Nations League.
+    # Excludes qualifiers and minor tournaments where weak nations
+    # inflate form metrics for strong confederations.
+    TOURNAMENT_TYPES = ["world_cup", "continental_final", "nations_league"]
+    X, y, matches = build_training_dataset(
+        max_rows=max_rows,
+        tournament_types=TOURNAMENT_TYPES,
+    )
     model = train(X, y)
     save_model(model)
 

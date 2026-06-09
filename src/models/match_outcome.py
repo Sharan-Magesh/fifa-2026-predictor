@@ -51,6 +51,10 @@ RESULT_INV = {2: "win", 1: "draw", 0: "loss"}
 # We exclude player features for training because most historical matches
 # don't have player quality data. We add them back at inference time.
 TRAINING_FEATURES = [
+    "fifa_points_norm_diff",
+    "fifa_points_norm_diff_sq",
+    "fifa_points_norm_a",
+    "fifa_points_norm_b",
     "elo_diff",
     "elo_momentum_diff",
     "form_diff",
@@ -89,9 +93,20 @@ def _build_training_row(home_team: str, away_team: str,
         exp_a = get_tournament_experience(home_team)
         exp_b = get_tournament_experience(away_team)
 
+        from src.features.team_features import get_fifa_ranking_feature
+        fifa_a = get_fifa_ranking_feature(home_team)
+        fifa_b = get_fifa_ranking_feature(away_team)
+
+        elo_diff_norm = elo.get("elo_diff", 0.0) / 400.0
+        elo_mom_norm  = elo.get("momentum_diff", 0.0) / 100.0
+
         return {
-            "elo_diff":           elo.get("elo_diff", 0.0),
-            "elo_momentum_diff":  elo.get("momentum_diff", 0.0),
+            "fifa_points_norm_diff":    round(fifa_a["fifa_points_norm"] - fifa_b["fifa_points_norm"], 4),
+            "fifa_points_norm_diff_sq": round((fifa_a["fifa_points_norm"] - fifa_b["fifa_points_norm"]) * abs(fifa_a["fifa_points_norm"] - fifa_b["fifa_points_norm"]), 4),
+            "fifa_points_norm_a":       fifa_a["fifa_points_norm"],
+            "fifa_points_norm_b":       fifa_b["fifa_points_norm"],
+            "elo_diff":           elo_diff_norm,
+            "elo_momentum_diff":  elo_mom_norm,
             "form_diff":          form_a.get("win_rate", 0.5) - form_b.get("win_rate", 0.5),
             "form_a":             form_a.get("win_rate", 0.5),
             "form_b":             form_b.get("win_rate", 0.5),
@@ -106,7 +121,7 @@ def _build_training_row(home_team: str, away_team: str,
         return None
 
 
-def build_training_dataset(max_rows: int = None, min_year: int = 2004) -> tuple:
+def build_training_dataset(max_rows: int = None, min_year: int = 2004, tournament_types: list = None) -> tuple:
     """
     Build X, y for training from historical international results.
 
@@ -132,6 +147,8 @@ def build_training_dataset(max_rows: int = None, min_year: int = 2004) -> tuple:
 
     # Filter to competitive matches only
     df = df[df["tournament_type"] != "friendly"].copy()
+    if tournament_types:
+        df = df[df["tournament_type"].isin(tournament_types)].copy()
     df = df[df["year"] >= min_year].copy()
     df = df[df["home_result"].isin(["W", "D", "L"])].copy()
     df = df.sort_values("date").reset_index(drop=True)
@@ -190,10 +207,13 @@ def train(X: pd.DataFrame, y: np.array) -> xgb.XGBClassifier:
 
     model = xgb.XGBClassifier(
         n_estimators=500,
-        max_depth=4,
+        max_depth=3,          # shallower tree — less overfitting on small dataset
         learning_rate=0.05,
         subsample=0.8,
         colsample_bytree=0.8,
+        min_child_weight=5,   # require 5 samples per leaf — reduces overfitting
+        reg_alpha=0.1,        # L1 regularisation
+        reg_lambda=1.5,       # L2 regularisation
         objective="multi:softmax",
         num_class=3,
         eval_metric="mlogloss",
