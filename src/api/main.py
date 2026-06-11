@@ -16,12 +16,18 @@ app = FastAPI(
 
 # ---------------------------------------------------------------------------
 # CORS — React dev server runs on localhost:3000 by default.
-# In production replace "*" with your deployed frontend URL.
+# In production replace with your deployed frontend URL.
+#
+# Note: "*" cannot be combined with allow_credentials=True (browsers reject
+# wildcard origins on credentialed requests, and FastAPI/Starlette will
+# echo "*" back literally, which is a footgun). This API is read-only and
+# does not use cookies/auth, so we disable credentials and keep an explicit
+# origin allowlist.
 # ---------------------------------------------------------------------------
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "*"],
-    allow_credentials=True,
+    allow_origins=["http://localhost:3000"],
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )

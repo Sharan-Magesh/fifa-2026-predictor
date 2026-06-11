@@ -28,12 +28,25 @@ SQUADS_PATH  = PROJECT_ROOT / "data" / "processed" / "wc2026_squads.csv"
 
 
 def _get_valid_teams() -> set:
-    """Return the set of 48 team names from the squad file for input validation."""
+    """
+    Return the set of 48 canonical team names for input validation.
+
+    wc2026_squads.csv spells one team "Ivory Coast", but the canonical
+    spelling used everywhere else (wc2026_groups.csv, wc2026_fixtures.csv,
+    GROUPS, FIFA_RANKING_POINTS) is "Côte d'Ivoire" — see
+    src/features/team_features.py SQUAD_NAME_ALIASES. Without remapping,
+    the canonical name the frontend sends is rejected with a 400 here.
+    """
     path = SQUADS_PATH
     if not path.exists():
         return set()
     df = pd.read_csv(path)
-    return set(df["team"].unique())
+    raw_teams = set(df["team"].unique())
+
+    from src.features.team_features import SQUAD_NAME_ALIASES
+    squad_to_canonical = {v: k for k, v in SQUAD_NAME_ALIASES.items()}
+
+    return {squad_to_canonical.get(t, t) for t in raw_teams}
 
 
 def _lazy_import_predict():
@@ -126,8 +139,11 @@ def predict_match(
 
     xg_a       = round(float(score_result.get("xg_a", 0)), 2)
     xg_b       = round(float(score_result.get("xg_b", 0)), 2)
-    score_a    = int(score_result.get("score_a", round(xg_a)))
-    score_b    = int(score_result.get("score_b", round(xg_b)))
+    # predict_score() returns the Poisson-derived likely scoreline under
+    # likely_score_a/likely_score_b — read those instead of falling back
+    # to a naive round(xg) every time.
+    score_a    = int(score_result.get("likely_score_a", round(xg_a)))
+    score_b    = int(score_result.get("likely_score_b", round(xg_b)))
     score_prob = round(float(score_result.get("score_prob", 0)), 3)
 
     # --- Knockout-mode draw redistribution ---

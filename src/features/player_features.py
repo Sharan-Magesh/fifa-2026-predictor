@@ -14,6 +14,8 @@
 
 import pandas as pd
 import numpy as np
+
+from src.features.team_features import _resolve_squad_team_name
 from pathlib import Path
 from functools import lru_cache
 
@@ -177,6 +179,17 @@ def _build_intl_xg() -> pd.DataFrame:
         w_shots_total=("w_shots", "sum"),
     ).reset_index()
 
+    agg["name_key"] = agg["player_name"].apply(_norm_name)
+
+    # Two distinct player_names (e.g. transliteration variants) can collapse
+    # to the same name_key. Re-aggregate to one row per name_key BEFORE
+    # returning, so the merge in build_player_quality_table() stays
+    # one-to-one against the squad list (avoids duplicated squad rows).
+    agg = agg.groupby("name_key", as_index=False).agg(
+        w_xg_total=("w_xg_total", "sum"),
+        w_shots_total=("w_shots_total", "sum"),
+    )
+
     agg["intl_xg_per_shot"] = (
         agg["w_xg_total"] / agg["w_shots_total"].clip(lower=1)
     ).round(4)
@@ -184,7 +197,6 @@ def _build_intl_xg() -> pd.DataFrame:
     # Zero out low-shot players — they're GKs/defenders, not attackers
     agg.loc[agg["w_shots_total"] < MIN_SHOTS_FOR_XG, "intl_xg_per_shot"] = 0.0
 
-    agg["name_key"] = agg["player_name"].apply(_norm_name)
     return agg[["name_key", "intl_xg_per_shot", "w_shots_total"]].rename(
         columns={"w_shots_total": "weighted_shots"}
     )
@@ -286,6 +298,15 @@ def build_player_quality_table() -> pd.DataFrame:
     df = df.merge(club_form,     on="name_key", how="left")
     df = df.merge(mkt_value,     on="name_key", how="left")
 
+    # Guard against one-to-many merges silently duplicating squad rows
+    # (e.g. two distinct players reducing to the same name_key in a
+    # lookup table). Should always hold after the dedup in _build_intl_xg().
+    assert len(df) == len(squads), (
+        f"build_player_quality_table: row count changed after merges "
+        f"({len(squads)} squad rows -> {len(df)} after merge). "
+        f"A lookup table likely has duplicate name_key rows."
+    )
+
     # --- Fill missing ---
     df["intl_xg_per_shot"] = df["intl_xg_per_shot"].fillna(0.0)
     df["weighted_shots"]   = df["weighted_shots"].fillna(0.0)
@@ -328,7 +349,10 @@ def build_player_quality_table() -> pd.DataFrame:
 
 def get_team_player_features(team: str) -> dict:
     df = build_player_quality_table()
-    players = df[df["team"] == team].copy()
+    # wc2026_squads.csv spells some teams differently from the canonical
+    # fixtures/groups naming (e.g. "Côte d'Ivoire" -> "Ivory Coast").
+    squad_team = _resolve_squad_team_name(team)
+    players = df[df["team"] == squad_team].copy()
 
     if players.empty:
         print(f"  [player_features] WARNING: {team} not found in squad data")

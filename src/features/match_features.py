@@ -67,16 +67,23 @@ def build_match_features(team_a: str, team_b: str) -> dict:
     # 0. FIFA ranking points differential
     fifa_a = get_fifa_ranking_feature(team_a)
     fifa_b = get_fifa_ranking_feature(team_b)
+    fifa_diff = fifa_a["fifa_points_norm"] - fifa_b["fifa_points_norm"]
     features["fifa_points_norm_a"]    = fifa_a["fifa_points_norm"]
     features["fifa_points_norm_b"]    = fifa_b["fifa_points_norm"]
-    features["fifa_points_norm_diff"] = round(fifa_a["fifa_points_norm"] - fifa_b["fifa_points_norm"], 4)
+    features["fifa_points_norm_diff"] = round(fifa_diff, 4)
+    # Squared (sign-preserving) diff — same formula as match_outcome._build_training_row.
+    # Without this, predict() always saw 0.0 here at inference (train/serve skew).
+    features["fifa_points_norm_diff_sq"] = round(fifa_diff * abs(fifa_diff), 4)
 
     # 1. Elo
     # Single strongest predictor of match outcome.
-    # Differential captures relative strength directly.
-    features["elo_a"]    = round(float(elo.get("elo_a",    1500.0)), 2)
-    features["elo_b"]    = round(float(elo.get("elo_b",    1500.0)), 2)
-    features["elo_diff"] = round(float(elo.get("elo_diff", 0.0)),    2)
+    # "elo_diff" is normalized by /400 to match _build_training_row's
+    # elo_diff_norm — this is the value TRAINING_FEATURES expects.
+    # Raw Elo ratings/diff are kept under elo_a/elo_b/elo_diff_raw for display.
+    features["elo_a"]        = round(float(elo.get("elo_a",    1500.0)), 2)
+    features["elo_b"]        = round(float(elo.get("elo_b",    1500.0)), 2)
+    features["elo_diff_raw"] = round(float(elo.get("elo_diff", 0.0)),    2)
+    features["elo_diff"]     = round(float(elo.get("elo_diff", 0.0)) / 400.0, 4)
 
     # 2. Elo momentum
     # Team on a winning streak is more dangerous than static Elo suggests.
@@ -90,17 +97,19 @@ def build_match_features(team_a: str, team_b: str) -> dict:
     features["form_b"]    = round(float(form_b.get("win_rate",  0.5)), 4)
     features["form_diff"] = round(features["form_a"] - features["form_b"], 4)
 
-    features["goals_scored_per_game_a"] = round(float(form_a.get("goals_scored_per_game",  1.2)), 4)
-    features["goals_scored_per_game_b"] = round(float(form_b.get("goals_scored_per_game",  1.2)), 4)
-    features["goals_conceded_per_game_a"] = round(float(form_a.get("goals_conceded_per_game", 1.0)), 4)
-    features["goals_conceded_per_game_b"] = round(float(form_b.get("goals_conceded_per_game", 1.0)), 4)
+    features["goals_scored_per_game_a"] = round(float(form_a.get("goals_scored_pg",  1.2)), 4)
+    features["goals_scored_per_game_b"] = round(float(form_b.get("goals_scored_pg",  1.2)), 4)
+    features["goals_conceded_per_game_a"] = round(float(form_a.get("goals_conceded_pg", 1.0)), 4)
+    features["goals_conceded_per_game_b"] = round(float(form_b.get("goals_conceded_pg", 1.0)), 4)
 
     # 4. H2H
     # Some teams consistently beat specific opponents regardless of Elo.
+    # get_h2h_features() now always returns a real h2h_win_rate_b (symmetric
+    # win rate or 1 - elo_win_prob_a fallback), so h2h_advantage is a genuine
+    # signal rather than a constant offset from 0.33.
     features["h2h_win_rate_a"]  = round(float(h2h.get("h2h_win_rate_a",  0.33)), 4)
     features["h2h_win_rate_b"]  = round(float(h2h.get("h2h_win_rate_b",  0.33)), 4)
-    features["h2h_advantage"]   = round(float(h2h.get("h2h_win_rate_a",  0.33)) -
-                                         float(h2h.get("h2h_win_rate_b",  0.33)), 4)
+    features["h2h_advantage"]   = round(features["h2h_win_rate_a"] - features["h2h_win_rate_b"], 4)
     features["h2h_matches"]     = int(h2h.get("h2h_matches", 0))
 
     # 5. Tournament experience
@@ -125,8 +134,9 @@ def build_match_features(team_a: str, team_b: str) -> dict:
 
     # 7. Composite strength index
     # Single summary feature combining Elo + player quality.
+    # features["elo_diff"] is already normalized to roughly [-0.5, 0.5] (raw / 400).
     features["strength_index_diff"] = round(
-        0.6 * features["elo_diff"] / 400.0 +
+        0.6 * features["elo_diff"] +
         0.4 * features["attack_score_diff"],
         4
     )

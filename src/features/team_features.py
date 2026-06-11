@@ -10,18 +10,55 @@ from functools import lru_cache
 
 PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 
-# Name aliases — maps squad/fixture names to Elo dataset names
+# ---------------------------------------------------------------------------
+# Canonical team names = wc2026_groups.csv / wc2026_fixtures.csv spelling
+# ("Côte d'Ivoire", "Curaçao"). All other data sources are aliased to this
+# spelling at lookup time via the dicts below.
+# ---------------------------------------------------------------------------
+
+# Maps team names -> elo_ratings.csv names.
+# - "Curaçao" -> "Curacao": the Kaggle Elo dataset spells it without the cedilla.
+# - "Ivory Coast" -> "Côte d'Ivoire": international_results.csv (used during
+#   training) spells this team "Ivory Coast", but elo_ratings.csv uses the
+#   canonical "Côte d'Ivoire". Without this alias, every historical match
+#   involving this team falls back to the mean Elo rating during training.
 TEAM_NAME_ALIASES = {
+    "Curaçao": "Curacao",
     "Ivory Coast": "Côte d'Ivoire",
-    "Curaçao":   "Curacao",
 }
 
 def _resolve_team_name(team: str) -> str:
     return TEAM_NAME_ALIASES.get(team, team)
 
-# FIFA ranking points for all 48 WC 2026 teams (April 2026)
-# Used as a direct feature to encode current team strength
-FIFA_RANKING_POINTS = {'France': 1877.32, 'Spain': 1876.4, 'Argentina': 1874.81, 'England': 1825.97, 'Portugal': 1763.83, 'Brazil': 1761.16, 'Netherlands': 1757.87, 'Morocco': 1755.87, 'Belgium': 1734.71, 'Germany': 1730.37, 'Croatia': 1717.07, 'Colombia': 1693.09, 'Senegal': 1688.99, 'Mexico': 1681.03, 'United States': 1673.13, 'Uruguay': 1673.07, 'Japan': 1660.43, 'Switzerland': 1649.4, 'Ecuador': 1619.0, 'Austria': 1609.0, 'South Korea': 1607.0, 'Turkey': 1600.0, 'Iran': 1594.0, 'Australia': 1590.0, 'Norway': 1580.0, 'Algeria': 1560.0, 'Ivory Coast': 1555.0, 'Scotland': 1550.0, 'Canada': 1545.0, 'Tunisia': 1530.0, 'Saudi Arabia': 1520.0, 'Paraguay': 1515.0, 'DR Congo': 1510.0, 'Ghana': 1505.0, 'Egypt': 1500.0, 'Iraq': 1490.0, 'Czech Republic': 1485.0, 'Sweden': 1480.0, 'South Africa': 1460.0, 'Panama': 1450.0, 'Jordan': 1440.0, 'New Zealand': 1430.0, 'Cape Verde': 1420.0, 'Bolivia': 1400.0, 'Haiti': 1380.0, 'Uzbekistan': 1370.0, 'Bosnia and Herzegovina': 1365.0, 'Qatar': 1350.0, 'Curaçao': 1300.0, 'Indonesia': 1290.0}
+# Maps canonical names -> wc2026_squads.csv names (only Côte d'Ivoire
+# differs — the squads file uses "Ivory Coast"). Used by player_features.py.
+SQUAD_NAME_ALIASES = {
+    "Côte d'Ivoire": "Ivory Coast",
+}
+
+def _resolve_squad_team_name(team: str) -> str:
+    return SQUAD_NAME_ALIASES.get(team, team)
+
+# FIFA ranking points for all 48 WC 2026 teams.
+# Source: live FIFA Men's World Ranking tracker (football-ranking.com),
+# snapshot dated 2026-06-10 — the day before the tournament-opener
+# official update (2026-06-11). Refresh after the official update lands.
+FIFA_RANKING_LAST_UPDATED = "2026-06-10"
+FIFA_RANKING_POINTS = {
+    "Argentina": 1876.11, "Spain": 1873.87, "France": 1870.69, "England": 1827.05,
+    "Portugal": 1766.17, "Brazil": 1765.86, "Morocco": 1755.44, "Netherlands": 1753.57,
+    "Belgium": 1742.23, "Germany": 1735.77, "Croatia": 1714.87, "Colombia": 1698.35,
+    "Mexico": 1687.48, "Senegal": 1685.24, "Uruguay": 1673.07, "United States": 1671.24,
+    "Japan": 1661.58, "Switzerland": 1650.07, "Iran": 1619.58, "Turkey": 1605.73,
+    "Ecuador": 1598.51, "Austria": 1597.41, "South Korea": 1591.63, "Australia": 1579.34,
+    "Algeria": 1571.04, "Egypt": 1562.37, "Canada": 1559.48, "Norway": 1557.44,
+    "Côte d'Ivoire": 1540.87, "Panama": 1539.15, "Sweden": 1509.79, "Czech Republic": 1505.74,
+    "Paraguay": 1505.35, "Scotland": 1503.34, "DR Congo": 1477.06, "Tunisia": 1476.40,
+    "Uzbekistan": 1458.73, "Iraq": 1451.16, "Qatar": 1450.31, "South Africa": 1432.71,
+    "Saudi Arabia": 1422.71, "Jordan": 1387.73, "Bosnia and Herzegovina": 1387.22,
+    "Cape Verde": 1371.11, "Curaçao": 1294.77, "Haiti": 1293.09, "New Zealand": 1275.58,
+    "Ghana": 1346.88,
+}
 
 MAX_FIFA_POINTS = 2000.0
 
@@ -29,7 +66,7 @@ MAX_FIFA_POINTS = 2000.0
 def get_fifa_ranking_feature(team: str) -> dict:
     """
     Normalised FIFA ranking points [0, 1].
-    France (1877) -> 0.939, Qatar (1350) -> 0.675
+    Argentina (1876) -> 0.938, New Zealand (1276) -> 0.638
     Used as a direct feature in match prediction — encodes
     current team strength as officially recognised by FIFA.
     """
@@ -38,69 +75,6 @@ def get_fifa_ranking_feature(team: str) -> dict:
         "fifa_points":      pts,
         "fifa_points_norm": round(pts / MAX_FIFA_POINTS, 4),
     }
-
-
-
-# Name aliases — maps squad/fixture names to Elo dataset names
-TEAM_NAME_ALIASES = {
-    "Ivory Coast": "Côte d'Ivoire",
-    "Curaçao":   "Curacao",
-}
-
-def _resolve_team_name(team: str) -> str:
-    return TEAM_NAME_ALIASES.get(team, team)
-
-# FIFA ranking points for all 48 WC 2026 teams (April 2026)
-# Used as a direct feature to encode current team strength
-FIFA_RANKING_POINTS = {'France': 1877.32, 'Spain': 1876.4, 'Argentina': 1874.81, 'England': 1825.97, 'Portugal': 1763.83, 'Brazil': 1761.16, 'Netherlands': 1757.87, 'Morocco': 1755.87, 'Belgium': 1734.71, 'Germany': 1730.37, 'Croatia': 1717.07, 'Colombia': 1693.09, 'Senegal': 1688.99, 'Mexico': 1681.03, 'United States': 1673.13, 'Uruguay': 1673.07, 'Japan': 1660.43, 'Switzerland': 1649.4, 'Ecuador': 1619.0, 'Austria': 1609.0, 'South Korea': 1607.0, 'Turkey': 1600.0, 'Iran': 1594.0, 'Australia': 1590.0, 'Norway': 1580.0, 'Algeria': 1560.0, 'Ivory Coast': 1555.0, 'Scotland': 1550.0, 'Canada': 1545.0, 'Tunisia': 1530.0, 'Saudi Arabia': 1520.0, 'Paraguay': 1515.0, 'DR Congo': 1510.0, 'Ghana': 1505.0, 'Egypt': 1500.0, 'Iraq': 1490.0, 'Czech Republic': 1485.0, 'Sweden': 1480.0, 'South Africa': 1460.0, 'Panama': 1450.0, 'Jordan': 1440.0, 'New Zealand': 1430.0, 'Cape Verde': 1420.0, 'Bolivia': 1400.0, 'Haiti': 1380.0, 'Uzbekistan': 1370.0, 'Bosnia and Herzegovina': 1365.0, 'Qatar': 1350.0, 'Curaçao': 1300.0, 'Indonesia': 1290.0}
-
-MAX_FIFA_POINTS = 2000.0
-
-
-def get_fifa_ranking_feature(team: str) -> dict:
-    """
-    Normalised FIFA ranking points [0, 1].
-    France (1877) -> 0.939, Qatar (1350) -> 0.675
-    Used as a direct feature in match prediction — encodes
-    current team strength as officially recognised by FIFA.
-    """
-    pts = FIFA_RANKING_POINTS.get(team, 1400.0)
-    return {
-        "fifa_points":      pts,
-        "fifa_points_norm": round(pts / MAX_FIFA_POINTS, 4),
-    }
-
-
-
-# Name aliases — maps squad/fixture names to Elo dataset names
-TEAM_NAME_ALIASES = {
-    "Ivory Coast": "Côte d'Ivoire",
-    "Curaçao":   "Curacao",
-}
-
-def _resolve_team_name(team: str) -> str:
-    return TEAM_NAME_ALIASES.get(team, team)
-
-# FIFA ranking points for all 48 WC 2026 teams (April 2026)
-# Used as a direct feature to encode current team strength
-FIFA_RANKING_POINTS = {'France': 1877.32, 'Spain': 1876.4, 'Argentina': 1874.81, 'England': 1825.97, 'Portugal': 1763.83, 'Brazil': 1761.16, 'Netherlands': 1757.87, 'Morocco': 1755.87, 'Belgium': 1734.71, 'Germany': 1730.37, 'Croatia': 1717.07, 'Colombia': 1693.09, 'Senegal': 1688.99, 'Mexico': 1681.03, 'United States': 1673.13, 'Uruguay': 1673.07, 'Japan': 1660.43, 'Switzerland': 1649.4, 'Ecuador': 1619.0, 'Austria': 1609.0, 'South Korea': 1607.0, 'Turkey': 1600.0, 'Iran': 1594.0, 'Australia': 1590.0, 'Norway': 1580.0, 'Algeria': 1560.0, 'Ivory Coast': 1555.0, 'Scotland': 1550.0, 'Canada': 1545.0, 'Tunisia': 1530.0, 'Saudi Arabia': 1520.0, 'Paraguay': 1515.0, 'DR Congo': 1510.0, 'Ghana': 1505.0, 'Egypt': 1500.0, 'Iraq': 1490.0, 'Czech Republic': 1485.0, 'Sweden': 1480.0, 'South Africa': 1460.0, 'Panama': 1450.0, 'Jordan': 1440.0, 'New Zealand': 1430.0, 'Cape Verde': 1420.0, 'Bolivia': 1400.0, 'Haiti': 1380.0, 'Uzbekistan': 1370.0, 'Bosnia and Herzegovina': 1365.0, 'Qatar': 1350.0, 'Curaçao': 1300.0, 'Indonesia': 1290.0}
-
-MAX_FIFA_POINTS = 2000.0
-
-
-def get_fifa_ranking_feature(team: str) -> dict:
-    """
-    Normalised FIFA ranking points [0, 1].
-    France (1877) -> 0.939, Qatar (1350) -> 0.675
-    Used as a direct feature in match prediction — encodes
-    current team strength as officially recognised by FIFA.
-    """
-    pts = FIFA_RANKING_POINTS.get(team, 1400.0)
-    return {
-        "fifa_points":      pts,
-        "fifa_points_norm": round(pts / MAX_FIFA_POINTS, 4),
-    }
-
 
 
 # How many recent matches to use for form calculation
@@ -139,6 +113,21 @@ def load_results() -> pd.DataFrame:
         raise FileNotFoundError(f"Run fetch_international_results.py first: {path}")
     df = pd.read_csv(path, parse_dates=["date"])
     return df.sort_values("date").reset_index(drop=True)
+
+
+@lru_cache(maxsize=1)
+def load_competitive_results() -> pd.DataFrame:
+    """
+    load_results() with friendlies filtered out, cached.
+
+    get_team_recent_form() is called twice per training row (once per team)
+    for ~3000 training rows, and previously re-ran the
+    `df[df["tournament_type"] != "friendly"]` filter on the full ~21k-row
+    table every single call. Caching the filtered frame once cuts that
+    redundant work without changing the result.
+    """
+    df = load_results()
+    return df[df["tournament_type"] != "friendly"].copy()
 
 
 def get_elo_features(team_a: str, team_b: str) -> dict:
@@ -187,6 +176,42 @@ def get_elo_features(team_a: str, team_b: str) -> dict:
     }
 
 
+@lru_cache(maxsize=1)
+def _team_match_history_index() -> dict:
+    """
+    Precomputed per-team match histories from load_competitive_results(),
+    each sorted by date with columns [date, team_goals, opp_goals, opponent]
+    from that team's perspective.
+
+    get_team_recent_form() is called twice per training row (~6000 times
+    across the ~2900-row training set) and previously rebuilt this
+    home/away split + concat from the full competitive-results table on
+    every call. Building it once per team here yields identical per-team
+    match sequences, just without the redundant work.
+    """
+    df = load_competitive_results()
+
+    home = df.rename(columns={
+        "home_team": "team", "away_team": "opponent",
+        "home_score": "team_goals", "away_score": "opp_goals",
+    })[["team", "date", "team_goals", "opp_goals", "opponent"]]
+
+    away = df.rename(columns={
+        "away_team": "team", "home_team": "opponent",
+        "away_score": "team_goals", "home_score": "opp_goals",
+    })[["team", "date", "team_goals", "opp_goals", "opponent"]]
+
+    combined = pd.concat([home, away]).sort_values("date")
+    return {team: group.drop(columns="team") for team, group in combined.groupby("team")}
+
+
+@lru_cache(maxsize=1)
+def _elo_lookup() -> dict:
+    """team -> elo rating, precomputed once for opponent-strength weighting."""
+    df_elo = load_elo()
+    return dict(zip(df_elo["team"], df_elo["elo"]))
+
+
 def get_team_recent_form(team: str, before_date: pd.Timestamp = None) -> dict:
     """
     Elo-weighted recent form over last FORM_WINDOW competitive matches.
@@ -194,40 +219,24 @@ def get_team_recent_form(team: str, before_date: pd.Timestamp = None) -> dict:
     Weight = opponent_elo / mean_elo, clipped to [0.5, 1.5].
     This fixes the CONMEBOL/UEFA confederation strength imbalance.
     """
-    df     = load_results()
     df_elo = load_elo()
     mean_elo = float(df_elo["elo"].mean())
+    elo_lookup = _elo_lookup()
 
-    df = df[df["tournament_type"] != "friendly"].copy()
+    matches = _team_match_history_index().get(team)
 
-    home = df[df["home_team"] == team].copy()
-    away = df[df["away_team"] == team].copy()
-
-    home["team_goals"] = home["home_score"]
-    home["opp_goals"]  = home["away_score"]
-    home["opponent"]   = home["away_team"]
-    away["team_goals"] = away["away_score"]
-    away["opp_goals"]  = away["home_score"]
-    away["opponent"]   = away["home_team"]
-
-    matches = pd.concat([
-        home[["date", "team_goals", "opp_goals", "opponent"]],
-        away[["date", "team_goals", "opp_goals", "opponent"]],
-    ]).sort_values("date")
-
-    if before_date is not None:
+    if matches is not None and before_date is not None:
         matches = matches[matches["date"] < before_date]
 
-    recent = matches.tail(FORM_WINDOW).copy()
+    recent = matches.tail(FORM_WINDOW).copy() if matches is not None else matches
 
-    if recent.empty:
+    if recent is None or recent.empty:
         return {"ppg": 1.0, "goals_scored_pg": 1.2, "goals_conceded_pg": 1.2,
                 "form_matches": 0, "win_rate": 0.33, "clean_sheet_rate": 0.2}
 
     def opp_weight(opp_name):
         resolved = TEAM_NAME_ALIASES.get(opp_name, opp_name)
-        row = df_elo[df_elo["team"] == resolved]
-        opp_elo = float(row["elo"].iloc[0]) if not row.empty else mean_elo
+        opp_elo = elo_lookup.get(resolved, mean_elo)
         return max(0.5, min(1.5, opp_elo / mean_elo))
 
     recent["opp_weight"]  = recent["opponent"].apply(opp_weight)
@@ -251,6 +260,23 @@ def get_team_recent_form(team: str, before_date: pd.Timestamp = None) -> dict:
         "clean_sheet_rate":  round(recent["clean_sheet"].sum() / n, 3),
     }
 
+@lru_cache(maxsize=1)
+def _h2h_index() -> dict:
+    """
+    Precomputed mapping of frozenset({team_a, team_b}) -> all matches between
+    that pair, built once from load_results().
+
+    get_h2h_features() is called twice per training row (~6000 times across
+    the ~2900-row training set) and previously re-scanned the full ~21k-row
+    results table with a boolean mask on every call. Grouping once here and
+    doing a dict lookup instead is purely a performance change — the matches
+    returned for a given pair are identical to the old boolean-mask filter.
+    """
+    df = load_results()
+    pair_keys = df.apply(lambda r: frozenset((r["home_team"], r["away_team"])), axis=1)
+    return {key: group for key, group in df.groupby(pair_keys)}
+
+
 def get_h2h_features(team_a: str, team_b: str, before_date: pd.Timestamp = None) -> dict:
     """
     Feature 6: Head-to-head record
@@ -269,13 +295,9 @@ def get_h2h_features(team_a: str, team_b: str, before_date: pd.Timestamp = None)
     on top of Elo, not as a primary feature. The MIN_H2H_MATCHES
     threshold prevents us from over-indexing on single-game samples."
     """
-    df = load_results()
-
-    # All matches between these two teams
-    h2h = df[
-        ((df["home_team"] == team_a) & (df["away_team"] == team_b)) |
-        ((df["home_team"] == team_b) & (df["away_team"] == team_a))
-    ].copy()
+    # All matches between these two teams (precomputed pair index)
+    pair_matches = _h2h_index().get(frozenset((team_a, team_b)))
+    h2h = pair_matches.copy() if pair_matches is not None else load_results().iloc[0:0].copy()
 
     if before_date is not None:
         h2h = h2h[h2h["date"] < before_date]
@@ -285,9 +307,11 @@ def get_h2h_features(team_a: str, team_b: str, before_date: pd.Timestamp = None)
     if n < MIN_H2H_MATCHES:
         # Not enough history — use Elo-implied probability as fallback
         elo_features = get_elo_features(team_a, team_b)
+        win_prob_a = elo_features["elo_win_prob_a"]
         return {
             "h2h_matches": n,
-            "h2h_win_rate_a": elo_features["elo_win_prob_a"],
+            "h2h_win_rate_a": win_prob_a,
+            "h2h_win_rate_b": round(1.0 - win_prob_a, 4),
             "h2h_goals_a_pg": None,
             "h2h_goals_b_pg": None,
             "h2h_sufficient": False,
@@ -295,6 +319,7 @@ def get_h2h_features(team_a: str, team_b: str, before_date: pd.Timestamp = None)
 
     # Compute win rate from team_a perspective
     wins_a = 0
+    wins_b = 0
     goals_a = 0
     goals_b = 0
 
@@ -308,10 +333,13 @@ def get_h2h_features(team_a: str, team_b: str, before_date: pd.Timestamp = None)
         goals_b += gb
         if ga > gb:
             wins_a += 1
+        elif gb > ga:
+            wins_b += 1
 
     return {
         "h2h_matches": n,
         "h2h_win_rate_a": round(wins_a / n, 3),
+        "h2h_win_rate_b": round(wins_b / n, 3),
         "h2h_goals_a_pg": round(goals_a / n, 3),
         "h2h_goals_b_pg": round(goals_b / n, 3),
         "h2h_sufficient": True,

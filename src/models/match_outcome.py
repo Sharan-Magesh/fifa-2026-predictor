@@ -314,7 +314,9 @@ def predict_score(team_a: str, team_b: str) -> dict:
 
     # Base expected goals from Elo differential
     # A 200 Elo point gap → ~0.5 xG difference
-    elo_diff = feats.get("elo_diff", 0.0)
+    # NOTE: feats["elo_diff"] is normalized (raw / 400) for the XGBoost model;
+    # use elo_diff_raw here since this formula does its own /400 scaling.
+    elo_diff = feats.get("elo_diff_raw", 0.0)
     base_xg  = 1.15  # average goals per team per match in WC football
 
     xg_a = base_xg + (elo_diff / 400.0) * 0.5
