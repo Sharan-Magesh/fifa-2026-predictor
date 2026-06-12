@@ -1,0 +1,1716 @@
+player_id,player_name,team,competition,shots,xg,goals,xg_per_shot,penalty_goals,non_penalty_goals
+2941,Ismaïla Sarr,Senegal,AFCON 2023,7,1.018,1,0.145,0,1
+2941,Ismaïla Sarr,Senegal,World Cup 2018,3,0.249,0,0.083,0,0
+2941,Ismaïla Sarr,Senegal,World Cup 2022,9,1.065,0,0.118,1,-1
+2948,Nabil Fekir,France,World Cup 2018,4,0.06,0,0.015,0,0
+2954,Youri Tielemans,Belgium,Euro 2024,4,0.153,1,0.038,0,1
+2954,Youri Tielemans,Belgium,World Cup 2018,4,0.119,0,0.03,0,0
+2956,Bertrand Isidore Traoré,Burkina Faso,AFCON 2023,8,0.182,0,0.023,3,-3
+2972,Marcus Thuram,France,Euro 2024,12,1.179,0,0.098,0,0
+2972,Marcus Thuram,France,World Cup 2022,1,0.116,0,0.116,0,0
+2974,Saîf-Eddine Khaoui,Tunisia,World Cup 2018,2,0.034,0,0.017,0,0
+2988,Memphis Depay,Netherlands,Euro 2024,18,1.951,1,0.108,0,1
+2988,Memphis Depay,Netherlands,World Cup 2022,10,1.182,1,0.118,0,1
+2989,Alexander Djiku,Ghana,AFCON 2023,1,0.097,1,0.097,0,1
+2995,Ángel Fabián Di María Hernández,Argentina,Copa America 2024,6,0.549,0,0.091,0,0
+2995,Ángel Fabián Di María Hernández,Argentina,World Cup 2018,4,0.431,1,0.108,0,1
+2995,Ángel Fabián Di María Hernández,Argentina,World Cup 2022,7,0.534,1,0.076,0,1
+3009,Kylian Mbappé Lottin,France,Euro 2024,23,1.723,0,0.075,1,-1
+3009,Kylian Mbappé Lottin,France,World Cup 2018,8,1.775,4,0.222,0,4
+3009,Kylian Mbappé Lottin,France,World Cup 2022,29,2.666,6,0.092,3,3
+3013,Nicolas Pépé,Côte d'Ivoire,AFCON 2023,4,0.28,0,0.07,1,-1
+3017,Ibrahim Sangaré,Côte d'Ivoire,AFCON 2023,5,0.256,0,0.051,0,0
+3026,Adrien Rabiot,France,Euro 2024,3,0.262,0,0.087,0,0
+3026,Adrien Rabiot,France,World Cup 2022,9,0.728,1,0.081,0,1
+3027,Mathias Jørgensen Jatta,Denmark,World Cup 2018,1,0.126,1,0.126,0,1
+3034,Kamil Glik,Poland,World Cup 2018,1,0.063,0,0.063,0,0
+3034,Kamil Glik,Poland,World Cup 2022,3,0.151,0,0.05,0,0
+3042,Mikel Merino Zazón,Spain,Euro 2024,3,0.326,1,0.109,0,1
+3043,Christian Dannemann Eriksen,Denmark,Euro 2024,12,0.835,1,0.07,0,1
+3043,Christian Dannemann Eriksen,Denmark,World Cup 2018,11,0.868,1,0.079,0,1
+3043,Christian Dannemann Eriksen,Denmark,World Cup 2022,4,0.154,0,0.039,0,0
+3044,Chancel Mbemba Mangulu,Congo DR,AFCON 2023,5,0.741,1,0.148,1,0
+3053,Leroy Sané,Germany,Euro 2024,7,0.282,0,0.04,0,0
+3053,Leroy Sané,Germany,World Cup 2022,3,0.183,0,0.061,0,0
+3054,Fernando Luiz Roza,Brazil,World Cup 2018,3,0.114,0,0.038,0,0
+3058,Javier Hernández Balcázar,Mexico,World Cup 2018,6,0.541,1,0.09,0,1
+3063,Danilo Luiz da Silva,Brazil,Copa America 2024,1,0.077,0,0.077,0,0
+3063,Danilo Luiz da Silva,Brazil,World Cup 2022,2,0.032,0,0.016,0,0
+3064,David Josué Jiménez Silva,Spain,World Cup 2018,10,1.091,0,0.109,0,0
+3076,Ayoze Pérez Gutiérrez,Spain,Euro 2024,3,0.324,0,0.108,0,0
+3077,Jan Vertonghen,Belgium,Euro 2024,1,0.105,0,0.105,0,0
+3077,Jan Vertonghen,Belgium,World Cup 2018,2,0.035,1,0.017,0,1
+3077,Jan Vertonghen,Belgium,World Cup 2022,2,0.108,0,0.054,0,0
+3083,Heung-Min Son,South Korea,World Cup 2018,14,1.572,2,0.112,0,2
+3083,Heung-Min Son,South Korea,World Cup 2022,9,0.454,0,0.05,0,0
+3086,Ben Davies,Wales,World Cup 2022,3,0.384,0,0.128,0,0
+3089,Kevin De Bruyne,Belgium,Euro 2024,11,0.878,1,0.08,0,1
+3089,Kevin De Bruyne,Belgium,World Cup 2018,12,0.552,1,0.046,0,1
+3089,Kevin De Bruyne,Belgium,World Cup 2022,7,0.178,0,0.025,0,0
+3090,Nicolás Hernán Otamendi,Argentina,Copa America 2024,2,0.724,0,0.362,1,-1
+3090,Nicolás Hernán Otamendi,Argentina,World Cup 2018,6,0.624,0,0.104,0,0
+3090,Nicolás Hernán Otamendi,Argentina,World Cup 2022,1,0.048,0,0.048,0,0
+3094,Bamidele Alli,England,World Cup 2018,6,0.513,1,0.086,0,1
+3097,Pascal Groß,Germany,Euro 2024,1,0.031,0,0.031,0,0
+3101,Vincent Kompany,Belgium,World Cup 2018,6,0.64,0,0.107,0,0
+3130,Gaël Kakuta,Congo DR,AFCON 2023,8,0.34,0,0.043,0,0
+3141,André-Frank Zambo Anguissa,Cameroon,AFCON 2023,1,0.202,0,0.202,0,0
+3141,André-Frank Zambo Anguissa,Cameroon,World Cup 2022,1,0.046,0,0.046,0,0
+3145,Keita Baldé Diao,Senegal,World Cup 2018,1,0.033,0,0.033,0,0
+3167,Antonio Rüdiger,Germany,Euro 2024,4,0.163,0,0.041,0,0
+3167,Antonio Rüdiger,Germany,World Cup 2022,6,0.66,0,0.11,0,0
+3176,Thomas Meunier,Belgium,World Cup 2018,6,0.462,1,0.077,0,1
+3176,Thomas Meunier,Belgium,World Cup 2022,3,0.119,0,0.04,0,0
+3186,Julian Draxler,Germany,World Cup 2018,6,0.526,0,0.088,0,0
+3193,Bernardo Mota Veiga de Carvalho e Silva,Portugal,Euro 2024,7,0.745,1,0.106,2,-1
+3193,Bernardo Mota Veiga de Carvalho e Silva,Portugal,World Cup 2018,2,0.166,0,0.083,0,0
+3193,Bernardo Mota Veiga de Carvalho e Silva,Portugal,World Cup 2022,1,0.109,0,0.109,0,0
+3196,Wahbi Khazri,Tunisia,World Cup 2018,12,1.466,2,0.122,0,2
+3196,Wahbi Khazri,Tunisia,World Cup 2022,5,0.298,1,0.06,0,1
+3202,Gabriel Fernando de Jesus,Brazil,World Cup 2018,10,1.469,0,0.147,0,0
+3202,Gabriel Fernando de Jesus,Brazil,World Cup 2022,2,0.324,0,0.162,0,0
+3233,Raheem Sterling,England,World Cup 2018,11,1.333,0,0.121,0,0
+3233,Raheem Sterling,England,World Cup 2022,1,0.189,1,0.189,0,1
+3237,Sergio Leonel Agüero del Castillo,Argentina,World Cup 2018,6,0.669,2,0.111,0,2
+3244,John Stones,England,Euro 2024,1,0.072,0,0.072,0,0
+3244,John Stones,England,World Cup 2018,6,1.355,2,0.226,0,2
+3244,John Stones,England,World Cup 2022,4,0.587,0,0.147,0,0
+3245,Thomas Lemar,France,World Cup 2018,1,0.027,0,0.027,0,0
+3248,Hamari Traoré,Mali,AFCON 2023,3,0.921,1,0.307,0,1
+3250,Edson André Sitoe,Mozambique,AFCON 2023,1,0.006,0,0.006,0,0
+3255,Guessouma Fofana,Mauritania,AFCON 2023,1,0.239,0,0.239,0,0
+3264,Vincent Janssen,Netherlands,World Cup 2022,2,0.156,0,0.078,0,0
+3265,José Luis Sanmartín Mato,Spain,Euro 2024,3,0.143,0,0.048,0,0
+3280,Richarlison de Andrade,Brazil,World Cup 2022,8,1.618,3,0.202,0,3
+3281,Aaron Mooy,Australia,World Cup 2018,3,0.054,0,0.018,0,0
+3281,Aaron Mooy,Australia,World Cup 2022,1,0.039,0,0.039,0,0
+3289,Romelu Lukaku Menama,Belgium,Euro 2024,11,1.751,0,0.159,0,0
+3289,Romelu Lukaku Menama,Belgium,World Cup 2018,14,2.61,4,0.186,0,4
+3289,Romelu Lukaku Menama,Belgium,World Cup 2022,5,1.684,0,0.337,0,0
+3293,Jesse Lingard,England,World Cup 2018,16,1.232,1,0.077,0,1
+3295,Thiago Emiliano da Silva,Brazil,World Cup 2018,6,0.774,1,0.129,0,1
+3295,Thiago Emiliano da Silva,Brazil,World Cup 2022,2,0.208,0,0.104,0,0
+3296,Marouane Fellaini-Bakkioui,Belgium,World Cup 2018,5,0.538,1,0.108,0,1
+3300,Maya Yoshida,Japan,World Cup 2018,2,0.223,0,0.111,0,0
+3302,Nordin Amrabat,Morocco,World Cup 2018,1,0.01,0,0.01,0,0
+3306,Nathan Aké,Netherlands,Euro 2024,2,0.107,0,0.053,0,0
+3308,Kieran Trippier,England,Euro 2024,1,0.089,0,0.089,0,0
+3308,Kieran Trippier,England,World Cup 2018,3,0.214,1,0.071,1,0
+3308,Kieran Trippier,England,World Cup 2022,1,0.043,0,0.043,0,0
+3311,Daley Blind,Netherlands,World Cup 2022,5,0.522,1,0.104,0,1
+3312,Demarai Gray,Jamaica,Copa America 2024,2,0.099,0,0.049,0,0
+3313,Giovani Lo Celso,Argentina,Copa America 2024,3,0.625,0,0.208,0,0
+3317,Kasey Palmer,Jamaica,Copa America 2024,2,0.08,0,0.04,0,0
+3318,Marcus Rashford,England,World Cup 2018,5,0.581,0,0.116,1,-1
+3318,Marcus Rashford,England,World Cup 2022,11,1.383,3,0.126,0,3
+3325,Marko Arnautović,Austria,Euro 2024,3,0.79,0,0.263,1,-1
+3336,Harry Maguire,England,World Cup 2018,11,0.784,1,0.071,0,1
+3336,Harry Maguire,England,World Cup 2022,6,0.49,0,0.082,0,0
+3338,Onyinye Wilfred Ndidi,Nigeria,World Cup 2018,3,0.079,0,0.026,0,0
+3347,André Ayew Pelé,Ghana,World Cup 2022,1,0.485,1,0.485,0,1
+3349,Michail Antonio,Jamaica,Copa America 2024,3,0.481,1,0.16,0,1
+3359,Jean Michaël Seri,Côte d'Ivoire,AFCON 2023,2,0.034,0,0.017,0,0
+3377,Timothy Weah,United States,Copa America 2024,3,0.216,0,0.072,0,0
+3377,Timothy Weah,United States,World Cup 2022,5,0.44,1,0.088,0,1
+3381,Nemanja Matić,Serbia,World Cup 2018,3,0.281,0,0.094,0,0
+3382,Luke Shaw,England,World Cup 2022,3,0.084,0,0.028,0,0
+3385,Alexis Alejandro Sánchez Sánchez,Chile,Copa America 2024,4,0.642,0,0.161,0,0
+3404,Youssouf Sabaly,Senegal,World Cup 2018,2,0.037,0,0.018,0,0
+3404,Youssouf Sabaly,Senegal,World Cup 2022,2,0.018,0,0.009,0,0
+3405,François Kamano,Guinea,AFCON 2023,1,0.045,0,0.045,0,0
+3433,Lassana Coulibaly,Mali,AFCON 2023,1,0.038,0,0.038,0,0
+3436,Idrissa Gana Gueye,Senegal,World Cup 2018,2,0.055,0,0.027,0,0
+3436,Idrissa Gana Gueye,Senegal,World Cup 2022,4,0.332,0,0.083,0,0
+3441,Nikola Vlašić,Croatia,World Cup 2022,5,0.629,0,0.126,2,-2
+3445,Radamel Falcao García Zárate,Colombia,World Cup 2018,8,1.095,1,0.137,1,0
+3447,Ademola Lookman,Nigeria,AFCON 2023,8,1.32,3,0.165,0,3
+3450,Jordan Ayew,Ghana,AFCON 2023,1,0.019,0,0.019,2,-2
+3450,Jordan Ayew,Ghana,World Cup 2022,1,0.071,0,0.071,0,0
+3457,Michy Batshuayi Tunga,Belgium,World Cup 2018,8,2.516,1,0.314,0,1
+3457,Michy Batshuayi Tunga,Belgium,World Cup 2022,6,0.621,1,0.103,0,1
+3471,Dejan Lovren,Croatia,World Cup 2018,6,0.382,0,0.064,0,0
+3471,Dejan Lovren,Croatia,World Cup 2022,4,0.382,0,0.095,0,0
+3472,Willian Borges da Silva,Brazil,World Cup 2018,5,0.151,0,0.03,0,0
+3477,Álvaro Borja Morata Martín,Spain,Euro 2024,14,1.567,1,0.112,0,1
+3477,Álvaro Borja Morata Martín,Spain,World Cup 2022,8,1.109,3,0.139,0,3
+3481,Serge Aurier,Côte d'Ivoire,AFCON 2023,1,0.023,0,0.023,1,-1
+3493,Emre Can,Germany,Euro 2024,1,0.05,1,0.05,0,1
+3494,Davinson Sánchez Mina,Colombia,Copa America 2024,7,1.277,1,0.182,0,1
+3494,Davinson Sánchez Mina,Colombia,World Cup 2018,2,0.185,0,0.092,0,0
+3496,Mesut Özil,Germany,World Cup 2018,2,0.044,0,0.022,0,0
+3499,Jean-Eric Maxim Choupo-Moting,Cameroon,World Cup 2022,3,0.524,1,0.175,0,1
+3500,Granit Xhaka,Switzerland,Euro 2024,4,0.152,0,0.038,0,0
+3500,Granit Xhaka,Switzerland,World Cup 2018,4,0.042,1,0.01,0,1
+3500,Granit Xhaka,Switzerland,World Cup 2022,6,0.296,0,0.049,0,0
+3501,Philippe Coutinho Correia,Brazil,World Cup 2018,23,1.777,2,0.077,0,2
+3504,Ruben Loftus-Cheek,England,World Cup 2018,3,0.275,0,0.092,0,0
+3512,Marko Grujić,Serbia,World Cup 2022,1,0.027,0,0.027,0,0
+3517,Aaron Ramsey,Wales,World Cup 2022,1,0.025,0,0.025,0,0
+3530,Hiroki Sakai,Japan,World Cup 2018,2,0.109,0,0.055,0,0
+3530,Hiroki Sakai,Japan,World Cup 2022,1,0.288,0,0.288,0,0
+3531,Mohamed Salah,Egypt,AFCON 2023,3,0.151,0,0.05,1,-1
+3531,Mohamed Salah,Egypt,World Cup 2018,5,0.814,1,0.163,1,0
+3532,Jordan Brian Henderson,England,World Cup 2018,4,0.128,0,0.032,0,0
+3532,Jordan Brian Henderson,England,World Cup 2022,2,0.149,1,0.074,0,1
+3533,Xherdan Shaqiri,Switzerland,Euro 2024,2,0.086,1,0.043,1,0
+3533,Xherdan Shaqiri,Switzerland,World Cup 2018,12,0.641,1,0.053,0,1
+3533,Xherdan Shaqiri,Switzerland,World Cup 2022,4,0.495,1,0.124,0,1
+3535,Roberto Firmino Barbosa de Oliveira,Brazil,World Cup 2018,6,1.609,1,0.268,0,1
+3551,Karl Brillant Toko Ekambi,Cameroon,AFCON 2023,6,0.806,1,0.134,0,1
+3551,Karl Brillant Toko Ekambi,Cameroon,World Cup 2022,2,0.18,0,0.09,0,0
+3557,Naïm Sliti,Tunisia,AFCON 2023,1,0.011,0,0.011,0,0
+3557,Naïm Sliti,Tunisia,World Cup 2018,6,0.431,0,0.072,0,0
+3557,Naïm Sliti,Tunisia,World Cup 2022,1,0.14,0,0.14,0,0
+3568,Mohamed Naser Elsayed Elneny,Egypt,AFCON 2023,1,0.049,0,0.049,0,0
+3568,Mohamed Naser Elsayed Elneny,Egypt,World Cup 2018,3,0.131,0,0.044,0,0
+3569,Daniel Nii Tackie Mensah Welbeck,England,World Cup 2018,2,0.19,0,0.095,0,0
+3570,Pierre-Emile Højbjerg,Denmark,Euro 2024,7,0.229,0,0.033,0,0
+3570,Pierre-Emile Højbjerg,Denmark,World Cup 2022,2,0.024,0,0.012,0,0
+3575,Oleksandr Zinchenko,Ukraine,Euro 2024,1,0.008,0,0.008,0,0
+3587,Arthur Masuaku,Congo DR,AFCON 2023,6,0.15,1,0.025,0,1
+3594,Danny Rose,England,World Cup 2018,1,0.015,0,0.015,0,0
+3602,Faustino Marcos Alberto Rojo,Argentina,World Cup 2018,2,0.093,1,0.047,0,1
+3603,Mame Biram Diouf,Senegal,World Cup 2018,2,0.177,0,0.088,0,0
+3604,Olivier Giroud,France,Euro 2024,2,0.157,0,0.078,0,0
+3604,Olivier Giroud,France,World Cup 2018,15,1.508,0,0.101,0,0
+3604,Olivier Giroud,France,World Cup 2022,17,3.036,4,0.179,0,4
+3605,Sung-Yeung Ki,South Korea,World Cup 2018,3,0.085,0,0.028,0,0
+3612,Ashley Young,England,World Cup 2018,2,0.088,0,0.044,0,0
+3620,Scott McTominay,Scotland,Euro 2024,4,0.246,1,0.061,0,1
+3621,Eden Hazard,Belgium,World Cup 2018,17,2.488,2,0.146,1,1
+3621,Eden Hazard,Belgium,World Cup 2022,1,0.009,0,0.009,0,0
+3625,Sofiane Boufal,Morocco,AFCON 2023,4,0.312,0,0.078,0,0
+3625,Sofiane Boufal,Morocco,World Cup 2022,7,0.316,0,0.045,0,0
+3629,Sadio Mané,Senegal,AFCON 2023,6,0.761,1,0.127,1,0
+3629,Sadio Mané,Senegal,World Cup 2018,3,0.754,1,0.251,0,1
+3632,André Martín Carrillo Díaz,Peru,Copa America 2024,1,0.022,0,0.022,0,0
+3632,André Martín Carrillo Díaz,Peru,World Cup 2018,3,0.102,1,0.034,0,1
+3634,Abdelhamid Sabiri,Morocco,World Cup 2022,3,0.123,0,0.041,1,-1
+3637,Grzegorz Krychowiak,Poland,World Cup 2018,2,0.567,1,0.284,0,1
+3637,Grzegorz Krychowiak,Poland,World Cup 2022,1,0.022,0,0.022,0,0
+3639,Georges-Kévin Nkoudou Mbida,Cameroon,AFCON 2023,6,0.455,0,0.076,0,0
+3639,Georges-Kévin Nkoudou Mbida,Cameroon,World Cup 2022,1,0.007,0,0.007,0,0
+3647,Alex Iwobi,Nigeria,AFCON 2023,7,0.359,0,0.051,0,0
+3647,Alex Iwobi,Nigeria,World Cup 2018,4,0.159,0,0.04,0,0
+3648,Cenk Tosun,Turkey,Euro 2024,3,0.206,1,0.069,0,1
+3664,Trent Alexander-Arnold,England,Euro 2024,4,0.125,0,0.031,1,-1
+3664,Trent Alexander-Arnold,England,World Cup 2018,1,0.063,0,0.063,0,0
+3669,Virgil van Dijk,Netherlands,Euro 2024,5,0.347,0,0.069,0,0
+3669,Virgil van Dijk,Netherlands,World Cup 2022,3,0.194,0,0.065,0,0
+3707,Adrien Sebastian Perruchet Silva,Portugal,World Cup 2018,2,0.09,0,0.045,0,0
+3708,Kelechi Promise Iheanacho,Nigeria,AFCON 2023,3,0.175,0,0.058,1,-1
+3708,Kelechi Promise Iheanacho,Nigeria,World Cup 2018,3,0.124,0,0.041,0,0
+3710,Fousseni Diabaté,Mali,AFCON 2023,2,0.059,0,0.03,0,0
+3720,Johann Berg Guðmunds­son,Iceland,World Cup 2018,3,0.054,0,0.018,0,0
+3767,Ellyes Joris Skhiri,Tunisia,AFCON 2023,2,0.076,0,0.038,0,0
+3767,Ellyes Joris Skhiri,Tunisia,World Cup 2022,2,0.101,0,0.05,0,0
+3806,Bright Osayi-Samuel,Nigeria,AFCON 2023,2,0.139,0,0.07,0,0
+3810,Shinji Okazaki,Japan,World Cup 2018,1,0.183,0,0.183,0,0
+3811,Islam Slimani,Algeria,AFCON 2023,2,0.106,0,0.053,0,0
+3814,Riyad Mahrez,Algeria,AFCON 2023,1,0.045,0,0.045,0,0
+3831,Dušan Tadić,Serbia,World Cup 2018,3,0.126,0,0.042,0,0
+3831,Dušan Tadić,Serbia,World Cup 2022,1,0.062,0,0.062,0,0
+3834,Ivan Toney,England,Euro 2024,1,0.123,0,0.123,1,-1
+3853,Kieffer Roberto Francisco Moore,Wales,World Cup 2022,6,0.64,0,0.107,0,0
+3856,Joe Aribo,Nigeria,AFCON 2023,1,0.055,0,0.055,0,0
+3913,Edimilson Fernandes,Switzerland,World Cup 2022,1,0.029,0,0.029,0,0
+3923,Oluwasemilogo Adesewo Ibidapo Ajayi,Nigeria,AFCON 2023,1,0.194,0,0.194,0,0
+3943,Declan Rice,England,Euro 2024,9,0.393,0,0.044,0,0
+3944,Gylfi Þór Sigurðsson,Iceland,World Cup 2018,8,0.317,0,0.04,1,-1
+3959,Andreas Christensen,Denmark,Euro 2024,4,0.366,0,0.091,0,0
+3959,Andreas Christensen,Denmark,World Cup 2022,2,0.525,1,0.263,0,1
+3960,José Miguel da Rocha Fonte,Portugal,World Cup 2018,4,0.339,0,0.085,0,0
+3961,N'Golo Kanté,France,Euro 2024,5,0.24,0,0.048,0,0
+3961,N'Golo Kanté,France,World Cup 2018,1,0.035,0,0.035,0,0
+3963,Victor Moses,Nigeria,World Cup 2018,6,0.255,0,0.042,1,-1
+4041,José Salomón Rondón Giménez,Venezuela,Copa America 2024,17,1.535,2,0.09,2,0
+4063,Ahmed Elsayed Ali Elsayed Hegazy,Egypt,AFCON 2023,2,0.357,0,0.179,1,-1
+4267,Mouctar Diakhaby,Guinea,AFCON 2023,2,0.117,0,0.059,0,0
+4269,Aleksandar Mitrović,Serbia,Euro 2024,10,1.154,0,0.115,0,0
+4269,Aleksandar Mitrović,Serbia,World Cup 2018,16,2.262,1,0.141,0,1
+4269,Aleksandar Mitrović,Serbia,World Cup 2022,10,1.502,2,0.15,0,2
+4272,João Mário Naval da Costa Eduardo,Portugal,World Cup 2018,1,0.119,0,0.119,0,0
+4277,Papa Alioune N'Diaye,Senegal,World Cup 2018,1,0.088,0,0.088,0,0
+4308,Houssem Aouar,Algeria,AFCON 2023,1,0.082,0,0.082,0,0
+4318,Davy Klaassen,Netherlands,World Cup 2022,2,0.432,1,0.216,0,1
+4319,Edinson Roberto Cavani Gómez,Uruguay,World Cup 2018,16,2.146,3,0.134,0,3
+4319,Edinson Roberto Cavani Gómez,Uruguay,World Cup 2022,3,0.179,0,0.06,0,0
+4320,Neymar da Silva Santos Junior,Brazil,World Cup 2018,27,4.178,2,0.155,0,2
+4320,Neymar da Silva Santos Junior,Brazil,World Cup 2022,11,1.346,1,0.122,1,0
+4324,Daniel Alves da Silva,Brazil,World Cup 2022,3,0.12,0,0.04,0,0
+4352,Issiaga Sylla,Guinea,AFCON 2023,1,0.038,0,0.038,0,0
+4353,Aymeric Laporte,Spain,Euro 2024,5,0.268,0,0.054,0,0
+4353,Aymeric Laporte,Spain,World Cup 2022,1,0.041,0,0.041,0,0
+4354,Phil Foden,England,Euro 2024,13,0.747,0,0.057,0,0
+4354,Phil Foden,England,World Cup 2022,5,1.229,1,0.246,0,1
+4354,Philip Foden,England,World Cup 2022,1,0.023,0,0.023,0,0
+4367,Gonçalo Manuel Ganchinho Guedes,Portugal,World Cup 2018,6,0.41,0,0.068,0,0
+4372,Marcos Aoás Corrêa,Brazil,Copa America 2024,1,0.166,0,0.166,0,0
+4372,Marcos Aoás Corrêa,Brazil,World Cup 2022,1,0.078,0,0.078,0,0
+4375,Blaise Matuidi,France,World Cup 2018,5,0.299,0,0.06,0,0
+4385,Yves Bissouma,Mali,AFCON 2023,6,0.218,0,0.036,0,0
+4412,Samuel Moutoussamy,Congo DR,AFCON 2023,7,0.709,0,0.101,2,-2
+4416,Max-Alain Gradel,Côte d'Ivoire,AFCON 2023,6,0.417,0,0.069,0,0
+4417,Ola Toivonen,Sweden,World Cup 2018,5,0.511,1,0.102,0,1
+4445,Jules Koundé,France,Euro 2024,1,0.071,0,0.071,1,-1
+4445,Jules Koundé,France,World Cup 2022,4,0.17,0,0.042,0,0
+4447,Martin Braithwaite Christensen,Denmark,World Cup 2018,4,0.282,0,0.07,0,0
+4447,Martin Braithwaite Christensen,Denmark,World Cup 2022,1,0.238,0,0.238,0,0
+4464,Adama Traoré,Mali,AFCON 2023,5,0.194,0,0.039,0,0
+4471,Ablie Jallow,Gambia,AFCON 2023,5,0.416,1,0.083,0,1
+4506,Nampalys Mendy,Senegal,AFCON 2023,3,0.096,0,0.032,0,0
+4506,Nampalys Mendy,Senegal,World Cup 2022,2,0.093,0,0.047,0,0
+4587,Matteo Darmian,Italy,Euro 2024,1,0.055,0,0.055,0,0
+4597,Fabian Delph,England,World Cup 2018,3,0.098,0,0.033,0,0
+4610,Ethan Pinnock,Jamaica,Copa America 2024,1,0.126,0,0.126,0,0
+4614,Antonee Robinson,United States,Copa America 2024,3,0.097,0,0.032,0,0
+4626,Jan Bednarek,Poland,Euro 2024,1,0.204,0,0.204,0,0
+4626,Jan Bednarek,Poland,World Cup 2018,1,0.209,1,0.209,0,1
+4664,Sebastian Szymański,Poland,Euro 2024,1,0.054,0,0.054,0,0
+4685,Artur Jędrzejczyk,Poland,World Cup 2018,1,0.063,0,0.063,0,0
+4709,Pontus Jansson,Sweden,World Cup 2018,1,0.084,0,0.084,0,0
+4734,Matty Cash,Poland,World Cup 2022,1,0.024,0,0.024,0,0
+4735,Ben Brereton Díaz,Chile,Copa America 2024,2,0.079,0,0.04,0,0
+4760,Ollie Watkins,England,Euro 2024,3,0.225,1,0.075,0,1
+4763,Henrik Dalsgaard,Denmark,World Cup 2018,1,0.005,0,0.005,0,0
+4831,Nacer Chadli,Belgium,World Cup 2018,3,0.412,1,0.137,0,1
+4870,Tomáš Souček,Czech Republic,Euro 2024,2,0.185,1,0.093,0,1
+4909,Jeremie Boga,Côte d'Ivoire,AFCON 2023,1,0.079,0,0.079,0,0
+4926,Francisco Román Alarcón Suárez,Spain,World Cup 2018,10,0.824,1,0.082,0,1
+4934,Ethan Ampadu,Wales,World Cup 2022,1,0.014,0,0.014,0,0
+4935,Bryan Mbeumo,Cameroon,World Cup 2022,2,0.134,0,0.067,0,0
+5170,Mário Figueira Fernandes,Russia,World Cup 2018,1,0.241,1,0.241,0,1
+5171,Roman Zobnin,Russia,World Cup 2018,7,0.238,0,0.034,0,0
+5173,Abdullah Ibrahim Otayf,Saudi Arabia,World Cup 2018,2,0.132,0,0.066,0,0
+5174,Sergei Ignashevich,Russia,World Cup 2018,3,0.366,0,0.122,2,-2
+5175,Ilya Kutepov,Russia,World Cup 2018,1,0.167,0,0.167,0,0
+5176,Mohanad Aseri Abu Radiah,Saudi Arabia,World Cup 2018,1,0.109,0,0.109,0,0
+5177,Aleksandr Golovin,Russia,World Cup 2018,3,0.263,1,0.088,1,0
+5178,Salman Mohammed Al Faraj,Saudi Arabia,World Cup 2018,2,0.186,0,0.093,1,-1
+5179,Daler Kuzyaev,Russia,World Cup 2018,2,0.061,0,0.03,1,-1
+5180,Alan Dzagoev,Russia,World Cup 2018,1,0.075,0,0.075,1,-1
+5181,Yury Gazinskiy,Russia,World Cup 2018,2,0.165,1,0.082,0,1
+5182,Aleksandr Samedov,Russia,World Cup 2018,2,0.08,0,0.04,0,0
+5183,Yasir Gharsan Al Shahrani,Saudi Arabia,World Cup 2018,5,0.168,0,0.034,0,0
+5186,Denis Cheryshev,Russia,World Cup 2018,13,1.113,4,0.086,1,3
+5187,Salem Mohammed Al Dawsari,Saudi Arabia,World Cup 2018,7,0.261,1,0.037,0,1
+5187,Salem Mohammed Al Dawsari,Saudi Arabia,World Cup 2022,6,0.781,2,0.13,0,2
+5188,Hattan Babhir,Saudi Arabia,World Cup 2018,6,0.222,0,0.037,0,0
+5190,Fahad Mosaed Al Muwallad Al Harbi,Saudi Arabia,World Cup 2018,1,0.012,0,0.012,0,0
+5191,Mohammed Al Burayk,Saudi Arabia,World Cup 2018,3,0.131,0,0.044,0,0
+5191,Mohammed Al Burayk,Saudi Arabia,World Cup 2022,2,0.37,0,0.185,0,0
+5193,Yuri Zhirkov,Russia,World Cup 2018,2,0.033,0,0.016,0,0
+5194,Fyodor Smolov,Russia,World Cup 2018,2,0.038,0,0.019,1,-1
+5195,Artem Dzyuba,Russia,World Cup 2018,7,0.872,2,0.125,1,1
+5196,Mohammad Ibrahim Al Sahlawi,Saudi Arabia,World Cup 2018,1,0.056,0,0.056,0,0
+5198,Diego da Silva Costa,Spain,World Cup 2018,11,2.304,3,0.209,0,3
+5199,Jorge Resurrección Merodio,Spain,World Cup 2018,1,0.012,0,0.012,0,0
+5201,Sergio Ramos García,Spain,World Cup 2018,4,0.197,0,0.049,1,-1
+5202,José Ignacio Fernández Iglesias,Spain,World Cup 2018,1,0.036,1,0.036,0,1
+5203,Sergio Busquets i Burgos,Spain,World Cup 2018,5,0.325,0,0.065,0,0
+5203,Sergio Busquets i Burgos,Spain,World Cup 2022,2,0.104,0,0.052,0,0
+5204,Bruno Miguel Borges Fernandes,Portugal,Euro 2024,10,1.222,1,0.122,1,0
+5204,Bruno Miguel Borges Fernandes,Portugal,World Cup 2018,3,0.064,0,0.021,0,0
+5204,Bruno Miguel Borges Fernandes,Portugal,World Cup 2022,7,0.248,1,0.035,1,0
+5205,Rui Pedro dos Santos Patrício,Portugal,World Cup 2018,1,0.076,0,0.076,0,0
+5206,Rúben Santos Gato Alves Dias,Portugal,Euro 2024,2,0.081,0,0.04,0,0
+5206,Rúben Santos Gato Alves Dias,Portugal,World Cup 2022,1,0.038,0,0.038,0,0
+5207,Cristiano Ronaldo dos Santos Aveiro,Portugal,Euro 2024,22,2.186,0,0.099,2,-2
+5207,Cristiano Ronaldo dos Santos Aveiro,Portugal,World Cup 2018,20,1.138,3,0.057,1,2
+5207,Cristiano Ronaldo dos Santos Aveiro,Portugal,World Cup 2022,10,1.156,0,0.116,1,-1
+5208,Thiago Alcântara do Nascimento,Spain,World Cup 2018,2,0.125,0,0.063,0,0
+5209,Raphaël Adelino José Guerreiro,Portugal,World Cup 2018,4,0.094,0,0.024,0,0
+5209,Raphaël Adelino José Guerreiro,Portugal,World Cup 2022,3,0.4,1,0.133,0,1
+5211,Jordi Alba Ramos,Spain,World Cup 2018,2,0.125,0,0.063,0,0
+5211,Jordi Alba Ramos,Spain,World Cup 2022,2,0.046,0,0.023,0,0
+5213,Gerard Piqué Bernabéu,Spain,World Cup 2018,8,1.223,0,0.153,1,-1
+5214,William Silva de Carvalho,Portugal,World Cup 2018,1,0.025,0,0.025,0,0
+5214,William Silva de Carvalho,Portugal,World Cup 2022,1,0.049,0,0.049,0,0
+5215,Ricardo Andrade Quaresma Bernardo,Portugal,World Cup 2018,5,0.192,1,0.038,0,1
+5216,Andrés Iniesta Luján,Spain,World Cup 2018,5,0.331,0,0.066,1,-1
+5217,Iago Aspas Juncal,Spain,World Cup 2018,4,0.537,1,0.134,0,1
+5218,André Miguel Valente Silva,Portugal,World Cup 2018,2,0.122,0,0.061,0,0
+5219,Romain Saïss,Morocco,AFCON 2023,1,0.406,1,0.406,0,1
+5219,Romain Saïss,Morocco,World Cup 2018,1,0.13,0,0.13,0,0
+5219,Romain Saïss,Morocco,World Cup 2022,1,0.565,1,0.565,0,1
+5220,Morteza Pouraliganji,Iran,World Cup 2022,2,0.269,0,0.134,0,0
+5221,Manuel Marouan da Costa Trinidade,Morocco,World Cup 2018,2,0.094,0,0.047,0,0
+5222,Roozbeh Cheshmi,Iran,World Cup 2018,1,0.044,0,0.044,0,0
+5222,Roozbeh Cheshmi,Iran,World Cup 2022,1,0.033,1,0.033,0,1
+5224,Sardar Azmoun,Iran,World Cup 2018,5,0.83,0,0.166,0,0
+5224,Sardar Azmoun,Iran,World Cup 2022,5,0.961,0,0.192,0,0
+5225,Omid Ebrahimi,Iran,World Cup 2018,1,0.03,0,0.03,0,0
+5226,Mehdi Taremi,Iran,World Cup 2018,3,0.468,0,0.156,0,0
+5226,Mehdi Taremi,Iran,World Cup 2022,5,0.595,1,0.119,1,0
+5229,Ayoub El Kaabi,Morocco,AFCON 2023,6,1.332,0,0.222,0,0
+5229,Ayoub El Kaabi,Morocco,World Cup 2018,1,0.09,0,0.09,0,0
+5230,Ehsan Hajsafi,Iran,World Cup 2018,2,0.048,0,0.024,0,0
+5230,Ehsan Hajsafi,Iran,World Cup 2022,1,0.068,0,0.068,0,0
+5231,Karim Ansarifard,Iran,World Cup 2018,2,0.072,0,0.036,1,-1
+5231,Karim Ansarifard,Iran,World Cup 2022,1,0.064,0,0.064,0,0
+5232,Mbark Boussoufa,Morocco,World Cup 2018,2,0.13,0,0.065,0,0
+5234,Sofyan Amrabat,Morocco,World Cup 2022,1,0.021,0,0.021,0,0
+5235,Ramin Rezaeian,Iran,World Cup 2018,1,0.009,0,0.009,0,0
+5235,Ramin Rezaeian,Iran,World Cup 2022,2,0.23,1,0.115,0,1
+5236,Karim El Ahmadi Al Aroos,Morocco,World Cup 2018,1,0.006,0,0.006,0,0
+5237,Hakim Ziyech,Morocco,AFCON 2023,7,0.295,1,0.042,0,1
+5237,Hakim Ziyech,Morocco,World Cup 2018,9,0.483,0,0.054,0,0
+5237,Hakim Ziyech,Morocco,World Cup 2022,10,0.312,1,0.031,1,0
+5239,Alireza Jahanbakhsh,Iran,World Cup 2018,2,0.086,0,0.043,0,0
+5239,Alireza Jahanbakhsh,Iran,World Cup 2022,3,0.155,0,0.052,0,0
+5240,Saman Ghoddos,Iran,World Cup 2018,2,0.107,0,0.054,0,0
+5240,Saman Ghoddos,Iran,World Cup 2022,1,0.391,0,0.391,0,0
+5241,Vahid Amiri,Iran,World Cup 2018,2,0.054,0,0.027,0,0
+5242,Younès Belhanda,Morocco,World Cup 2018,6,0.618,0,0.103,0,0
+5243,Amine Harit,Morocco,AFCON 2023,1,0.035,0,0.035,0,0
+5243,Amine Harit,Morocco,World Cup 2018,3,0.204,0,0.068,0,0
+5244,Medhi Amine El Mouttaqi Benatia,Morocco,World Cup 2018,5,0.59,0,0.118,0,0
+5245,Achraf Hakimi Mouh,Morocco,AFCON 2023,5,0.276,1,0.055,0,1
+5245,Achraf Hakimi Mouh,Morocco,World Cup 2018,1,0.029,0,0.029,0,0
+5245,Achraf Hakimi Mouh,Morocco,World Cup 2022,4,0.136,0,0.034,1,-1
+5246,Luis Alberto Suárez Díaz,Uruguay,Copa America 2024,5,0.949,1,0.19,1,0
+5246,Luis Alberto Suárez Díaz,Uruguay,World Cup 2018,14,1.556,2,0.111,0,2
+5246,Luis Alberto Suárez Díaz,Uruguay,World Cup 2022,2,0.362,0,0.181,0,0
+5247,Nahitan Michel Nández Acosta,Uruguay,Copa America 2024,1,0.17,0,0.17,0,0
+5247,Nahitan Michel Nández Acosta,Uruguay,World Cup 2018,1,0.016,0,0.016,0,0
+5248,José Martín Cáceres Silva,Uruguay,World Cup 2018,7,1.331,0,0.19,0,0
+5249,Diego Roberto Godín Leal,Uruguay,World Cup 2018,3,0.418,0,0.139,0,0
+5249,Diego Roberto Godín Leal,Uruguay,World Cup 2022,1,0.055,0,0.055,0,0
+5250,Ahmed Fathy Abdel Meneim Ibrahim,Egypt,World Cup 2018,1,0.008,0,0.008,0,0
+5251,Abdalla Mahmoud El Said Bekhit,Egypt,World Cup 2018,2,0.101,0,0.051,0,0
+5252,Marwan Mohsen,Egypt,World Cup 2018,6,0.441,0,0.073,0,0
+5253,Amr Medhat Warda,Egypt,World Cup 2018,2,0.043,0,0.022,0,0
+5254,Ali Gabr,Egypt,World Cup 2018,1,0.063,0,0.063,0,0
+5255,Matías Vecino Falero,Uruguay,World Cup 2018,4,0.34,0,0.085,0,0
+5255,Matías Vecino Falero,Uruguay,World Cup 2022,1,0.052,0,0.052,0,0
+5256,Cristian Gabriel Rodríguez Barrotti,Uruguay,World Cup 2018,4,0.148,0,0.037,0,0
+5258,Giorgian Daniel De Arrascaeta Benedetti,Uruguay,Copa America 2024,2,0.103,0,0.052,2,-2
+5258,Giorgian Daniel De Arrascaeta Benedetti,Uruguay,World Cup 2018,1,0.37,0,0.37,0,0
+5258,Giorgian Daniel De Arrascaeta Benedetti,Uruguay,World Cup 2022,3,1.135,2,0.378,0,2
+5259,José María Giménez de Vargas,Uruguay,Copa America 2024,4,0.367,0,0.092,0,0
+5259,José María Giménez de Vargas,Uruguay,World Cup 2018,4,0.326,1,0.082,0,1
+5259,José María Giménez de Vargas,Uruguay,World Cup 2022,3,0.129,0,0.043,0,0
+5260,Rodrigo Bentancur Colmán,Uruguay,Copa America 2024,2,0.308,2,0.154,2,0
+5260,Rodrigo Bentancur Colmán,Uruguay,World Cup 2018,3,0.475,0,0.158,0,0
+5260,Rodrigo Bentancur Colmán,Uruguay,World Cup 2022,3,0.621,0,0.207,0,0
+5261,Mahmoud Ibrahim Hassan,Egypt,AFCON 2023,6,0.436,1,0.073,0,1
+5261,Mahmoud Ibrahim Hassan,Egypt,World Cup 2018,8,0.555,0,0.069,0,0
+5262,Tarek Hamed,Egypt,World Cup 2018,2,0.046,0,0.023,0,0
+5266,Lucas Torreira Di Pascua,Uruguay,World Cup 2018,2,0.051,0,0.026,0,0
+5268,Carlos Andrés Sánchez Arcosa,Uruguay,World Cup 2018,2,0.19,0,0.095,0,0
+5455,William Troost-Ekong,Nigeria,AFCON 2023,3,0.193,1,0.064,3,-2
+5455,William Troost-Ekong,Nigeria,World Cup 2018,2,0.124,0,0.062,0,0
+5456,Mateo Kovačić,Croatia,Euro 2024,6,0.325,0,0.054,0,0
+5456,Mateo Kovačić,Croatia,World Cup 2018,4,0.352,0,0.088,0,0
+5456,Mateo Kovačić,Croatia,World Cup 2022,3,0.345,0,0.115,0,0
+5458,Odion Jude Ighalo,Nigeria,World Cup 2018,5,0.535,0,0.107,0,0
+5459,Marko Pjaca,Croatia,World Cup 2018,1,0.028,0,0.028,0,0
+5460,Andrej Kramarić,Croatia,Euro 2024,4,0.928,1,0.232,0,1
+5460,Andrej Kramarić,Croatia,World Cup 2018,11,0.861,1,0.078,1,0
+5460,Andrej Kramarić,Croatia,World Cup 2022,10,1.087,2,0.109,0,2
+5461,Šime Vrsaljko,Croatia,World Cup 2018,5,0.064,0,0.013,0,0
+5463,Luka Modrić,Croatia,Euro 2024,4,0.58,1,0.145,0,1
+5463,Luka Modrić,Croatia,World Cup 2018,8,0.273,1,0.034,3,-2
+5463,Luka Modrić,Croatia,World Cup 2022,6,0.344,0,0.057,1,-1
+5465,Ante Rebić,Croatia,World Cup 2018,15,1.543,1,0.103,0,1
+5466,Oghenekaro Etebo,Nigeria,World Cup 2018,7,0.251,0,0.036,0,0
+5467,Leon Aderemi Balogun,Nigeria,World Cup 2018,3,0.29,0,0.097,0,0
+5468,Domagoj Vida,Croatia,World Cup 2018,3,0.377,1,0.126,1,0
+5469,Marcelo Brozović,Croatia,Euro 2024,3,0.127,0,0.042,0,0
+5469,Marcelo Brozović,Croatia,World Cup 2018,4,0.12,0,0.03,1,-1
+5469,Marcelo Brozović,Croatia,World Cup 2022,4,0.585,0,0.146,1,-1
+5470,Ivan Rakitić,Croatia,World Cup 2018,15,1.017,1,0.068,2,-1
+5472,Mario Mandžukić,Croatia,World Cup 2018,12,2.71,3,0.226,0,3
+5473,Ahmed Musa,Nigeria,World Cup 2018,4,0.736,2,0.184,0,2
+5474,Ivan Perišić,Croatia,Euro 2024,4,0.08,0,0.02,0,0
+5474,Ivan Perišić,Croatia,World Cup 2018,24,2.114,3,0.088,0,3
+5474,Ivan Perišić,Croatia,World Cup 2022,16,0.756,1,0.047,0,1
+5476,Benjamin Pavard,France,World Cup 2018,4,0.136,1,0.034,0,1
+5477,Ousmane Dembélé,France,Euro 2024,8,0.459,0,0.057,1,-1
+5477,Ousmane Dembélé,France,World Cup 2018,3,0.09,0,0.03,0,0
+5477,Ousmane Dembélé,France,World Cup 2022,8,0.362,0,0.045,0,0
+5478,Trent Sainsbury,Australia,World Cup 2018,3,0.308,0,0.103,0,0
+5479,Aziz Eraltay Behich,Australia,World Cup 2018,2,0.13,0,0.065,0,0
+5479,Aziz Eraltay Behich,Australia,World Cup 2022,2,0.127,0,0.063,0,0
+5480,Corentin Tolisso,France,World Cup 2018,2,0.217,0,0.108,0,0
+5481,Mathew Leckie,Australia,World Cup 2018,9,0.722,0,0.08,0,0
+5481,Mathew Leckie,Australia,World Cup 2022,1,0.114,1,0.114,0,1
+5482,Josh Risdon,Australia,World Cup 2018,1,0.044,0,0.044,0,0
+5483,Daniel Arzani,Australia,World Cup 2018,2,0.071,0,0.036,0,0
+5484,Lucas Hernández Pi,France,World Cup 2018,5,0.293,0,0.059,0,0
+5485,Raphaël Varane,France,World Cup 2018,4,0.356,1,0.089,0,1
+5485,Raphaël Varane,France,World Cup 2022,3,0.264,0,0.088,0,0
+5487,Antoine Griezmann,France,Euro 2024,12,1.519,0,0.127,0,0
+5487,Antoine Griezmann,France,World Cup 2018,18,1.206,1,0.067,3,-2
+5487,Antoine Griezmann,France,World Cup 2022,6,0.496,0,0.083,0,0
+5489,Mile Jedinak,Australia,World Cup 2018,4,0.422,0,0.106,2,-2
+5490,Jackson Irvine,Australia,World Cup 2022,3,0.332,0,0.111,0,0
+5491,Tom Rogić,Australia,World Cup 2018,5,0.364,0,0.073,0,0
+5492,Samuel Yves Umtiti,France,World Cup 2018,2,0.087,1,0.044,0,1
+5494,Robbie Kruse,Australia,World Cup 2018,1,0.097,0,0.097,0,0
+5495,Rúrik Gíslason,Iceland,World Cup 2018,1,0.044,0,0.044,0,0
+5496,Cristian David Pavón,Argentina,World Cup 2018,1,0.029,0,0.029,0,0
+5497,Gonzalo Gerardo Higuaín,Argentina,World Cup 2018,3,0.299,0,0.1,0,0
+5499,Maximiliano Eduardo Meza,Argentina,World Cup 2018,3,0.339,0,0.113,0,0
+5501,Hörður Björgvin Magnússon,Iceland,World Cup 2018,2,0.167,0,0.084,0,0
+5503,Lionel Andrés Messi Cuccittini,Argentina,Copa America 2024,13,2.05,1,0.158,0,1
+5503,Lionel Andrés Messi Cuccittini,Argentina,World Cup 2018,17,1.093,1,0.064,0,1
+5503,Lionel Andrés Messi Cuccittini,Argentina,World Cup 2022,27,2.114,3,0.078,6,-3
+5504,Éver Maximiliano David Banega,Argentina,World Cup 2018,3,0.107,0,0.036,0,0
+5506,Javier Alejandro Mascherano,Argentina,World Cup 2018,1,0.02,0,0.02,0,0
+5507,Nicolás Alejandro Tagliafico,Argentina,Copa America 2024,3,0.148,0,0.049,0,0
+5507,Nicolás Alejandro Tagliafico,Argentina,World Cup 2018,4,0.278,0,0.07,0,0
+5507,Nicolás Alejandro Tagliafico,Argentina,World Cup 2022,3,0.912,0,0.304,0,0
+5509,Birkir Bjarnason,Iceland,World Cup 2018,7,0.947,0,0.135,0,0
+5510,Lucas Rodrigo Biglia,Argentina,World Cup 2018,2,0.134,0,0.067,0,0
+5512,Emil Hallfreðsson,Iceland,World Cup 2018,1,0.015,0,0.015,0,0
+5513,Eduardo Antonio Salvio,Argentina,World Cup 2018,1,0.03,0,0.03,0,0
+5514,Alfreð Finnbogason,Iceland,World Cup 2018,6,1.027,1,0.171,0,1
+5515,Aron Einar Gunnarsson,Iceland,World Cup 2018,2,0.223,0,0.111,0,0
+5516,Pione Sisto Ifolo Emirmija,Denmark,World Cup 2018,5,0.211,0,0.042,0,0
+5519,Christian Alberto Cueva Bravo,Peru,Copa America 2024,1,0.104,0,0.104,0,0
+5519,Christian Alberto Cueva Bravo,Peru,World Cup 2018,1,0.05,0,0.05,0,0
+5520,Lasse Schöne,Denmark,World Cup 2018,4,0.117,0,0.029,0,0
+5521,Luis Jan Piers Advíncula Castrillón,Peru,World Cup 2018,3,0.027,0,0.009,0,0
+5522,Nicolai Jørgensen,Denmark,World Cup 2018,4,0.465,0,0.116,0,0
+5523,Renato Fabrizio Tapia Cortijo,Peru,World Cup 2018,1,0.017,0,0.017,0,0
+5524,Jens Stryger Larsen,Denmark,World Cup 2018,2,0.105,0,0.052,0,0
+5525,Édison Michael Flores Peralta,Peru,Copa America 2024,2,0.059,0,0.029,0,0
+5525,Édison Michael Flores Peralta,Peru,World Cup 2018,5,0.296,0,0.059,0,0
+5526,Pedro Jesús Aquino Sánchez,Peru,World Cup 2018,1,0.032,0,0.032,0,0
+5527,Thomas Delaney,Denmark,World Cup 2018,4,0.273,0,0.068,0,0
+5529,Víctor Yoshimar Yotún Flores,Peru,World Cup 2018,3,0.014,0,0.005,0,0
+5531,Jefferson Agustín Farfán Guadalupe,Peru,World Cup 2018,4,0.337,0,0.084,0,0
+5532,Alberto Junior Rodríguez Valdelomar,Peru,World Cup 2018,2,0.132,0,0.066,0,0
+5535,José Paolo Guerrero Gonzáles,Peru,Copa America 2024,2,0.269,0,0.135,0,0
+5535,José Paolo Guerrero Gonzáles,Peru,World Cup 2018,9,1.098,1,0.122,0,1
+5536,Yussuf Yurary Poulsen,Denmark,World Cup 2018,2,0.346,1,0.173,0,1
+5537,Fabian Lukas Schär,Switzerland,Euro 2024,5,0.22,0,0.044,1,-1
+5537,Fabian Lukas Schär,Switzerland,World Cup 2018,1,0.071,0,0.071,0,0
+5537,Fabian Lukas Schär,Switzerland,World Cup 2022,2,0.104,0,0.052,0,0
+5538,Denis Lemi Zakaria Lako Lado,Switzerland,World Cup 2022,1,0.042,0,0.042,0,0
+5539,Carlos Henrique Casimiro,Brazil,World Cup 2018,4,0.173,0,0.043,0,0
+5539,Carlos Henrique Casimiro,Brazil,World Cup 2022,9,0.36,1,0.04,1,0
+5540,Valon Behrami,Switzerland,World Cup 2018,1,0.019,0,0.019,0,0
+5541,Stephan Lichtsteiner,Switzerland,World Cup 2018,3,0.053,0,0.018,0,0
+5542,José Paulo Bezzera Maciel Júnior,Brazil,World Cup 2018,6,1.374,1,0.229,0,1
+5543,Haris Seferović,Switzerland,World Cup 2018,1,0.06,0,0.06,0,0
+5543,Haris Seferović,Switzerland,World Cup 2022,1,0.27,0,0.27,0,0
+5544,Ricardo Iván Rodríguez Araya,Switzerland,Euro 2024,3,0.074,0,0.025,0,0
+5544,Ricardo Iván Rodríguez Araya,Switzerland,World Cup 2018,6,0.136,0,0.023,0,0
+5545,Breel-Donald Embolo,Switzerland,Euro 2024,8,1.57,2,0.196,0,2
+5545,Breel-Donald Embolo,Switzerland,World Cup 2018,4,0.187,0,0.047,0,0
+5545,Breel-Donald Embolo,Switzerland,World Cup 2022,6,2.391,2,0.399,0,2
+5546,Michael Lang,Switzerland,World Cup 2018,1,0.054,0,0.054,0,0
+5548,Steven Zuber,Switzerland,Euro 2024,2,0.094,0,0.047,0,0
+5548,Steven Zuber,Switzerland,World Cup 2018,4,0.311,1,0.078,0,1
+5549,Manuel Obafemi Akanji,Switzerland,World Cup 2018,2,0.175,0,0.088,0,0
+5549,Manuel Obafemi Akanji,Switzerland,World Cup 2022,4,0.883,1,0.221,0,1
+5551,João Miranda de Souza Filho,Brazil,World Cup 2018,1,0.051,0,0.051,0,0
+5552,Marcelo Vieira da Silva Júnior,Brazil,World Cup 2018,4,0.059,0,0.015,0,0
+5553,Renato Soares de Oliveira Augusto,Brazil,World Cup 2018,3,0.496,1,0.165,0,1
+5554,Blerim Džemaili,Switzerland,World Cup 2018,9,1.232,1,0.137,0,1
+5555,Julian Brandt,Germany,World Cup 2018,4,0.316,0,0.079,0,0
+5556,Miguel Arturo Layún Prado,Mexico,World Cup 2018,9,0.434,0,0.048,0,0
+5557,Timo Werner,Germany,World Cup 2018,7,0.81,0,0.116,0,0
+5559,Marco Reus,Germany,World Cup 2018,6,0.295,1,0.049,0,1
+5560,Carlos Alberto Vela Garrido,Mexico,World Cup 2018,9,1.128,0,0.125,1,-1
+5561,Hugo Ayala Castro,Mexico,World Cup 2018,1,0.046,0,0.046,0,0
+5562,Thomas Müller,Germany,Euro 2024,1,0.237,0,0.237,0,0
+5562,Thomas Müller,Germany,World Cup 2018,4,0.393,0,0.098,0,0
+5562,Thomas Müller,Germany,World Cup 2022,3,0.27,0,0.09,0,0
+5563,José Andrés Guardado Hernández,Mexico,World Cup 2018,8,0.529,0,0.066,0,0
+5564,Carlos Joel Salcedo Hernández,Mexico,World Cup 2018,5,0.218,0,0.044,0,0
+5565,Mario Gómez García,Germany,World Cup 2018,6,1.456,0,0.243,0,0
+5566,Sami Khedira,Germany,World Cup 2018,3,0.148,0,0.049,0,0
+5567,Edson Omar Álvarez Velázquez,Mexico,World Cup 2018,1,0.109,0,0.109,0,0
+5567,Edson Omar Álvarez Velázquez,Mexico,World Cup 2022,1,0.014,0,0.014,0,0
+5568,Raúl Alonso Jiménez Rodríguez,Mexico,World Cup 2018,1,0.068,0,0.068,0,0
+5569,Marvin Plattenhardt,Germany,World Cup 2018,1,0.029,0,0.029,0,0
+5571,Hirving Rodrigo Lozano Bahena,Mexico,World Cup 2018,12,0.816,1,0.068,0,1
+5571,Hirving Rodrigo Lozano Bahena,Mexico,World Cup 2022,6,0.24,0,0.04,0,0
+5572,Mats Hummels,Germany,World Cup 2018,6,0.879,0,0.147,0,0
+5573,Héctor Alfredo Moreno Herrera,Mexico,World Cup 2018,2,0.164,0,0.082,0,0
+5573,Héctor Alfredo Moreno Herrera,Mexico,World Cup 2022,1,0.177,0,0.177,0,0
+5574,Toni Kroos,Germany,Euro 2024,3,0.155,0,0.052,0,0
+5574,Toni Kroos,Germany,World Cup 2018,16,0.693,1,0.043,0,1
+5575,Héctor Miguel Herrera López,Mexico,World Cup 2018,5,0.169,0,0.034,0,0
+5576,Jesús Daniel Gallardo Vasconcelos,Mexico,World Cup 2018,1,0.039,0,0.039,0,0
+5576,Jesús Daniel Gallardo Vasconcelos,Mexico,World Cup 2022,1,0.064,0,0.064,0,0
+5578,Jérôme Boateng,Germany,World Cup 2018,3,0.042,0,0.014,0,0
+5579,Joshua Kimmich,Germany,Euro 2024,7,0.31,0,0.044,0,0
+5579,Joshua Kimmich,Germany,World Cup 2018,3,0.176,0,0.059,0,0
+5579,Joshua Kimmich,Germany,World Cup 2022,7,0.335,0,0.048,0,0
+5581,Joel Nathaniel Campbell Samuels,Costa Rica,World Cup 2018,3,0.201,0,0.067,0,0
+5581,Joel Nathaniel Campbell Samuels,Costa Rica,World Cup 2022,1,0.051,0,0.051,0,0
+5582,Celso Borges Mora,Costa Rica,World Cup 2018,5,0.393,0,0.079,0,0
+5584,Giancarlo González Castro,Costa Rica,World Cup 2018,2,0.205,0,0.102,0,0
+5585,Daniel Colindres Solera,Costa Rica,World Cup 2018,3,0.121,0,0.04,0,0
+5586,Marcos Danilo Ureña Porras,Costa Rica,World Cup 2018,2,0.067,0,0.034,0,0
+5587,Adem Ljajić,Serbia,World Cup 2018,1,0.053,0,0.053,0,0
+5589,Sergej Milinković-Savić,Serbia,Euro 2024,3,0.215,0,0.072,0,0
+5589,Sergej Milinković-Savić,Serbia,World Cup 2018,5,0.302,0,0.06,0,0
+5589,Sergej Milinković-Savić,Serbia,World Cup 2022,3,0.2,1,0.067,0,1
+5591,Filip Kostić,Serbia,World Cup 2018,4,1.044,0,0.261,0,0
+5591,Filip Kostić,Serbia,World Cup 2022,1,0.012,0,0.012,0,0
+5592,Bryan Ruiz González,Costa Rica,World Cup 2018,1,0.106,0,0.106,0,0
+5596,Aleksandar Kolarov,Serbia,World Cup 2018,2,0.017,1,0.009,0,1
+5598,Óscar Esau Duarte Gaitán,Costa Rica,World Cup 2018,2,0.11,0,0.055,0,0
+5599,David Alberto Guzmán Pérez,Costa Rica,World Cup 2018,1,0.026,0,0.026,0,0
+5600,Francisco Javier Calvo Quesada,Costa Rica,Copa America 2024,1,0.231,1,0.231,0,1
+5600,Francisco Javier Calvo Quesada,Costa Rica,World Cup 2018,1,0.056,0,0.056,0,0
+5600,Francisco Javier Calvo Quesada,Costa Rica,World Cup 2022,1,0.014,0,0.014,0,0
+5602,Cristian Gamboa Luna,Costa Rica,World Cup 2018,3,0.048,0,0.016,0,0
+5603,Nikola Milenković,Serbia,World Cup 2022,3,0.123,0,0.041,0,0
+5604,Young-Gwon Kim,South Korea,World Cup 2018,1,0.473,1,0.473,0,1
+5604,Young-Gwon Kim,South Korea,World Cup 2022,2,0.689,1,0.345,0,1
+5607,Andreas Granqvist,Sweden,World Cup 2018,4,0.374,0,0.093,2,-2
+5608,Yong Lee,South Korea,World Cup 2018,1,0.019,0,0.019,0,0
+5610,Min-Woo Kim,South Korea,World Cup 2018,1,0.026,0,0.026,0,0
+5612,Mikael Lustig,Sweden,World Cup 2018,2,0.028,0,0.014,0,0
+5613,Viktor Claesson,Sweden,World Cup 2018,6,0.855,0,0.142,0,0
+5616,Seung-Woo Lee,South Korea,World Cup 2018,1,0.029,0,0.029,0,0
+5617,Sebastian Larsson,Sweden,World Cup 2018,1,0.006,0,0.006,0,0
+5618,Woo-Young Jung,South Korea,World Cup 2018,3,0.067,0,0.022,0,0
+5618,Woo-Young Jung,South Korea,World Cup 2022,1,0.011,0,0.011,0,0
+5620,Hee-Chan Hwang,South Korea,World Cup 2018,2,0.249,0,0.124,0,0
+5620,Hee-Chan Hwang,South Korea,World Cup 2022,6,0.568,1,0.095,0,1
+5621,Ludwig Augustinsson,Sweden,World Cup 2018,3,0.36,1,0.12,0,1
+5623,Jae-Sung Lee,South Korea,World Cup 2018,5,0.19,0,0.038,0,0
+5623,Jae-Sung Lee,South Korea,World Cup 2022,1,0.021,0,0.021,0,0
+5624,Albin Ekdal,Sweden,World Cup 2018,3,0.261,0,0.087,0,0
+5625,Emil Peter Forsberg,Sweden,World Cup 2018,15,0.753,1,0.05,0,1
+5627,Ja-Cheol Koo,South Korea,World Cup 2018,1,0.118,0,0.118,0,0
+5628,José Luis Rodríguez Francis,Panama,Copa America 2024,2,0.057,0,0.028,0,0
+5628,José Luis Rodríguez Francis,Panama,World Cup 2018,3,0.12,0,0.04,0,0
+5629,Gabriel Arturo Torres Tejada,Panama,World Cup 2018,1,0.154,0,0.154,0,0
+5630,Dries Mertens,Belgium,World Cup 2018,6,0.29,1,0.048,0,1
+5630,Dries Mertens,Belgium,World Cup 2022,3,0.367,0,0.122,0,0
+5631,Blas Antonio Miguel Pérez Ortega,Panama,World Cup 2018,1,0.059,0,0.059,0,0
+5632,Thorgan Hazard,Belgium,World Cup 2018,3,0.152,0,0.051,0,0
+5633,Yannick Ferreira Carrasco,Belgium,Euro 2024,6,0.456,0,0.076,0,0
+5633,Yannick Ferreira Carrasco,Belgium,World Cup 2018,6,0.305,0,0.051,0,0
+5633,Yannick Ferreira Carrasco,Belgium,World Cup 2022,4,0.202,0,0.051,0,0
+5634,Erick Javier Davis Grajales,Panama,Copa America 2024,1,0.04,0,0.04,0,0
+5635,Román Aureliano Torres Morcillo,Panama,World Cup 2018,4,0.798,0,0.199,0,0
+5637,Edgar Yoel Bárcenas Herrera,Panama,Copa America 2024,6,0.381,0,0.063,0,0
+5637,Edgar Yoel Bárcenas Herrera,Panama,World Cup 2018,6,0.358,0,0.06,0,0
+5638,Fidel Escobar Mendieta,Panama,World Cup 2018,1,0.009,0,0.009,0,0
+5639,Anga Dedryck Boyata,Belgium,World Cup 2018,1,0.101,0,0.101,0,0
+5641,Michael Amir Murillo Bermudez,Panama,Copa America 2024,4,0.264,1,0.066,0,1
+5641,Michael Amir Murillo Bermudez,Panama,World Cup 2018,2,0.477,0,0.238,0,0
+5642,Axel Witsel,Belgium,World Cup 2018,6,0.195,0,0.033,0,0
+5642,Axel Witsel,Belgium,World Cup 2022,1,0.025,0,0.025,0,0
+5645,Armando Enrique Cooper Whitaker,Panama,World Cup 2018,1,0.023,0,0.023,0,0
+5646,Aníbal Cesis Godoy,Panama,World Cup 2018,2,0.21,0,0.105,0,0
+5649,Anice Badri,Tunisia,World Cup 2018,3,0.171,0,0.057,0,0
+5650,Ferjani Sassi,Tunisia,World Cup 2018,4,0.26,0,0.065,1,-1
+5650,Ferjani Sassi,Tunisia,World Cup 2022,1,0.02,0,0.02,0,0
+5651,Yassine Meriah,Tunisia,AFCON 2023,2,0.294,0,0.147,0,0
+5651,Yassine Meriah,Tunisia,World Cup 2022,1,0.046,0,0.046,0,0
+5654,Fakhreddine Ben Youssef,Tunisia,World Cup 2018,7,1.536,1,0.219,0,1
+5655,Dylan Daniel Mahmoud Bronn,Tunisia,World Cup 2018,1,0.159,1,0.159,0,1
+5655,Dylan Daniel Mahmoud Bronn,Tunisia,World Cup 2022,1,0.059,0,0.059,0,0
+5658,Łukasz Piszczek,Poland,World Cup 2018,1,0.043,0,0.043,0,0
+5660,Piotr Zieliński,Poland,Euro 2024,8,0.377,0,0.047,0,0
+5660,Piotr Zieliński,Poland,World Cup 2018,4,0.118,0,0.03,0,0
+5660,Piotr Zieliński,Poland,World Cup 2022,3,0.584,1,0.195,0,1
+5661,M'Baye Babacar Niang,Senegal,World Cup 2018,8,1.731,1,0.216,0,1
+5664,Salif Sané,Senegal,World Cup 2018,4,0.225,0,0.056,0,0
+5665,Arkadiusz Milik,Poland,World Cup 2018,1,0.122,0,0.122,0,0
+5665,Arkadiusz Milik,Poland,World Cup 2022,1,0.135,0,0.135,0,0
+5666,Dawid Kownacki,Poland,World Cup 2018,2,0.07,0,0.035,0,0
+5667,Kamil Grosicki,Poland,Euro 2024,1,0.12,0,0.12,0,0
+5667,Kamil Grosicki,Poland,World Cup 2018,5,0.529,0,0.106,0,0
+5668,Robert Lewandowski,Poland,Euro 2024,4,0.206,0,0.051,1,-1
+5668,Robert Lewandowski,Poland,World Cup 2018,9,1.182,0,0.131,0,0
+5668,Robert Lewandowski,Poland,World Cup 2022,10,1.559,1,0.156,1,0
+5671,Alfred John Momar N'Diaye,Senegal,World Cup 2018,1,0.112,0,0.112,0,0
+5673,Bartosz Bereszyński,Poland,World Cup 2018,1,0.052,0,0.052,0,0
+5674,Moussa Wagué,Senegal,World Cup 2018,1,0.075,1,0.075,0,1
+5675,Kalidou Koulibaly,Senegal,AFCON 2023,3,0.182,0,0.061,1,-1
+5675,Kalidou Koulibaly,Senegal,World Cup 2022,1,0.234,1,0.234,0,1
+5676,Cheikh N'Doye,Senegal,World Cup 2018,1,0.132,0,0.132,0,0
+5678,Jefferson Andrés Lerma Solís,Colombia,Copa America 2024,8,0.329,2,0.041,0,2
+5678,Jefferson Andrés Lerma Solís,Colombia,World Cup 2018,2,0.074,0,0.037,0,0
+5679,Yūya Ōsako,Japan,World Cup 2018,7,1.16,1,0.166,0,1
+5680,Oscar Fabián Murillo Murillo,Colombia,World Cup 2018,2,0.191,0,0.095,0,0
+5681,Makoto Hasebe,Japan,World Cup 2018,1,0.03,0,0.03,0,0
+5682,Gen Shōji,Japan,World Cup 2018,1,0.005,0,0.005,0,0
+5683,Keisuke Honda,Japan,World Cup 2018,4,0.633,1,0.158,0,1
+5684,Shinji Kagawa,Japan,World Cup 2018,2,0.276,0,0.138,1,-1
+5687,Takashi Inui,Japan,World Cup 2018,9,0.552,2,0.061,0,2
+5688,Carlos Arturo Bacca Ahumada,Colombia,World Cup 2018,2,0.139,0,0.069,0,0
+5689,Juan Guillermo Cuadrado Bello,Colombia,World Cup 2018,6,0.323,1,0.054,1,0
+5690,Yuto Nagatomo,Japan,World Cup 2018,2,0.077,0,0.038,0,0
+5691,Johan Andrés Mojica Palacio,Colombia,Copa America 2024,1,0.062,0,0.062,0,0
+5691,Johan Andrés Mojica Palacio,Colombia,World Cup 2018,1,0.006,0,0.006,0,0
+5692,Juan Fernando Quintero Paniagua,Colombia,Copa America 2024,1,0.022,0,0.022,0,0
+5692,Juan Fernando Quintero Paniagua,Colombia,World Cup 2018,8,0.218,1,0.027,0,1
+5693,Gaku Shibasaki,Japan,World Cup 2018,1,0.054,0,0.054,0,0
+5695,James David Rodríguez Rubio,Colombia,Copa America 2024,7,0.329,0,0.047,1,-1
+5695,James David Rodríguez Rubio,Colombia,World Cup 2018,3,0.121,0,0.04,0,0
+5696,Santiago Arias Naranjo,Colombia,Copa America 2024,1,0.022,0,0.022,0,0
+5696,Santiago Arias Naranjo,Colombia,World Cup 2018,1,0.017,0,0.017,0,0
+5697,Genki Haraguchi,Japan,World Cup 2018,3,0.204,1,0.068,0,1
+5713,Mohammed Kanoo,Saudi Arabia,World Cup 2018,1,0.055,0,0.055,0,0
+5713,Mohammed Kanoo,Saudi Arabia,World Cup 2022,6,0.319,0,0.053,0,0
+5716,Hussain Al Mogahwi,Saudi Arabia,World Cup 2018,4,0.169,0,0.042,0,0
+5717,Diego Sebastián Laxalt Suárez,Uruguay,World Cup 2018,1,0.019,0,0.019,0,0
+5718,Rodrigo Moreno Machado,Spain,World Cup 2018,4,0.339,0,0.085,0,0
+5719,Marco Asensio Willemsen,Spain,World Cup 2018,3,0.346,0,0.115,0,0
+5719,Marco Asensio Willemsen,Spain,World Cup 2022,10,0.608,1,0.061,0,1
+5721,Daniel Carvajal Ramos,Spain,Euro 2024,2,0.349,1,0.174,0,1
+5721,Daniel Carvajal Ramos,Spain,World Cup 2018,2,0.089,0,0.044,0,0
+5722,Saeid Ezatolahi Afagh,Iran,World Cup 2018,1,0.169,0,0.169,0,0
+5722,Saeid Ezatolahi Afagh,Iran,World Cup 2022,3,0.061,0,0.02,0,0
+5726,Khalid Boutaïb,Morocco,World Cup 2018,4,1.027,1,0.257,0,1
+5727,Nabil Dirar,Morocco,World Cup 2018,2,0.108,0,0.054,0,0
+5732,Andreas Evald Cornelius,Denmark,World Cup 2018,1,0.146,0,0.146,0,0
+5732,Andreas Evald Cornelius,Denmark,World Cup 2022,5,0.802,0,0.16,0,0
+5741,Enzo Nicolás Pérez,Argentina,World Cup 2018,1,0.336,0,0.336,0,0
+5742,Gabriel Iván Mercado,Argentina,World Cup 2018,1,0.28,1,0.28,0,1
+5743,Paulo Bruno Exequiel Dybala,Argentina,World Cup 2018,1,0.011,0,0.011,0,0
+5829,Jón Daði Böðvarsson,Iceland,World Cup 2018,1,0.045,0,0.045,0,0
+5830,Kenneth Josiah Omeruo,Nigeria,World Cup 2018,1,0.044,0,0.044,0,0
+5831,Sverrir Ingi Ingason,Iceland,World Cup 2018,3,0.312,0,0.104,0,0
+5833,Nemanja Radonjić,Serbia,World Cup 2022,2,0.052,0,0.026,0,0
+5834,Mario Gavranović,Switzerland,World Cup 2018,3,0.382,0,0.127,0,0
+5835,Josip Drmic,Switzerland,World Cup 2018,4,0.418,1,0.105,0,1
+5836,Bryan Oviedo,Costa Rica,World Cup 2018,3,0.084,0,0.028,0,0
+5837,Douglas Costa de Souza,Brazil,World Cup 2018,4,0.054,0,0.014,0,0
+5839,Yeltsin Ignacio Tejeda Valverde,Costa Rica,World Cup 2022,2,0.522,1,0.261,0,1
+5936,Hamdi Nagguez,Tunisia,World Cup 2018,1,0.086,0,0.086,0,0
+5989,Seon-Min Moon,South Korea,World Cup 2018,2,0.183,0,0.092,0,0
+6038,John Guidetti,Sweden,World Cup 2018,1,0.014,0,0.014,0,0
+6039,Sebastian Rudy,Germany,World Cup 2018,1,0.027,0,0.027,0,0
+6040,Jonas Hector,Germany,World Cup 2018,2,0.184,0,0.092,0,0
+6138,Ricardo Guardia Avila,Panama,World Cup 2018,1,0.007,0,0.007,0,0
+6139,Felipe Abdiel Baloy Ramírez,Panama,World Cup 2018,1,0.174,1,0.174,0,1
+6191,Takashi Usami,Japan,World Cup 2018,3,0.174,0,0.058,0,0
+6193,Andrés Mateus Uribe Villa,Colombia,Copa America 2024,3,0.759,0,0.253,0,0
+6193,Andrés Mateus Uribe Villa,Colombia,World Cup 2018,2,0.105,0,0.052,0,0
+6194,Łukasz Teodorczyk,Poland,World Cup 2018,1,0.069,0,0.069,0,0
+6195,Jacek Góralski,Poland,World Cup 2018,1,0.007,0,0.007,0,0
+6196,Yerry Fernando Mina González,Colombia,World Cup 2018,3,0.77,3,0.257,0,3
+6297,Maximiliano Gómez González,Uruguay,World Cup 2022,2,0.078,0,0.039,0,0
+6300,Sebastián Coates Nión,Uruguay,World Cup 2022,1,0.103,0,0.103,0,0
+6301,Youssef En-Nesyri,Morocco,AFCON 2023,8,1.512,1,0.189,0,1
+6301,Youssef En-Nesyri,Morocco,World Cup 2018,1,0.067,1,0.067,0,1
+6301,Youssef En-Nesyri,Morocco,World Cup 2022,11,1.046,2,0.095,0,2
+6302,Kasper Dolberg,Denmark,World Cup 2022,4,0.512,0,0.128,0,0
+6303,Viktor Fischer,Denmark,World Cup 2018,1,0.027,0,0.027,0,0
+6305,Milan Badelj,Croatia,World Cup 2018,2,0.186,1,0.093,0,1
+6308,Josip Pivarić,Croatia,World Cup 2018,2,0.047,0,0.024,0,0
+6313,Wilder José Cartagena Mendoza,Peru,Copa America 2024,1,0.008,0,0.008,0,0
+6314,Tim Cahill,Australia,World Cup 2018,2,0.242,0,0.121,0,0
+6317,Marco Jhonfai Fabián De La Mora,Mexico,World Cup 2018,1,0.022,0,0.022,0,0
+6318,Andrija Živković,Serbia,World Cup 2018,1,0.009,0,0.009,0,0
+6318,Andrija Živković,Serbia,World Cup 2022,1,0.03,0,0.03,0,0
+6319,Luka Jović,Serbia,Euro 2024,1,0.142,1,0.142,0,1
+6319,Luka Jović,Serbia,World Cup 2022,2,0.058,0,0.029,0,0
+6320,Filipe Luís Kasmirski,Brazil,World Cup 2018,1,0.031,0,0.031,0,0
+6322,Niklas Süle,Germany,World Cup 2022,1,0.076,0,0.076,0,0
+6324,Leon Goretzka,Germany,World Cup 2018,2,0.282,0,0.141,0,0
+6324,Leon Goretzka,Germany,World Cup 2022,4,0.461,0,0.115,0,0
+6328,Kendall Jamaal Waston Manley,Costa Rica,World Cup 2018,1,0.131,1,0.131,0,1
+6328,Kendall Jamaal Waston Manley,Costa Rica,World Cup 2022,1,0.099,0,0.099,0,0
+6330,Adnan Januzaj,Belgium,World Cup 2018,3,0.167,1,0.056,0,1
+6331,Leander Dendoncker,Belgium,World Cup 2022,1,0.089,0,0.089,0,0
+6333,Miguel Ángel Borja Hernández,Colombia,Copa America 2024,1,0.059,0,0.059,1,-1
+6334,Luis Fernando Muriel Fruto,Colombia,World Cup 2018,1,0.065,0,0.065,1,-1
+6336,Rafał Kurzawa,Poland,World Cup 2018,2,0.106,0,0.053,0,0
+6337,Yoshinori Muto,Japan,World Cup 2018,2,0.166,0,0.083,0,0
+6338,Tomoaki Makino,Japan,World Cup 2018,2,0.195,0,0.098,0,0
+6339,Gotoku Sakai,Japan,World Cup 2018,1,0.063,0,0.063,0,0
+6344,Luis Carlos Ovalle Victoria,Panama,World Cup 2018,1,0.007,0,0.007,0,0
+6347,Ghilane Chalali,Tunisia,World Cup 2018,1,0.06,0,0.06,0,0
+6350,Manuel Henrique Tavares Fernandes,Portugal,World Cup 2018,2,0.032,0,0.016,0,0
+6351,Cristhian Ricardo Stuani Curbelo,Uruguay,World Cup 2018,1,0.014,0,0.014,0,0
+6354,Aleksandr Erokhin,Russia,World Cup 2018,3,0.423,0,0.141,0,0
+6374,Nélson Cabral Semedo,Portugal,Euro 2024,2,0.234,0,0.117,0,0
+6383,Thomas Teye Partey,Ghana,World Cup 2022,2,0.236,0,0.118,0,0
+6393,Iñaki Williams Arthuer,Ghana,AFCON 2023,1,0.097,0,0.097,0,0
+6393,Iñaki Williams Arthuer,Ghana,World Cup 2022,2,0.126,0,0.063,0,0
+6399,Gareth Frank Bale,Wales,World Cup 2022,1,0.022,0,0.022,1,-1
+6583,Carlos Soler Barragán,Spain,World Cup 2022,4,0.488,1,0.122,0,1
+6648,Aïssa Mandi,Algeria,AFCON 2023,3,0.466,0,0.155,0,0
+6655,Fabián Ruiz Peña,Spain,Euro 2024,17,1.145,2,0.067,0,2
+6685,Mikel Oyarzabal Ugarte,Spain,Euro 2024,6,0.599,1,0.1,0,1
+6687,Saša Lukić,Serbia,Euro 2024,1,0.088,0,0.088,0,0
+6687,Saša Lukić,Serbia,World Cup 2022,1,0.04,0,0.04,0,0
+6704,Theo Bernard François Hernández,France,Euro 2024,4,0.243,0,0.061,1,-1
+6704,Theo Bernard François Hernández,France,World Cup 2022,5,0.259,1,0.052,0,1
+6720,Pablo Sarabia García,Spain,World Cup 2022,1,0.104,0,0.104,0,0
+6748,Ferrán Torres García,Spain,Euro 2024,5,0.492,1,0.098,0,1
+6748,Ferrán Torres García,Spain,World Cup 2022,3,0.222,1,0.074,1,0
+6765,Rodrigo Hernández Cascante,Spain,Euro 2024,5,0.191,1,0.038,0,1
+6765,Rodrigo Hernández Cascante,Spain,World Cup 2022,1,0.006,0,0.006,0,0
+6773,Federico Santiago Valverde Dipetta,Uruguay,Copa America 2024,15,0.59,1,0.039,2,-1
+6773,Federico Santiago Valverde Dipetta,Uruguay,World Cup 2022,7,0.117,0,0.017,0,0
+6798,Stanislav Lobotka,Slovakia,Euro 2024,1,0.022,0,0.022,0,0
+6840,Marcos Llorente Moreno,Spain,World Cup 2022,1,0.025,0,0.025,0,0
+6846,Andreas Hoelgebaum Pereira,Brazil,Copa America 2024,1,0.041,0,0.041,1,-1
+6862,Cédric Bakambu,Congo DR,AFCON 2023,8,0.658,0,0.082,1,-1
+6919,Guilherme Antonio Arana Lopes,Brazil,Copa America 2024,1,0.053,0,0.053,0,0
+6945,Alex Sandro Lobo Silva,Brazil,World Cup 2022,1,0.022,0,0.022,0,0
+6963,Lorenzo Pellegrini,Italy,Euro 2024,7,0.503,0,0.072,0,0
+6983,Remo Freuler,Switzerland,Euro 2024,3,0.211,1,0.07,0,1
+6983,Remo Freuler,Switzerland,World Cup 2022,3,0.545,1,0.182,0,1
+6988,Musa Barrow,Gambia,AFCON 2023,8,0.267,0,0.033,0,0
+6990,Milan Škriniar,Slovakia,Euro 2024,3,0.219,0,0.073,0,0
+6993,Bryan Cristante,Italy,Euro 2024,2,0.067,0,0.034,0,0
+7005,João Pedro Cavaco Cancelo,Portugal,Euro 2024,2,0.081,0,0.04,0,0
+7005,João Pedro Cavaco Cancelo,Portugal,World Cup 2022,2,0.055,0,0.027,0,0
+7006,Alejandro Darío Gómez,Argentina,World Cup 2022,2,0.023,0,0.012,0,0
+7023,Franck Yannick Kessié,Côte d'Ivoire,AFCON 2023,9,0.572,1,0.064,2,-1
+7031,Elseid Hysaj,Albania,Euro 2024,2,0.098,0,0.049,0,0
+7039,Hakan Çalhanoğlu,Turkey,Euro 2024,10,0.27,1,0.027,0,1
+7044,Patrik Schick,Czech Republic,Euro 2024,7,1.193,1,0.17,0,1
+7087,Saba Lobzhanidze,Georgia,Euro 2024,1,0.306,0,0.306,0,0
+7104,Mathías Olivera Miramontes,Uruguay,Copa America 2024,4,0.771,1,0.193,0,1
+7104,Mathías Olivera Miramontes,Uruguay,World Cup 2022,2,0.081,0,0.04,0,0
+7108,Berat Djimsiti,Albania,Euro 2024,2,0.104,0,0.052,0,0
+7139,Josip Iličić,Slovenia,Euro 2024,1,0.045,0,0.045,0,0
+7143,Gianluca Lapadula Vargas,Peru,Copa America 2024,8,0.5,0,0.063,0,0
+7145,Darko Lazović,Serbia,World Cup 2022,1,0.018,0,0.018,0,0
+7156,Federico Chiesa,Italy,Euro 2024,8,0.248,0,0.031,0,0
+7161,Germán Alejandro Pezzella,Argentina,Copa America 2024,1,0.022,0,0.022,0,0
+7161,Germán Alejandro Pezzella,Argentina,World Cup 2022,1,0.045,0,0.045,0,0
+7162,Ádám Nagy,Hungary,Euro 2024,1,0.029,0,0.029,0,0
+7197,Steven Moreira,Cape Verde Islands,AFCON 2023,1,0.046,0,0.046,0,0
+7214,El-Hadji Ba,Mauritania,AFCON 2023,1,0.091,0,0.091,0,0
+7294,Yoane Wissa,Congo DR,AFCON 2023,19,2.675,1,0.141,2,-1
+7355,Olivier Michel Kemen,Cameroon,AFCON 2023,3,0.071,0,0.024,0,0
+7360,Julian Jeanvier,Guinea,AFCON 2023,4,0.253,0,0.063,0,0
+7426,Jean-Charles Castelletto,Cameroon,AFCON 2023,2,0.136,1,0.068,0,1
+7426,Jean-Charles Castelletto,Cameroon,World Cup 2022,1,0.895,1,0.895,0,1
+7439,Axel Disasi,France,World Cup 2022,1,0.061,0,0.061,0,0
+7459,Jawad El Yamiq,Morocco,World Cup 2022,1,0.064,0,0.064,0,0
+7472,Nicolas Alexis Julio N'Koulou Ndoubena,Cameroon,World Cup 2022,3,0.382,0,0.127,0,0
+7475,Tomás Eduardo Rincón Hernández,Venezuela,Copa America 2024,1,0.049,0,0.049,1,-1
+7480,Alessandro Bastoni,Italy,Euro 2024,3,0.45,1,0.15,0,1
+7531,Qazim Laçi,Albania,Euro 2024,1,0.153,1,0.153,0,1
+7568,Opa Sangante,Guinea-Bissau,AFCON 2023,1,0.05,0,0.05,0,0
+7663,Adam Buksa,Poland,Euro 2024,3,0.148,1,0.049,0,1
+7693,Bruno Petković,Croatia,Euro 2024,3,0.354,0,0.118,0,0
+7693,Bruno Petković,Croatia,World Cup 2022,1,0.1,1,0.1,0,1
+7713,Obite Evan Ndicka,Côte d'Ivoire,AFCON 2023,7,0.428,0,0.061,0,0
+7745,Steven Berghuis,Netherlands,World Cup 2022,5,0.192,0,0.038,0,0
+7753,Jamiro Gregory Monteiro Alvarenga,Cape Verde Islands,AFCON 2023,3,0.595,1,0.198,0,1
+7787,Stefan de Vrij,Netherlands,Euro 2024,4,0.275,1,0.069,0,1
+7791,Seko Fofana,Côte d'Ivoire,AFCON 2023,17,0.619,1,0.036,0,1
+7796,Silvan Widmer,Switzerland,Euro 2024,2,0.16,0,0.08,0,0
+7796,Silvan Widmer,Switzerland,World Cup 2022,1,0.051,0,0.051,0,0
+7797,Rodrigo Javier De Paul,Argentina,Copa America 2024,4,0.104,0,0.026,0,0
+7797,Rodrigo Javier De Paul,Argentina,World Cup 2022,7,0.57,0,0.081,0,0
+7829,Wout Weghorst,Netherlands,Euro 2024,4,0.389,1,0.097,0,1
+7829,Wout Weghorst,Netherlands,World Cup 2022,2,0.267,2,0.134,1,1
+7843,Mason Mount,England,World Cup 2022,4,0.182,0,0.045,0,0
+7891,Teun Koopmeiners,Netherlands,World Cup 2022,2,0.09,0,0.045,1,-1
+7900,Tiago Manuel Dias Correia,Cape Verde Islands,AFCON 2023,16,0.508,1,0.032,0,1
+7975,Lukáš Haraslín,Slovakia,Euro 2024,8,0.427,0,0.053,0,0
+7979,Przemysław Frankowski,Poland,World Cup 2022,1,0.044,0,0.044,0,0
+7993,Filip Mladenović,Serbia,World Cup 2022,1,0.026,0,0.026,0,0
+8050,Tarik Tissoudali,Morocco,AFCON 2023,3,0.724,0,0.241,0,0
+8116,Václav Černý,Czech Republic,Euro 2024,2,0.562,0,0.281,0,0
+8118,Frenkie de Jong,Netherlands,World Cup 2022,2,0.721,1,0.36,0,1
+8125,Denzel Dumfries,Netherlands,Euro 2024,4,0.269,0,0.067,0,0
+8125,Denzel Dumfries,Netherlands,World Cup 2022,2,0.283,1,0.142,0,1
+8181,Nicolò Barella,Italy,Euro 2024,1,0.085,1,0.085,0,1
+8211,Benjamin Henrichs,Germany,Euro 2024,1,0.019,0,0.019,0,0
+8217,Kingsley Coman,France,World Cup 2022,1,0.088,0,0.088,0,0
+8221,Jonathan Tah,Germany,Euro 2024,1,0.022,0,0.022,0,0
+8227,Mario Götze,Germany,World Cup 2022,1,0.067,0,0.067,0,0
+8246,Christian Pulisic,United States,Copa America 2024,7,0.374,1,0.053,0,1
+8246,Christian Pulisic,United States,World Cup 2022,9,1.138,1,0.126,0,1
+8247,Joachim Andersen,Denmark,Euro 2024,3,0.144,0,0.048,0,0
+8247,Joachim Andersen,Denmark,World Cup 2022,4,0.145,0,0.036,0,0
+8259,Steven Bergwijn,Netherlands,Euro 2024,1,0.025,0,0.025,0,0
+8259,Steven Bergwijn,Netherlands,World Cup 2022,2,0.34,0,0.17,0,0
+8289,Bartosz Salamon,Poland,Euro 2024,1,0.003,0,0.003,0,0
+8309,Michael Gregoritsch,Austria,Euro 2024,4,0.82,1,0.205,0,1
+8346,Craig Goodwin,Australia,World Cup 2022,2,0.205,1,0.103,0,1
+8349,Deroy Duarte,Cape Verde Islands,AFCON 2023,5,0.249,0,0.05,0,0
+8361,Ritsu Doan,Japan,World Cup 2022,4,0.577,2,0.144,0,2
+8400,Serge Gnabry,Germany,World Cup 2022,12,0.728,1,0.061,0,1
+8422,Ľubomír Tupta,Slovakia,Euro 2024,1,0.029,0,0.029,0,0
+8454,Mohamed Bayo,Guinea,AFCON 2023,8,0.986,2,0.123,1,1
+8505,Naby Deco Keïta,Guinea,AFCON 2023,1,0.108,0,0.108,0,0
+8506,Konrad Laimer,Austria,Euro 2024,2,0.269,0,0.135,0,0
+8509,Willi Orban,Hungary,Euro 2024,3,0.568,0,0.189,0,0
+8518,Marcel Sabitzer,Austria,Euro 2024,11,0.666,1,0.061,0,1
+8519,Dayotchanculle Upamecano,France,Euro 2024,3,0.228,0,0.076,0,0
+8520,Nabil Bentaleb,Algeria,AFCON 2023,1,0.108,0,0.108,0,0
+8526,Weston McKennie,United States,Copa America 2024,2,0.237,0,0.119,0,0
+8526,Weston McKennie,United States,World Cup 2022,5,0.376,0,0.075,0,0
+8546,Niclas Füllkrug,Germany,Euro 2024,9,0.915,2,0.102,0,2
+8546,Niclas Füllkrug,Germany,World Cup 2022,8,1.689,2,0.211,0,2
+8553,Abdou Diallo,Senegal,AFCON 2023,2,0.164,0,0.082,0,0
+8553,Abdou Diallo,Senegal,World Cup 2022,1,0.035,0,0.035,0,0
+8621,Morten Hjulmand,Denmark,Euro 2024,5,0.144,1,0.029,0,1
+8654,Ante Budimir,Croatia,Euro 2024,4,0.518,0,0.129,0,0
+8654,Ante Budimir,Croatia,World Cup 2022,1,0.101,0,0.101,0,0
+8669,Mijat Gaćinović,Serbia,Euro 2024,1,0.033,0,0.033,0,0
+8673,Sébastien Haller,Côte d'Ivoire,AFCON 2023,10,1.1,2,0.11,1,1
+8774,Amadou Haïdara,Mali,AFCON 2023,9,0.669,0,0.074,0,0
+8776,Takumi Minamino,Japan,World Cup 2022,2,0.05,0,0.025,0,0
+8778,Gernot Trauner,Austria,Euro 2024,1,0.126,1,0.126,0,1
+8784,Romano Schmid,Austria,Euro 2024,1,0.18,1,0.18,0,1
+8785,Patson Daka,Zambia,AFCON 2023,5,0.504,1,0.101,0,1
+8792,Mattia Zaccagni,Italy,Euro 2024,2,0.222,1,0.111,0,1
+8804,Jonas Hofmann,Germany,World Cup 2022,1,0.327,0,0.327,0,0
+8814,Nico Elvedi,Switzerland,World Cup 2022,1,0.19,0,0.19,0,0
+8815,Jannik Vestergaard,Denmark,Euro 2024,4,0.224,0,0.056,0,0
+8817,Jhon Andrés Córdoba Copete,Colombia,Copa America 2024,11,1.368,2,0.124,0,2
+8830,Andriy Yarmolenko,Ukraine,Euro 2024,4,0.519,0,0.13,0,0
+8836,Karol Świderski,Poland,Euro 2024,2,0.204,0,0.102,0,0
+8859,Ajdin Hrustic,Australia,World Cup 2022,1,0.033,0,0.033,0,0
+8931,Philipp Lienhart,Austria,Euro 2024,2,0.181,0,0.091,0,0
+8949,Takuma Asano,Japan,World Cup 2022,8,0.496,1,0.062,1,0
+8966,Kai Havertz,Germany,Euro 2024,17,2.211,0,0.13,2,-2
+8966,Kai Havertz,Germany,World Cup 2022,5,1.155,2,0.231,0,2
+8967,Ondrej Duda,Slovakia,Euro 2024,2,0.135,1,0.067,0,1
+8992,Ibrahim Sissoko,Mali,AFCON 2023,1,0.123,0,0.123,0,0
+9000,Eberechi Eze,England,Euro 2024,2,0.04,0,0.02,0,0
+9085,Salih Özcan,Turkey,Euro 2024,1,0.026,0,0.026,0,0
+9102,Serhou Guirassy,Guinea,AFCON 2023,4,0.345,0,0.086,0,0
+9195,Robert Andrich,Germany,Euro 2024,7,0.276,0,0.039,0,0
+9236,Mohamed Dräger,Tunisia,World Cup 2022,4,0.304,0,0.076,0,0
+9286,Antoine Semenyo,Ghana,AFCON 2023,2,0.079,0,0.04,0,0
+9286,Antoine Semenyo,Ghana,World Cup 2022,1,0.12,0,0.12,0,0
+9411,Daichi Kamada,Japan,World Cup 2022,6,0.421,0,0.07,0,0
+9466,Che Adams,Scotland,Euro 2024,2,0.124,0,0.062,0,0
+9478,Kenneth McLean,Scotland,Euro 2024,1,0.011,0,0.011,0,0
+9481,Grant Campbell Hanley,Scotland,Euro 2024,1,0.199,0,0.199,0,0
+9540,Harry Wilson,Wales,World Cup 2022,2,0.061,0,0.031,0,0
+9638,Jack Grealish,England,World Cup 2022,1,0.626,1,0.626,0,1
+9722,Peter Pekarík,Slovakia,Euro 2024,3,0.55,0,0.183,0,0
+9893,Klaus Gjasula,Albania,Euro 2024,2,0.177,1,0.089,0,1
+9904,Frederico Rodrigues Santos,Brazil,World Cup 2022,3,0.467,0,0.156,0,0
+9922,David Junior Hoilett,Canada,World Cup 2022,4,0.119,0,0.03,0,0
+9923,Bobby Armani De Cordova-Reid,Jamaica,Copa America 2024,2,0.077,0,0.039,0,0
+9927,Rúben Diogo Da Silva Neves,Portugal,Euro 2024,2,0.036,0,0.018,0,0
+9927,Rúben Diogo Da Silva Neves,Portugal,World Cup 2022,2,0.087,0,0.044,0,0
+9929,Diogo José Teixeira da Silva,Portugal,Euro 2024,2,0.778,0,0.389,0,0
+9933,Willy Boly,Côte d'Ivoire,AFCON 2023,1,0.184,0,0.184,0,0
+10002,Scott McKenna,Scotland,Euro 2024,2,0.086,0,0.043,0,0
+10039,Ghislain Konan,Côte d'Ivoire,AFCON 2023,1,0.052,0,0.052,0,0
+10040,Youcef Atal,Algeria,AFCON 2023,3,0.071,0,0.024,0,0
+10280,Aboubakar Kamara,Mauritania,AFCON 2023,2,0.088,0,0.044,0,0
+10287,İlkay Gündoğan,Germany,Euro 2024,7,0.746,1,0.107,0,1
+10287,İlkay Gündoğan,Germany,World Cup 2018,1,0.022,0,0.022,0,0
+10287,İlkay Gündoğan,Germany,World Cup 2022,5,0.345,0,0.069,1,-1
+10290,Fabián Cornelio Balbuena González,Paraguay,Copa America 2024,4,0.303,0,0.076,0,0
+10323,Alfa Semedo Esteves,Guinea-Bissau,AFCON 2023,3,0.054,0,0.018,0,0
+10337,Yordan Hernando Osorio Paredes,Venezuela,Copa America 2024,3,0.698,0,0.233,0,0
+10349,Mehmet Zeki Çelik,Turkey,Euro 2024,1,0.242,0,0.242,0,0
+10448,Adam Ounas,Algeria,AFCON 2023,2,0.036,0,0.018,0,0
+10481,Aurélien Djani Tchouaméni,France,Euro 2024,12,0.405,0,0.034,0,0
+10481,Aurélien Djani Tchouaméni,France,World Cup 2022,6,0.399,1,0.067,0,1
+10530,Jules Olivier Ntcham,Cameroon,AFCON 2023,5,0.121,0,0.024,0,0
+10530,Jules Olivier Ntcham,Cameroon,World Cup 2022,1,0.033,0,0.033,0,0
+10534,Callum McGregor,Scotland,Euro 2024,3,0.14,0,0.047,0,0
+10573,Jonathan Buatu Mananga,Angola,AFCON 2023,3,0.568,0,0.189,0,0
+10577,Jacinto Muondo Dala,Angola,AFCON 2023,9,1.522,4,0.169,0,4
+10595,Raphael Dias Belloli,Brazil,Copa America 2024,8,0.837,1,0.105,0,1
+10595,Raphael Dias Belloli,Brazil,World Cup 2022,8,0.923,0,0.115,0,0
+10598,Jovane Eduardo Borges Cabral,Cape Verde Islands,AFCON 2023,9,0.724,0,0.08,0,0
+10826,Mert Müldür,Turkey,Euro 2024,3,0.468,1,0.156,0,1
+10836,Sergio Fernando Peña Flores,Peru,Copa America 2024,1,0.006,0,0.006,0,0
+10844,Alfredo Kulembe Ribeiro,Angola,AFCON 2023,4,0.397,0,0.099,0,0
+10848,Reinildo Isnard Mandava,Mozambique,AFCON 2023,2,0.086,1,0.043,0,1
+10854,Euciodálcio Gomes,Guinea-Bissau,AFCON 2023,3,0.103,0,0.034,0,0
+10865,Witiness Chimoio João Quembo,Mozambique,AFCON 2023,4,0.265,1,0.066,0,1
+10868,Ricardo Jorge Luz Horta,Portugal,World Cup 2022,3,0.459,1,0.153,0,1
+10915,Denis Alibec,Romania,Euro 2024,1,0.363,0,0.363,0,0
+10916,Nicolae Claudiu Stanciu,Romania,Euro 2024,5,0.135,1,0.027,0,1
+10919,Juraj Kucka,Slovakia,Euro 2024,8,0.439,0,0.055,0,0
+10931,Joe Allen,Wales,World Cup 2022,2,0.064,0,0.032,0,0
+10955,Harry Kane,England,Euro 2024,17,2.27,2,0.134,1,1
+10955,Harry Kane,England,World Cup 2018,11,1.677,3,0.152,4,-1
+10955,Harry Kane,England,World Cup 2022,10,0.764,1,0.076,1,0
+10956,Eric Dier,England,World Cup 2018,5,0.724,0,0.145,1,-1
+10960,Jamie Vardy,England,World Cup 2018,3,0.258,0,0.086,0,0
+10992,Gianluca Scamacca,Italy,Euro 2024,6,0.533,0,0.089,0,0
+11000,Taras Stepanenko,Ukraine,Euro 2024,1,0.067,0,0.067,0,0
+11098,Marcus Berg,Sweden,World Cup 2018,15,2.555,0,0.17,0,0
+11116,Jack Hendry,Scotland,Euro 2024,1,0.066,0,0.066,0,0
+11127,Borna Barišić,Croatia,World Cup 2022,1,0.015,0,0.015,0,0
+11135,Ibrahima Konaté,France,World Cup 2022,2,0.176,0,0.088,0,0
+11162,Jhonder Leonel Cádiz Fernández,Venezuela,Copa America 2024,3,0.149,1,0.05,1,0
+11174,Vincent Paté Aboubakar,Cameroon,World Cup 2022,6,0.529,2,0.088,0,2
+11184,Otávio Edmilson da Silva Monteiro,Portugal,World Cup 2022,3,0.104,0,0.035,0,0
+11187,Stephen Antunes Eustáquio,Canada,Copa America 2024,3,0.404,0,0.135,0,0
+11187,Stephen Antunes Eustáquio,Canada,World Cup 2022,3,0.165,0,0.055,0,0
+11277,Victor James Osimhen,Nigeria,AFCON 2023,24,3.113,1,0.13,0,1
+11383,László Bénes,Slovakia,Euro 2024,1,0.08,0,0.08,0,0
+11396,Florian Grillitsch,Austria,Euro 2024,5,0.196,0,0.039,0,0
+11416,Jon Gorenc Stankovič,Slovenia,Euro 2024,1,0.039,0,0.039,0,0
+11456,Lautaro Javier Martínez,Argentina,Copa America 2024,11,2.888,5,0.263,0,5
+11456,Lautaro Javier Martínez,Argentina,World Cup 2022,14,2.122,0,0.152,1,-1
+11457,Vincent Sierro,Switzerland,Euro 2024,1,0.02,0,0.02,0,0
+11492,Temitayo Olufisayo Olaoluwa Aina,Nigeria,AFCON 2023,3,0.315,0,0.105,0,0
+11493,Gleison Bremer Silva Nascimento,Brazil,World Cup 2022,1,0.344,0,0.344,0,0
+11501,Darwin Daniel Machís Marcano,Venezuela,Copa America 2024,4,0.145,0,0.036,0,0
+11514,Giovanni Di Lorenzo,Italy,Euro 2024,2,0.191,0,0.096,0,0
+11515,Ismael Bennacer,Algeria,AFCON 2023,1,0.039,0,0.039,0,0
+11603,Mario Pašalić,Croatia,Euro 2024,3,0.279,0,0.093,0,0
+11603,Mario Pašalić,Croatia,World Cup 2022,3,0.167,0,0.056,1,-1
+11737,Krystian Bielik,Poland,World Cup 2022,2,0.137,0,0.068,0,0
+11820,Kevin Danso,Austria,Euro 2024,1,0.037,0,0.037,0,0
+11821,Stefan Posch,Austria,Euro 2024,7,0.339,0,0.048,0,0
+11923,Yacoub Aly Abeid,Mauritania,AFCON 2023,1,0.039,0,0.039,0,0
+11990,Youssouf Fofana,France,Euro 2024,1,0.023,0,0.023,1,-1
+11990,Youssouf Fofana,France,World Cup 2022,4,0.166,0,0.041,0,0
+12034,David Raum,Germany,Euro 2024,1,0.024,0,0.024,0,0
+12041,João Félix Sequeira,Portugal,Euro 2024,4,0.181,0,0.045,0,0
+12041,João Félix Sequeira,Portugal,World Cup 2022,11,0.669,1,0.061,0,1
+12064,Mama Samba Baldé,Guinea-Bissau,AFCON 2023,3,0.229,0,0.076,0,0
+12111,Rayan Aït Nouri,Algeria,AFCON 2023,3,0.07,0,0.023,0,0
+12149,Nayef Aguerd,Morocco,AFCON 2023,1,0.064,0,0.064,0,0
+12149,Nayef Aguerd,Morocco,World Cup 2022,1,0.251,0,0.251,0,0
+12169,João Maria Lobo Alves Palhinha Gonçalves,Portugal,Euro 2024,5,0.21,0,0.042,0,0
+12169,João Maria Lobo Alves Palhinha Gonçalves,Portugal,World Cup 2022,1,0.021,0,0.021,0,0
+12255,Federico Dimarco,Italy,Euro 2024,2,0.026,0,0.013,0,0
+12293,Kaan Ayhan,Turkey,Euro 2024,3,0.233,0,0.078,0,0
+12306,Dodi Lukebakio,Belgium,Euro 2024,3,0.123,0,0.041,0,0
+12365,Alphonso Davies,Canada,Copa America 2024,6,0.4,0,0.067,1,-1
+12365,Alphonso Davies,Canada,World Cup 2022,3,0.145,1,0.048,0,1
+12407,Maximilian Mittelstädt,Germany,Euro 2024,5,0.145,0,0.029,0,0
+12493,Krzysztof Piątek,Poland,Euro 2024,2,0.49,1,0.245,0,1
+12493,Krzysztof Piątek,Poland,World Cup 2022,1,0.028,0,0.028,0,0
+12496,Christian Kouamé,Côte d'Ivoire,AFCON 2023,4,0.601,0,0.15,1,-1
+12498,Omar Colley,Gambia,AFCON 2023,2,0.177,0,0.088,0,0
+12524,Walker Zimmerman,United States,World Cup 2022,1,0.057,0,0.057,0,0
+12555,Okay Yokuşlu,Turkey,Euro 2024,1,0.04,0,0.04,0,0
+12603,Miguel Ángel Almirón Rejala,Paraguay,Copa America 2024,1,0.033,0,0.033,0,0
+12623,Pierre Kunde Malong,Cameroon,World Cup 2022,5,0.187,0,0.037,0,0
+12625,Borna Sosa,Croatia,World Cup 2022,2,0.048,0,0.024,0,0
+12751,Tyler Adams,United States,World Cup 2022,1,0.02,0,0.02,0,0
+12770,Jonathan Osorio,Canada,Copa America 2024,2,0.676,0,0.338,0,0
+12770,Jonathan Osorio,Canada,World Cup 2022,1,0.038,0,0.038,0,0
+12803,Romario Andrés Ibarra Mina,Ecuador,World Cup 2022,2,0.137,0,0.068,0,0
+12921,Barnabás Varga,Hungary,Euro 2024,4,0.939,1,0.235,0,1
+13314,Famara Diedhiou,Senegal,World Cup 2022,3,0.238,1,0.079,0,1
+13329,Silas Katompa Mvumpa,Congo DR,AFCON 2023,4,1.062,1,0.266,1,0
+13454,Nouhou Tolo,Cameroon,AFCON 2023,3,0.137,0,0.046,0,0
+13493,Cristian Sleiker Cásseres Yepes,Venezuela,Copa America 2024,2,0.075,0,0.038,0,0
+13581,Emilio Nsue López,Equatorial Guinea,AFCON 2023,8,2.169,5,0.271,0,5
+13620,Éder Gabriel Militão,Brazil,Copa America 2024,1,0.065,0,0.065,0,0
+13620,Éder Gabriel Militão,Brazil,World Cup 2022,5,0.259,0,0.052,0,0
+13621,Danilo Luís Hélio Pereira,Portugal,Euro 2024,1,0.23,0,0.23,0,0
+15452,Carlos Uriel Antuna Romero,Mexico,Copa America 2024,2,0.087,0,0.043,0,0
+15452,Carlos Uriel Antuna Romero,Mexico,World Cup 2022,2,0.309,0,0.154,0,0
+15503,Jerdy Schouten,Netherlands,Euro 2024,1,0.072,0,0.072,0,0
+15546,Matúš Bero,Slovakia,Euro 2024,1,0.014,0,0.014,0,0
+15582,Donyell Malen,Netherlands,Euro 2024,6,1.509,2,0.252,0,2
+15890,Noussair Mazraoui,Morocco,World Cup 2022,4,0.151,0,0.038,0,0
+15896,Timi Elšnik,Slovenia,Euro 2024,3,0.215,0,0.072,0,0
+16001,Garry Mendes Rodrigues,Cape Verde Islands,AFCON 2023,9,1.54,1,0.171,0,1
+16015,Nicolas Moumi Ngamaleu,Cameroon,AFCON 2023,2,0.052,0,0.026,0,0
+16016,Michel Aebischer,Switzerland,Euro 2024,2,0.09,1,0.045,0,1
+16022,Christian Fassnacht,Switzerland,World Cup 2022,1,0.317,0,0.317,0,0
+16026,Djibril Sow,Switzerland,World Cup 2022,2,0.15,0,0.075,0,0
+16028,José Diogo Dalot Teixeira,Portugal,Euro 2024,3,0.072,0,0.024,0,0
+16028,José Diogo Dalot Teixeira,Portugal,World Cup 2022,1,0.036,0,0.036,0,0
+16047,Jaka Bijol,Slovenia,Euro 2024,1,0.036,0,0.036,0,0
+16120,Richie Laryea,Canada,Copa America 2024,4,0.142,0,0.035,0,0
+16120,Richie Laryea,Canada,World Cup 2022,2,0.057,0,0.028,0,0
+16249,Yangel Clemente Herrera Ravelo,Venezuela,Copa America 2024,7,0.307,0,0.044,0,0
+16252,Mark Anthony Kaye,Canada,World Cup 2022,1,0.039,0,0.039,0,0
+16298,Denis Vavro,Slovakia,Euro 2024,3,0.055,0,0.018,0,0
+16308,Leandro Daniel Paredes,Argentina,Copa America 2024,3,0.055,0,0.018,0,0
+16308,Leandro Daniel Paredes,Argentina,World Cup 2022,1,0.014,0,0.014,2,-2
+16335,Samuel Chimerenka Chukwueze,Nigeria,AFCON 2023,4,0.117,0,0.029,0,0
+16344,Răzvan Gabriel Marin,Romania,Euro 2024,5,0.107,1,0.021,1,0
+16346,Ngoran Suiru Fai Collins,Cameroon,World Cup 2022,1,0.009,0,0.009,0,0
+16352,Issam Jebali,Tunisia,World Cup 2022,3,0.593,0,0.198,0,0
+16459,Cyle Larin,Canada,Copa America 2024,7,0.632,0,0.09,0,0
+16459,Cyle Larin,Canada,World Cup 2022,3,0.25,0,0.083,0,0
+16469,Tomáš Holeš,Czech Republic,Euro 2024,1,0.019,0,0.019,0,0
+16509,Viktor Tsygankov,Ukraine,Euro 2024,2,0.11,0,0.055,0,0
+16510,Benjamin Verbič,Slovenia,Euro 2024,1,0.045,0,0.045,0,0
+16527,Mislav Oršić,Croatia,World Cup 2022,9,0.276,1,0.031,1,0
+16528,Petar Stojanović,Slovenia,Euro 2024,1,0.023,0,0.023,0,0
+16532,Daniel Olmo Carvajal,Spain,Euro 2024,17,1.378,3,0.081,0,3
+16532,Daniel Olmo Carvajal,Spain,World Cup 2022,12,1.084,1,0.09,0,1
+16546,Joseph Paintsil,Ghana,AFCON 2023,1,0.293,0,0.293,0,0
+16548,Mbwana Ally Samatta,Tanzania,AFCON 2023,2,0.057,0,0.028,0,0
+16554,Joakim Mæhle,Denmark,Euro 2024,1,0.092,0,0.092,0,0
+16554,Joakim Mæhle,Denmark,World Cup 2022,2,0.042,0,0.021,0,0
+16557,Ruslan Malinovskiy,Ukraine,Euro 2024,2,0.063,0,0.031,0,0
+16559,Leandro Trossard,Belgium,Euro 2024,4,0.201,0,0.05,0,0
+16607,Assan Ceesay,Gambia,AFCON 2023,1,0.127,0,0.127,0,0
+16637,Cristian Jesús Martínez,Panama,Copa America 2024,3,0.115,0,0.038,0,0
+16768,Michael Hector,Jamaica,Copa America 2024,1,0.025,0,0.025,0,0
+16879,Dávid Hancko,Slovakia,Euro 2024,4,0.253,0,0.063,0,0
+16931,Lewis Morgan,Scotland,Euro 2024,1,0.056,0,0.056,0,0
+17033,Mohammed Kudus,Ghana,AFCON 2023,9,0.41,2,0.046,0,2
+17033,Mohammed Kudus,Ghana,World Cup 2022,8,0.659,2,0.082,0,2
+17042,Andreas Skov Olsen,Denmark,Euro 2024,1,0.04,0,0.04,0,0
+17042,Andreas Skov Olsen,Denmark,World Cup 2022,4,0.312,0,0.078,0,0
+17592,William Saliba,France,Euro 2024,2,0.114,0,0.057,0,0
+17620,Marc Cucurella Saseta,Spain,Euro 2024,1,0.016,0,0.016,0,0
+18015,Dušan Vlahović,Serbia,Euro 2024,6,0.27,0,0.045,0,0
+18015,Dušan Vlahović,Serbia,World Cup 2022,3,0.762,1,0.254,0,1
+18163,Moses Daddy-Ajala Simon,Nigeria,AFCON 2023,5,0.459,0,0.092,0,0
+18242,Tim Ream,United States,World Cup 2022,1,0.258,0,0.258,0,0
+18244,Grady Diangana,Congo DR,AFCON 2023,2,0.108,0,0.054,1,-1
+18360,Rafael Alexandre Conceição Leão,Portugal,Euro 2024,3,0.182,0,0.061,0,0
+18360,Rafael Alexandre Conceição Leão,Portugal,World Cup 2022,5,0.248,2,0.05,0,2
+18395,Vinícius José Paixão de Oliveira Júnior,Brazil,Copa America 2024,4,0.732,2,0.183,0,2
+18395,Vinícius José Paixão de Oliveira Júnior,Brazil,World Cup 2022,9,0.812,1,0.09,0,1
+18516,Habibou Mouhamadou Diallo,Senegal,AFCON 2023,5,1.638,2,0.328,0,2
+18722,Mathias Jensen,Denmark,World Cup 2022,2,0.048,0,0.024,0,0
+18724,Sofiane Feghouli,Algeria,AFCON 2023,1,0.045,0,0.045,0,0
+19101,Ariel Lassiter,Costa Rica,Copa America 2024,1,0.017,0,0.017,0,0
+19316,Roland Sallai,Hungary,Euro 2024,8,0.825,0,0.103,0,0
+19597,Marcos Javier Acuña,Argentina,Copa America 2024,1,0.024,0,0.024,0,0
+19597,Marcos Javier Acuña,Argentina,World Cup 2018,1,0.037,0,0.037,0,0
+19597,Marcos Javier Acuña,Argentina,World Cup 2022,2,0.076,0,0.038,0,0
+20004,Paul Pogba,France,World Cup 2018,7,0.359,1,0.051,0,1
+20005,Toby Alderweireld,Belgium,World Cup 2018,5,0.36,0,0.072,0,0
+20016,Kléper Laveran Lima Ferreira,Portugal,Euro 2024,1,0.051,0,0.051,0,0
+20016,Kléper Laveran Lima Ferreira,Portugal,World Cup 2018,3,0.405,1,0.135,0,1
+20016,Kléper Laveran Lima Ferreira,Portugal,World Cup 2022,3,0.335,1,0.112,0,1
+20033,Luuk de Jong,Netherlands,World Cup 2022,1,0.053,0,0.053,1,-1
+20572,Cristian Gabriel Romero,Argentina,Copa America 2024,1,0.085,0,0.085,0,0
+20611,Boulaye Dia,Senegal,World Cup 2022,8,0.662,1,0.083,0,1
+20687,Nicolás Iván González,Argentina,Copa America 2024,5,0.662,0,0.132,0,0
+20750,Cody Mathès Gakpo,Netherlands,Euro 2024,13,0.885,3,0.068,0,3
+20750,Cody Mathès Gakpo,Netherlands,World Cup 2022,5,0.562,3,0.112,0,3
+20758,Krépin Diatta,Senegal,AFCON 2023,2,0.088,0,0.044,0,0
+20758,Krépin Diatta,Senegal,World Cup 2022,3,0.129,0,0.043,0,0
+20840,Zinho Gano,Guinea-Bissau,AFCON 2023,1,0.06,0,0.06,0,0
+20841,Jakub Piotrowski,Poland,Euro 2024,2,0.069,0,0.035,0,0
+21026,Pape Gueye,Senegal,AFCON 2023,2,0.174,1,0.087,0,1
+21026,Pape Gueye,Senegal,World Cup 2022,4,0.094,0,0.024,0,0
+21131,John Yeboah Zamora,Ecuador,Copa America 2024,3,0.107,0,0.036,1,-1
+21209,Dominik Szoboszlai,Hungary,Euro 2024,6,0.22,0,0.037,0,0
+21226,Tomáš Chorý,Czech Republic,Euro 2024,1,0.551,0,0.551,0,0
+21261,Jonas Older Wind,Denmark,Euro 2024,5,0.383,0,0.077,0,0
+21294,Mykola Shaparenko,Ukraine,Euro 2024,1,0.24,1,0.24,0,1
+21315,Bruno Miranda Villagomez,Bolivia,Copa America 2024,1,0.425,1,0.425,0,1
+21582,Tijjani Reijnders,Netherlands,Euro 2024,10,0.633,0,0.063,0,0
+21633,Joey Veerman,Netherlands,Euro 2024,2,0.141,0,0.071,0,0
+21736,Zakaria Aboukhlal,Morocco,World Cup 2022,3,0.597,1,0.199,0,1
+21881,Sergino Dest,United States,World Cup 2022,6,0.252,0,0.042,0,0
+22008,Haji Wright,United States,Copa America 2024,1,0.092,0,0.092,0,0
+22008,Haji Wright,United States,World Cup 2022,7,0.658,1,0.094,0,1
+22041,Marko Livaja,Croatia,World Cup 2022,6,0.99,1,0.165,0,1
+22067,Woo-Yeong Jeong,South Korea,World Cup 2022,1,0.03,0,0.03,0,0
+22084,Bukayo Saka,England,Euro 2024,8,0.517,1,0.065,1,0
+22084,Bukayo Saka,England,World Cup 2022,7,0.579,3,0.083,0,3
+22097,Randal Kolo Muani,France,Euro 2024,3,0.451,1,0.15,0,1
+22097,Randal Kolo Muani,France,World Cup 2022,4,1.267,1,0.317,1,0
+22128,Robin Aime Robert Le Normand,Spain,Euro 2024,3,0.296,0,0.099,0,0
+22168,Joshua Sargent,United States,Copa America 2024,1,0.041,0,0.041,0,0
+22168,Joshua Sargent,United States,World Cup 2022,4,0.362,0,0.091,0,0
+22212,Orkun Kökçü,Turkey,Euro 2024,6,0.8,0,0.133,0,0
+22242,Heorhii Tsitaishvili,Georgia,Euro 2024,3,0.072,0,0.024,0,0
+22256,Roderick Alonso Miller Molina,Panama,Copa America 2024,3,0.244,0,0.081,0,0
+22293,Harry Souttar,Australia,World Cup 2022,1,0.068,0,0.068,0,0
+22600,Lucas Tolentino Coelho de Lima,Brazil,Copa America 2024,9,0.646,0,0.072,1,-1
+22600,Lucas Tolentino Coelho de Lima,Brazil,World Cup 2022,4,0.704,1,0.176,0,1
+22740,Kang-In Lee,South Korea,World Cup 2022,5,0.118,0,0.024,0,0
+23260,Emmanuel Justine Rabby Banda,Zambia,AFCON 2023,4,0.088,0,0.022,0,0
+23264,Seung-Ho Paik,South Korea,World Cup 2022,1,0.023,1,0.023,0,1
+23301,Kenny Rocha Santos,Cape Verde Islands,AFCON 2023,4,0.195,0,0.049,0,0
+23331,Boubakar Kouyate,Mali,AFCON 2023,2,0.259,0,0.13,0,0
+23363,Liam Millar,Canada,Copa America 2024,5,0.179,0,0.036,0,0
+23420,Lubambo Musonda,Zambia,AFCON 2023,1,0.006,0,0.006,0,0
+23454,Petr Ševčík,Czech Republic,Euro 2024,1,0.113,0,0.113,0,0
+23527,Junya Ito,Japan,World Cup 2022,2,0.111,0,0.055,0,0
+23558,Merih Demiral,Turkey,Euro 2024,3,0.717,2,0.239,0,2
+23559,José Ndong Machín Dicombo,Equatorial Guinea,AFCON 2023,2,0.053,0,0.026,0,0
+23614,Chris Führich,Germany,Euro 2024,1,0.027,0,0.027,0,0
+23623,Sekou Koita,Mali,AFCON 2023,6,0.302,0,0.05,0,0
+23640,Jonathan David,Canada,Copa America 2024,8,1.336,2,0.167,2,0
+23640,Jonathan David,Canada,World Cup 2022,8,0.813,0,0.102,0,0
+23646,Giorgi Chakvetadze,Georgia,Euro 2024,2,0.078,0,0.039,0,0
+23649,Roman Yaremchuk,Ukraine,Euro 2024,6,0.662,1,0.11,0,1
+23650,Jeremy Doku,Belgium,Euro 2024,5,0.255,0,0.051,0,0
+23706,Alfons Amade,Mozambique,AFCON 2023,2,0.172,0,0.086,0,0
+23708,Fashion Sakala,Zambia,AFCON 2023,2,0.202,0,0.101,0,0
+23721,Wataru Endo,Japan,World Cup 2022,6,0.181,0,0.03,0,0
+23749,Marcos Johan López Lanfranco,Peru,Copa America 2024,1,0.021,0,0.021,0,0
+23760,Derek Cornelius,Canada,Copa America 2024,1,0.042,0,0.042,0,0
+23763,In-Beom Hwang,South Korea,World Cup 2022,6,0.198,0,0.033,0,0
+23774,Selim Amallah,Morocco,AFCON 2023,1,0.072,0,0.072,0,0
+23774,Selim Amallah,Morocco,World Cup 2022,2,0.115,0,0.057,0,0
+23785,Théo Bongonda Mbul''Ofeko Batombo,Congo DR,AFCON 2023,1,0.131,0,0.131,0,0
+23785,Théo Bongonda Mbul'Ofeko Batombo,Congo DR,AFCON 2023,9,0.473,0,0.053,0,0
+23873,Núrio Domingos Matias Fortuna,Angola,AFCON 2023,1,0.019,0,0.019,0,0
+23874,Ali Gholizadeh,Iran,World Cup 2022,1,0.043,0,0.043,0,0
+23892,Aboubakary Koita,Mauritania,AFCON 2023,12,0.517,1,0.043,0,1
+23910,Youssef Msakni,Tunisia,AFCON 2023,6,0.66,0,0.11,0,0
+23910,Youssef Msakni,Tunisia,World Cup 2022,9,0.643,0,0.071,0,0
+23957,Jean Thierry Lazare Amani,Côte d'Ivoire,AFCON 2023,1,0.038,0,0.038,0,0
+23983,Jérémy Bela,Angola,AFCON 2023,1,0.049,0,0.049,0,0
+23987,Rey Manaj,Albania,Euro 2024,2,0.216,0,0.108,0,0
+23999,Ibrahim Blati Touré,Burkina Faso,AFCON 2023,1,0.065,0,0.065,0,0
+24024,Tajon Buchanan,Canada,Copa America 2024,2,0.292,0,0.146,0,0
+24024,Tajon Buchanan,Canada,World Cup 2022,5,0.714,0,0.143,0,0
+24085,Pervis Josué Estupiñán Tenorio,Ecuador,World Cup 2022,2,0.27,0,0.135,0,0
+24087,Iddrisu Baba Mohammed,Ghana,AFCON 2023,2,0.257,0,0.128,0,0
+24109,Žan Celar,Slovenia,Euro 2024,1,0.039,0,0.039,0,0
+24118,Nico Schlotterbeck,Germany,Euro 2024,2,0.07,0,0.035,0,0
+24243,Brenden Aaronson,United States,World Cup 2022,1,0.094,0,0.094,0,0
+24411,Adama Guira,Burkina Faso,AFCON 2023,1,0.063,0,0.063,0,0
+24443,Mikkel Damsgaard,Denmark,Euro 2024,1,0.018,0,0.018,0,0
+24467,Frank Onyeka,Nigeria,AFCON 2023,6,0.359,0,0.06,0,0
+24478,Paul Onuachu,Nigeria,AFCON 2023,1,0.145,0,0.145,0,0
+24547,Alexander Hartmann Bah,Denmark,Euro 2024,2,0.241,0,0.121,0,0
+24547,Alexander Hartmann Bah,Denmark,World Cup 2022,2,0.056,0,0.028,0,0
+24778,Eduardo Camavinga,France,Euro 2024,2,0.258,0,0.129,0,0
+24806,Mohamed Camara,Mali,AFCON 2023,2,0.071,0,0.035,0,0
+24826,Simon Bokote Banza,Congo DR,AFCON 2023,5,0.552,0,0.11,0,0
+24861,Andrei Florin Ratiu,Romania,Euro 2024,3,0.135,0,0.045,0,0
+24977,Christoph Baumgartner,Austria,Euro 2024,8,1.551,1,0.194,0,1
+25036,Otar Kakabadze,Georgia,Euro 2024,1,0.013,0,0.013,0,0
+25048,Giacomo Raspadori,Italy,Euro 2024,1,0.066,0,0.066,0,0
+25056,Marcelo Amado Djaló Taritolay,Guinea-Bissau,AFCON 2023,1,0.042,0,0.042,0,0
+25079,Artem Dovbyk,Ukraine,Euro 2024,6,0.545,0,0.091,0,0
+25104,Rodrygo Silva de Goes,Brazil,Copa America 2024,10,0.903,0,0.09,0,0
+25104,Rodrygo Silva de Goes,Brazil,World Cup 2022,6,0.462,0,0.077,0,0
+25115,Yeferson Julio Soteldo Martínez,Venezuela,Copa America 2024,4,0.195,0,0.049,0,0
+25142,Bruno Guimarães Rodriguez Moura,Brazil,Copa America 2024,6,0.338,0,0.056,0,0
+25142,Bruno Guimarães Rodriguez Moura,Brazil,World Cup 2022,5,0.648,0,0.13,0,0
+25305,Pedro Guilherme Abreu dos Santos,Brazil,World Cup 2022,4,0.432,0,0.108,1,-1
+25363,Antony Matheus dos Santos,Brazil,World Cup 2022,6,0.155,0,0.026,0,0
+25759,Abdoulaye Seck,Senegal,AFCON 2023,5,0.513,1,0.103,0,1
+26151,Ricardo Daniel Pepi,United States,Copa America 2024,7,2.158,0,0.308,0,0
+26152,Jacob Shaffelburg,Canada,Copa America 2024,5,0.333,1,0.067,0,1
+26256,Igor Lichnovsky Osorio,Chile,Copa America 2024,2,0.187,0,0.093,0,0
+26280,Orbelín Pineda Alvarado,Mexico,Copa America 2024,2,0.029,0,0.014,0,0
+26280,Orbelín Pineda Alvarado,Mexico,World Cup 2022,4,0.505,0,0.126,0,0
+26297,Carlos Alberto Rodríguez Gómez,Mexico,Copa America 2024,2,0.194,0,0.097,0,0
+26301,Ernesto Alexis Vega Rojas,Mexico,World Cup 2022,9,0.692,0,0.077,0,0
+26318,Rogelio Gabriel Funes Mori,Mexico,World Cup 2022,1,0.067,0,0.067,0,0
+26336,Johan Felipe Vásquez Ibarra,Mexico,Copa America 2024,5,0.252,0,0.05,0,0
+26368,César Jasib Montes Castro,Mexico,Copa America 2024,3,0.143,0,0.048,0,0
+26368,César Jasib Montes Castro,Mexico,World Cup 2022,1,0.099,0,0.099,0,0
+26386,Luis Francisco Romo Barrón,Mexico,Copa America 2024,6,0.267,0,0.045,0,0
+26400,Henry Josué Martín Mex,Mexico,World Cup 2022,4,0.669,1,0.167,0,1
+26406,Jorge Eduardo Sánchez Ramos,Mexico,Copa America 2024,3,0.143,0,0.048,0,0
+26406,Jorge Eduardo Sánchez Ramos,Mexico,World Cup 2022,1,0.007,0,0.007,0,0
+27133,Odilon Kossonou,Côte d'Ivoire,AFCON 2023,2,0.05,0,0.025,0,0
+27158,Luis Fernando Díaz Marulanda,Colombia,Copa America 2024,8,0.649,1,0.081,1,0
+27163,Juan Pablo Vargas Campos,Costa Rica,World Cup 2022,1,0.184,0,0.184,0,0
+27277,Jhon Adolfo Arias Andrade,Colombia,Copa America 2024,7,0.209,0,0.03,0,0
+27423,Daniel Muñoz Mejía,Colombia,Copa America 2024,4,0.606,2,0.151,0,2
+27434,Alhassan Yusuf,Nigeria,AFCON 2023,3,0.075,0,0.025,0,0
+27569,Jesper Lindstrøm,Denmark,World Cup 2022,3,0.334,0,0.111,0,0
+27719,Strahinja Pavlović,Serbia,World Cup 2022,2,0.178,1,0.089,0,1
+27767,Matías Nicolás Rojas Romero,Paraguay,Copa America 2024,1,0.02,0,0.02,0,0
+27768,Lisandro Martínez,Argentina,Copa America 2024,5,0.577,1,0.115,0,1
+27768,Lisandro Martínez,Argentina,World Cup 2022,1,0.332,0,0.332,0,0
+27826,Ondřej Lingr,Czech Republic,Euro 2024,5,0.438,0,0.088,0,0
+27886,Alexis Mac Allister,Argentina,Copa America 2024,6,0.625,0,0.104,1,-1
+27886,Alexis Mac Allister,Argentina,World Cup 2022,7,0.502,1,0.072,0,1
+27889,César Saúl Huerta Valera,Mexico,Copa America 2024,4,0.297,0,0.074,0,0
+27896,Gerardo Daniel Arteaga Zamora,Mexico,Copa America 2024,3,0.162,1,0.054,0,1
+28032,Ivan Schranz,Slovakia,Euro 2024,5,0.877,3,0.175,0,3
+28034,Lukáš Provod,Czech Republic,Euro 2024,3,0.097,1,0.032,0,1
+28075,Veljko Birmančević,Serbia,Euro 2024,1,0.033,0,0.033,0,0
+28211,Erik Janža,Slovenia,Euro 2024,3,0.056,1,0.019,0,1
+28212,Alasana Manneh,Gambia,AFCON 2023,2,0.078,0,0.039,0,0
+28227,Pavel Šulc,Czech Republic,Euro 2024,1,0.061,0,0.061,0,0
+28239,Adam Hložek,Czech Republic,Euro 2024,4,0.49,0,0.122,0,0
+28263,Gonzalo Ariel Montiel,Argentina,World Cup 2022,1,0.021,0,0.021,2,-2
+28266,Rafael Santos Borré Amaury,Colombia,Copa America 2024,1,0.305,0,0.305,0,0
+28268,Exequiel Alejandro Palacios,Argentina,World Cup 2022,1,0.047,0,0.047,0,0
+28272,Ladislav Krejčí,Czech Republic,Euro 2024,5,0.197,0,0.039,0,0
+28370,Fran Karačić,Australia,World Cup 2022,3,0.055,0,0.018,0,0
+28413,Willy Afonso Semedo Johnson,Cape Verde Islands,AFCON 2023,4,0.312,0,0.078,0,0
+28415,Charles Pickel,Congo DR,AFCON 2023,3,0.102,0,0.034,0,0
+28453,Michał Skóraś,Poland,World Cup 2022,1,0.027,0,0.027,0,0
+28511,Ángel Israel Mena Delgado,Ecuador,Copa America 2024,1,0.052,0,0.052,0,0
+28559,Enner Remberto Valencia Lastra,Ecuador,Copa America 2024,3,0.106,0,0.035,0,0
+28559,Enner Remberto Valencia Lastra,Ecuador,World Cup 2022,8,1.141,2,0.143,1,1
+28565,Ianis Hagi,Romania,Euro 2024,2,0.049,0,0.025,0,0
+28567,Carlos Eccehomo Cuesta Figueroa,Colombia,Copa America 2024,3,0.32,0,0.107,0,0
+28723,Jorge Andrés Carrascal Guardo,Colombia,Copa America 2024,1,0.058,0,0.058,0,0
+28729,Diego Nicolás De La Cruz Arcosa,Uruguay,Copa America 2024,5,0.177,0,0.035,0,0
+28729,Diego Nicolás De La Cruz Arcosa,Uruguay,World Cup 2022,1,0.043,0,0.043,0,0
+28825,Luis Gerardo Chávez Magallón,Mexico,Copa America 2024,7,0.309,0,0.044,0,0
+28825,Luis Gerardo Chávez Magallón,Mexico,World Cup 2022,10,0.216,1,0.022,0,1
+28914,Lovro Majer,Croatia,Euro 2024,2,0.16,0,0.08,0,0
+28914,Lovro Majer,Croatia,World Cup 2022,4,0.809,1,0.202,1,0
+28943,Víctor Gustavo Velázquez Ramos,Paraguay,Copa America 2024,1,0.057,0,0.057,0,0
+29006,Noah Okafor,Switzerland,World Cup 2022,1,0.032,0,0.032,0,0
+29009,Omar Federico Alderete Fernández,Paraguay,Copa America 2024,3,0.073,1,0.024,0,1
+29163,Josip Juranović,Croatia,World Cup 2022,1,0.041,0,0.041,0,0
+29201,Nahuel Molina Lucero,Argentina,Copa America 2024,1,0.147,0,0.147,0,0
+29201,Nahuel Molina Lucero,Argentina,World Cup 2022,2,0.485,1,0.243,0,1
+29217,Edward Chilufya,Zambia,AFCON 2023,1,0.042,0,0.042,0,0
+29367,Percy Tau,South Africa,AFCON 2023,10,0.765,0,0.076,1,-1
+29377,Brennan Johnson,Wales,World Cup 2022,3,0.124,0,0.041,0,0
+29480,Jakub Moder,Poland,Euro 2024,4,0.505,0,0.126,0,0
+29482,Ricardo Martins Guimarães,Mozambique,AFCON 2023,1,0.048,0,0.048,0,0
+29531,Taulant Sulejmanov,Albania,Euro 2024,1,0.034,0,0.034,0,0
+29560,Julián Álvarez,Argentina,Copa America 2024,9,1.542,2,0.171,1,1
+29560,Julián Álvarez,Argentina,World Cup 2022,11,1.908,4,0.173,0,4
+29595,Ko Itakura,Japan,World Cup 2022,3,0.162,0,0.054,0,0
+29966,Ui-Jo Hwang,South Korea,World Cup 2022,1,0.323,0,0.323,0,0
+29976,Gabriel Teodoro Martinelli Silva,Brazil,World Cup 2022,4,0.406,0,0.101,0,0
+29989,Yusuf Yazıcı,Turkey,Euro 2024,3,0.185,0,0.062,0,0
+30016,Martin Hongla Yma II,Cameroon,World Cup 2022,1,0.082,0,0.082,0,0
+30111,Felix Eduardo Torres Caicedo,Ecuador,Copa America 2024,5,0.462,0,0.092,0,0
+30111,Felix Eduardo Torres Caicedo,Ecuador,World Cup 2022,1,0.154,0,0.154,0,0
+30179,Ivan Ilić,Serbia,Euro 2024,2,0.051,0,0.025,0,0
+30193,Gedeon Kalulu Kyatengwa,Congo DR,AFCON 2023,1,0.062,0,0.062,1,-1
+30401,Ruben Vargas,Switzerland,Euro 2024,5,0.691,1,0.138,0,1
+30401,Ruben Vargas,Switzerland,World Cup 2022,3,0.296,0,0.099,0,0
+30423,Ibán Salvador Edu,Equatorial Guinea,AFCON 2023,2,0.096,1,0.048,0,1
+30438,Ferdi Erenay Kadıoğlu,Turkey,Euro 2024,2,0.055,0,0.028,0,0
+30486,Pedro González López,Spain,Euro 2024,6,0.851,0,0.142,0,0
+30519,Mohamed Salisu,Ghana,World Cup 2022,2,0.428,1,0.214,0,1
+30606,Edmond Fayçal Tapsoba,Burkina Faso,AFCON 2023,4,0.261,0,0.065,0,0
+30626,Valdomiro Tualungo Paulo Lameiras,Angola,AFCON 2023,1,0.06,0,0.06,0,0
+30628,Daizen Maeda,Japan,World Cup 2022,2,0.536,1,0.268,0,1
+30681,Ali Abdi,Tunisia,AFCON 2023,1,0.029,0,0.029,0,0
+30693,Majeed Ashimeru,Ghana,AFCON 2023,1,0.035,0,0.035,0,0
+30714,Jude Bellingham,England,Euro 2024,6,0.664,2,0.111,1,1
+30714,Jude Bellingham,England,World Cup 2022,5,0.841,1,0.168,0,1
+30736,Paul Brian Rodríguez Bravo,Uruguay,Copa America 2024,1,0.134,0,0.134,0,0
+30739,Paweł Dawidowicz,Poland,Euro 2024,1,0.068,0,0.068,0,0
+30795,Ángel Rodrigo Romero Villamayor,Paraguay,Copa America 2024,3,0.629,0,0.21,0,0
+30926,Davide Frattesi,Italy,Euro 2024,2,0.273,0,0.136,0,0
+30944,Víctor Alejandro Dávila Zavala,Chile,Copa America 2024,5,0.268,0,0.054,0,0
+31016,Manuel Luís da Silva Cafumana,Angola,AFCON 2023,2,0.037,0,0.019,0,0
+31029,Salis Abdul Samed,Ghana,World Cup 2022,1,0.027,0,0.027,0,0
+31053,Santiago Tomás Giménez,Mexico,Copa America 2024,8,1.029,0,0.129,0,0
+31067,Billy Gilmour,Scotland,Euro 2024,2,0.088,0,0.044,0,0
+31089,Jan Mlakar,Slovenia,Euro 2024,2,0.165,0,0.082,0,0
+31093,Mateo Retegui,Italy,Euro 2024,4,0.258,0,0.064,0,0
+31152,Gonzalo Jordy Plata Jiménez,Ecuador,World Cup 2022,2,0.105,0,0.053,0,0
+31193,Denis Mihai Drăguş,Romania,Euro 2024,5,1.1,1,0.22,0,1
+31295,Yahia Attiyat allah,Morocco,World Cup 2022,2,0.332,0,0.166,0,0
+31455,Shamar Nicholson,Jamaica,Copa America 2024,6,0.504,0,0.084,0,0
+31684,Atiba Hutchinson,Canada,World Cup 2022,2,0.133,0,0.067,0,0
+31751,Pathé Ismaël Ciss,Senegal,World Cup 2022,1,0.031,0,0.031,0,0
+31866,Andraž Šporar,Slovenia,Euro 2024,8,1.249,0,0.156,0,0
+31908,Andrei Burcă Andonie,Romania,Euro 2024,1,0.111,0,0.111,0,0
+31949,Zaidu Sanusi,Nigeria,AFCON 2023,6,0.56,0,0.093,0,0
+31955,Jakub Kamiński,Poland,World Cup 2022,4,0.262,0,0.066,0,0
+31968,Adam Gnezda Čerin,Slovenia,Euro 2024,4,0.286,0,0.071,0,0
+32015,Hichem Boudaoui,Algeria,AFCON 2023,3,0.13,0,0.043,0,0
+32030,Nedim Bajrami,Albania,Euro 2024,3,0.196,1,0.065,0,1
+32190,Darlin Zidane Yongwa Ngameni,Cameroon,AFCON 2023,1,0.029,0,0.029,0,0
+32433,Jefferson Anilson Silva Encada,Guinea-Bissau,AFCON 2023,2,0.031,0,0.015,0,0
+32450,Montassar Omar Talbi,Tunisia,AFCON 2023,1,0.025,0,0.025,0,0
+32450,Montassar Omar Talbi,Tunisia,World Cup 2022,1,0.012,0,0.012,0,0
+32478,Darwin Gabriel Núñez Ribeiro,Uruguay,Copa America 2024,21,1.861,2,0.089,0,2
+32478,Darwin Gabriel Núñez Ribeiro,Uruguay,World Cup 2022,3,0.217,0,0.072,0,0
+32480,Ronald Federico Araújo da Silva,Uruguay,Copa America 2024,3,0.087,0,0.029,0,0
+32712,Jeremie Frimpong,Netherlands,Euro 2024,2,0.17,0,0.085,0,0
+32868,Bryan Alberto Silva Teixeira Jr.,Cape Verde Islands,AFCON 2023,2,0.271,1,0.136,1,0
+32915,Ismail Jakobs,Senegal,AFCON 2023,2,0.126,0,0.063,0,0
+32915,Ismail Jakobs,Senegal,World Cup 2022,1,0.014,0,0.014,0,0
+32985,Mojmír Chytil,Czech Republic,Euro 2024,2,0.107,0,0.053,0,0
+33018,Joško Gvardiol,Croatia,Euro 2024,2,0.069,0,0.034,0,0
+33018,Joško Gvardiol,Croatia,World Cup 2022,2,0.186,1,0.093,0,1
+33145,Di'Shon Bernard,Jamaica,Copa America 2024,1,0.055,0,0.055,0,0
+33176,Miguel Gianpierre Araujo Blanco,Peru,Copa America 2024,1,0.09,0,0.09,0,0
+33234,Georges Mikautadze,Georgia,Euro 2024,4,0.458,1,0.115,2,-1
+33297,Patrick Wimmer,Austria,Euro 2024,3,0.141,0,0.047,0,0
+33342,Ebrima Colley,Gambia,AFCON 2023,1,0.236,1,0.236,0,1
+33395,Ransford Königsdörffer,Ghana,AFCON 2023,3,0.775,0,0.258,0,0
+33401,Amine Adli,Morocco,AFCON 2023,5,0.714,0,0.143,0,0
+33477,Riley McGree,Australia,World Cup 2022,3,0.08,0,0.027,0,0
+33488,Keanu Baccus,Australia,World Cup 2022,1,0.035,0,0.035,0,0
+33492,Mitchell Thomas Duke,Australia,World Cup 2022,7,0.255,1,0.036,0,1
+33602,Tariq Lamptey,Ghana,World Cup 2022,1,0.075,0,0.075,0,0
+33680,Kacper Urbanski,Poland,Euro 2024,2,0.097,0,0.049,0,0
+34339,Giovanni Reyna,United States,Copa America 2024,1,0.073,0,0.073,0,0
+34339,Giovanni Reyna,United States,World Cup 2022,2,0.086,0,0.043,0,0
+34396,Michael Steveen Estrada Martínez,Ecuador,World Cup 2022,3,0.246,0,0.082,0,0
+34476,Matías Nicolás Viña Susperreguy,Uruguay,Copa America 2024,2,0.099,1,0.05,0,1
+34526,Marc Guehi,England,Euro 2024,2,0.139,0,0.069,0,0
+34599,Florinel Teodor Coman,Romania,Euro 2024,2,0.058,0,0.029,0,0
+34639,Vitor Machado Ferreira,Portugal,Euro 2024,8,0.641,0,0.08,0,0
+34639,Vitor Machado Ferreira,Portugal,World Cup 2022,2,0.054,0,0.027,0,0
+34794,Neco Williams,Wales,World Cup 2022,3,0.076,0,0.025,0,0
+34845,Federico Bikoro Akieme Nchama,Equatorial Guinea,AFCON 2023,1,0.032,0,0.032,0,0
+34904,Róbert Boženík,Slovakia,Euro 2024,3,0.12,0,0.04,0,0
+35205,Jesús Abdallah Castillo Molina,Peru,Copa America 2024,1,0.031,0,0.031,0,0
+35375,Julián Andrés Quiñones Quiñones,Mexico,Copa America 2024,8,0.391,0,0.049,0,0
+35432,Abdiel Armando Ayarza Cocanegra,Panama,Copa America 2024,3,0.107,0,0.036,0,0
+35471,Issa Kabore,Burkina Faso,AFCON 2023,1,0.2,0,0.2,0,0
+35492,Maximiliano Javier Araújo Vilches,Uruguay,Copa America 2024,11,0.896,2,0.081,0,2
+35592,Anis Ben Slimane,Tunisia,AFCON 2023,3,0.023,0,0.008,0,0
+35592,Anis Ben Slimane,Tunisia,World Cup 2022,1,0.101,0,0.101,0,0
+35658,Kamaldeen Sulemana,Ghana,World Cup 2022,1,0.081,0,0.081,0,0
+35684,Meschak Elia,Congo DR,AFCON 2023,6,1.296,1,0.216,0,1
+35689,James Gomez,Gambia,AFCON 2023,1,0.036,0,0.036,0,0
+35690,Sebastián Enzo Cáceres Ramos,Uruguay,Copa America 2024,2,0.156,0,0.078,0,0
+35738,Rodrigo Eduardo Echeverría Sáez,Chile,Copa America 2024,4,0.305,0,0.076,0,0
+35785,Eduard Alexander Bello Gil,Venezuela,Copa America 2024,4,0.533,2,0.133,0,2
+36148,José Adoni Cifuentes Charcopa,Ecuador,World Cup 2022,1,0.025,0,0.025,0,0
+36271,Roberto Lopes,Cape Verde Islands,AFCON 2023,1,0.099,0,0.099,0,0
+36288,Facundo Pellistri Rebollo,Uruguay,Copa America 2024,3,1.008,1,0.336,0,1
+36288,Facundo Pellistri Rebollo,Uruguay,World Cup 2022,1,0.099,0,0.099,0,0
+36359,Carlos Augusto Zambrano Ochandarte,Peru,Copa America 2024,2,0.046,0,0.023,0,0
+36520,Miguel Ángel Navarro Zárate,Venezuela,Copa America 2024,1,0.08,0,0.08,0,0
+36532,Marcelino Ignacio Nuñez Espinoza,Chile,Copa America 2024,3,0.079,0,0.026,0,0
+36539,Wilfried Stephane Singo,Côte d'Ivoire,AFCON 2023,5,0.232,0,0.046,0,0
+36659,Manuel Ugarte Ribeiro,Uruguay,Copa America 2024,4,0.179,0,0.045,1,-1
+36830,Joseph Scally,United States,Copa America 2024,1,0.019,0,0.019,0,0
+36885,Armando Broja,Albania,Euro 2024,2,0.229,0,0.114,0,0
+36917,José Andrés Martínez Torres,Venezuela,Copa America 2024,4,0.195,0,0.049,0,0
+37070,Luis Fernando Haquín Lopez,Bolivia,Copa America 2024,1,0.027,0,0.027,0,0
+37122,Yuki Soma,Japan,World Cup 2022,3,0.135,0,0.045,0,0
+37148,Josip Šutalo,Croatia,Euro 2024,1,0.278,0,0.278,0,0
+37208,Ao Tanaka,Japan,World Cup 2022,1,0.873,1,0.873,0,1
+37211,Kaoru Mitoma,Japan,World Cup 2022,1,0.054,0,0.054,0,0
+37215,Shogo Taniguchi,Japan,World Cup 2022,2,0.174,0,0.087,0,0
+37221,Hidemasa Morita,Japan,World Cup 2022,3,0.191,0,0.064,0,0
+37726,Moisés Isaac Caicedo Corozo,Ecuador,Copa America 2024,3,0.098,0,0.033,0,0
+37726,Moisés Isaac Caicedo Corozo,Ecuador,World Cup 2022,3,0.653,1,0.218,0,1
+37737,Angelo Smit Preciado Quiñónez,Ecuador,Copa America 2024,5,0.219,0,0.044,0,0
+37737,Angelo Smit Preciado Quiñónez,Ecuador,World Cup 2022,4,0.071,0,0.018,0,0
+37945,Alan Steven Franco Palma,Ecuador,Copa America 2024,3,0.122,0,0.041,0,0
+38004,Piero Martín Hincapié Reyna,Ecuador,Copa America 2024,1,0.007,0,0.007,0,0
+38229,Khvicha Kvaratskhelia,Georgia,Euro 2024,6,0.552,1,0.092,0,1
+38718,Enzo Fernandez,Argentina,Copa America 2024,6,0.39,0,0.065,0,0
+38718,Enzo Fernandez,Argentina,World Cup 2022,8,0.267,1,0.033,0,1
+38759,Benjamin Šeško,Slovenia,Euro 2024,8,0.844,0,0.106,0,0
+38792,Yunus Dimoara Musah,United States,World Cup 2022,4,0.197,0,0.049,0,0
+38803,Gonçalo Matias Ramos,Portugal,Euro 2024,1,0.102,0,0.102,0,0
+38803,Gonçalo Matias Ramos,Portugal,World Cup 2022,7,1.671,3,0.239,0,3
+38909,Nicolò Fagioli,Italy,Euro 2024,1,0.018,0,0.018,0,0
+38975,Georgiy Sudakov,Ukraine,Euro 2024,9,0.43,0,0.048,0,0
+39073,Moriba Kourouma Kourouma,Guinea,AFCON 2023,3,0.217,0,0.072,0,0
+39143,Matěj Jurásek,Czech Republic,Euro 2024,4,0.099,0,0.025,0,0
+39161,Alejandro Balde Martínez,Spain,World Cup 2022,1,0.078,0,0.078,0,0
+39167,Xavi Simons,Netherlands,Euro 2024,11,0.545,1,0.05,0,1
+39174,Ismael Saibari,Morocco,AFCON 2023,1,0.104,0,0.104,0,0
+39259,Malik Tillman,United States,Copa America 2024,1,0.056,0,0.056,0,0
+39420,Bradley Barcola,France,Euro 2024,2,0.079,0,0.04,1,-1
+39460,Nicolas Seiwald,Austria,Euro 2024,1,0.034,0,0.034,0,0
+39461,Cole Palmer,England,Euro 2024,3,0.137,1,0.046,1,0
+39483,Mykhailo Mudryk,Ukraine,Euro 2024,6,0.298,0,0.05,0,0
+39490,Luka Sučić,Croatia,Euro 2024,3,0.318,0,0.106,0,0
+39559,Aguibou Camara,Guinea,AFCON 2023,5,0.493,1,0.099,0,1
+39565,Jamal Musiala,Germany,Euro 2024,10,0.901,3,0.09,0,3
+39565,Jamal Musiala,Germany,World Cup 2022,11,1.153,0,0.105,0,0
+39615,Radu Drăgușin,Romania,Euro 2024,3,0.144,0,0.048,0,0
+39624,Francisco Fernandes Conceição,Portugal,Euro 2024,5,0.75,1,0.15,0,1
+40128,Jannick Buyla Sam,Equatorial Guinea,AFCON 2023,1,0.252,1,0.252,0,1
+40211,Jeremy Leonel Sarmiento Morante,Ecuador,Copa America 2024,6,0.386,1,0.064,0,1
+40211,Jeremy Leonel Sarmiento Morante,Ecuador,World Cup 2022,1,0.029,0,0.029,0,0
+40485,Ryan Isaac Mendes da Graça,Cape Verde Islands,AFCON 2023,5,0.644,1,0.129,1,0
+40538,Jin-Su Kim,South Korea,World Cup 2022,3,0.285,0,0.095,0,0
+40542,Gue-Sung Cho,South Korea,World Cup 2022,8,0.713,2,0.089,0,2
+40564,Kyung-Won Kwon,South Korea,World Cup 2022,1,0.005,0,0.005,0,0
+40724,Florian Wirtz,Germany,Euro 2024,8,0.575,2,0.072,0,2
+40735,Lazar Samardžić,Serbia,Euro 2024,1,0.049,0,0.049,0,0
+40761,Omar Marmoush,Egypt,AFCON 2023,8,0.696,1,0.087,1,0
+40784,Akram Hassan Afif,Qatar,World Cup 2022,2,0.029,0,0.015,0,0
+40868,Amadou Dante,Mali,AFCON 2023,1,0.029,0,0.029,0,0
+40874,Matheus Luiz Nunes,Portugal,Euro 2024,1,0.194,0,0.194,0,0
+40874,Matheus Luiz Nunes,Portugal,World Cup 2022,1,0.008,0,0.008,0,0
+40920,Márton Dárdai,Hungary,Euro 2024,1,0.057,0,0.057,0,0
+41052,Fali Candé,Guinea-Bissau,AFCON 2023,4,0.08,0,0.02,0,0
+41092,Nuno Mendes,Portugal,Euro 2024,3,0.185,0,0.062,1,-1
+41186,Jasir Asani,Albania,Euro 2024,4,0.06,0,0.015,0,0
+41202,Giorgi Kochorashvili,Georgia,Euro 2024,5,0.816,0,0.163,0,0
+41266,Chris Richards,United States,Copa America 2024,2,0.179,0,0.09,0,0
+41542,Daniel Vivian Moreno,Spain,Euro 2024,1,0.047,0,0.047,0,0
+41711,Sang-Ho Na,South Korea,World Cup 2022,1,0.06,0,0.06,0,0
+41768,Riccardo Calafiori,Italy,Euro 2024,3,0.309,0,0.103,0,0
+42106,Gonçalo Bernardo Inácio,Portugal,Euro 2024,1,0.049,0,0.049,0,0
+42527,Sphephelo S''Miso Sithole,South Africa,AFCON 2023,5,0.311,0,0.062,0,0
+42822,András Schäfer,Hungary,Euro 2024,2,0.066,0,0.033,0,0
+43007,Mauro Daniel Rodrigues Teixeira,Guinea-Bissau,AFCON 2023,2,0.061,0,0.031,0,0
+43072,Jean-Philippe Krasso,Côte d'Ivoire,AFCON 2023,7,0.67,1,0.096,0,1
+43555,Erick Daniel Sánchez Ocegueda,Mexico,Copa America 2024,1,0.014,0,0.014,0,0
+43565,Min Jae Kim,South Korea,World Cup 2022,2,0.106,0,0.053,0,0
+43705,Abdoul Fessal Tapsoba,Burkina Faso,AFCON 2023,1,0.048,0,0.048,0,0
+43779,Calvin Bassey Ughelumba,Nigeria,AFCON 2023,2,0.611,0,0.306,0,0
+43913,Arthur Theate,Belgium,Euro 2024,2,0.014,0,0.007,0,0
+43920,Mohamed Konaté,Burkina Faso,AFCON 2023,8,0.707,1,0.088,0,1
+43976,David Strelec,Slovakia,Euro 2024,7,0.629,0,0.09,0,0
+44166,Jakub Piotr Kiwior,Poland,Euro 2024,2,0.079,0,0.04,0,0
+44166,Jakub Piotr Kiwior,Poland,World Cup 2022,1,0.124,0,0.124,0,0
+44183,Zuriko Davitashvili,Georgia,Euro 2024,2,0.165,0,0.083,0,0
+44225,Osman Bukari,Ghana,World Cup 2022,3,0.246,1,0.082,0,1
+44304,Eric Kleybel Ramírez Matheus,Venezuela,Copa America 2024,3,0.554,1,0.185,0,1
+44305,César Rodolfo Blackman Camarena,Panama,Copa America 2024,4,0.18,1,0.045,0,1
+44307,Cédric Badolo,Burkina Faso,AFCON 2023,1,0.007,0,0.007,0,0
+44311,Alieu Fadera,Gambia,AFCON 2023,3,0.268,0,0.089,0,0
+44402,Kings Kangwa,Zambia,AFCON 2023,3,0.181,1,0.06,0,1
+44455,Sávio Moreira de Oliveira,Brazil,Copa America 2024,4,0.773,1,0.193,0,1
+44703,Alistair Johnston,Canada,Copa America 2024,1,0.011,0,0.011,0,0
+44703,Alistair Johnston,Canada,World Cup 2022,2,0.672,0,0.336,0,0
+44751,Lameck Banda,Zambia,AFCON 2023,5,0.2,0,0.04,0,0
+44955,Aïssa Bilal Laïdouni,Tunisia,AFCON 2023,1,0.026,0,0.026,0,0
+44955,Aïssa Bilal Laïdouni,Tunisia,World Cup 2022,2,0.081,0,0.04,0,0
+45047,Alidu Seidu,Ghana,World Cup 2022,1,0.015,0,0.015,0,0
+45064,Pape Ibnou Bâ,Mauritania,AFCON 2023,3,0.894,0,0.298,0,0
+45190,Dan Ndoye,Switzerland,Euro 2024,14,1.24,1,0.089,0,1
+45377,Franco Zanelatto Téllez,Peru,Copa America 2024,1,0.058,0,0.058,0,0
+45466,Gustavo Fabrice Sangaré,Burkina Faso,AFCON 2023,1,0.06,0,0.06,0,0
+46258,Azzedine Ounahi,Morocco,AFCON 2023,7,0.497,1,0.071,0,1
+46258,Azzedine Ounahi,Morocco,World Cup 2022,6,0.245,0,0.041,0,0
+46312,Famana Quizera,Guinea-Bissau,AFCON 2023,4,0.064,0,0.016,0,0
+46376,Attila Szalai,Hungary,Euro 2024,1,0.096,0,0.096,0,0
+46677,Matías David Espinoza Acosta,Paraguay,Copa America 2024,1,0.024,0,0.024,0,0
+46789,Bendegúz Bolla,Hungary,Euro 2024,3,0.085,0,0.028,0,0
+47055,Roberto Carlos Fernández Toro,Bolivia,Copa America 2024,1,0.027,0,0.027,0,0
+47112,Julio César Enciso Espínola,Paraguay,Copa America 2024,14,0.662,1,0.047,0,1
+47345,Adalberto Eliécer Carrasquilla Alcázar,Panama,Copa America 2024,2,0.065,0,0.033,0,0
+47351,Morgan Guilavogui,Guinea,AFCON 2023,6,1.142,0,0.19,0,0
+47762,Jacob Mendy,Gambia,AFCON 2023,1,0.009,0,0.009,0,0
+48178,Luka Lochoshvili,Georgia,Euro 2024,1,0.051,0,0.051,0,0
+48335,Mohamed Zeki Amdouni,Switzerland,Euro 2024,2,0.149,0,0.075,1,-1
+48347,Amadou Onana,Belgium,Euro 2024,3,0.168,0,0.056,0,0
+48347,Amadou Onana,Belgium,World Cup 2022,2,0.292,0,0.146,0,0
+48383,Abdülkerim Bardakcı,Turkey,Euro 2024,2,0.221,0,0.111,0,0
+48720,João Victor Gomes da Silva,Brazil,Copa America 2024,1,0.031,0,0.031,0,0
+49007,Kwadwo Duah,Switzerland,Euro 2024,4,0.582,1,0.146,0,1
+49097,Mario Mitaj,Albania,Euro 2024,1,0.031,0,0.031,0,0
+49120,Damion Lowe,Jamaica,Copa America 2024,1,0.018,0,0.018,0,0
+49337,Josip Stanišić,Croatia,Euro 2024,1,0.223,0,0.223,0,0
+49337,Josip Stanišić,Croatia,World Cup 2022,1,0.041,0,0.041,0,0
+49395,Richard Rios Montoya,Colombia,Copa America 2024,8,0.233,1,0.029,0,1
+49689,Muhammed Kerem Aktürkoğlu,Turkey,Euro 2024,6,1.246,1,0.208,0,1
+49763,Souleymane Anne,Mauritania,AFCON 2023,4,0.583,0,0.146,0,0
+50436,Fabian Rieder,Switzerland,Euro 2024,1,0.008,0,0.008,0,0
+50442,Hamza Rafia,Tunisia,AFCON 2023,1,0.359,1,0.359,0,1
+50497,Nicolas Jackson,Senegal,AFCON 2023,1,0.074,0,0.074,0,0
+50498,Pape Matar Sarr,Senegal,AFCON 2023,1,0.019,0,0.019,1,-1
+50498,Pape Matar Sarr,Senegal,World Cup 2022,4,0.086,0,0.021,0,0
+50501,Ebrima Darboe,Gambia,AFCON 2023,1,0.021,0,0.021,0,0
+50502,Nicola Zalewski,Poland,Euro 2024,2,0.118,0,0.059,0,0
+50503,Sayfallah Ltaief,Tunisia,AFCON 2023,1,0.074,0,0.074,0,0
+50938,Ali Sowe,Gambia,AFCON 2023,4,0.698,0,0.175,0,0
+50971,Eduardo Antonio Guerrero Lozcano,Panama,Copa America 2024,3,0.257,1,0.086,0,1
+51094,Abdulelah Al Amri,Saudi Arabia,World Cup 2022,1,0.038,0,0.038,0,0
+51096,Ali Al Hassan,Saudi Arabia,World Cup 2022,1,0.102,0,0.102,0,0
+51099,Firas Tariq Nasser Al Albirakan,Saudi Arabia,World Cup 2022,2,0.124,0,0.062,0,0
+51469,Saleh Khalid Al Shehri,Saudi Arabia,World Cup 2022,3,0.147,1,0.049,0,1
+51571,Haythem Jouini,Tunisia,AFCON 2023,3,0.632,0,0.211,0,0
+51672,Rasmus Winther Højlund,Denmark,Euro 2024,6,1.104,0,0.184,0,0
+51705,Abdulrahman Al-Obood,Saudi Arabia,World Cup 2022,1,0.042,0,0.042,0,0
+51710,Saud Abdullah Abdul Hamid,Saudi Arabia,World Cup 2022,1,0.006,0,0.006,0,0
+51733,Folarin Balogun,United States,Copa America 2024,5,0.246,2,0.049,0,2
+51941,Muhammed Badamosi,Gambia,AFCON 2023,3,0.159,0,0.053,0,0
+51969,Jackson Gabriel Porozo Vernaza,Ecuador,World Cup 2022,1,0.053,0,0.053,0,0
+52129,Alejandro Garnacho Ferreyra,Argentina,Copa America 2024,2,0.123,0,0.061,0,0
+52218,Johan Bakayoko,Belgium,Euro 2024,3,0.289,0,0.096,0,0
+52324,Saúl Basilio Coco-Bassey Oubiña,Equatorial Guinea,AFCON 2023,3,0.033,0,0.011,0,0
+54140,Mirlind Daku,Albania,Euro 2024,1,0.133,0,0.133,0,0
+54144,Nawaf Shaker Al Abid,Saudi Arabia,World Cup 2022,2,0.106,0,0.053,0,0
+56755,Abdulelah Saad Hameed Al-Malki,Saudi Arabia,World Cup 2022,2,0.139,0,0.07,0,0
+56905,Dennis Man,Romania,Euro 2024,6,0.547,0,0.091,0,0
+57303,Kristjan Asllani,Albania,Euro 2024,8,0.629,0,0.079,0,0
+57620,Sultan Abdullah Salim Al Ghannam,Saudi Arabia,World Cup 2022,2,0.245,0,0.122,0,0
+58878,Boubacar Traore,Mali,AFCON 2023,1,0.015,0,0.015,0,0
+59493,Abderrazak Hamdallah,Morocco,World Cup 2022,2,0.543,0,0.271,0,0
+60138,Kevin Duvan Castaño Gil,Colombia,Copa America 2024,2,0.177,0,0.089,0,0
+60343,Victor Bernth Kristansen,Denmark,Euro 2024,1,0.05,0,0.05,0,0
+60514,Yaser Esneider Asprilla Martínez,Colombia,Copa America 2024,2,0.218,0,0.109,0,0
+61204,Dexter Lembikisa,Jamaica,Copa America 2024,3,0.052,0,0.017,0,0
+63505,Martin Baturina,Croatia,Euro 2024,1,0.018,0,0.018,0,0
+64607,Zakhele Lerato Lepasa,South Africa,AFCON 2023,1,0.05,0,0.05,1,-1
+64612,Deon Hotto Kavendji,Namibia,AFCON 2023,4,0.373,1,0.093,0,1
+65555,Riaan Hanamub,Namibia,AFCON 2023,2,0.021,0,0.01,0,0
+65719,Khuliso Johnson Mudau,South Africa,AFCON 2023,2,0.363,0,0.182,0,0
+65723,Peter Shalulile,Namibia,AFCON 2023,10,1.373,0,0.137,0,0
+65726,Themba Zwane,South Africa,AFCON 2023,3,0.563,2,0.188,0,2
+65727,Thapelo James Morena,South Africa,AFCON 2023,5,0.416,0,0.083,0,0
+65733,Aubrey Maphosa Modiba,South Africa,AFCON 2023,4,0.068,0,0.017,1,-1
+65761,Jayden Adams,South Africa,AFCON 2023,1,0.073,0,0.073,0,0
+65853,Evidence Makgopa,South Africa,AFCON 2023,12,1.27,1,0.106,0,1
+66716,Teboho Mokoena,South Africa,AFCON 2023,18,0.377,1,0.021,2,-1
+66878,Ahmed Sayed,Egypt,AFCON 2023,10,0.447,0,0.045,0,0
+66886,Mostafa Mohamed Ahmed Abdallah,Egypt,AFCON 2023,13,1.723,3,0.133,1,2
+66887,Hamdi Fathi,Egypt,AFCON 2023,7,0.261,0,0.037,0,0
+66892,Mohamed Hany Gamal Eldemerdash,Egypt,AFCON 2023,1,0.02,0,0.02,1,-1
+67714,Aliou Dieng,Mali,AFCON 2023,2,0.034,0,0.017,0,0
+67737,Ahmed Mohamed Abo El Fotouh Mohamed,Egypt,AFCON 2023,3,0.092,0,0.031,0,0
+67742,Emam Ashour Metwally Abdelghany,Egypt,AFCON 2023,7,0.251,0,0.036,0,0
+68574,Nicholas Williams Arthuer,Spain,Euro 2024,12,0.949,2,0.079,0,2
+68755,Mostafa Fathi,Egypt,AFCON 2023,1,0.013,0,0.013,1,-1
+69442,Nyiko Mobbie,South Africa,AFCON 2023,2,0.012,0,0.006,0,0
+69563,Mohamed Abdelmonem,Egypt,AFCON 2023,5,0.164,0,0.033,1,-1
+70682,Marwan Attia Fahim Ghallab,Egypt,AFCON 2023,2,0.042,0,0.021,0,0
+72512,Valentin Mihai Mihăilă,Romania,Euro 2024,4,0.224,0,0.056,0,0
+74588,Christopher Wooh,Cameroon,AFCON 2023,2,0.229,1,0.114,0,1
+74588,Christopher Wooh,Cameroon,World Cup 2022,1,0.057,0,0.057,0,0
+75305,Guillermo Martínez Ayala,Mexico,Copa America 2024,3,0.359,0,0.12,0,0
+78241,İsmail Yüksek,Turkey,Euro 2024,1,0.046,0,0.046,0,0
+80484,Iliman Ndiaye,Senegal,AFCON 2023,1,0.153,1,0.153,0,1
+80484,Iliman Ndiaye,Senegal,World Cup 2022,2,0.074,0,0.037,0,0
+81330,Robin Hranáč,Czech Republic,Euro 2024,2,0.337,0,0.169,0,0
+82257,Rubin Colwill,Wales,World Cup 2022,1,0.025,0,0.025,0,0
+87429,Mathías Adalberto Villasanti Rolón,Paraguay,Copa America 2024,3,0.411,0,0.137,0,0
+87449,Damián Josué Bobadilla Benítez,Paraguay,Copa America 2024,4,0.175,0,0.044,0,0
+87603,Ramón Sosa Acosta,Paraguay,Copa America 2024,3,0.135,1,0.045,0,1
+88123,Cheikh Ahmadou Bamba Mbacke Dieng,Senegal,World Cup 2022,4,0.384,1,0.096,0,1
+90913,Zito André Sebastião Luvumbo,Angola,AFCON 2023,3,0.143,0,0.048,0,0
+91089,José Fajardo Nelson,Panama,Copa America 2024,8,0.803,2,0.1,0,2
+95042,Dango Aboubacar Faissal Ouattara,Burkina Faso,AFCON 2023,4,0.346,0,0.086,0,0
+99174,Kobbie Mainoo,England,Euro 2024,5,0.25,0,0.05,0,0
+101509,Piero Aldair Quispe Córdova,Peru,Copa America 2024,1,0.208,0,0.208,0,0
+102372,Budu Zivzivadze,Georgia,Euro 2024,1,0.057,0,0.057,0,0
+102661,Mohamed Dellahi Yali,Mauritania,AFCON 2023,2,0.104,1,0.052,0,1
+102667,Hemeya Tanjy,Mauritania,AFCON 2023,4,0.254,0,0.064,0,0
+102722,Siyanda Xulu,South Africa,AFCON 2023,1,0.078,0,0.078,1,-1
+102800,Issoufou Dayo,Burkina Faso,AFCON 2023,2,0.281,0,0.141,0,0
+103207,Loide António Augusto,Angola,AFCON 2023,1,0.04,0,0.04,0,0
+103208,Kialonda Gaspar,Angola,AFCON 2023,2,0.091,0,0.045,0,0
+103268,Faisal Salum Abdalla,Tanzania,AFCON 2023,1,0.007,0,0.007,0,0
+103270,Simon Happygod Msuva,Tanzania,AFCON 2023,4,0.184,1,0.046,0,1
+103464,Mohamed Youcef Belaïli,Algeria,AFCON 2023,10,0.314,0,0.031,0,0
+103465,Baghdad Bounedjah,Algeria,AFCON 2023,9,1.891,3,0.21,0,3
+103803,Prins Menelik Tjiueza,Namibia,AFCON 2023,2,0.435,0,0.218,0,0
+103804,Absalom Iimbondi,Namibia,AFCON 2023,1,0.459,0,0.459,0,0
+103910,Cletous Chama,Zambia,AFCON 2023,1,0.007,0,0.007,0,0
+104181,César Augusto Yanis Velasco,Panama,Copa America 2024,1,0.111,1,0.111,0,1
+105182,Lassine Sinayoko,Mali,AFCON 2023,9,1.526,3,0.17,0,3
+105392,Simon Adingra,Côte d'Ivoire,AFCON 2023,6,0.405,1,0.068,0,1
+105762,José Antonio Miranda Boacho,Equatorial Guinea,AFCON 2023,3,0.197,1,0.066,0,1
+105764,Basilio Ndong Owono Nchamaaa,Equatorial Guinea,AFCON 2023,1,0.024,0,0.024,0,0
+105766,Mohamed Hussein Mohamed,Tanzania,AFCON 2023,1,0.007,0,0.007,0,0
+105936,Gilson Benchimol Tavares,Cape Verde Islands,AFCON 2023,6,0.515,1,0.086,0,1
+105942,Pablo Ganet Cómitre,Equatorial Guinea,AFCON 2023,4,0.117,1,0.029,0,1
+105944,Wajdi Kechrida,Tunisia,AFCON 2023,1,0.033,0,0.033,0,0
+105946,Henoc Inonga Baka,Congo DR,AFCON 2023,1,0.049,0,0.049,1,-1
+106068,Gildo Lourenço Vilanculos,Mozambique,AFCON 2023,3,0.149,0,0.05,0,0
+106069,Clésio Bauque,Mozambique,AFCON 2023,1,0.383,1,0.383,0,1
+106070,Bruno Alberto Langa,Mozambique,AFCON 2023,4,0.227,0,0.057,0,0
+106082,Pachoio Lau Há King,Mozambique,AFCON 2023,2,0.103,0,0.051,0,0
+113450,Jon Mikel Aramburu Mejías,Venezuela,Copa America 2024,1,0.026,0,0.026,0,0
+113715,Fernando Javier Saucedo Pereyra,Bolivia,Copa America 2024,1,0.007,0,0.007,0,0
+113717,Carmelo Algarañaz Añez,Bolivia,Copa America 2024,2,0.012,0,0.006,0,0
+113732,Gabriel Alejandro Villamíl Cortéz,Bolivia,Copa America 2024,3,0.153,0,0.051,0,0
+113995,Ramiro Vaca Ponce,Bolivia,Copa America 2024,1,0.027,0,0.027,0,0
+116587,Arda Güler,Turkey,Euro 2024,9,0.334,1,0.037,0,1
+118368,Amir Richardson,Morocco,AFCON 2023,1,0.083,0,0.083,0,0
+123554,Jordy Josué Caicedo Medina,Ecuador,Copa America 2024,2,0.201,0,0.1,1,-1
+123625,Alan Steve Minda García,Ecuador,Copa America 2024,1,0.471,1,0.471,0,1
+124161,Mehdi Torabi,Iran,World Cup 2022,2,0.097,0,0.048,0,0
+124167,Ahmad Nourollahi,Iran,World Cup 2022,5,0.08,0,0.016,0,0
+124488,Hassan Khalid Al Heidos,Qatar,World Cup 2022,1,0.016,0,0.016,0,0
+124494,Abdelkarim Hassan Al Haj Fadlalla,Qatar,World Cup 2022,6,0.275,0,0.046,0,0
+124495,Almoez Ali Zainalabiddin Abdulla,Qatar,World Cup 2022,3,0.484,0,0.161,0,0
+124506,Pedro Miguel Correia,Qatar,World Cup 2022,2,0.037,0,0.019,0,0
+124514,Abdulaziz Hatem Mohammed Abdullah,Qatar,World Cup 2022,1,0.024,0,0.024,0,0
+124899,Ismaeel Mohammad Mohammad,Qatar,World Cup 2022,2,0.358,0,0.179,0,0
+124901,Mohammed Muntari,Qatar,World Cup 2022,3,0.185,1,0.062,0,1
+125333,Petrus Shitembi,Namibia,AFCON 2023,1,0.084,0,0.084,0,0
+127300,Geny Cipriano Catamo,Mozambique,AFCON 2023,3,0.134,0,0.045,1,-1
+128053,Idrissa Thiam,Mauritania,AFCON 2023,4,0.199,0,0.05,0,0
+128793,Taha Yassine Khenissi,Tunisia,AFCON 2023,1,0.1,0,0.1,0,0
+128793,Taha Yassine Khenissi,Tunisia,World Cup 2022,1,0.013,0,0.013,0,0
+128881,Cristóvão Paciência Mabululo,Angola,AFCON 2023,13,1.15,2,0.088,1,1
+129288,Alexander Andre Marshsall,Jamaica,Copa America 2024,1,0.008,0,0.008,0,0
+129475,Feliciano João Jone,Mozambique,AFCON 2023,1,0.086,0,0.086,0,0
+130185,Keysher Fuller Spence,Costa Rica,World Cup 2022,3,0.312,1,0.104,0,1
+130193,Jefferson Brenes Rojas,Costa Rica,Copa America 2024,1,0.028,0,0.028,0,0
+132257,Josimar Alcócer,Costa Rica,Copa America 2024,1,0.041,1,0.041,0,1
+132461,Mohamed Elias Achouri,Tunisia,AFCON 2023,1,0.077,0,0.077,0,0
+132497,Gerson Torres Barrantes,Costa Rica,World Cup 2022,1,0.014,0,0.014,0,0
+132516,Orlando Moisés Galo Calderón,Costa Rica,Copa America 2024,2,0.056,0,0.028,0,0
+132711,Sekou Oumar Sylla,Guinea,AFCON 2023,4,0.367,0,0.092,0,0
+132728,Jewison Bennette,Costa Rica,World Cup 2022,1,0.038,0,0.038,0,0
+132755,Alejandro Jesús Bran Flores,Costa Rica,Copa America 2024,1,0.016,0,0.016,0,0
+132800,Kevin Lenini Gonçalves Pereira de Pina,Cape Verde Islands,AFCON 2023,5,0.149,1,0.03,0,1
+133003,Mihlali Samson Mayambela,South Africa,AFCON 2023,7,0.603,0,0.086,1,-1
+133038,João Paulo Moreira Fernandes,Cape Verde Islands,AFCON 2023,4,0.177,0,0.044,0,0
+133189,Luc Rollet De Fougerolles,Canada,Copa America 2024,1,0.061,0,0.061,0,0
+133229,Ismael Koné,Canada,Copa America 2024,5,0.462,1,0.092,1,0
+133305,Samet Akaydin,Turkey,Euro 2024,2,0.321,1,0.16,0,1
+133353,Pablo Martín Páez Gavira,Spain,World Cup 2022,1,0.056,1,0.056,0,1
+133698,Arbër Hoxha,Albania,Euro 2024,2,0.093,0,0.046,0,0
+134209,Barış Alper Yılmaz,Turkey,Euro 2024,4,0.349,0,0.087,0,0
+134272,David Jurásek,Czech Republic,Euro 2024,4,0.142,0,0.036,0,0
+136055,Novatus Dismas Miroshi,Tanzania,AFCON 2023,1,0.005,0,0.005,0,0
+136074,Karim Konaté,Côte d'Ivoire,AFCON 2023,3,0.414,0,0.138,0,0
+136312,Ambrosini Antonio Cabaça Salvador,Angola,AFCON 2023,7,1.148,1,0.164,0,1
+136406,Aprocious Petrus,Namibia,AFCON 2023,2,0.114,0,0.057,0,0
+136411,Juan José Óscar Siafá Etoha,Equatorial Guinea,AFCON 2023,1,0.012,0,0.012,0,0
+136414,Luis Miguel Nlavo Asue,Equatorial Guinea,AFCON 2023,3,0.33,0,0.11,0,0
+137487,Žan Karničnik,Slovenia,Euro 2024,3,0.356,1,0.119,0,1
+138493,Morice Michael Abraham,Tanzania,AFCON 2023,1,0.064,0,0.064,0,0
+138875,Djibril Cheick Ouattara,Burkina Faso,AFCON 2023,1,0.049,0,0.049,0,0
+139016,Achraf Dari,Morocco,World Cup 2022,1,0.418,1,0.418,0,1
+141358,Mohamed El Amine Amoura,Algeria,AFCON 2023,2,0.3,0,0.15,0,0
+142800,Medon Berisha,Albania,Euro 2024,1,0.032,0,0.032,0,0
+143854,António João Pereira Albuquerque Tavares Silva,Portugal,Euro 2024,1,0.187,0,0.187,0,0
+143859,João Neves,Portugal,Euro 2024,1,0.044,0,0.044,0,0
+143863,Franculino Gluda Djú,Guinea-Bissau,AFCON 2023,2,0.29,0,0.145,0,0
+143864,Fermin Lopez Marin,Spain,Euro 2024,2,0.038,0,0.019,0,0
+144127,Volodymyr Brazhko,Ukraine,Euro 2024,2,0.044,0,0.022,0,0
+145622,Denis Kibu,Tanzania,AFCON 2023,1,0.063,0,0.063,0,0
+146933,Bodda Mouhsine,Mauritania,AFCON 2023,4,0.128,0,0.032,0,0
+149576,Semih Kılıçsoy,Turkey,Euro 2024,1,0.114,0,0.114,0,0
+149714,Abdessamad Ezzalzouli,Morocco,AFCON 2023,4,0.349,0,0.087,0,0
+149714,Abdessamad Ezzalzouli,Morocco,World Cup 2022,1,0.06,0,0.06,0,0
+151813,Kenan Yildiz,Turkey,Euro 2024,11,0.59,0,0.054,0,0
+154895,Warren Steven Madrigal Molina,Costa Rica,Copa America 2024,1,0.064,0,0.064,0,0
+156734,Bilal El Khannous,Morocco,AFCON 2023,2,0.307,0,0.154,0,0
+160904,Miguel Changa Chaiwa,Zambia,AFCON 2023,1,0.007,0,0.007,0,0
+162132,Kamory Doumbia,Mali,AFCON 2023,9,0.537,0,0.06,0,0
+170230,Alex Adrián Arce Barrios,Paraguay,Copa America 2024,5,0.438,0,0.088,0,0
+176683,Ibrahim Diakité,Guinea,AFCON 2023,1,0.079,0,0.079,0,0
+184468,Álvaro José Zamora Mata,Costa Rica,Copa America 2024,1,0.02,0,0.02,0,0
+189348,Frank Magri,Cameroon,AFCON 2023,6,0.556,1,0.093,0,1
+190172,Telasco José Segovia Pérez,Venezuela,Copa America 2024,1,0.036,0,0.036,0,0
+196109,Ousmane Diomande,Côte d'Ivoire,AFCON 2023,1,0.021,0,0.021,0,0
+199653,Nene Dorgeles,Mali,AFCON 2023,3,0.067,1,0.022,0,1
+202037,Thapelo Maseko,South Africa,AFCON 2023,2,0.188,1,0.094,0,1
+204925,Darío Esteban Osorio Osorio,Chile,Copa America 2024,1,0.023,0,0.023,0,0
+212489,Oumar Diakité,Côte d'Ivoire,AFCON 2023,3,0.346,1,0.115,0,1
+217047,Fares Chaïbi,Algeria,AFCON 2023,3,0.109,0,0.036,0,0
+217795,César Ignacio Pérez Maldonado,Chile,Copa America 2024,1,0.027,0,0.027,0,0
+223971,José Ángel Córdoba Chambers,Panama,Copa America 2024,1,0.022,0,0.022,0,0
+224603,Tanitoluwa Oluwaseyi,Canada,Copa America 2024,9,1.776,0,0.197,0,0
+224628,Ali Ahmed,Canada,Copa America 2024,1,0.066,0,0.066,0,0
+225436,Abdoul Razack Guiebre,Burkina Faso,AFCON 2023,2,0.025,0,0.013,0,0
+225437,Stephane Aziz Ki,Burkina Faso,AFCON 2023,8,0.207,0,0.026,0,0
+227697,Garang Kuol,Australia,World Cup 2022,1,0.234,0,0.234,0,0
+233463,Ernest Appiah Nuamah,Ghana,AFCON 2023,2,0.077,0,0.039,0,0
+260212,Edgardo Isaac Fariña Wynter,Panama,Copa America 2024,3,0.097,0,0.032,0,0
+264017,Anzor Mekvabishvili,Georgia,Euro 2024,2,0.081,0,0.04,0,0
+264381,Kennedy Amutenya,Namibia,AFCON 2023,6,0.375,0,0.062,0,0
+271988,Endrick Felipe Moreira de Sousa,Brazil,Copa America 2024,2,0.122,0,0.061,0,0
+286708,Kévin Daniel Van Den Kerkhof,Algeria,AFCON 2023,2,0.069,0,0.034,0,0
+296254,Walid Cheddira,Morocco,World Cup 2022,2,0.249,0,0.125,0,0
+307271,Yankuba Minteh,Gambia,AFCON 2023,2,0.069,0,0.035,0,0
+315395,Bakari Camara,Mauritania,AFCON 2023,1,0.005,0,0.005,0,0
+316046,Lamine Yamal Nasraoui Ebana,Spain,Euro 2024,18,1.587,1,0.088,0,1
+336796,Miguel Ángel Terceros,Bolivia,Copa America 2024,7,0.318,0,0.045,0,0
+341163,Omaré Gassama,Mauritania,AFCON 2023,2,0.027,0,0.013,0,0
+348757,Kevin José Rodríguez Cortez,Ecuador,Copa America 2024,5,0.121,1,0.024,0,1
+348757,Kevin José Rodríguez Cortez,Ecuador,World Cup 2022,1,0.138,0,0.138,0,0
+363738,Fernando de Lacerda Gomes,Guinea-Bissau,AFCON 2023,2,0.075,0,0.038,0,0
+363986,Jovani Francisco Welch Lopez,Panama,Copa America 2024,3,0.037,0,0.012,0,0
+380983,José Correia,Guinea-Bissau,AFCON 2023,4,0.353,1,0.088,0,1
+383095,Kahiser Lenis Navarro,Panama,Copa America 2024,3,0.442,0,0.147,0,0
+383250,Moise Bombito,Canada,Copa America 2024,3,0.13,0,0.043,2,-2
+384888,Ray Kendry Páez Andrade,Ecuador,Copa America 2024,10,0.876,0,0.088,1,-1
+389092,Ibrahim Abdallah Hamad,Tanzania,AFCON 2023,1,0.073,0,0.073,0,0
+389291,Fiston Kalala Mayele,Congo DR,AFCON 2023,5,0.713,0,0.143,0,0
+389292,Khadim Diaw,Mauritania,AFCON 2023,1,0.007,0,0.007,0,0
+389294,Nouh Mohamed El Abd,Mauritania,AFCON 2023,2,0.161,0,0.08,0,0
+389316,Ngero Kaanjuka Katua,Namibia,AFCON 2023,3,0.089,0,0.03,0,0
+389319,Muzeu Bethuel,Namibia,AFCON 2023,3,0.382,0,0.127,0,0
+389328,Deivi Miguel Vieira,Angola,AFCON 2023,6,0.659,1,0.11,0,1
+389641,Domingos João Macandza,Mozambique,AFCON 2023,2,0.137,0,0.068,0,0
+389675,Kennedy Musonda,Zambia,AFCON 2023,2,0.095,0,0.048,0,0
+389882,Kevin Csoboth,Hungary,Euro 2024,2,0.448,1,0.224,0,1
+391434,Marciano Sanca Tchami,Guinea-Bissau,AFCON 2023,2,0.425,0,0.213,0,0
+392153,Lamine Camara,Senegal,AFCON 2023,3,0.168,2,0.056,0,2
+405926,Renaldo Showayne Cephas,Jamaica,Copa America 2024,3,0.537,0,0.179,0,0
+406457,Facinet Conte,Guinea,AFCON 2023,2,0.42,0,0.21,0,0
+408457,Idrissa Gueye,Senegal,AFCON 2023,1,0.039,0,0.039,0,0
+408674,Aboubacar Traoré,Mali,AFCON 2023,1,0.006,0,0.006,0,0
+416907,Sidi Bouna Sidi Amar,Mauritania,AFCON 2023,7,0.396,1,0.057,0,1
+417067,Infren David da Conceição Matola,Mozambique,AFCON 2023,1,0.02,0,0.02,0,0
+422691,José Nabil Onva Adjugu,Equatorial Guinea,AFCON 2023,1,0.06,0,0.06,0,0
+435137,Kaheim Dixon,Jamaica,Copa America 2024,2,0.047,0,0.023,0,0

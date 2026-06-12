@@ -266,8 +266,33 @@ def load_model() -> xgb.XGBClassifier:
         return pickle.load(f)
 
 
+def _elo_prior(elo_diff_raw: float) -> dict:
+    """
+    Elo-based prior for win/draw/loss, independent of the learned model.
+
+    Elo ratings are the single most reliable proxy for current team strength
+    (and track FIFA rankings closely), so this prior is used to keep the
+    final prediction anchored to "the stronger-rated team should usually
+    win" — even in feature combinations the XGBoost model hasn't seen
+    enough of to extrapolate sensibly (e.g. a mid-table team with an
+    unusually hot recent-form streak facing a top-5 side).
+
+    elo_exp_a: classic Elo expected score for team_a (0-1).
+    Draw probability shrinks as the rating gap widens (blowouts are
+    rarely draws); the remainder is split between win/loss according
+    to elo_exp_a.
+    """
+    elo_exp_a = 1.0 / (1.0 + 10 ** (-elo_diff_raw / 400.0))
+    p_draw = 0.28 * np.exp(-abs(elo_diff_raw) / 600.0)
+    remaining = 1.0 - p_draw
+    p_win = remaining * elo_exp_a
+    p_loss = remaining * (1.0 - elo_exp_a)
+    return {"win": p_win, "draw": p_draw, "loss": p_loss}
+
+
 def predict(team_a: str, team_b: str,
-            model: xgb.XGBClassifier = None) -> dict:
+            model: xgb.XGBClassifier = None,
+            elo_blend: float = 0.5) -> dict:
     """
     Predict win/draw/loss probabilities for team_a vs team_b.
 
@@ -275,6 +300,16 @@ def predict(team_a: str, team_b: str,
     player quality differentials on top of the training features.
     XGBoost handles missing features gracefully — it uses the mean split
     value for any feature not seen during training.
+
+    The raw model output is blended with an Elo-based prior (see
+    `_elo_prior`). The learned model picks up real signal from form, H2H,
+    tournament experience etc., but on a relatively small training set it
+    can occasionally rate a team with a hot recent streak (e.g. Mexico)
+    above a much higher-rated side (e.g. Argentina, France) by a wide
+    margin — which compounds unrealistically over a 7-round single-elim
+    bracket. Blending 50/50 with the Elo prior keeps predictions anchored
+    to overall team strength while still letting the model's extra signal
+    shift things at the margins.
 
     Returns:
         {"win": float, "draw": float, "loss": float}
@@ -295,11 +330,21 @@ def predict(team_a: str, team_b: str,
     probs = model.predict_proba(X)[0]
 
     # probs are ordered by class label: [0=L, 1=D, 2=W]
-    return {
-        "win":  round(float(probs[2]), 4),
-        "draw": round(float(probs[1]), 4),
-        "loss": round(float(probs[0]), 4),
+    model_probs = {
+        "win":  float(probs[2]),
+        "draw": float(probs[1]),
+        "loss": float(probs[0]),
     }
+
+    elo_diff_raw = float(feats.get("elo_diff_raw", 0.0))
+    elo_probs = _elo_prior(elo_diff_raw)
+
+    blended = {
+        k: elo_blend * model_probs[k] + (1 - elo_blend) * elo_probs[k]
+        for k in ("win", "draw", "loss")
+    }
+    total = sum(blended.values())
+    return {k: round(v / total, 4) for k, v in blended.items()}
 
 
 def predict_score(team_a: str, team_b: str) -> dict:

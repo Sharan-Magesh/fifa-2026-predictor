@@ -21,7 +21,23 @@ from functools import lru_cache
 
 PROCESSED_DIR = Path(__file__).resolve().parents[2] / "data" / "processed"
 
-# --- Score weights ---
+# --- Score weights (position-aware) ---
+# xG-based signals describe *attacking* output, so weighting them equally
+# for every position made a comparison like "elite CB vs average striker"
+# systematically wrong: defenders/keepers were scored almost entirely by
+# how rarely they shoot. Market value is the most reliable cross-position,
+# cross-league quality signal we have (it prices defending/keeping skill
+# too), so it anchors the composite for non-attacking roles.
+#   weights: (intl_xg, club_form, market_value, experience)
+POSITION_WEIGHTS = {
+    "Forward":    (0.35, 0.30, 0.20, 0.15),
+    "Midfielder": (0.20, 0.30, 0.30, 0.20),
+    "Defender":   (0.05, 0.15, 0.50, 0.30),
+    "Goalkeeper": (0.00, 0.10, 0.55, 0.35),
+}
+DEFAULT_WEIGHTS = (0.20, 0.25, 0.35, 0.20)
+
+# Legacy flat weights, kept for reference / backwards-compat in docs
 W_INTL_XG    = 0.45
 W_CLUB_FORM  = 0.35
 W_EXPERIENCE = 0.20
@@ -30,10 +46,29 @@ W_EXPERIENCE = 0.20
 MAX_XG_PER_SHOT  = 0.25   # top-end xG/shot for elite strikers
 MAX_NPXG_PER90   = 1.5    # top-end club npxg/90
 MAX_CAPS         = 150    # normalise caps to 0-1
+MAX_VALUE_M      = 200.0  # log-scale ceiling for market value (€200m ~ 1.0)
 
 # --- Quality filters ---
 MIN_SHOTS_FOR_XG   = 15    # ignore xG for players with < 5 weighted shots (defenders, GKs)
 MIN_MINUTES_ACTIVE = 450  # ~5 full games — filters out fringe squad members
+
+# --- Club form fallback (for players whose league isn't covered by
+# Understat/FBref, e.g. Saudi Pro League, MLS, Liga MX, etc.) ---
+# Without this, ~63% of players (756/1244) get club_npxg_per90 = 0, which
+# makes star players in uncovered leagues (e.g. Cristiano Ronaldo at
+# Al-Nassr) look like they have "zero club form" — unrealistic and
+# misleading in the player-comparison UI.
+#
+# Fallback chain for players with no Understat/FBref match:
+#   1. If they have international xG data (StatsBomb), derive an estimated
+#      club npxg/90 from their intl xG/shot, assuming a typical attacking
+#      player takes ~AVG_SHOTS_PER90 shots per 90 minutes. This keeps elite
+#      players who are still performing internationally (Ronaldo, etc.)
+#      from showing 0.
+#   2. Otherwise, fall back to the average club_npxg_per90 (among players
+#      WITH real data) for that position — e.g. a typical goalkeeper or
+#      defender, rather than a hard 0.
+AVG_SHOTS_PER90 = 3.0
 
 # --- Competition recency weights ---
 # More recent = more predictive of WC 2026 performance
@@ -313,6 +348,38 @@ def build_player_quality_table() -> pd.DataFrame:
     df["club_npxg_per90"]  = df["club_npxg_per90"].fillna(0.0)
     df["market_value_m"]   = df["market_value_m"].fillna(0.0)
 
+    # --- Club form fallback for players with no Understat/FBref coverage ---
+    # (e.g. Cristiano Ronaldo at Al-Nassr / Saudi Pro League). Without this,
+    # these players show club_npxg_per90 = 0 -> club_form_norm = 0, which
+    # reads as "zero club form" even for prolific, currently-active players.
+    df["club_form_estimated"] = False
+    no_data_mask = df["club_npxg_per90"] == 0.0
+
+    # 1. Players with international xG data: derive an estimate from
+    #    intl xG/shot, scaled to a per-90 basis.
+    intl_proxy_mask = no_data_mask & (df["intl_xg_per_shot"] > 0)
+    df.loc[intl_proxy_mask, "club_npxg_per90"] = (
+        df.loc[intl_proxy_mask, "intl_xg_per_shot"] * AVG_SHOTS_PER90
+    ).clip(upper=MAX_NPXG_PER90)
+    df.loc[intl_proxy_mask, "club_form_estimated"] = True
+
+    # 2. Remaining players with no data at all: fall back to the average
+    #    club_npxg_per90 for their position, computed from players who DO
+    #    have real Understat/FBref data — e.g. an "average" defender/keeper
+    #    rather than a flat 0.
+    has_real_data = df["club_npxg_per90"] > 0
+    position_avg = (
+        df.loc[has_real_data].groupby("position")["club_npxg_per90"].mean()
+    )
+    overall_avg = df.loc[has_real_data, "club_npxg_per90"].mean()
+
+    still_missing_mask = df["club_npxg_per90"] == 0.0
+    fallback_values = df.loc[still_missing_mask, "position"].map(position_avg).fillna(overall_avg)
+    df.loc[still_missing_mask, "club_npxg_per90"] = fallback_values
+    df.loc[still_missing_mask, "club_form_estimated"] = True
+
+    df["club_npxg_per90"] = df["club_npxg_per90"].round(4)
+
     # --- Normalise to 0-1 ---
     df["intl_xg_norm"] = (
         df["intl_xg_per_shot"].clip(0, MAX_XG_PER_SHOT) / MAX_XG_PER_SHOT
@@ -327,18 +394,32 @@ def build_player_quality_table() -> pd.DataFrame:
         df["caps"].clip(0, MAX_CAPS) / MAX_CAPS
     ).round(4)
 
-    # --- Composite score ---
-    df["player_score"] = (
-        W_INTL_XG    * df["intl_xg_norm"] +
-        W_CLUB_FORM  * df["club_form_norm"] +
-        W_EXPERIENCE * df["experience_norm"]
+    # Market value, log-scaled: the gap between €5m and €40m matters far
+    # more than the gap between €140m and €180m. log1p compresses the top
+    # end the way scouts actually read valuations.
+    df["value_norm"] = (
+        np.log1p(df["market_value_m"].clip(0, MAX_VALUE_M)) / np.log1p(MAX_VALUE_M)
     ).round(4)
+
+    # --- Composite score (position-aware) ---
+    def _composite(row):
+        w_xg, w_form, w_val, w_exp = POSITION_WEIGHTS.get(
+            row["position"], DEFAULT_WEIGHTS
+        )
+        return (w_xg   * row["intl_xg_norm"]
+                + w_form * row["club_form_norm"]
+                + w_val  * row["value_norm"]
+                + w_exp  * row["experience_norm"])
+
+    df["player_score"] = df.apply(_composite, axis=1).round(4)
 
     # Coverage stats
     intl_coverage = int((df["intl_xg_per_shot"] > 0).sum())
-    club_coverage = int((df["club_npxg_per90"]  > 0).sum())
+    club_real     = int((~df["club_form_estimated"]).sum())
+    club_estimated = int(df["club_form_estimated"].sum())
     print(f"  [player_features] intl xG coverage : {intl_coverage}/{len(df)} players")
-    print(f"  [player_features] club form coverage: {club_coverage}/{len(df)} players")
+    print(f"  [player_features] club form coverage: {club_real}/{len(df)} players "
+          f"have real Understat/FBref data ({club_estimated} estimated via fallback)")
 
     return df.sort_values("player_score", ascending=False).reset_index(drop=True)
 
@@ -382,7 +463,8 @@ def get_team_player_features(team: str) -> dict:
         "depth_dropoff":       round(star_player_score - depth_score, 4),
         "avg_caps_top5":       round(float(top_n["caps"].mean()), 1),
         "total_squad_value_m": round(float(players["market_value_m"].sum()), 1),
-        "active_player_count": int((players["club_npxg_per90"] > 0).sum()),
+        # "active" = players with real (non-estimated) club form data
+        "active_player_count": int((~players["club_form_estimated"]).sum()),
         "players_in_squad":    len(players),
     }
 

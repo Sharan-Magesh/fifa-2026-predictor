@@ -4,9 +4,9 @@ Player Router
 GET /api/player/compare?player_a=Kylian+Mbappe&player_b=Vinicius+Junior
 
 Returns a head-to-head player comparison for the Player page:
-  - Composite score breakdown for each player (intl_xg, club_form, experience)
-  - Radar chart data (6 normalised dimensions)
-  - Match impact score — player's team-relative contribution
+  - Position-aware composite score breakdown (xG / club form / value / experience)
+  - Radar chart data (6 genuinely independent dimensions)
+  - Cross-position caveat flag when comparing different role groups
 
 All data comes from player_features.py outputs. No live API calls at request time.
 """
@@ -69,20 +69,44 @@ def _find_player(df: pd.DataFrame, name: str) -> pd.Series:
     )
 
 
+def _safe(row, col, default=0.0) -> float:
+    try:
+        v = float(row.get(col, default))
+        return default if pd.isna(v) else v
+    except (TypeError, ValueError):
+        return default
+
+
 def _build_radar(row: pd.Series) -> dict:
     """
-    Build 6-dimension radar chart data from available score columns.
-    All values normalised to [0, 1] — already done in player_features.py.
-    Radar dimensions chosen to map to visible skills on the Player page.
+    Build 6-dimension radar chart data — six GENUINELY independent axes
+    (the old version padded the radar by duplicating xG and club form
+    under different labels, which made every comparison look more
+    symmetric than it really was).
+
+      finishing     : recency-weighted international xG/shot (StatsBomb)
+      club_form     : club npxG/90 (Understat/FBref, with fallback)
+      experience    : international caps
+      market_value  : log-scaled Transfermarkt valuation
+      productivity  : international goals per cap
+      peak_age      : closeness to the empirical 24-29 performance peak
     """
+    age  = _safe(row, "age", 27)
+    caps = max(_safe(row, "caps", 0), 1)
+    goals_per_cap = _safe(row, "goals", 0) / caps
+
+    if 24 <= age <= 29:
+        peak = 1.0
+    else:
+        peak = max(0.0, 1.0 - 0.09 * (24 - age if age < 24 else age - 29))
+
     return {
-        "international_xg":  round(float(row.get("intl_xg_norm",     0)), 3),
-        "club_form":         round(float(row.get("club_form_norm",    0)), 3),
-        "experience":        round(float(row.get("experience_norm",   0)), 3),
-        "composite_score":   round(float(row.get("composite_score",   0)), 3),
-        # If deeper breakdown columns exist from StatsBomb, include them
-        "shot_quality":      round(float(row.get("shot_quality_norm", row.get("intl_xg_norm",  0))), 3),
-        "involvement":       round(float(row.get("involvement_norm",  row.get("club_form_norm", 0))), 3),
+        "finishing":     round(_safe(row, "intl_xg_norm"), 3),
+        "club_form":     round(_safe(row, "club_form_norm"), 3),
+        "experience":    round(_safe(row, "experience_norm"), 3),
+        "market_value":  round(_safe(row, "value_norm"), 3),
+        "productivity":  round(min(goals_per_cap / 0.8, 1.0), 3),  # 0.8 g/cap ~ all-time elite
+        "peak_age":      round(peak, 3),
     }
 
 
@@ -96,49 +120,42 @@ def compare_players(
 ):
     """
     Head-to-head player comparison for the Player page radar chart.
-
-    Response shape:
-    {
-        "player_a": {
-            "player": "Kylian Mbappe",
-            "team": "France",
-            "position": "FW",
-            "composite_score": 0.91,
-            "breakdown": {
-                "intl_xg_contribution": 0.88,
-                "club_form_contribution": 0.92,
-                "experience_contribution": 0.79
-            },
-            "radar": {
-                "international_xg": 0.88,
-                "club_form": 0.92,
-                "experience": 0.79,
-                "composite_score": 0.91,
-                "shot_quality": 0.87,
-                "involvement": 0.85
-            }
-        },
-        "player_b": { ... },
-        "advantage": "player_a",   # which player has higher composite_score
-        "score_delta": 0.07
-    }
+    Composite scores are position-aware (see player_features.POSITION_WEIGHTS),
+    breakdown bars sum exactly to the composite, and cross-position
+    comparisons are flagged.
     """
     df = _load_player_scores()
 
     row_a = _find_player(df, player_a)
     row_b = _find_player(df, player_b)
 
+    from src.features.player_features import POSITION_WEIGHTS, DEFAULT_WEIGHTS
+
     def _build_profile(row: pd.Series) -> dict:
-        composite = float(row.get("composite_score", 0))
+        composite = _safe(row, "composite_score")
+        position = str(row.get("position", "Unknown"))
+        w_xg, w_form, w_val, w_exp = POSITION_WEIGHTS.get(position, DEFAULT_WEIGHTS)
         return {
             "player":   str(row.get("player",   "Unknown")),
             "team":     str(row.get("team",     "Unknown")),
-            "position": str(row.get("position", "Unknown")),
+            "position": position,
+            "age":      int(_safe(row, "age", 0)),
+            "caps":     int(_safe(row, "caps", 0)),
+            "goals":    int(_safe(row, "goals", 0)),
+            "club":     str(row.get("club", "")),
+            "market_value_m": round(_safe(row, "market_value_m"), 1),
             "composite_score": round(composite, 3),
+            # Position-aware weighted contributions — these now sum to the
+            # composite score exactly, so the bars in the UI are honest.
             "breakdown": {
-                "intl_xg_contribution":      round(float(row.get("intl_xg_norm",   0)) * 0.45, 3),
-                "club_form_contribution":    round(float(row.get("club_form_norm",  0)) * 0.35, 3),
-                "experience_contribution":   round(float(row.get("experience_norm", 0)) * 0.20, 3),
+                "intl_xg_contribution":      round(_safe(row, "intl_xg_norm")    * w_xg,   3),
+                "club_form_contribution":    round(_safe(row, "club_form_norm")  * w_form, 3),
+                "market_value_contribution": round(_safe(row, "value_norm")      * w_val,  3),
+                "experience_contribution":   round(_safe(row, "experience_norm") * w_exp,  3),
+            },
+            "weights": {
+                "intl_xg": w_xg, "club_form": w_form,
+                "market_value": w_val, "experience": w_exp,
             },
             "radar": _build_radar(row),
         }
@@ -152,11 +169,19 @@ def compare_players(
     advantage   = "player_a" if score_a >= score_b else "player_b"
     score_delta = round(abs(score_a - score_b), 3)
 
+    # Comparing across position groups is fine, but the verdict deserves
+    # a caveat — an elite keeper and an elite winger aren't on one axis.
+    ATTACKING = {"Forward", "Midfielder"}
+    cross_position = (
+        (profile_a["position"] in ATTACKING) != (profile_b["position"] in ATTACKING)
+    )
+
     return {
         "player_a":    profile_a,
         "player_b":    profile_b,
         "advantage":   advantage,
         "score_delta": score_delta,
+        "cross_position": cross_position,
     }
 
 
@@ -168,15 +193,6 @@ def get_team_players(team_name: str):
     """
     All players for a given team with their composite scores.
     Used by the Team page squad depth section and the Player page's team selector.
-
-    Response shape:
-    {
-        "team": "France",
-        "players": [
-            {"player": "Kylian Mbappe", "position": "FW", "composite_score": 0.91},
-            ...
-        ]
-    }
     """
     df = _load_player_scores()
 
@@ -206,16 +222,6 @@ def get_team_players(team_name: str):
 def search_player(q: str = Query(..., description="Partial player name")):
     """
     Fuzzy player search — returns up to 10 matches.
-    Useful for the Player page autocomplete / name-mismatch debugging.
-
-    Response shape:
-    {
-        "query": "mbappe",
-        "results": [
-            {"player": "Kylian Mbappe-Lottin", "team": "France", "position": "FW"},
-            ...
-        ]
-    }
     """
     df = _load_player_scores()
 

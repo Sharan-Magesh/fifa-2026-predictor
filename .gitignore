@@ -20,14 +20,20 @@ ENV/
 .ipynb_checkpoints/
 # Data
 data/raw/
-data/processed/
 data/statsbomb/
+# data/processed/ holds the cleaned CSVs + prediction cache that the live
+# API serves directly — keep these tracked so a deploy works without
+# re-running the full pipeline. Only large/raw scratch files are excluded.
+data/processed/*
+!data/processed/*.csv
+!data/processed/*.pkl
 # Model artifacts
-*.pkl
 *.joblib
 *.pt
 *.pth
 *.onnx
+# Keep the trained model used by the live API
+!models/*.pkl
 # OS
 .DS_Store
 Thumbs.db
@@ -39,7 +45,11 @@ Thumbs.db
 # Frontend
 frontend/node_modules/
 frontend/build/
+frontend/dist/
 frontend/.env.local
+frontend/vite.config.js.timestamp-*.mjs
+frontend/src_backup*/
 # Kaggle credentials
 .kaggle/
-kaggle.jsondata/raw/wc2026_squads.html  
+kaggle.json
+data/raw/wc2026_squads.html

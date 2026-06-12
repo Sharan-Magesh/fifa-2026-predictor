@@ -15,7 +15,14 @@ from pathlib import Path
 import pandas as pd
 from fastapi import APIRouter, HTTPException
 
+from src.features.team_features import SQUAD_NAME_ALIASES
+
 router = APIRouter()
+
+# wc2026_squads.csv spells some teams differently from the canonical names
+# used in monte_carlo_results.csv (e.g. "Ivory Coast" vs "Côte d'Ivoire").
+# Build squad-name -> canonical-name map so the merge below lines up.
+SQUAD_TO_CANONICAL = {v: k for k, v in SQUAD_NAME_ALIASES.items()}
 
 # ---------------------------------------------------------------------------
 # Path resolution — works regardless of where uvicorn is launched from
@@ -70,6 +77,11 @@ def get_all_teams():
     mc_df     = _load_monte_carlo()
     squad_df  = _load_squads()
 
+    # Canonicalise squad team names (e.g. "Ivory Coast" -> "Côte d'Ivoire")
+    # so the merge below matches every team in monte_carlo_results.csv.
+    squad_df = squad_df.copy()
+    squad_df["team"] = squad_df["team"].map(lambda t: SQUAD_TO_CANONICAL.get(t, t))
+
     # Count squad size per team
     squad_counts = (
         squad_df.groupby("team")["player_name"].count().reset_index()
@@ -88,8 +100,13 @@ def get_all_teams():
     # Sort by win probability descending
     merged = merged.sort_values("p_win_tournament", ascending=False)
 
-    # Replace NaN with None so JSON serialisation doesn't blow up
-    merged = merged.where(pd.notnull(merged), None)
+    # Replace NaN with None so JSON serialisation doesn't blow up.
+    # NOTE: merged.where(pd.notnull(merged), None) on its own does NOT work for
+    # float64 columns -- pandas casts the replacement None right back to NaN,
+    # and starlette's JSONResponse uses allow_nan=False, which raises
+    # "Out of range float values are not JSON compliant". Casting to object
+    # dtype first preserves the None values through to_dict().
+    merged = merged.astype(object).where(pd.notnull(merged), None)
 
     return {"teams": merged.to_dict(orient="records")}
 
@@ -124,7 +141,7 @@ def get_groups():
         if col in mc_df.columns:
             mc_df[col] = mc_df[col].round(3)
 
-    mc_df = mc_df.where(pd.notnull(mc_df), None)
+    mc_df = mc_df.astype(object).where(pd.notnull(mc_df), None)
 
     groups: dict = {}
     for group_name, group_df in mc_df.groupby("group"):

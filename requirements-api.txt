@@ -1,0 +1,12 @@
+# Minimal dependencies for running the FastAPI backend in production
+# (Render, Railway, etc). The full requirements.txt also includes data
+# pipeline / scraping / training / notebook tools that aren't needed to
+# just serve predictions from the committed data + model artifacts.
+fastapi
+uvicorn[standard]
+pydantic
+pandas
+numpy
+xgboost
+scikit-learn
+python-dotenv

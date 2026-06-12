@@ -1,0 +1,1245 @@
+team,player,position,age,caps,goals,club,intl_xg_per_shot,weighted_shots,club_npxg_per90,market_value_m,club_form_estimated,intl_xg_norm,club_form_norm,experience_norm,value_norm,composite_score
+Argentina,Lionel Messi,Forward,38,198,116,Inter Miami CF,0.1025,38.7,1.041,35.0,False,0.41,0.694,1.0,0.6757,0.6368
+Morocco,Achraf Hakimi,Defender,27,95,11,Paris Saint-Germain,0.0,8.2,0.18,80.0,False,0.0,0.12,0.6333,0.8286,0.6223
+Belgium,Thibaut Courtois,Goalkeeper,34,109,0,Real Madrid,0.0,0.0,0.002,28.0,True,0.0,0.0013,0.7267,0.6349,0.6037
+England,Harry Kane,Forward,32,113,79,Bayern Munich,0.1224,28.4,0.676,65.0,False,0.4896,0.4507,0.7533,0.79,0.5776
+Germany,Joshua Kimmich,Defender,31,110,10,Bayern Munich,0.0,13.1,0.069,40.0,False,0.0,0.046,0.7333,0.7002,0.577
+Belgium,Romelu Lukaku,Forward,33,126,90,Napoli,0.1977,20.1,0.317,15.0,False,0.7908,0.2113,0.84,0.5228,0.5707
+France,Kylian Mbappé,Forward,27,97,56,Real Madrid,0.0925,46.5,0.718,180.0,False,0.37,0.4787,0.6467,0.9802,0.5662
+Brazil,Neymar,Forward,34,128,79,Santos,0.1413,18.5,0.4239,50.0,True,0.5652,0.2826,0.8533,0.7414,0.5589
+Brazil,Marquinhos,Defender,32,104,7,Paris Saint-Germain,0.0,0.0,0.134,30.0,False,0.0,0.0893,0.6933,0.6475,0.5451
+Portugal,Rúben Dias,Defender,29,75,3,Manchester City,0.0,0.0,0.053,60.0,False,0.0,0.0353,0.5,0.7752,0.5429
+Germany,Kai Havertz,Forward,27,58,22,Arsenal,0.1473,20.5,0.566,55.0,False,0.5892,0.3773,0.3867,0.759,0.5292
+Austria,David Alaba,Defender,33,113,15,Real Madrid,0.0,0.0,0.0735,20.0,True,0.0,0.049,0.7533,0.5741,0.5204
+Germany,Jamal Musiala,Midfielder,23,42,9,Bayern Munich,0.0965,17.7,0.546,130.0,False,0.386,0.364,0.28,0.9193,0.5182
+Portugal,Nuno Mendes,Defender,23,43,1,Paris Saint-Germain,0.0,3.0,0.094,75.0,False,0.0,0.0627,0.2867,0.8166,0.5037
+Argentina,Cristian Romero,Defender,28,49,3,Tottenham Hotspur,0.0,0.0,0.12,60.0,False,0.0,0.08,0.3267,0.7752,0.4976
+Canada,Alphonso Davies,Defender,25,58,15,Bayern Munich,0.0,8.1,0.108,50.0,False,0.0,0.072,0.3867,0.7414,0.4975
+France,William Saliba,Defender,25,31,0,Arsenal,0.0,2.0,0.095,90.0,False,0.0,0.0633,0.2067,0.8506,0.4968
+Mexico,Edson Álvarez,Defender,28,98,7,Fenerbahçe,0.0,0.0,0.016,22.0,False,0.0,0.0107,0.6533,0.5912,0.4932
+Spain,Unai Simón,Goalkeeper,29,57,0,Athletic Bilbao,0.0,0.0,0.002,30.0,True,0.0,0.0013,0.38,0.6475,0.4893
+DR Congo,Yoane Wissa,Forward,29,37,9,Newcastle United,0.1408,19.0,0.634,28.0,False,0.5632,0.4227,0.2467,0.6349,0.4879
+Ecuador,Piero Hincapié,Defender,24,51,3,Arsenal,0.0,0.0,0.119,50.0,False,0.0,0.0793,0.34,0.7414,0.4846
+France,Dayot Upamecano,Defender,27,37,2,Bayern Munich,0.0,0.0,0.0735,70.0,True,0.0,0.049,0.2467,0.8038,0.4833
+Portugal,Diogo Costa,Goalkeeper,26,42,0,Porto,0.0,0.0,0.002,40.0,True,0.0,0.0013,0.28,0.7002,0.4832
+England,Jordan Pickford,Goalkeeper,32,83,0,Everton,0.0,0.0,0.002,15.0,True,0.0,0.0013,0.5533,0.5228,0.4813
+Brazil,Alisson,Goalkeeper,33,77,0,Liverpool,0.0,0.0,0.002,17.0,True,0.0,0.0013,0.5133,0.545,0.4795
+Germany,Antonio Rüdiger,Defender,33,82,3,Real Madrid,0.0,8.2,0.071,25.0,False,0.0,0.0473,0.5467,0.6144,0.4783
+Netherlands,Denzel Dumfries,Defender,30,71,11,Inter Milan,0.0,5.4,0.286,25.0,False,0.0,0.1907,0.4733,0.6144,0.4778
+Ecuador,Willian Pacho,Defender,24,34,2,Paris Saint-Germain,0.0,0.0,0.0735,70.0,True,0.0,0.049,0.2267,0.8038,0.4773
+France,Mike Maignan,Goalkeeper,30,39,0,Milan,0.0,0.0,0.002,38.0,True,0.0,0.0013,0.26,0.6908,0.4711
+Netherlands,Virgil van Dijk,Defender,34,91,12,Liverpool,0.0,7.1,0.076,18.0,False,0.0,0.0507,0.6067,0.5552,0.4672
+England,John Stones,Defender,32,88,3,Manchester City,0.0,6.2,0.111,18.0,False,0.0,0.074,0.5867,0.5552,0.4647
+France,Jules Koundé,Defender,27,47,0,Barcelona,0.0,3.8,0.095,45.0,False,0.0,0.0633,0.3133,0.7219,0.4644
+Switzerland,Manuel Akanji,Defender,30,81,4,Inter Milan,0.0,0.0,0.045,22.0,False,0.0,0.03,0.54,0.5912,0.4621
+Germany,Manuel Neuer,Goalkeeper,40,124,0,Bayern Munich,0.0,0.0,0.002,4.0,True,0.0,0.0013,0.8267,0.3035,0.4564
+Netherlands,Jurriën Timber,Defender,24,24,0,Arsenal,0.0,0.0,0.048,70.0,False,0.0,0.032,0.16,0.8038,0.4547
+Senegal,Kalidou Koulibaly,Defender,34,102,2,Al-Hilal,0.0,3.7,0.0735,12.0,True,0.0,0.049,0.68,0.4837,0.4532
+Portugal,João Cancelo,Defender,32,67,12,Barcelona,0.0,0.0,0.0735,25.0,True,0.0,0.049,0.4467,0.6144,0.4486
+Colombia,David Ospina,Goalkeeper,37,130,0,Atlético Nacional,0.0,0.0,0.002,3.0,True,0.0,0.0013,0.8667,0.2614,0.4472
+Morocco,Yassine Bounou,Goalkeeper,35,89,0,Al-Hilal,0.0,0.0,0.002,9.0,True,0.0,0.0013,0.5933,0.4342,0.4466
+England,Marc Guéhi,Defender,25,28,1,Manchester City,0.0,0.0,0.0735,55.0,True,0.0,0.049,0.1867,0.759,0.4429
+Germany,Nico Schlotterbeck,Defender,26,27,0,Borussia Dortmund,0.0,2.0,0.083,55.0,False,0.0,0.0553,0.18,0.759,0.4418
+Portugal,Cristiano Ronaldo,Forward,41,227,143,Al-Nassr,0.0933,37.0,0.2799,15.0,True,0.3732,0.1866,1.0,0.5228,0.4412
+Colombia,Davinson Sánchez,Defender,29,78,4,Galatasaray,0.0,7.8,0.037,18.0,False,0.0,0.0247,0.52,0.5552,0.4373
+Netherlands,Bart Verbruggen,Goalkeeper,23,28,0,Brighton & Hove Albion,0.0,0.0,0.002,35.0,True,0.0,0.0013,0.1867,0.6757,0.4371
+United States,Antonee Robinson,Defender,28,54,5,Fulham,0.0,3.0,0.03,30.0,False,0.0,0.02,0.36,0.6475,0.4348
+Switzerland,Gregor Kobel,Goalkeeper,28,21,0,Borussia Dortmund,0.0,0.0,0.002,40.0,True,0.0,0.0013,0.14,0.7002,0.4342
+England,Jude Bellingham,Midfielder,22,47,6,Real Madrid,0.0,9.5,0.416,160.0,False,0.0,0.2773,0.3133,0.9582,0.4333
+Argentina,Lisandro Martínez,Defender,28,26,1,Manchester United,0.0,5.7,0.086,50.0,False,0.0,0.0573,0.1733,0.7414,0.4313
+Morocco,Nayef Aguerd,Defender,30,64,2,Marseille,0.0,1.7,0.0735,22.0,True,0.0,0.049,0.4267,0.5912,0.431
+Spain,Marc Cucurella,Defender,27,23,1,Chelsea,0.0,1.0,0.095,50.0,False,0.0,0.0633,0.1533,0.7414,0.4262
+Netherlands,Micky van de Ven,Defender,25,20,1,Tottenham Hotspur,0.0,0.0,0.067,55.0,False,0.0,0.0447,0.1333,0.759,0.4262
+Argentina,Emiliano Martínez,Goalkeeper,33,59,0,Aston Villa,0.0,0.0,0.002,15.0,True,0.0,0.0013,0.3933,0.5228,0.4253
+France,Ibrahima Konaté,Defender,27,28,0,Liverpool,0.0,1.4,0.065,45.0,False,0.0,0.0433,0.1867,0.7219,0.4235
+Mexico,Guillermo Ochoa,Goalkeeper,40,152,0,AEL Limassol,0.0,0.0,0.002,1.0,True,0.0,0.0013,1.0,0.1307,0.422
+Netherlands,Memphis Depay,Forward,32,109,55,Corinthians,0.1111,25.0,0.3333,10.0,True,0.4444,0.2222,0.7267,0.4522,0.4216
+England,Reece James,Defender,26,23,1,Chelsea,0.0,0.0,0.049,50.0,False,0.0,0.0327,0.1533,0.7414,0.4216
+Germany,Jonathan Tah,Defender,30,47,1,Bayern Munich,0.0,1.0,0.035,30.0,False,0.0,0.0233,0.3133,0.6475,0.4212
+Belgium,Kevin De Bruyne,Midfielder,34,119,37,Napoli,0.0591,20.7,0.292,15.0,False,0.2364,0.1947,0.7933,0.5228,0.4212
+Sweden,Victor Lindelöf,Defender,31,76,3,Aston Villa,0.0,0.0,0.0735,15.0,True,0.0,0.049,0.5067,0.5228,0.4208
+Colombia,Daniel Muñoz,Defender,30,45,3,Crystal Palace,0.0,4.0,0.161,27.0,False,0.0,0.1073,0.3,0.6283,0.4202
+Norway,Alexander Sørloth,Forward,30,71,26,Atlético Madrid,0.0,0.0,1.163,20.0,False,0.0,0.7753,0.4733,0.5741,0.4184
+Turkey,Merih Demiral,Defender,28,61,6,Al-Ahli,0.0,3.0,0.0735,20.0,True,0.0,0.049,0.4067,0.5741,0.4164
+France,Ousmane Dembélé,Forward,29,58,7,Paris Saint-Germain,0.0,14.8,0.916,100.0,False,0.0,0.6107,0.3867,0.8702,0.4153
+Algeria,Rayan Aït-Nouri,Defender,25,28,0,Manchester City,0.0,0.0,0.0735,40.0,True,0.0,0.049,0.1867,0.7002,0.4135
+Portugal,Gonçalo Inácio,Defender,24,21,2,Sporting CP,0.0,0.0,0.072,45.0,False,0.0,0.048,0.14,0.7219,0.4102
+Ivory Coast,Wilfried Singo,Defender,25,34,1,Galatasaray,0.0,0.0,0.189,28.0,False,0.0,0.126,0.2267,0.6349,0.4044
+Spain,Lamine Yamal,Forward,18,25,6,Barcelona,0.0882,18.0,0.362,120.0,False,0.3528,0.2413,0.1667,0.9043,0.4017
+Germany,Leroy Sané,Midfielder,30,76,17,Galatasaray,0.0,9.1,0.597,23.0,False,0.0,0.398,0.5067,0.5993,0.4005
+Spain,David Raya,Goalkeeper,30,12,0,Arsenal,0.0,0.0,0.002,35.0,True,0.0,0.0013,0.08,0.6757,0.3998
+Portugal,Gonçalo Ramos,Forward,24,24,10,Paris Saint-Germain,0.0,0.0,1.202,35.0,False,0.0,0.8013,0.16,0.6757,0.3995
+Netherlands,Nathan Aké,Defender,31,59,5,Manchester City,0.0,2.0,0.032,18.0,False,0.0,0.0213,0.3933,0.5552,0.3988
+Ivory Coast,Ousmane Diomande,Defender,22,15,1,Sporting CP,0.0,1.0,0.0735,45.0,True,0.0,0.049,0.1,0.7219,0.3983
+Paraguay,Gustavo Gómez,Defender,33,89,4,Palmeiras,0.0,0.0,0.0735,8.5,True,0.0,0.049,0.5933,0.4245,0.3976
+Uzbekistan,Abdukodir Khusanov,Defender,22,26,0,Manchester City,0.0,0.0,0.0735,35.0,True,0.0,0.049,0.1733,0.6757,0.3972
+Portugal,Diogo Dalot,Defender,27,34,3,Manchester United,0.0,0.0,0.054,28.0,False,0.0,0.036,0.2267,0.6349,0.3909
+Spain,Pedro Porro,Defender,26,17,0,Tottenham Hotspur,0.0,0.0,0.063,40.0,False,0.0,0.042,0.1133,0.7002,0.3904
+England,Declan Rice,Midfielder,27,72,6,Arsenal,0.0,9.0,0.115,120.0,False,0.0,0.0767,0.48,0.9043,0.3903
+United States,Chris Richards,Defender,26,36,3,Crystal Palace,0.0,2.0,0.079,25.0,False,0.0,0.0527,0.24,0.6144,0.3871
+Morocco,Noussair Mazraoui,Defender,28,44,2,Manchester United,0.0,2.8,0.025,22.0,False,0.0,0.0167,0.2933,0.5912,0.3861
+Norway,Erling Haaland,Forward,25,49,55,Manchester City,0.0,0.0,0.685,200.0,False,0.0,0.4567,0.3267,1.0,0.386
+Turkey,Ferdi Kadıoğlu,Defender,26,30,2,Brighton & Hove Albion,0.0,0.0,0.0735,28.0,True,0.0,0.049,0.2,0.6349,0.3848
+Spain,Aymeric Laporte,Defender,32,45,2,Athletic Bilbao,0.0,5.7,0.0735,20.0,True,0.0,0.049,0.3,0.5741,0.3844
+Uruguay,Federico Valverde,Midfielder,27,73,9,Real Madrid,0.0,0.0,0.074,120.0,False,0.0,0.0493,0.4867,0.9043,0.3834
+Belgium,Zeno Debast,Defender,22,26,1,Sporting CP,0.0,0.0,0.0735,30.0,True,0.0,0.049,0.1733,0.6475,0.3831
+Argentina,Nahuel Molina,Defender,28,58,1,Atlético Madrid,0.0,2.4,0.057,15.0,False,0.0,0.038,0.3867,0.5228,0.3831
+Ivory Coast,Evan Ndicka,Defender,26,28,0,Roma,0.0,0.0,0.026,30.0,False,0.0,0.0173,0.1867,0.6475,0.3824
+England,Ezri Konsa,Defender,28,19,1,Aston Villa,0.0,0.0,0.034,35.0,False,0.0,0.0227,0.1267,0.6757,0.3793
+Croatia,Andrej Kramarić,Forward,34,115,36,TSG Hoffenheim,0.132,15.4,0.396,0.0,True,0.528,0.264,0.7667,0.0,0.379
+Belgium,Arthur Theate,Defender,26,33,1,Eintracht Frankfurt,0.0,2.0,0.082,24.0,False,0.0,0.0547,0.22,0.607,0.3777
+Turkey,Uğurcan Çakır,Goalkeeper,30,38,0,Galatasaray,0.0,0.0,0.002,15.0,True,0.0,0.0013,0.2533,0.5228,0.3763
+Norway,Kristoffer Ajer,Defender,28,51,2,Brentford,0.0,0.0,0.071,16.0,False,0.0,0.0473,0.34,0.5342,0.3762
+Germany,Florian Wirtz,Midfielder,23,41,11,Liverpool,0.0,8.0,0.267,110.0,False,0.0,0.178,0.2733,0.888,0.3745
+Ivory Coast,Odilon Kossounou,Defender,25,35,0,Atalanta,0.0,0.0,0.087,22.0,False,0.0,0.058,0.2333,0.5912,0.3743
+Portugal,Bruno Fernandes,Midfielder,31,88,29,Manchester United,0.0,0.0,0.226,40.0,False,0.0,0.1507,0.5867,0.7002,0.3726
+Japan,Zion Suzuki,Goalkeeper,23,24,0,Parma,0.0,0.0,0.002,20.0,True,0.0,0.0013,0.16,0.5741,0.3719
+Argentina,Nicolás Tagliafico,Defender,33,75,1,Lyon,0.0,0.0,0.139,8.0,False,0.0,0.0927,0.5,0.4143,0.3711
+Uruguay,Fernando Muslera,Goalkeeper,39,134,0,Estudiantes,0.0,0.0,0.002,0.75,True,0.0,0.0013,0.8933,0.1055,0.3708
+England,Tino Livramento,Defender,23,6,0,Newcastle United,0.0,0.0,0.0735,40.0,True,0.0,0.049,0.04,0.7002,0.3695
+Turkey,Zeki Çelik,Defender,29,60,3,Roma,0.0,0.0,0.0735,12.0,True,0.0,0.049,0.4,0.4837,0.3692
+Sweden,Isak Hien,Defender,27,29,0,Atalanta,0.0,0.0,0.037,25.0,False,0.0,0.0247,0.1933,0.6144,0.3689
+Ecuador,Pervis Estupiñán,Defender,28,53,4,Milan,0.0,0.0,0.0735,14.0,True,0.0,0.049,0.3533,0.5106,0.3686
+Scotland,Aaron Hickey,Defender,24,21,0,Brentford,0.0,0.0,0.0735,28.0,True,0.0,0.049,0.14,0.6349,0.3668
+France,Malo Gusto,Defender,23,10,0,Chelsea,0.0,0.0,0.076,35.0,False,0.0,0.0507,0.0667,0.6757,0.3655
+England,Nico O'Reilly,Defender,21,4,0,Manchester City,0.0,0.0,0.0735,40.0,True,0.0,0.049,0.0267,0.7002,0.3655
+Norway,Martin Ødegaard,Midfielder,27,67,4,Arsenal,0.0,0.0,0.155,75.0,True,0.0,0.1033,0.4467,0.8166,0.3653
+Germany,David Raum,Defender,28,37,1,RB Leipzig,0.0,1.0,0.04,20.0,False,0.0,0.0267,0.2467,0.5741,0.3651
+Austria,Stefan Posch,Defender,29,52,5,Mainz 05,0.0,7.0,0.057,14.0,False,0.0,0.038,0.3467,0.5106,0.365
+Portugal,Bernardo Silva,Midfielder,31,108,14,Manchester City,0.0,0.0,0.162,27.0,False,0.0,0.108,0.72,0.6283,0.3649
+Algeria,Ramy Bensebaini,Defender,31,81,7,Borussia Dortmund,0.0,0.0,0.064,7.0,False,0.0,0.0427,0.54,0.3921,0.3645
+Scotland,Scott McTominay,Midfielder,29,70,15,Napoli,0.0,4.0,0.271,45.0,False,0.0,0.1807,0.4667,0.7219,0.3641
+Ghana,Antoine Semenyo,Midfielder,26,34,3,Manchester City,0.0,2.7,0.407,65.0,False,0.0,0.2713,0.2267,0.79,0.3637
+Austria,Kevin Danso,Defender,27,32,0,Tottenham Hotspur,0.0,1.0,0.038,22.0,False,0.0,0.0253,0.2133,0.5912,0.3634
+Netherlands,Jan Paul van Hecke,Defender,26,11,0,Brighton & Hove Albion,0.0,0.0,0.03,35.0,False,0.0,0.02,0.0733,0.6757,0.3628
+Spain,Rodri,Midfielder,29,61,4,Manchester City,0.0,0.0,0.181,75.0,False,0.0,0.1207,0.4067,0.8166,0.3625
+Brazil,Ederson,Goalkeeper,32,32,0,Fenerbahçe,0.0,0.0,0.002,15.0,True,0.0,0.0013,0.2133,0.5228,0.3623
+Sweden,Alexander Isak,Forward,26,58,17,Liverpool,0.0,0.0,0.616,120.0,False,0.0,0.4107,0.3867,0.9043,0.3621
+Netherlands,Jorrel Hato,Defender,20,8,0,Chelsea,0.0,0.0,0.0735,35.0,True,0.0,0.049,0.0533,0.6757,0.3612
+United States,Sergiño Dest,Defender,25,39,3,PSV Eindhoven,0.0,0.0,0.041,18.0,False,0.0,0.0273,0.26,0.5552,0.3597
+Germany,Nathaniel Brown,Defender,22,5,0,Eintracht Frankfurt,0.0,0.0,0.114,35.0,False,0.0,0.076,0.0333,0.6757,0.3592
+Spain,Fabián Ruiz,Midfielder,30,41,6,Paris Saint-Germain,0.0674,17.0,0.2022,40.0,True,0.2696,0.1348,0.2733,0.7002,0.3591
+England,Dean Henderson,Goalkeeper,29,4,0,Crystal Palace,0.0,0.0,0.002,28.0,True,0.0,0.0013,0.0267,0.6349,0.3587
+Czech Republic,Ladislav Krejčí,Defender,27,27,5,Wolverhampton Wanderers,0.0,5.0,0.0735,22.0,True,0.0,0.049,0.18,0.5912,0.357
+Australia,Mathew Ryan,Goalkeeper,34,104,0,Levante,0.0,0.0,0.002,2.0,True,0.0,0.0013,0.6933,0.2072,0.3567
+Paraguay,Júnior Alonso,Defender,33,71,3,Atlético Mineiro,0.0,0.0,0.0735,8.0,True,0.0,0.049,0.4733,0.4143,0.3565
+Morocco,Ismael Saibari,Midfielder,25,30,9,PSV Eindhoven,0.0,1.0,0.591,32.0,False,0.0,0.394,0.2,0.6593,0.356
+England,Jarell Quansah,Defender,23,2,0,Bayer Leverkusen,0.0,0.0,0.017,40.0,False,0.0,0.0113,0.0133,0.7002,0.3558
+Egypt,Mohamed Salah,Forward,33,115,67,Liverpool,0.0,5.0,0.553,30.0,False,0.0,0.3687,0.7667,0.6475,0.3551
+Brazil,Bremer,Defender,29,7,1,Juventus,0.0,0.0,0.022,35.0,False,0.0,0.0147,0.0467,0.6757,0.3541
+Belgium,Timothy Castagne,Defender,30,63,2,Fulham,0.0,0.0,0.02,10.0,False,0.0,0.0133,0.42,0.4522,0.3541
+France,Aurélien Tchouaméni,Midfielder,26,45,3,Real Madrid,0.0,0.0,0.155,100.0,True,0.0,0.1033,0.3,0.8702,0.352
+Uruguay,Mathías Olivera,Defender,28,35,2,Napoli,0.0,5.4,0.042,18.0,False,0.0,0.028,0.2333,0.5552,0.3518
+France,Maxence Lacroix,Defender,26,3,0,Crystal Palace,0.0,0.0,0.079,35.0,False,0.0,0.0527,0.02,0.6757,0.3518
+Ecuador,Moisés Caicedo,Midfielder,24,60,3,Chelsea,0.0,0.0,0.018,110.0,False,0.0,0.012,0.4,0.888,0.35
+Switzerland,Nico Elvedi,Defender,29,67,3,Borussia Mönchengladbach,0.0,0.7,0.077,8.0,False,0.0,0.0513,0.4467,0.4143,0.3489
+Spain,Pau Cubarsí,Defender,19,11,0,Barcelona,0.0,0.0,0.032,30.0,False,0.0,0.0213,0.0733,0.6475,0.3489
+Colombia,Jhon Lucumí,Defender,27,36,1,Bologna,0.0,0.0,0.027,17.0,False,0.0,0.018,0.24,0.545,0.3472
+Netherlands,Mats Wieffer,Defender,26,15,1,Brighton & Hove Albion,0.0,0.0,0.1,25.0,False,0.0,0.0667,0.1,0.6144,0.3472
+Turkey,Hakan Çalhanoğlu,Midfielder,32,104,22,Inter Milan,0.0,10.0,0.155,22.0,True,0.0,0.1033,0.6933,0.5912,0.347
+Argentina,Lautaro Martínez,Forward,28,75,36,Inter Milan,0.0,0.0,0.517,85.0,False,0.0,0.3447,0.5,0.8399,0.3464
+Netherlands,Frenkie de Jong,Midfielder,29,65,2,Barcelona,0.0,1.4,0.083,70.0,False,0.0,0.0553,0.4333,0.8038,0.3444
+Spain,Marcos Llorente,Defender,31,23,0,Atlético Madrid,0.0,0.7,0.024,22.0,False,0.0,0.016,0.1533,0.5912,0.344
+Argentina,Enzo Fernández,Midfielder,25,40,6,Chelsea,0.0,0.0,0.188,85.0,False,0.0,0.1253,0.2667,0.8399,0.3429
+Belgium,Senne Lammens,Goalkeeper,23,2,0,Manchester United,0.0,0.0,0.002,25.0,True,0.0,0.0013,0.0133,0.6144,0.3427
+United States,Matt Turner,Goalkeeper,31,54,0,New England Revolution,0.0,0.0,0.002,7.0,True,0.0,0.0013,0.36,0.3921,0.3418
+DR Congo,Chancel Mbemba,Defender,31,108,7,Lille,0.0,5.0,0.0735,2.5,True,0.0,0.049,0.72,0.2362,0.3415
+Belgium,Maxim De Cuyper,Defender,25,19,4,Brighton & Hove Albion,0.0,0.0,0.0735,22.0,True,0.0,0.049,0.1267,0.5912,0.341
+Scotland,Kieran Tierney,Defender,29,56,2,Celtic,0.0,0.0,0.216,8.0,False,0.0,0.144,0.3733,0.4143,0.3407
+Ivory Coast,Franck Kessié,Midfielder,29,103,15,Al-Ahli,0.0,0.0,0.155,20.0,True,0.0,0.1033,0.6867,0.5741,0.3406
+Algeria,Aïssa Mandi,Defender,34,117,7,Lille,0.0,3.0,0.0735,1.8,True,0.0,0.049,0.78,0.1941,0.3384
+Portugal,Renato Veiga,Defender,22,12,1,Villarreal,0.0,0.0,0.068,25.0,False,0.0,0.0453,0.08,0.6144,0.338
+Brazil,Roger Ibañez,Defender,27,6,0,Al-Ahli,0.0,0.0,0.0735,28.0,True,0.0,0.049,0.04,0.6349,0.3368
+Switzerland,Granit Xhaka,Midfielder,33,146,17,Sunderland,0.0,9.799999999999999,0.025,10.0,False,0.0,0.0167,0.9733,0.4522,0.3353
+Portugal,Vitinha,Midfielder,26,37,0,Paris Saint-Germain,0.0,0.0,0.098,110.0,False,0.0,0.0653,0.2467,0.888,0.3353
+Mexico,César Montes,Defender,29,67,4,Lokomotiv Moscow,0.0,0.0,0.051,7.0,False,0.0,0.034,0.4467,0.3921,0.3352
+Argentina,Alexis Mac Allister,Midfielder,27,44,6,Liverpool,0.0,10.899999999999999,0.123,85.0,False,0.0,0.082,0.2933,0.8399,0.3352
+Japan,Takehiro Tomiyasu,Defender,27,43,1,Ajax,0.0,0.0,0.0735,12.0,True,0.0,0.049,0.2867,0.4837,0.3352
+Cape Verde,Logan Costa,Defender,25,27,0,Villarreal,0.0,0.0,0.035,18.0,False,0.0,0.0233,0.18,0.5552,0.3351
+Senegal,Moussa Niakhaté,Defender,30,30,0,Lyon,0.0,0.0,0.0735,16.0,True,0.0,0.049,0.2,0.5342,0.3345
+Spain,Eric García,Defender,25,20,0,Barcelona,0.0,0.0,0.0735,20.0,True,0.0,0.049,0.1333,0.5741,0.3344
+Belgium,Youri Tielemans,Midfielder,29,85,13,Aston Villa,0.0,5.6,0.087,35.0,False,0.0,0.058,0.5667,0.6757,0.3334
+Argentina,Nicolás Otamendi,Defender,38,130,8,Benfica,0.0,0.0,0.069,1.0,False,0.0,0.046,0.8667,0.1307,0.3323
+Portugal,João Neves,Midfielder,21,21,3,Paris Saint-Germain,0.0,1.0,0.185,110.0,False,0.0,0.1233,0.14,0.888,0.3314
+Tunisia,Montassar Talbi,Defender,28,64,4,Lorient,0.0,0.0,0.0735,7.0,True,0.0,0.049,0.4267,0.3921,0.3314
+Portugal,Tomás Araújo,Defender,24,4,0,Benfica,0.0,0.0,0.053,28.0,False,0.0,0.0353,0.0267,0.6349,0.3308
+Sweden,Daniel Svensson,Defender,24,13,0,Borussia Dortmund,0.0,0.0,0.089,22.0,False,0.0,0.0593,0.0867,0.5912,0.3305
+Canada,Alistair Johnston,Defender,27,58,1,Celtic,0.0,2.4,0.0735,8.0,True,0.0,0.049,0.3867,0.4143,0.3305
+Portugal,Rúben Neves,Midfielder,29,66,1,Al-Hilal,0.0,0.0,0.155,40.0,True,0.0,0.1033,0.44,0.7002,0.329
+Spain,Mikel Merino,Midfielder,29,42,10,Arsenal,0.0,3.0,0.392,30.0,False,0.0,0.2613,0.28,0.6475,0.3286
+Senegal,Sadio Mané,Forward,34,127,55,Al-Nassr,0.0,7.2,0.3899,25.0,True,0.0,0.2599,0.8467,0.6144,0.3279
+Brazil,Vinícius Júnior,Forward,25,48,9,Real Madrid,0.0,0.0,0.419,180.0,False,0.0,0.2793,0.32,0.9802,0.3278
+Austria,Philipp Lienhart,Defender,29,41,3,SC Freiburg,0.0,2.0,0.03,12.0,False,0.0,0.02,0.2733,0.4837,0.3268
+Brazil,Bruno Guimarães,Midfielder,28,42,2,Newcastle United,0.0,9.5,0.127,75.0,False,0.0,0.0847,0.28,0.8166,0.3264
+Senegal,Mamadou Sarr,Defender,20,7,0,Chelsea,0.0,0.0,0.042,25.0,False,0.0,0.028,0.0467,0.6144,0.3254
+Mexico,Johan Vásquez,Defender,27,46,3,Genoa,0.0,0.0,0.072,10.0,False,0.0,0.048,0.3067,0.4522,0.3253
+Colombia,Luis Díaz,Forward,29,73,22,Bayern Munich,0.0,0.0,0.457,70.0,False,0.0,0.3047,0.4867,0.8038,0.3252
+Ivory Coast,Guéla Doué,Defender,23,20,3,Strasbourg,0.0,0.0,0.0735,18.0,True,0.0,0.049,0.1333,0.5552,0.3249
+Netherlands,Tijjani Reijnders,Midfielder,27,31,7,Manchester City,0.0,10.0,0.231,65.0,False,0.0,0.154,0.2067,0.79,0.3245
+France,Lucas Digne,Defender,32,57,0,Aston Villa,0.0,0.0,0.029,8.0,False,0.0,0.0193,0.38,0.4143,0.324
+Iran,Ehsan Hajsafi,Defender,36,146,7,Sepahan,0.0,1.5,0.0735,0.28,True,0.0,0.049,0.9733,0.0465,0.3226
+Croatia,Luka Modrić,Midfielder,40,197,28,Milan,0.0,11.399999999999999,0.155,4.0,True,0.0,0.1033,1.0,0.3035,0.322
+DR Congo,Aaron Wan-Bissaka,Defender,28,11,0,West Ham United,0.0,0.0,0.039,22.0,False,0.0,0.026,0.0733,0.5912,0.3215
+Scotland,Scott McKenna,Defender,29,50,1,Dinamo Zagreb,0.0,2.0,0.043,9.0,False,0.0,0.0287,0.3333,0.4342,0.3214
+Paraguay,Omar Alderete,Defender,29,36,3,Sunderland,0.0,0.0,0.064,12.0,False,0.0,0.0427,0.24,0.4837,0.3203
+United States,Ricardo Pepi,Forward,23,37,13,PSV Eindhoven,0.0,0.0,0.892,15.0,False,0.0,0.5947,0.2467,0.5228,0.32
+Uruguay,Matías Viña,Defender,28,43,1,River Plate,0.0,0.0,0.0735,10.0,True,0.0,0.049,0.2867,0.4522,0.3195
+Germany,Malick Thiaw,Defender,24,5,0,Newcastle United,0.0,0.0,0.022,25.0,False,0.0,0.0147,0.0333,0.6144,0.3194
+Spain,Pedri,Midfielder,23,40,5,Barcelona,0.0,0.0,0.077,80.0,False,0.0,0.0513,0.2667,0.8286,0.3173
+Czech Republic,Patrik Schick,Forward,30,53,26,Bayer Leverkusen,0.0,7.0,0.701,25.0,False,0.0,0.4673,0.3533,0.6144,0.3161
+England,Bukayo Saka,Forward,24,48,14,Arsenal,0.0,12.899999999999999,0.418,130.0,False,0.0,0.2787,0.32,0.9193,0.3155
+Egypt,Omar Marmoush,Forward,27,48,11,Manchester City,0.0,8.0,0.547,65.0,False,0.0,0.3647,0.32,0.79,0.3154
+England,Eberechi Eze,Midfielder,27,16,3,Arsenal,0.0,2.0,0.285,65.0,False,0.0,0.19,0.1067,0.79,0.3153
+Sweden,Gabriel Gudmundsson,Defender,27,24,0,Leeds United,0.0,0.0,0.054,15.0,False,0.0,0.036,0.16,0.5228,0.3148
+Uruguay,Darwin Núñez,Forward,26,38,13,Al-Hilal,0.0,0.0,0.58,70.0,False,0.0,0.3867,0.2533,0.8038,0.3148
+Croatia,Ivan Perišić,Forward,37,153,38,PSV Eindhoven,0.0587,24.8,0.245,1.3,False,0.2348,0.1633,1.0,0.1571,0.3126
+Brazil,Lucas Paquetá,Midfielder,28,62,13,Flamengo,0.0,0.0,0.136,35.0,False,0.0,0.0907,0.4133,0.6757,0.3126
+Germany,Waldemar Anton,Defender,29,13,0,Borussia Dortmund,0.0,0.0,0.087,18.0,False,0.0,0.058,0.0867,0.5552,0.3123
+Turkey,Çağlar Söyüncü,Defender,30,60,2,Fenerbahçe,0.0,0.0,0.0735,6.0,True,0.0,0.049,0.4,0.3669,0.3108
+England,James Trafford,Goalkeeper,23,2,0,Manchester City,0.0,0.0,0.002,18.0,True,0.0,0.0013,0.0133,0.5552,0.3101
+Argentina,Facundo Medina,Defender,27,7,0,Marseille,0.0,0.0,0.07,20.0,False,0.0,0.0467,0.0467,0.5741,0.3081
+Colombia,James Rodríguez,Midfielder,34,125,31,Minnesota United FC,0.0,0.0,0.155,6.0,True,0.0,0.1033,0.8333,0.3669,0.3077
+Norway,Leo Østigård,Defender,26,37,1,Genoa,0.0,0.0,0.0735,10.0,True,0.0,0.049,0.2467,0.4522,0.3075
+Senegal,Krépin Diatta,Defender,27,60,2,Monaco,0.0,4.1,0.038,6.0,False,0.0,0.0253,0.4,0.3669,0.3072
+Morocco,Sofyan Amrabat,Midfielder,29,74,0,Real Betis,0.0,0.7,0.155,22.0,True,0.0,0.1033,0.4933,0.5912,0.307
+England,Morgan Rogers,Midfielder,23,14,1,Aston Villa,0.0,0.0,0.232,70.0,False,0.0,0.1547,0.0933,0.8038,0.3062
+Ivory Coast,Ghislain Konan,Defender,30,54,0,Gil Vicente,0.0,1.0,0.0735,6.5,True,0.0,0.049,0.36,0.3799,0.3053
+France,Bradley Barcola,Forward,23,19,3,Paris Saint-Germain,0.0,2.0,0.621,70.0,False,0.0,0.414,0.1267,0.8038,0.304
+Algeria,Riyad Mahrez,Forward,35,114,38,Al-Ahli,0.0,1.0,0.3899,18.0,True,0.0,0.2599,0.76,0.5552,0.303
+Switzerland,Breel Embolo,Forward,29,86,24,Rennes,0.0,0.0,0.601,12.0,False,0.0,0.4007,0.5733,0.4837,0.3029
+Portugal,Nélson Semedo,Defender,32,49,0,Fenerbahçe,0.0,0.0,0.031,7.5,False,0.0,0.0207,0.3267,0.4035,0.3029
+United States,Christian Pulisic,Forward,27,86,33,Milan,0.0,13.3,0.308,60.0,False,0.0,0.2053,0.5733,0.7752,0.3026
+France,Adrien Rabiot,Midfielder,31,58,7,Milan,0.0,9.3,0.265,20.0,False,0.0,0.1767,0.3867,0.5741,0.3026
+Scotland,John McGinn,Midfielder,31,86,20,Aston Villa,0.0,0.0,0.152,15.0,False,0.0,0.1013,0.5733,0.5228,0.3019
+Austria,Konrad Laimer,Midfielder,29,57,7,Bayern Munich,0.0,2.0,0.139,32.0,False,0.0,0.0927,0.38,0.6593,0.3016
+Uruguay,Rodrigo Bentancur,Midfielder,28,74,3,Tottenham Hotspur,0.0,5.3,0.07,27.0,False,0.0,0.0467,0.4933,0.6283,0.3012
+Brazil,Raphinha,Forward,29,38,11,Barcelona,0.0,0.0,0.559,50.0,False,0.0,0.3727,0.2533,0.7414,0.2981
+Germany,Leon Goretzka,Midfielder,31,70,15,Bayern Munich,0.0,3.5999999999999996,0.238,15.0,False,0.0,0.1587,0.4667,0.5228,0.2978
+Japan,Yūto Nagatomo,Defender,39,145,4,FC Tokyo,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.9667,0.0,0.2974
+Netherlands,Ryan Gravenberch,Midfielder,24,26,1,Liverpool,0.0,0.0,0.037,90.0,False,0.0,0.0247,0.1733,0.8506,0.2972
+Czech Republic,Tomáš Souček,Midfielder,31,90,17,West Ham United,0.0,2.0,0.155,12.0,True,0.0,0.1033,0.6,0.4837,0.2961
+Switzerland,Denis Zakaria,Midfielder,29,65,3,Monaco,0.0,0.0,0.122,25.0,False,0.0,0.0813,0.4333,0.6144,0.2954
+Senegal,Ismaïla Sarr,Forward,28,82,19,Crystal Palace,0.0,14.5,0.3899,35.0,True,0.0,0.2599,0.5467,0.6757,0.2951
+United States,Folarin Balogun,Forward,24,27,9,Monaco,0.0,5.0,0.746,22.0,False,0.0,0.4973,0.18,0.5912,0.2944
+Japan,Ayase Ueda,Forward,27,39,16,Feyenoord,0.0,0.0,0.857,8.0,False,0.0,0.5713,0.26,0.4143,0.2932
+Turkey,Orkun Kökçü,Midfielder,25,49,4,Beşiktaş,0.0,6.0,0.218,25.0,False,0.0,0.1453,0.3267,0.6144,0.2932
+Japan,Takefusa Kubo,Midfielder,25,49,7,Real Sociedad,0.0,0.0,0.159,30.0,False,0.0,0.106,0.3267,0.6475,0.2914
+Germany,Nick Woltemade,Forward,24,11,4,Newcastle United,0.0,0.0,0.597,70.0,False,0.0,0.398,0.0733,0.8038,0.2912
+Canada,Jonathan David,Forward,26,77,39,Juventus,0.0,13.6,0.3899,35.0,True,0.0,0.2599,0.5133,0.6757,0.2901
+Austria,Xaver Schlager,Midfielder,28,51,4,RB Leipzig,0.0,0.0,0.155,28.0,True,0.0,0.1033,0.34,0.6349,0.2895
+Netherlands,Cody Gakpo,Forward,27,49,19,Liverpool,0.0,0.0,0.393,70.0,False,0.0,0.262,0.3267,0.8038,0.2884
+United States,Weston McKennie,Midfielder,27,66,12,Juventus,0.0,5.5,0.113,22.0,False,0.0,0.0753,0.44,0.5912,0.288
+Ivory Coast,Ibrahim Sangaré,Midfielder,28,58,12,Nottingham Forest,0.0,5.0,0.155,22.0,True,0.0,0.1033,0.3867,0.5912,0.2857
+Senegal,Pape Matar Sarr,Midfielder,23,39,4,Tottenham Hotspur,0.0,3.8,0.155,35.0,True,0.0,0.1033,0.26,0.6757,0.2857
+Scotland,Nathan Patterson,Defender,24,26,1,Everton,0.0,0.0,0.0735,10.0,True,0.0,0.049,0.1733,0.4522,0.2854
+Senegal,Nicolas Jackson,Forward,24,32,8,Bayern Munich,0.0,1.0,0.543,45.0,False,0.0,0.362,0.2133,0.7219,0.285
+Switzerland,Ricardo Rodriguez,Defender,33,138,9,Real Betis,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.92,0.0,0.2834
+France,Maghnes Akliouche,Midfielder,24,8,1,Monaco,0.0,0.0,0.28,45.0,False,0.0,0.1867,0.0533,0.7219,0.2832
+France,Marcus Thuram,Forward,28,34,3,Inter Milan,0.0,12.7,0.471,60.0,False,0.0,0.314,0.2267,0.7752,0.2832
+Iran,Alireza Beiranvand,Goalkeeper,33,86,0,Tractor,0.0,0.0,0.002,1.2,True,0.0,0.0013,0.5733,0.1487,0.2826
+Argentina,Rodrigo De Paul,Midfielder,32,85,2,Inter Miami CF,0.0,0.0,0.062,15.0,False,0.0,0.0413,0.5667,0.5228,0.2826
+Portugal,Rafael Leão,Forward,27,44,5,Milan,0.0,0.0,0.335,90.0,False,0.0,0.2233,0.2933,0.8506,0.2811
+Brazil,Fabinho,Midfielder,32,32,0,Al-Ittihad,0.0,0.0,0.155,38.0,True,0.0,0.1033,0.2133,0.6908,0.2809
+Spain,Dani Olmo,Forward,28,49,12,Barcelona,0.0,0.0,0.38,60.0,False,0.0,0.2533,0.3267,0.7752,0.28
+Belgium,Amadou Onana,Midfielder,24,29,1,Aston Villa,0.0,4.4,0.141,42.0,False,0.0,0.094,0.1933,0.7092,0.2796
+Spain,Martín Zubimendi,Midfielder,27,25,3,Arsenal,0.0,0.0,0.119,50.0,False,0.0,0.0793,0.1667,0.7414,0.2795
+Belgium,Jérémy Doku,Forward,24,43,7,Manchester City,0.0,0.0,0.3899,65.0,True,0.0,0.2599,0.2867,0.79,0.279
+Portugal,Samú Costa,Defender,25,5,0,Mallorca,0.0,0.0,0.07,15.0,False,0.0,0.0467,0.0333,0.5228,0.2784
+Argentina,Giovani Lo Celso,Midfielder,30,65,4,Real Betis,0.0,3.0,0.156,16.0,False,0.0,0.104,0.4333,0.5342,0.2781
+Japan,Daizen Maeda,Midfielder,28,27,4,Celtic,0.0,1.4,0.444,14.0,False,0.0,0.296,0.18,0.5106,0.278
+Netherlands,Guus Til,Midfielder,28,6,1,PSV Eindhoven,0.0,0.0,0.562,15.0,False,0.0,0.3747,0.04,0.5228,0.2772
+France,Michael Olise,Forward,24,16,4,Bayern Munich,0.0,0.0,0.381,130.0,False,0.0,0.254,0.1067,0.9193,0.2761
+Spain,Álex Baena,Midfielder,24,16,2,Atlético Madrid,0.0,0.0,0.22,40.0,False,0.0,0.1467,0.1067,0.7002,0.2754
+Norway,Sander Berge,Midfielder,28,65,1,Fulham,0.0,0.0,0.017,25.0,False,0.0,0.0113,0.4333,0.6144,0.2744
+United States,Malik Tillman,Midfielder,24,30,3,Bayer Leverkusen,0.0,1.0,0.155,35.0,True,0.0,0.1033,0.2,0.6757,0.2737
+Germany,Alexander Nübel,Goalkeeper,29,3,0,VfB Stuttgart,0.0,0.0,0.002,12.0,True,0.0,0.0013,0.02,0.4837,0.2732
+Austria,Marcel Sabitzer,Midfielder,32,98,26,Borussia Dortmund,0.0,11.0,0.124,7.0,False,0.0,0.0827,0.6533,0.3921,0.2731
+Egypt,Mohamed El Shenawy,Goalkeeper,37,76,0,Al Ahly,0.0,2.0,0.002,1.5,True,0.0,0.0013,0.5067,0.1728,0.2725
+Netherlands,Teun Koopmeiners,Midfielder,28,28,3,Juventus,0.0,1.4,0.22,28.0,False,0.0,0.1467,0.1867,0.6349,0.2718
+Sweden,Viktor Gyökeres,Forward,28,33,20,Arsenal,0.0,0.0,0.3899,70.0,True,0.0,0.2599,0.22,0.8038,0.2717
+Netherlands,Donyell Malen,Forward,27,52,13,Roma,0.0,6.0,0.482,25.0,False,0.0,0.3213,0.3467,0.6144,0.2713
+Mexico,Orbelín Pineda,Midfielder,30,92,12,AEK Athens,0.0,4.8,0.155,7.0,True,0.0,0.1033,0.6133,0.3921,0.2713
+Mexico,Raúl Jiménez,Forward,35,124,45,Fulham,0.0,0.0,0.431,4.0,False,0.0,0.2873,0.8267,0.3035,0.2709
+France,Manu Koné,Midfielder,25,13,0,Roma,0.0,0.0,0.155,50.0,True,0.0,0.1033,0.0867,0.7414,0.2708
+Belgium,Koni De Winter,Defender,23,8,0,Milan,0.0,0.0,0.117,12.0,False,0.0,0.078,0.0533,0.4837,0.2695
+Turkey,Kenan Yıldız,Forward,21,28,5,Juventus,0.0,0.0,0.3899,75.0,True,0.0,0.2599,0.1867,0.8166,0.2693
+United States,Tyler Adams,Midfielder,27,54,2,Bournemouth,0.0,0.7,0.064,25.0,False,0.0,0.0427,0.36,0.6144,0.2691
+Belgium,Thomas Meunier,Defender,34,80,10,Lille,0.0,4.5,0.119,1.8,False,0.0,0.0793,0.5333,0.1941,0.2689
+Qatar,Akram Afif,Forward,29,125,39,Al-Sadd,0.0,0.0,0.3899,4.5,True,0.0,0.2599,0.8333,0.3215,0.2673
+Morocco,Anass Salah-Eddine,Defender,24,9,0,PSV Eindhoven,0.0,0.0,0.0735,12.0,True,0.0,0.049,0.06,0.4837,0.2672
+France,N'Golo Kanté,Midfielder,35,68,2,Fenerbahçe,0.0,5.4,0.157,12.0,False,0.0,0.1047,0.4533,0.4837,0.2672
+Mexico,Jorge Sánchez,Defender,28,59,3,PAOK,0.0,0.0,0.0735,3.5,True,0.0,0.049,0.3933,0.2836,0.2671
+Australia,Harry Souttar,Defender,27,38,11,Leicester City,0.0,0.7,0.0735,6.0,True,0.0,0.049,0.2533,0.3669,0.2668
+Austria,Marco Friedl,Defender,28,11,0,Werder Bremen,0.0,0.0,0.027,12.0,False,0.0,0.018,0.0733,0.4837,0.2665
+Spain,Gavi,Midfielder,21,29,5,Barcelona,0.0,0.0,0.088,40.0,False,0.0,0.0587,0.1933,0.7002,0.2663
+England,Ollie Watkins,Forward,30,21,6,Aston Villa,0.0,3.0,0.578,30.0,False,0.0,0.3853,0.14,0.6475,0.2661
+Argentina,Exequiel Palacios,Midfielder,27,38,0,Bayer Leverkusen,0.0,0.0,0.104,30.0,False,0.0,0.0693,0.2533,0.6475,0.2657
+Turkey,Mert Müldür,Defender,27,44,3,Fenerbahçe,0.0,3.0,0.074,5.0,False,0.0,0.0493,0.2933,0.3379,0.2643
+England,Marcus Rashford,Forward,28,71,18,Barcelona,0.0,9.7,0.265,40.0,False,0.0,0.1767,0.4733,0.7002,0.264
+Spain,Ferran Torres,Forward,26,56,24,Barcelona,0.0,0.0,0.3899,30.0,True,0.0,0.2599,0.3733,0.6475,0.2635
+Sweden,Mattias Svanberg,Midfielder,27,41,2,VfL Wolfsburg,0.0,0.0,0.309,12.0,False,0.0,0.206,0.2733,0.4837,0.2616
+Ivory Coast,Emmanuel Agbadou,Defender,28,20,2,Beşiktaş,0.0,0.0,0.044,9.0,False,0.0,0.0293,0.1333,0.4342,0.2615
+France,Rayan Cherki,Midfielder,22,6,2,Manchester City,0.0,0.0,0.155,50.0,True,0.0,0.1033,0.04,0.7414,0.2614
+Croatia,Mario Pašalić,Midfielder,31,84,11,Atalanta,0.0,5.1,0.155,7.0,True,0.0,0.1033,0.56,0.3921,0.2606
+Brazil,Casemiro,Midfielder,34,85,9,Manchester United,0.0,0.0,0.115,8.0,False,0.0,0.0767,0.5667,0.4143,0.2606
+Colombia,Santiago Arias,Defender,34,67,0,Independiente,0.0,1.4,0.0735,2.5,True,0.0,0.049,0.4467,0.2362,0.2595
+England,Noni Madueke,Forward,24,10,1,Arsenal,0.0,0.0,0.505,50.0,False,0.0,0.3367,0.0667,0.7414,0.2593
+Morocco,Chadi Riad,Defender,22,5,1,Crystal Palace,0.0,0.0,0.0735,12.0,True,0.0,0.049,0.0333,0.4837,0.2592
+Mexico,Jesús Gallardo,Defender,31,121,3,Toluca,0.0,0.0,0.167,0.0,False,0.0,0.1113,0.8067,0.0,0.2587
+France,Brice Samba,Goalkeeper,32,4,0,Rennes,0.0,0.0,0.002,10.0,True,0.0,0.0013,0.0267,0.4522,0.2582
+Netherlands,Justin Kluivert,Midfielder,27,12,0,Bournemouth,0.0,0.0,0.221,32.0,False,0.0,0.1473,0.08,0.6593,0.258
+England,Elliot Anderson,Midfielder,23,8,0,Nottingham Forest,0.0,0.0,0.072,60.0,False,0.0,0.048,0.0533,0.7752,0.2576
+Germany,Deniz Undav,Forward,29,9,6,VfB Stuttgart,0.0,0.0,0.622,25.0,False,0.0,0.4147,0.06,0.6144,0.2563
+France,Warren Zaïre-Emery,Midfielder,20,11,1,Paris Saint-Germain,0.0,0.0,0.095,50.0,False,0.0,0.0633,0.0733,0.7414,0.2561
+Senegal,Lamine Camara,Midfielder,22,32,7,Monaco,0.0,3.0,0.096,30.0,False,0.0,0.064,0.2133,0.6475,0.2561
+Argentina,Gerónimo Rulli,Goalkeeper,34,7,0,Marseille,0.0,0.0,0.002,9.0,True,0.0,0.0013,0.0467,0.4342,0.2553
+Japan,Tsuyoshi Watanabe,Defender,29,11,0,Feyenoord,0.0,0.0,0.068,10.0,False,0.0,0.0453,0.0733,0.4522,0.2549
+Algeria,Mohamed Amoura,Forward,26,45,19,VfL Wolfsburg,0.0,0.0,0.3899,32.0,True,0.0,0.2599,0.3,0.6593,0.2548
+Czech Republic,Vladimír Coufal,Defender,33,62,2,TSG Hoffenheim,0.0,0.0,0.0735,2.7,True,0.0,0.049,0.4133,0.2467,0.2547
+Morocco,Bilal El Khannouss,Midfielder,22,36,3,VfB Stuttgart,0.0,2.0,0.058,30.0,False,0.0,0.0387,0.24,0.6475,0.2539
+Netherlands,Mark Flekken,Goalkeeper,32,11,0,Bayer Leverkusen,0.0,0.0,0.002,8.0,True,0.0,0.0013,0.0733,0.4143,0.2536
+Uruguay,Manuel Ugarte,Midfielder,25,36,1,Manchester United,0.0,4.0,0.054,30.0,False,0.0,0.036,0.24,0.6475,0.253
+Uzbekistan,Eldor Shomurodov,Forward,30,91,44,İstanbul Başakşehir,0.0,0.0,0.47,5.0,False,0.0,0.3133,0.6067,0.3379,0.2526
+New Zealand,Chris Wood,Forward,34,90,45,Nottingham Forest,0.0,0.0,0.397,8.0,False,0.0,0.2647,0.6,0.4143,0.2523
+Paraguay,Miguel Almirón,Midfielder,32,76,10,Atlanta United FC,0.0,0.0,0.1,9.0,False,0.0,0.0667,0.5067,0.4342,0.2516
+Algeria,Farès Chaïbi,Midfielder,23,29,3,Eintracht Frankfurt,0.0,0.0,0.274,15.0,False,0.0,0.1827,0.1933,0.5228,0.2503
+Canada,Moïse Bombito,Defender,26,20,0,Nice,0.0,0.0,0.027,8.0,False,0.0,0.018,0.1333,0.4143,0.2498
+Turkey,Abdülkerim Bardakcı,Defender,31,26,2,Galatasaray,0.0,2.0,0.0735,6.5,True,0.0,0.049,0.1733,0.3799,0.2493
+Croatia,Nikola Vlašić,Midfielder,28,62,10,Torino,0.0,3.5,0.155,10.0,True,0.0,0.1033,0.4133,0.4522,0.2493
+United States,Joe Scally,Defender,23,26,0,Borussia Mönchengladbach,0.0,0.0,0.009,7.0,False,0.0,0.006,0.1733,0.3921,0.2489
+Senegal,Ismail Jakobs,Defender,26,29,0,Galatasaray,0.0,2.7,0.0735,6.0,True,0.0,0.049,0.1933,0.3669,0.2488
+France,Robin Risser,Goalkeeper,21,0,0,Lens,0.0,0.0,0.002,10.0,True,0.0,0.0013,0.0,0.4522,0.2488
+Paraguay,Diego Gómez,Midfielder,23,24,3,Brighton & Hove Albion,0.0,0.0,0.162,25.0,False,0.0,0.108,0.16,0.6144,0.2487
+United States,Mark McKenzie,Defender,27,29,0,Toulouse,0.0,0.0,0.064,6.0,False,0.0,0.0427,0.1933,0.3669,0.2478
+Canada,Derek Cornelius,Defender,28,44,1,Rangers,0.0,1.0,0.078,4.0,False,0.0,0.052,0.2933,0.3035,0.2475
+Norway,Jørgen Strand Larsen,Forward,26,27,6,Crystal Palace,0.0,0.0,0.401,40.0,False,0.0,0.2673,0.18,0.7002,0.2472
+Turkey,Can Uzun,Forward,20,5,1,Eintracht Frankfurt,0.0,0.0,0.488,45.0,False,0.0,0.3253,0.0333,0.7219,0.247
+Germany,Maximilian Beier,Forward,23,9,0,Borussia Dortmund,0.0,0.0,0.541,30.0,False,0.0,0.3607,0.06,0.6475,0.2467
+Croatia,Petar Sučić,Midfielder,22,16,1,Inter Milan,0.0,0.0,0.155,30.0,True,0.0,0.1033,0.1067,0.6475,0.2466
+Japan,Yukinari Sugawara,Defender,25,21,2,Werder Bremen,0.0,0.0,0.026,7.5,False,0.0,0.0173,0.14,0.4035,0.2463
+Saudi Arabia,Saud Abdulhamid,Defender,26,54,1,Lens,0.0,0.0,0.0735,3.0,True,0.0,0.049,0.36,0.2614,0.246
+Ivory Coast,Seko Fofana,Midfielder,31,32,7,Porto,0.0364,17.0,0.247,8.0,False,0.1456,0.1647,0.2133,0.4143,0.2455
+Belgium,Charles De Ketelaere,Forward,25,30,6,Atalanta,0.0,0.0,0.407,34.0,False,0.0,0.2713,0.2,0.6704,0.2455
+Portugal,Matheus Nunes,Midfielder,27,19,2,Manchester City,0.0,0.0,0.064,38.0,False,0.0,0.0427,0.1267,0.6908,0.2454
+Colombia,Yerry Mina,Defender,31,53,8,Cagliari,0.0,0.0,0.086,3.0,False,0.0,0.0573,0.3533,0.2614,0.2453
+Argentina,Gonzalo Montiel,Defender,29,38,2,River Plate,0.0,0.0,0.0735,4.5,True,0.0,0.049,0.2533,0.3215,0.2441
+Portugal,João Félix,Forward,26,53,12,Al-Nassr,0.0,11.7,0.34,25.0,False,0.0,0.2267,0.3533,0.6144,0.2439
+Uruguay,Santiago Bueno,Defender,27,8,0,Wolverhampton Wanderers,0.0,0.0,0.018,10.0,False,0.0,0.012,0.0533,0.4522,0.2439
+Turkey,Altay Bayındır,Goalkeeper,28,12,0,Manchester United,0.0,0.0,0.002,7.0,True,0.0,0.0013,0.08,0.3921,0.2438
+Morocco,Brahim Díaz,Forward,26,25,13,Real Madrid,0.0,0.0,0.3899,40.0,True,0.0,0.2599,0.1667,0.7002,0.243
+Sweden,Yasin Ayari,Midfielder,22,21,3,Brighton & Hove Albion,0.0,0.0,0.102,30.0,False,0.0,0.068,0.14,0.6475,0.2426
+Sweden,Benjamin Nygren,Midfielder,24,11,3,Celtic,0.0,0.0,0.567,6.5,False,0.0,0.378,0.0733,0.3799,0.242
+Tunisia,Ali Abdi,Defender,32,46,7,Nice,0.0,1.0,0.312,2.5,False,0.0,0.208,0.3067,0.2362,0.2413
+Switzerland,Johan Manzambi,Midfielder,20,12,3,SC Freiburg,0.0,0.0,0.155,30.0,True,0.0,0.1033,0.08,0.6475,0.2412
+Norway,Oscar Bobb,Midfielder,22,19,2,Fulham,0.0,0.0,0.155,25.0,True,0.0,0.1033,0.1267,0.6144,0.2406
+Germany,Angelo Stiller,Midfielder,25,8,0,VfB Stuttgart,0.0,0.0,0.067,45.0,False,0.0,0.0447,0.0533,0.7219,0.2406
+Senegal,Habib Diarra,Midfielder,22,20,4,Sunderland,0.0,0.0,0.079,32.0,False,0.0,0.0527,0.1333,0.6593,0.2403
+Germany,Felix Nmecha,Midfielder,25,8,1,Borussia Dortmund,0.0,0.0,0.065,45.0,False,0.0,0.0433,0.0533,0.7219,0.2402
+Iran,Alireza Jahanbakhsh,Midfielder,32,98,17,Dender,0.0,2.8999999999999995,0.155,3.0,True,0.0,0.1033,0.6533,0.2614,0.2401
+France,Désiré Doué,Forward,21,6,2,Paris Saint-Germain,0.0,0.0,0.319,90.0,False,0.0,0.2127,0.04,0.8506,0.2399
+France,Jean-Philippe Mateta,Forward,28,4,2,Crystal Palace,0.0,0.0,0.479,40.0,False,0.0,0.3193,0.0267,0.7002,0.2398
+Algeria,Amine Gouiri,Forward,26,22,8,Marseille,0.0,0.0,0.453,28.0,False,0.0,0.302,0.1467,0.6349,0.2396
+Switzerland,Luca Jaquez,Defender,23,3,0,VfB Stuttgart,0.0,0.0,0.0735,10.0,True,0.0,0.049,0.02,0.4522,0.2394
+Switzerland,Ardon Jashari,Midfielder,23,8,0,Milan,0.0,0.0,0.155,32.0,True,0.0,0.1033,0.0533,0.6593,0.2394
+Qatar,Boualem Khoukhi,Defender,35,116,20,Al-Sadd,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.7733,0.0,0.2393
+Uruguay,Rodrigo Zalazar,Midfielder,26,8,2,Braga,0.0,0.0,0.278,20.0,False,0.0,0.1853,0.0533,0.5741,0.2385
+Brazil,Gabriel Martinelli,Forward,24,22,4,Arsenal,0.0,0.0,0.359,45.0,False,0.0,0.2393,0.1467,0.7219,0.2382
+Iran,Milad Mohammadi,Defender,32,76,1,Persepolis,0.0,0.0,0.0735,1.3,True,0.0,0.049,0.5067,0.1571,0.2379
+Uruguay,Sergio Rochet,Goalkeeper,33,35,0,Internacional,0.0,0.0,0.002,3.5,True,0.0,0.0013,0.2333,0.2836,0.2378
+Bosnia and Herzegovina,Nikola Vasilj,Goalkeeper,30,26,0,FC St. Pauli,0.0,0.0,0.002,4.5,True,0.0,0.0013,0.1733,0.3215,0.2376
+Scotland,Ché Adams,Forward,29,47,13,Torino,0.0,0.0,0.3899,18.0,True,0.0,0.2599,0.3133,0.5552,0.236
+Iraq,Jalal Hassan,Goalkeeper,35,101,0,Al-Zawraa,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.6733,0.0,0.2358
+England,Kobbie Mainoo,Midfielder,21,13,0,Manchester United,0.0,5.0,0.04,40.0,False,0.0,0.0267,0.0867,0.7002,0.2354
+Morocco,Issa Diop,Defender,29,3,0,Fulham,0.0,0.0,0.033,10.0,False,0.0,0.022,0.02,0.4522,0.2354
+Portugal,Rui Silva,Goalkeeper,32,3,0,Sporting CP,0.0,0.0,0.002,8.0,True,0.0,0.0013,0.02,0.4143,0.235
+Belgium,Axel Witsel,Midfielder,37,138,12,Girona,0.0,3.1000000000000005,0.007,1.4,False,0.0,0.0047,0.92,0.1651,0.2349
+Austria,Romano Schmid,Midfielder,26,34,3,Werder Bremen,0.0,1.0,0.129,17.0,False,0.0,0.086,0.2267,0.545,0.2346
+Scotland,Ryan Christie,Midfielder,31,68,10,Bournemouth,0.0,0.0,0.068,9.0,False,0.0,0.0453,0.4533,0.4342,0.2345
+Turkey,Ozan Kabak,Defender,26,29,2,TSG Hoffenheim,0.0,0.0,0.0735,5.0,True,0.0,0.049,0.1933,0.3379,0.2343
+England,Ivan Toney,Forward,30,8,1,Al-Ahli,0.0,1.0,0.3899,50.0,True,0.0,0.2599,0.0533,0.7414,0.2342
+Turkey,Kerem Aktürkoğlu,Forward,27,51,15,Fenerbahçe,0.0,0.0,0.323,22.0,False,0.0,0.2153,0.34,0.5912,0.2338
+Tunisia,Ellyes Skhiri,Midfielder,31,83,4,Eintracht Frankfurt,0.0,0.0,0.063,6.0,False,0.0,0.042,0.5533,0.3669,0.2333
+United States,Brenden Aaronson,Forward,25,58,9,Leeds United,0.0,0.7,0.3899,12.0,True,0.0,0.2599,0.3867,0.4837,0.2327
+Sweden,Lucas Bergvall,Midfielder,20,10,0,Tottenham Hotspur,0.0,0.0,0.046,40.0,False,0.0,0.0307,0.0667,0.7002,0.2326
+Senegal,Yehvann Diouf,Goalkeeper,26,2,0,Nice,0.0,0.0,0.002,8.0,False,0.0,0.0013,0.0133,0.4143,0.2326
+Spain,Mikel Oyarzabal,Forward,29,52,24,Real Sociedad,0.0,6.0,0.288,25.0,False,0.0,0.192,0.3467,0.6144,0.2325
+Ghana,Alidu Seidu,Defender,26,24,1,Rennes,0.0,0.7,0.011,6.0,False,0.0,0.0073,0.16,0.3669,0.2325
+Colombia,Luis Suárez,Forward,28,11,5,Sporting CP,0.0,0.0,0.803,4.0,False,0.0,0.5353,0.0733,0.3035,0.2323
+Turkey,Eren Elmalı,Defender,25,22,0,Galatasaray,0.0,0.0,0.176,5.0,False,0.0,0.1173,0.1467,0.3379,0.2306
+Morocco,Azzedine Ounahi,Midfielder,26,48,9,Girona,0.0,11.2,0.155,10.0,True,0.0,0.1033,0.32,0.4522,0.2306
+Australia,Jordan Bos,Defender,23,27,4,Feyenoord,0.0,0.0,0.0735,5.0,True,0.0,0.049,0.18,0.3379,0.2303
+Norway,Ørjan Nyland,Goalkeeper,35,70,0,Sevilla,0.0,0.0,0.002,0.9,True,0.0,0.0013,0.4667,0.121,0.23
+Turkey,Arda Güler,Forward,21,28,6,Real Madrid,0.0,9.0,0.287,45.0,False,0.0,0.1913,0.1867,0.7219,0.2298
+Scotland,Grant Hanley,Defender,34,68,2,Hibernian,0.0,0.0,0.0735,1.5,True,0.0,0.049,0.4533,0.1728,0.2297
+Japan,Wataru Endo,Midfielder,33,73,4,Liverpool,0.0,4.199999999999999,0.155,5.0,True,0.0,0.1033,0.4867,0.3379,0.2297
+Switzerland,Dan Ndoye,Forward,25,31,8,Nottingham Forest,0.0,14.0,0.292,40.0,False,0.0,0.1947,0.2067,0.7002,0.2295
+Spain,Yéremy Pino,Forward,23,22,4,Crystal Palace,0.0,0.0,0.3899,30.0,True,0.0,0.2599,0.1467,0.6475,0.2295
+Cape Verde,Wagner Pina,Defender,23,13,0,Trabzonspor,0.0,0.0,0.0735,7.0,True,0.0,0.049,0.0867,0.3921,0.2294
+England,Anthony Gordon,Forward,25,18,2,Newcastle United,0.0,0.0,0.279,60.0,False,0.0,0.186,0.12,0.7752,0.2288
+Morocco,Abde Ezzalzouli,Forward,24,36,2,Real Betis,0.0,0.0,0.3899,20.0,True,0.0,0.2599,0.24,0.5741,0.2288
+Saudi Arabia,Salem Al-Dawsari,Forward,34,109,27,Al-Hilal,0.0,0.0,0.3899,2.0,True,0.0,0.2599,0.7267,0.2072,0.2284
+Colombia,Jhon Córdoba,Forward,33,21,6,Krasnodar,0.0,0.0,0.585,10.0,False,0.0,0.39,0.14,0.4522,0.2284
+Qatar,Hassan Al-Haydos,Forward,35,186,41,Al-Sadd,0.0,0.0,0.3899,0.0,True,0.0,0.2599,1.0,0.0,0.228
+Algeria,Rafik Belghali,Defender,24,12,1,Hellas Verona,0.0,0.0,0.0735,7.0,True,0.0,0.049,0.08,0.3921,0.2274
+Argentina,Nico Paz,Forward,21,8,1,Como,0.0,0.0,0.306,65.0,False,0.0,0.204,0.0533,0.79,0.2272
+Belgium,Leandro Trossard,Forward,31,51,12,Arsenal,0.0,4.0,0.306,20.0,False,0.0,0.204,0.34,0.5741,0.227
+United States,Tim Ream,Defender,38,82,1,Charlotte FC,0.0,0.7,0.0735,0.8,True,0.0,0.049,0.5467,0.1108,0.2268
+Turkey,Kaan Ayhan,Midfielder,31,73,5,Galatasaray,0.0,3.0,0.155,4.7,True,0.0,0.1033,0.4867,0.3282,0.2268
+Spain,Nico Williams,Forward,23,30,6,Athletic Bilbao,0.0,0.0,0.207,60.0,False,0.0,0.138,0.2,0.7752,0.2264
+Bosnia and Herzegovina,Edin Džeko,Forward,40,148,73,Schalke 04,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.9867,0.0,0.226
+Switzerland,Rubén Vargas,Forward,27,61,11,Sevilla,0.0,0.0,0.3899,9.0,True,0.0,0.2599,0.4067,0.4342,0.2258
+Ecuador,Joel Ordóñez,Defender,22,16,0,Club Brugge,0.0,0.0,0.101,6.0,False,0.0,0.0673,0.1067,0.3669,0.2256
+Brazil,Matheus Cunha,Forward,27,22,1,Manchester United,0.0,0.0,0.29,45.0,False,0.0,0.1933,0.1467,0.7219,0.2244
+Austria,Nicolas Seiwald,Midfielder,25,47,1,RB Leipzig,0.0,1.0,0.007,16.0,False,0.0,0.0047,0.3133,0.5342,0.2243
+Senegal,Iliman Ndiaye,Forward,26,39,4,Everton,0.0,2.4,0.202,45.0,False,0.0,0.1347,0.26,0.7219,0.2238
+Belgium,Dodi Lukébakio,Forward,28,30,6,Benfica,0.0,0.0,0.3899,20.0,True,0.0,0.2599,0.2,0.5741,0.2228
+Switzerland,Djibril Sow,Midfielder,29,52,0,Sevilla,0.0,1.4,0.115,9.0,False,0.0,0.0767,0.3467,0.4342,0.2226
+Ghana,Gideon Mensah,Defender,27,40,0,Auxerre,0.0,0.0,0.005,3.5,False,0.0,0.0033,0.2667,0.2836,0.2223
+Japan,Daichi Kamada,Midfielder,29,49,12,Crystal Palace,0.0,4.199999999999999,0.058,12.0,False,0.0,0.0387,0.3267,0.4837,0.2221
+New Zealand,Liberato Cacace,Defender,25,37,1,Wrexham,0.0,0.0,0.173,3.0,False,0.0,0.1153,0.2467,0.2614,0.222
+Brazil,Douglas Santos,Defender,32,6,0,Zenit Saint Petersburg,0.0,0.0,0.022,8.0,False,0.0,0.0147,0.04,0.4143,0.2214
+Sweden,Carl Starfelt,Defender,31,18,0,Celta Vigo,0.0,0.0,0.02,6.0,False,0.0,0.0133,0.12,0.3669,0.2214
+Panama,Eric Davis,Defender,35,107,9,Plaza Amador,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.7133,0.0,0.2213
+Canada,Tajon Buchanan,Forward,27,60,8,Villarreal,0.0,5.5,0.3899,8.0,True,0.0,0.2599,0.4,0.4143,0.2208
+Norway,Andreas Schjelderup,Midfielder,22,11,1,Benfica,0.0,0.0,0.262,14.0,False,0.0,0.1747,0.0733,0.5106,0.2202
+Sweden,Anthony Elanga,Forward,24,30,6,Newcastle United,0.0,0.0,0.209,50.0,False,0.0,0.1393,0.2,0.7414,0.2201
+Algeria,Ramiz Zerrouki,Midfielder,28,52,3,Twente,0.0,0.0,0.102,9.0,False,0.0,0.068,0.3467,0.4342,0.22
+Croatia,Petar Musa,Forward,28,11,1,FC Dallas,0.0,0.0,0.627,8.0,False,0.0,0.418,0.0733,0.4143,0.2193
+Austria,Carney Chukwuemeka,Midfielder,22,3,1,Borussia Dortmund,0.0,0.0,0.155,25.0,True,0.0,0.1033,0.02,0.6144,0.2193
+Japan,Keito Nakamura,Midfielder,25,25,10,Reims,0.0,0.0,0.308,8.0,False,0.0,0.2053,0.1667,0.4143,0.2192
+England,Djed Spence,Defender,25,5,0,Tottenham Hotspur,0.0,0.0,0.021,8.0,False,0.0,0.014,0.0333,0.4143,0.2192
+Panama,Alberto Quintero,Midfielder,38,141,7,Plaza Amador,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.94,0.0,0.219
+Ecuador,Enner Valencia,Forward,36,105,49,Pachuca,0.0,0.0,0.273,3.8,False,0.0,0.182,0.7,0.2958,0.2188
+Algeria,Hicham Boudaoui,Midfielder,26,32,0,Nice,0.0,0.0,0.155,12.0,True,0.0,0.1033,0.2133,0.4837,0.2188
+Netherlands,Quinten Timber,Midfielder,24,11,1,Marseille,0.0,0.0,0.068,28.0,False,0.0,0.0453,0.0733,0.6349,0.2187
+Senegal,Idrissa Gueye,Midfielder,36,130,7,Everton,0.0,1.0,0.03,1.0,False,0.0,0.02,0.8667,0.1307,0.2186
+Canada,Promise David,Forward,24,10,3,Union Saint-Gilloise,0.0,0.0,0.545,13.0,False,0.0,0.3633,0.0667,0.4976,0.2185
+Ivory Coast,Nicolas Pépé,Forward,31,55,12,Villarreal,0.0,4.0,0.3899,8.5,True,0.0,0.2599,0.3667,0.4245,0.2179
+Ghana,Iñaki Williams,Forward,31,26,2,Athletic Bilbao,0.0,2.4,0.344,25.0,False,0.0,0.2293,0.1733,0.6144,0.2177
+Colombia,Jefferson Lerma,Midfielder,31,64,5,Crystal Palace,0.0,0.0,0.036,8.0,False,0.0,0.024,0.4267,0.4143,0.2168
+Switzerland,Remo Freuler,Midfielder,34,88,11,Bologna,0.0,5.1,0.042,4.0,False,0.0,0.028,0.5867,0.3035,0.2168
+Sweden,Hjalmar Ekdal,Defender,27,13,0,Burnley,0.0,0.0,0.0735,6.0,True,0.0,0.049,0.0867,0.3669,0.2168
+Australia,Aziz Behich,Defender,35,84,3,Melbourne City,0.0,0.0,0.0735,0.55,True,0.0,0.049,0.56,0.0826,0.2166
+Morocco,Ayyoub Bouaddi,Midfielder,18,3,0,Lille,0.0,0.0,0.012,40.0,False,0.0,0.008,0.02,0.7002,0.2165
+Morocco,Ayoub El Kaabi,Forward,32,71,37,Olympiacos,0.0,6.4,0.3899,5.0,True,0.0,0.2599,0.4733,0.3379,0.2165
+Canada,Ismaël Koné,Midfielder,23,40,4,Sassuolo,0.0,0.0,0.049,14.0,False,0.0,0.0327,0.2667,0.5106,0.2163
+Netherlands,Noa Lang,Forward,26,15,3,Galatasaray,0.0,0.0,0.3899,25.0,True,0.0,0.2599,0.1,0.6144,0.2158
+Germany,Jamie Leweling,Midfielder,25,5,1,VfB Stuttgart,0.0,0.0,0.123,25.0,False,0.0,0.082,0.0333,0.6144,0.2156
+Ivory Coast,Evann Guessand,Forward,24,21,4,Crystal Palace,0.0,0.0,0.338,28.0,False,0.0,0.2253,0.14,0.6349,0.2156
+DR Congo,Arthur Masuaku,Defender,32,45,4,Lens,0.0,6.0,0.0735,2.5,True,0.0,0.049,0.3,0.2362,0.2154
+Norway,Fredrik Aursnes,Midfielder,30,21,1,Benfica,0.0,0.0,0.118,17.0,False,0.0,0.0787,0.14,0.545,0.2151
+Morocco,Chemsdine Talbi,Midfielder,21,5,0,Sunderland,0.0,0.0,0.155,22.0,True,0.0,0.1033,0.0333,0.5912,0.215
+Portugal,Pedro Neto,Forward,26,24,2,Chelsea,0.0,0.0,0.178,60.0,False,0.0,0.1187,0.16,0.7752,0.2146
+Switzerland,Noah Okafor,Forward,26,25,2,Leeds United,0.0,0.7,0.3899,18.0,True,0.0,0.2599,0.1667,0.5552,0.214
+Scotland,Jack Hendry,Defender,31,38,3,Al-Ettifaq,0.0,1.0,0.0735,3.0,True,0.0,0.049,0.2533,0.2614,0.214
+Belgium,Alexis Saelemaekers,Midfielder,26,24,2,Milan,0.0,0.0,0.183,12.0,False,0.0,0.122,0.16,0.4837,0.2137
+England,Jordan Henderson,Midfielder,35,90,3,Brentford,0.0,0.0,0.155,2.0,True,0.0,0.1033,0.6,0.2072,0.2132
+Ghana,Abdul Rahman Baba,Defender,31,51,1,PAOK,0.0,0.0,0.0735,2.0,True,0.0,0.049,0.34,0.2072,0.213
+Canada,Cyle Larin,Forward,31,90,30,Southampton,0.0,9.1,0.329,3.5,False,0.0,0.2193,0.6,0.2836,0.2125
+Ivory Coast,Amad Diallo,Forward,23,19,6,Manchester United,0.0,0.0,0.226,50.0,False,0.0,0.1507,0.1267,0.7414,0.2125
+Argentina,Leandro Paredes,Midfielder,31,77,5,Boca Juniors,0.0,0.0,0.042,5.0,False,0.0,0.028,0.5133,0.3379,0.2124
+Haiti,Johny Placide,Goalkeeper,38,81,0,Bastia,0.0,0.0,0.002,0.25,True,0.0,0.0013,0.54,0.0421,0.2123
+Ivory Coast,Yahia Fofana,Goalkeeper,25,35,0,Çaykur Rizespor,0.0,0.0,0.002,2.5,True,0.0,0.0013,0.2333,0.2362,0.2117
+Croatia,Dominik Kotarski,Goalkeeper,26,4,0,Copenhagen,0.0,0.0,0.002,6.0,True,0.0,0.0013,0.0267,0.3669,0.2113
+Iran,Mehdi Taremi,Forward,33,105,60,Olympiacos,0.0,4.7,0.295,2.5,False,0.0,0.1967,0.7,0.2362,0.2112
+Algeria,Nabil Bentaleb,Midfielder,31,59,6,Lille,0.0,1.0,0.155,5.0,True,0.0,0.1033,0.3933,0.3379,0.211
+Austria,Marko Arnautović,Forward,37,133,47,Red Star Belgrade,0.0,3.0,0.3899,0.0,True,0.0,0.2599,0.8867,0.0,0.211
+Senegal,Ibrahim Mbaye,Forward,18,10,3,Paris Saint-Germain,0.0,0.0,0.3899,25.0,True,0.0,0.2599,0.0667,0.6144,0.2109
+Panama,Aníbal Godoy,Midfielder,36,159,4,San Diego FC,0.0,0.0,0.052,0.0,False,0.0,0.0347,1.0,0.0,0.2104
+Paraguay,Ramón Sosa,Midfielder,26,29,1,Palmeiras,0.0,3.0,0.155,11.0,True,0.0,0.1033,0.1933,0.4686,0.2102
+Norway,David Møller Wolfe,Defender,24,21,1,Wolverhampton Wanderers,0.0,0.0,0.0735,4.5,True,0.0,0.049,0.14,0.3215,0.2101
+Czech Republic,David Zima,Defender,25,25,1,Slavia Prague,0.0,0.0,0.0735,4.0,True,0.0,0.049,0.1667,0.3035,0.2091
+Germany,Nadiem Amiri,Midfielder,29,11,1,Mainz 05,0.0,0.0,0.151,17.0,False,0.0,0.1007,0.0733,0.545,0.2084
+Egypt,Mohamed Abdelmonem,Defender,27,35,3,Nice,0.0,5.0,0.0735,3.0,True,0.0,0.049,0.2333,0.2614,0.208
+Scotland,Lewis Ferguson,Midfielder,26,24,1,Bologna,0.0,0.0,0.017,20.0,False,0.0,0.0113,0.16,0.5741,0.2076
+Egypt,Zizo,Forward,30,62,5,Al Ahly,0.0,0.0,0.3899,5.0,True,0.0,0.2599,0.4133,0.3379,0.2075
+United States,Timothy Weah,Forward,26,51,7,Marseille,0.0,6.5,0.205,20.0,False,0.0,0.1367,0.34,0.5741,0.2068
+Panama,Fidel Escobar,Defender,31,99,4,Saprissa,0.0,0.4,0.0735,0.0,True,0.0,0.049,0.66,0.0,0.2054
+Qatar,Pedro Miguel,Defender,35,99,3,Al-Sadd,0.0,1.4,0.0735,0.0,True,0.0,0.049,0.66,0.0,0.2054
+Uruguay,José Giménez,Defender,31,99,8,Atlético Madrid,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.66,0.0,0.2054
+DR Congo,Gédéon Kalulu,Defender,28,28,0,Aris Limassol,0.0,0.0,0.0735,3.5,True,0.0,0.049,0.1867,0.2836,0.2052
+Switzerland,Aurèle Amenda,Defender,22,7,0,Eintracht Frankfurt,0.0,0.0,0.0735,6.0,True,0.0,0.049,0.0467,0.3669,0.2048
+DR Congo,Cédric Bakambu,Forward,35,69,21,Real Betis,0.0,8.0,0.512,1.4,False,0.0,0.3413,0.46,0.1651,0.2044
+Brazil,Igor Thiago,Forward,24,3,2,Brentford,0.0,0.0,0.3899,25.0,True,0.0,0.2599,0.02,0.6144,0.2038
+Netherlands,Brian Brobbey,Forward,24,11,1,Sunderland,0.0,0.0,0.3899,20.0,True,0.0,0.2599,0.0733,0.5741,0.2038
+South Africa,Lyle Foster,Forward,25,26,10,Burnley,0.0,0.0,0.3899,13.0,True,0.0,0.2599,0.1733,0.4976,0.2035
+Norway,Kristian Thorstvedt,Midfielder,27,36,4,Sassuolo,0.0,0.0,0.155,8.0,True,0.0,0.1033,0.24,0.4143,0.2033
+South Korea,Kim Seung-gyu,Goalkeeper,35,87,0,FC Tokyo,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.58,0.0,0.2031
+Uruguay,Emiliano Martínez,Midfielder,26,10,0,Palmeiras,0.0,0.0,0.155,15.0,True,0.0,0.1033,0.0667,0.5228,0.2012
+Scotland,Craig Gordon,Goalkeeper,43,84,0,Heart of Midlothian,0.0,0.0,0.002,0.05,True,0.0,0.0013,0.56,0.0092,0.2012
+Cape Verde,Vozinha,Goalkeeper,40,86,0,Chaves,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.5733,0.0,0.2008
+Panama,Ismael Díaz,Midfielder,29,57,17,León,0.0,0.0,0.421,1.0,False,0.0,0.2807,0.38,0.1307,0.1994
+Ivory Coast,Simon Adingra,Forward,24,29,5,Monaco,0.0,6.0,0.261,22.0,False,0.0,0.174,0.1933,0.5912,0.1994
+Brazil,Alex Sandro,Defender,35,44,2,Flamengo,0.0,0.7,0.0735,2.0,True,0.0,0.049,0.2933,0.2072,0.1989
+Mexico,Luis Chávez,Midfielder,30,45,5,Dynamo Moscow,0.0,0.0,0.043,9.0,False,0.0,0.0287,0.3,0.4342,0.1989
+Czech Republic,Michal Sadílek,Midfielder,27,35,1,Slavia Prague,0.0,0.0,0.155,7.5,True,0.0,0.1033,0.2333,0.4035,0.1987
+Sweden,Gustaf Lagerbielke,Defender,26,11,2,Braga,0.0,0.0,0.075,5.0,False,0.0,0.05,0.0733,0.3379,0.1984
+Czech Republic,David Jurásek,Defender,25,18,1,Slavia Prague,0.0,4.0,0.014,4.5,False,0.0,0.0093,0.12,0.3215,0.1981
+South Korea,Son Heung-min,Forward,33,144,56,Los Angeles FC,0.0,11.9,0.269,0.0,False,0.0,0.1793,0.96,0.0,0.1978
+Portugal,José Sá,Goalkeeper,33,5,0,Wolverhampton Wanderers,0.0,0.0,0.002,5.0,True,0.0,0.0013,0.0333,0.3379,0.1976
+Ecuador,Kevin Rodríguez,Forward,26,31,2,Union Saint-Gilloise,0.0,0.0,0.495,5.0,False,0.0,0.33,0.2067,0.3379,0.1976
+Panama,Michael Amir Murillo,Defender,30,94,9,Beşiktaş,0.0,4.8,0.094,0.0,False,0.0,0.0627,0.6267,0.0,0.1974
+Scotland,John Souttar,Defender,29,24,2,Rangers,0.0,0.0,0.0735,3.5,True,0.0,0.049,0.16,0.2836,0.1972
+Ghana,Jordan Ayew,Forward,34,120,34,Leicester City,0.0,1.7,0.191,1.8,False,0.0,0.1273,0.8,0.1941,0.197
+Colombia,Cucho Hernández,Forward,27,8,2,Real Betis,0.0,0.0,0.3899,18.0,True,0.0,0.2599,0.0533,0.5552,0.197
+DR Congo,Axel Tuanzebe,Defender,28,13,1,Burnley,0.0,0.0,0.018,5.0,False,0.0,0.012,0.0867,0.3379,0.1968
+Turkey,İsmail Yüksek,Midfielder,27,31,1,Fenerbahçe,0.0,1.0,0.051,12.0,False,0.0,0.034,0.2067,0.4837,0.1966
+Portugal,Francisco Trincão,Forward,26,17,3,Sporting CP,0.0,0.0,0.222,35.0,False,0.0,0.148,0.1133,0.6757,0.1965
+Ivory Coast,Yan Diomande,Forward,19,10,3,RB Leipzig,0.0,0.0,0.21,45.0,False,0.0,0.14,0.0667,0.7219,0.1964
+Japan,Yuito Suzuki,Midfielder,24,6,0,SC Freiburg,0.0,0.0,0.155,15.0,True,0.0,0.1033,0.04,0.5228,0.1958
+Uzbekistan,Otabek Shukurov,Midfielder,29,83,9,Baniyas,0.0,0.0,0.155,1.6,True,0.0,0.1033,0.5533,0.1802,0.1957
+Senegal,Pape Gueye,Midfielder,27,41,5,Villarreal,0.0,4.8,0.155,6.0,True,0.0,0.1033,0.2733,0.3669,0.1957
+Scotland,Andy Robertson,Defender,32,94,4,Liverpool,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.6267,0.0,0.1954
+Uruguay,Facundo Pellistri,Forward,24,39,2,Panathinaikos,0.0,3.7,0.3899,7.0,True,0.0,0.2599,0.26,0.3921,0.1954
+Cape Verde,Ryan Mendes,Forward,36,97,22,Iğdır,0.0,0.0,0.3899,0.7,True,0.0,0.2599,0.6467,0.1001,0.195
+Ecuador,Gonzalo Plata,Forward,25,49,8,Flamengo,0.0,0.0,0.3899,5.0,True,0.0,0.2599,0.3267,0.3379,0.1946
+Switzerland,Zeki Amdouni,Forward,25,29,11,Burnley,0.0,0.0,0.3899,9.0,True,0.0,0.2599,0.1933,0.4342,0.1938
+Colombia,Jorge Carrascal,Midfielder,28,23,2,Flamengo,0.0,0.0,0.163,9.0,False,0.0,0.1087,0.1533,0.4342,0.1935
+DR Congo,Ngal'ayel Mukau,Midfielder,21,13,0,Lille,0.0,0.0,0.155,12.0,True,0.0,0.1033,0.0867,0.4837,0.1934
+Algeria,Houssem Aouar,Midfielder,27,20,6,Al-Ittihad,0.0,1.0,0.155,10.0,True,0.0,0.1033,0.1333,0.4522,0.1933
+Argentina,Juan Musso,Goalkeeper,32,3,0,Atlético Madrid,0.0,0.0,0.002,5.0,True,0.0,0.0013,0.02,0.3379,0.193
+Haiti,Wilson Isidor,Forward,25,4,2,Sunderland,0.0,0.0,0.3899,18.0,True,0.0,0.2599,0.0267,0.5552,0.193
+Qatar,Almoez Ali,Forward,29,115,55,Al-Duhail,0.0,2.0999999999999996,0.3899,0.0,True,0.0,0.2599,0.7667,0.0,0.193
+Ghana,Thomas Partey,Midfielder,32,57,15,Villarreal,0.0,0.0,0.077,5.0,False,0.0,0.0513,0.38,0.3379,0.1928
+Belgium,Hans Vanaken,Midfielder,33,34,7,Club Brugge,0.0,0.0,0.187,6.0,False,0.0,0.1247,0.2267,0.3669,0.1928
+Colombia,Deiver Machado,Defender,32,15,0,Nantes,0.0,0.0,0.11,4.0,False,0.0,0.0733,0.1,0.3035,0.1927
+Switzerland,Fabian Rieder,Midfielder,24,28,1,FC Augsburg,0.0,1.0,0.155,8.0,False,0.0,0.1033,0.1867,0.4143,0.1926
+United States,Auston Trusty,Defender,27,8,0,Celtic,0.0,0.0,0.0735,5.0,True,0.0,0.049,0.0533,0.3379,0.1923
+Austria,Paul Wanner,Midfielder,20,3,0,PSV Eindhoven,0.0,0.0,0.175,14.0,False,0.0,0.1167,0.02,0.5106,0.1922
+Haiti,Duckens Nazon,Forward,32,78,44,Esteghlal,0.0,0.0,0.3899,1.6,True,0.0,0.2599,0.52,0.1802,0.192
+United States,Giovanni Reyna,Midfielder,23,38,9,Borussia Mönchengladbach,0.0,2.4,0.155,6.0,True,0.0,0.1033,0.2533,0.3669,0.1917
+Curaçao,Juninho Bacuna,Midfielder,28,48,14,Volendam,0.0,0.0,0.155,4.5,True,0.0,0.1033,0.32,0.3215,0.1914
+Uzbekistan,Abbosbek Fayzullaev,Midfielder,22,31,8,İstanbul Başakşehir,0.0,0.0,0.157,7.0,False,0.0,0.1047,0.2067,0.3921,0.1904
+Iran,Ramin Rezaeian,Defender,36,74,8,Foolad,0.0,1.7999999999999998,0.0735,0.45,True,0.0,0.049,0.4933,0.0701,0.1904
+England,Dan Burn,Defender,34,7,0,Newcastle United,0.0,0.0,0.07,5.0,False,0.0,0.0467,0.0467,0.3379,0.19
+Tunisia,Dylan Bronn,Defender,30,52,2,Servette,0.0,0.0,0.0735,1.3,True,0.0,0.049,0.3467,0.1571,0.1899
+Netherlands,Wout Weghorst,Forward,33,52,14,Ajax,0.0,5.4,0.404,3.5,False,0.0,0.2693,0.3467,0.2836,0.1895
+Jordan,Ihsan Haddad,Defender,32,91,2,Al-Hussein,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.6067,0.0,0.1894
+Haiti,Jean-Ricner Bellegarde,Midfielder,27,10,0,Wolverhampton Wanderers,0.0,0.0,0.095,15.0,False,0.0,0.0633,0.0667,0.5228,0.1892
+Paraguay,Julio Enciso,Forward,22,32,4,Strasbourg,0.0,0.0,0.211,20.0,False,0.0,0.1407,0.2133,0.5741,0.189
+Morocco,Zakaria El Ouahdi,Defender,24,2,0,Genk,0.0,0.0,0.241,4.5,False,0.0,0.1607,0.0133,0.3215,0.1888
+Switzerland,Silvan Widmer,Defender,33,60,5,Mainz 05,0.0,2.7,0.13,0.8,False,0.0,0.0867,0.4,0.1108,0.1884
+Qatar,Karim Boudiaf,Midfielder,35,118,5,Al-Duhail,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.7867,0.0,0.1883
+Turkey,İrfan Can Kahveci,Forward,30,46,6,Kasımpaşa,0.0,0.0,0.3899,4.5,True,0.0,0.2599,0.3067,0.3215,0.1883
+Portugal,Francisco Conceição,Forward,23,16,3,Juventus,0.0,0.0,0.213,30.0,False,0.0,0.142,0.1067,0.6475,0.1881
+Turkey,Barış Alper Yılmaz,Forward,26,34,3,Galatasaray,0.0,4.0,0.195,20.0,False,0.0,0.13,0.2267,0.5741,0.1878
+Colombia,Johan Mojica,Defender,33,44,1,Mallorca,0.0,0.0,0.025,1.8,False,0.0,0.0167,0.2933,0.1941,0.1875
+Belgium,Diego Moreira,Midfielder,21,3,0,Strasbourg,0.0,0.0,0.084,18.0,False,0.0,0.056,0.02,0.5552,0.1874
+Qatar,Abdulaziz Hatem,Midfielder,36,117,11,Al-Rayyan,0.0,0.7,0.155,0.0,True,0.0,0.1033,0.78,0.0,0.187
+DR Congo,Simon Banza,Forward,29,15,2,Al Jazira,0.0,0.0,0.3899,11.0,True,0.0,0.2599,0.1,0.4686,0.1867
+Australia,Jackson Irvine,Midfielder,33,82,14,FC St. Pauli,0.0,2.0999999999999996,0.127,1.5,False,0.0,0.0847,0.5467,0.1728,0.1866
+Iran,Mohammad Mohebi,Midfielder,27,36,14,Rostov,0.0,0.0,0.267,3.5,False,0.0,0.178,0.24,0.2836,0.1865
+Paraguay,Juan José Cáceres,Defender,26,17,0,Dynamo Moscow,0.0,1.0,0.008,4.0,False,0.0,0.0053,0.1133,0.3035,0.1865
+Uzbekistan,Jaloliddin Masharipov,Midfielder,32,74,12,Esteghlal,0.0,0.0,0.155,1.7,True,0.0,0.1033,0.4933,0.1873,0.1858
+Curaçao,Eloy Room,Goalkeeper,37,71,0,Miami FC,0.0,0.0,0.002,0.2,True,0.0,0.0013,0.4733,0.0344,0.1847
+Paraguay,Fabián Balbuena,Defender,34,48,2,Grêmio,0.0,0.0,0.019,1.5,False,0.0,0.0127,0.32,0.1728,0.1843
+Iran,Saman Ghoddos,Midfielder,32,68,3,Kalba,0.0,1.5,0.155,2.0,True,0.0,0.1033,0.4533,0.2072,0.1838
+Norway,Patrick Berg,Midfielder,28,42,0,Bodø/Glimt,0.0,0.0,0.155,4.5,True,0.0,0.1033,0.28,0.3215,0.1834
+Curaçao,Joshua Brenet,Defender,32,17,1,Kayserispor,0.0,0.0,0.0735,3.5,True,0.0,0.049,0.1133,0.2836,0.1831
+Haiti,Jean-Kévin Duverne,Defender,28,17,1,Gent,0.0,0.0,0.0735,3.5,True,0.0,0.049,0.1133,0.2836,0.1831
+Croatia,Martin Erlić,Defender,28,12,1,Midtjylland,0.0,0.0,0.0735,4.0,True,0.0,0.049,0.08,0.3035,0.1831
+Ivory Coast,Bazoumana Touré,Forward,20,6,2,TSG Hoffenheim,0.0,0.0,0.268,25.0,False,0.0,0.1787,0.04,0.6144,0.1825
+Scotland,Ben Gannon-Doak,Forward,20,14,1,Bournemouth,0.0,0.0,0.3899,10.0,True,0.0,0.2599,0.0933,0.4522,0.1824
+Netherlands,Marten de Roon,Midfielder,35,43,1,Atalanta,0.0,0.0,0.037,7.0,False,0.0,0.0247,0.2867,0.3921,0.1824
+DR Congo,Théo Bongonda,Midfielder,30,37,7,Spartak Moscow,0.0,10.0,0.155,5.0,True,0.0,0.1033,0.2467,0.3379,0.1817
+Scotland,Angus Gunn,Goalkeeper,30,22,0,Nottingham Forest,0.0,0.0,0.002,2.5,True,0.0,0.0013,0.1467,0.2362,0.1814
+Haiti,Frantzdy Pierrot,Forward,31,51,34,Çaykur Rizespor,0.0,0.0,0.3899,3.0,True,0.0,0.2599,0.34,0.2614,0.1813
+Sweden,Alexander Bernhardsson,Defender,27,11,0,Holstein Kiel,0.0,0.0,0.278,3.0,False,0.0,0.1853,0.0733,0.2614,0.1805
+Croatia,Mateo Kovačić,Midfielder,32,112,5,Manchester City,0.0,9.7,0.155,0.0,True,0.0,0.1033,0.7467,0.0,0.1803
+Spain,Borja Iglesias,Forward,33,7,0,Celta Vigo,0.0,0.0,0.528,5.0,False,0.0,0.352,0.0467,0.3379,0.1802
+Sweden,Eric Smith,Defender,29,2,0,FC St. Pauli,0.0,0.0,0.055,5.0,False,0.0,0.0367,0.0133,0.3379,0.1784
+Turkey,Oğuz Aydın,Forward,25,10,0,Fenerbahçe,0.0,0.0,0.3899,10.0,True,0.0,0.2599,0.0667,0.4522,0.1784
+Argentina,Giuliano Simeone,Forward,23,11,1,Atlético Madrid,0.0,0.0,0.136,40.0,False,0.0,0.0907,0.0733,0.7002,0.1782
+DR Congo,Edo Kayembe,Midfielder,28,42,2,Watford,0.0,0.0,0.155,4.0,True,0.0,0.1033,0.28,0.3035,0.178
+Iran,Saeid Ezatolahi,Midfielder,29,83,2,Shabab Al Ahli,0.0,2.4999999999999996,0.155,0.9,True,0.0,0.1033,0.5533,0.121,0.178
+Australia,Mathew Leckie,Forward,35,80,14,Melbourne City,0.0,4.3,0.3899,0.7,True,0.0,0.2599,0.5333,0.1001,0.178
+Austria,Patrick Wimmer,Forward,25,30,1,VfL Wolfsburg,0.0,3.0,0.215,15.0,False,0.0,0.1433,0.2,0.5228,0.1776
+Croatia,Ante Budimir,Forward,34,37,6,Osasuna,0.0,4.7,0.441,3.0,False,0.0,0.294,0.2467,0.2614,0.1775
+Norway,Antonio Nusa,Forward,21,23,8,RB Leipzig,0.0,0.0,0.112,32.0,False,0.0,0.0747,0.1533,0.6593,0.1773
+Ivory Coast,Elye Wahi,Forward,23,2,0,Nice,0.0,0.0,0.3899,12.0,True,0.0,0.2599,0.0133,0.4837,0.1767
+United States,Haji Wright,Forward,28,20,7,Coventry City,0.0,5.8999999999999995,0.3899,7.0,True,0.0,0.2599,0.1333,0.3921,0.1764
+Scotland,Lyndon Dykes,Forward,30,51,10,Charlton Athletic,0.0,0.0,0.3899,2.5,True,0.0,0.2599,0.34,0.2362,0.1762
+DR Congo,Joris Kayembe,Defender,31,25,0,Genk,0.0,0.0,0.0735,2.5,True,0.0,0.049,0.1667,0.2362,0.1755
+Jordan,Yazeed Abulaila,Goalkeeper,33,75,0,Al-Hussein,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.5,0.0,0.1751
+Germany,Oliver Baumann,Goalkeeper,36,13,0,TSG Hoffenheim,0.0,0.0,0.002,3.0,True,0.0,0.0013,0.0867,0.2614,0.1742
+Switzerland,Yvon Mvogo,Goalkeeper,32,13,0,Lorient,0.0,0.0,0.002,3.0,True,0.0,0.0013,0.0867,0.2614,0.1742
+Scotland,George Hirst,Forward,27,10,1,Ipswich Town,0.0,0.0,0.406,8.0,False,0.0,0.2707,0.0667,0.4143,0.1741
+Senegal,Antoine Mendy,Defender,22,6,0,Nice,0.0,0.0,0.1,4.0,False,0.0,0.0667,0.04,0.3035,0.1738
+Haiti,Hannes Delcroix,Defender,27,7,0,Lugano,0.0,0.0,0.0735,4.0,True,0.0,0.049,0.0467,0.3035,0.1731
+Egypt,Trézéguet,Forward,31,95,23,Al Ahly,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.6333,0.0,0.173
+Croatia,Dominik Livaković,Goalkeeper,31,74,0,Dinamo Zagreb,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.4933,0.0,0.1728
+Panama,Andrés Andrade,Defender,27,50,1,LASK,0.0,0.0,0.0735,1.0,True,0.0,0.049,0.3333,0.1307,0.1727
+Iraq,Aymen Hussein,Forward,30,94,33,Al-Karma,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.6267,0.0,0.172
+Morocco,Neil El Aynaoui,Midfielder,24,15,2,Roma,0.0,0.0,0.138,8.0,False,0.0,0.092,0.1,0.4143,0.1719
+Paraguay,Andrés Cubas,Midfielder,30,33,0,Vancouver Whitecaps FC,0.0,0.0,0.155,4.5,True,0.0,0.1033,0.22,0.3215,0.1714
+Tunisia,Ismaël Gharbi,Midfielder,22,17,2,FC Augsburg,0.0,0.0,0.155,7.0,True,0.0,0.1033,0.1133,0.3921,0.1713
+South Korea,Lee Jae-sung,Midfielder,33,105,15,Mainz 05,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.7,0.0,0.171
+Belgium,Nicolas Raskin,Midfielder,25,13,2,Rangers,0.0,0.0,0.194,6.5,False,0.0,0.1293,0.0867,0.3799,0.1701
+Czech Republic,Jan Kuchta,Forward,29,31,3,Sparta Prague,0.0,0.0,0.3899,4.0,True,0.0,0.2599,0.2067,0.3035,0.1697
+Panama,Yoel Bárcenas,Midfielder,32,104,10,Mazatlán,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.6933,0.0,0.1696
+Ivory Coast,Jean Michaël Seri,Midfielder,34,65,4,Maribor,0.0,2.0,0.155,1.5,True,0.0,0.1033,0.4333,0.1728,0.1695
+Portugal,Gonçalo Guedes,Forward,29,34,8,Real Sociedad,0.0,0.0,0.31,6.0,False,0.0,0.2067,0.2267,0.3669,0.1694
+New Zealand,Tommy Smith,Defender,36,56,2,Braintree Town,0.0,0.0,0.0735,0.7,True,0.0,0.049,0.3733,0.1001,0.1694
+New Zealand,Kosta Barbarouses,Forward,36,76,10,Western Sydney Wanderers,0.0,0.0,0.3899,0.5,True,0.0,0.2599,0.5067,0.0765,0.1693
+Ecuador,Yaimar Medina,Defender,21,5,0,Genk,0.0,0.0,0.0735,4.0,True,0.0,0.049,0.0333,0.3035,0.1691
+Jordan,Musa Al-Taamari,Forward,29,91,24,Rennes,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.6067,0.0,0.169
+Austria,Michael Gregoritsch,Forward,32,75,24,FC Augsburg,0.0,4.0,0.296,1.5,False,0.0,0.1973,0.5,0.1728,0.1688
+Paraguay,Matías Galarza,Midfielder,24,15,3,Atlanta United FC,0.0,0.0,0.155,7.0,True,0.0,0.1033,0.1,0.3921,0.1686
+Uruguay,Juan Manuel Sanabria,Midfielder,26,5,1,Real Salt Lake,0.0,0.0,0.22,7.0,False,0.0,0.1467,0.0333,0.3921,0.1683
+Argentina,Thiago Almada,Forward,25,14,4,Atlético Madrid,0.0,0.0,0.192,20.0,False,0.0,0.128,0.0933,0.5741,0.1672
+Uruguay,Guillermo Varela,Defender,33,28,0,Flamengo,0.0,0.0,0.0735,2.0,True,0.0,0.049,0.1867,0.2072,0.167
+Australia,Nestory Irankunda,Forward,20,15,5,Watford,0.0,0.0,0.3899,6.0,True,0.0,0.2599,0.1,0.3669,0.1664
+South Korea,Kim Min-jae,Defender,29,79,4,Bayern Munich,0.0,0.0,0.08,0.0,False,0.0,0.0533,0.5267,0.0,0.166
+Jordan,Mahmoud Al-Mardi,Forward,32,88,9,Al-Hussein,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.5867,0.0,0.166
+Colombia,Juan Fernando Quintero,Midfielder,33,48,6,River Plate,0.0,4.2,0.155,2.5,True,0.0,0.1033,0.32,0.2362,0.1658
+Brazil,Luiz Henrique,Forward,25,14,2,Zenit Saint Petersburg,0.0,0.0,0.152,24.0,False,0.0,0.1013,0.0933,0.607,0.1658
+Jordan,Yazan Al-Arab,Defender,30,79,3,FC Seoul,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.5267,0.0,0.1654
+Bosnia and Herzegovina,Benjamin Tahirović,Midfielder,23,28,2,Brøndby,0.0,0.0,0.155,4.5,True,0.0,0.1033,0.1867,0.3215,0.1648
+Tunisia,Elias Achouri,Forward,27,30,4,Copenhagen,0.0,0.0,0.3899,3.5,True,0.0,0.2599,0.2,0.2836,0.1647
+Senegal,Cherif Ndiaye,Forward,30,18,4,Samsunspor,0.0,0.0,0.443,3.5,False,0.0,0.2953,0.12,0.2836,0.1633
+Norway,Julian Ryerson,Forward,28,42,1,Borussia Dortmund,0.0,0.0,0.032,20.0,False,0.0,0.0213,0.28,0.5741,0.1632
+Curaçao,Armando Obispo,Defender,27,5,0,PSV Eindhoven,0.0,0.0,0.222,3.0,False,0.0,0.148,0.0333,0.2614,0.1629
+Austria,Patrick Pentz,Goalkeeper,29,18,0,Brøndby,0.0,0.0,0.002,2.2,True,0.0,0.0013,0.12,0.2193,0.1627
+Netherlands,Crysencio Summerville,Forward,24,1,0,West Ham United,0.0,0.0,0.215,22.0,False,0.0,0.1433,0.0067,0.5912,0.1622
+Curaçao,Leandro Bacuna,Midfielder,34,71,16,Iğdır,0.0,0.0,0.155,0.9,True,0.0,0.1033,0.4733,0.121,0.162
+Belgium,Brandon Mechele,Defender,33,9,1,Club Brugge,0.0,0.0,0.131,3.0,False,0.0,0.0873,0.06,0.2614,0.1618
+Ecuador,Jackson Porozo,Defender,25,9,1,Tijuana,0.0,0.0,0.061,3.3,False,0.0,0.0407,0.06,0.275,0.1616
+New Zealand,Marko Stamenić,Midfielder,24,39,3,Swansea City,0.0,0.0,0.155,3.0,True,0.0,0.1033,0.26,0.2614,0.1614
+Spain,Marc Pubill,Defender,22,1,0,Atlético Madrid,0.0,0.0,0.0735,4.0,True,0.0,0.049,0.0067,0.3035,0.1611
+Scotland,Lawrence Shankland,Forward,30,20,7,Heart of Midlothian,0.0,0.0,0.469,2.5,False,0.0,0.3127,0.1333,0.2362,0.161
+Senegal,Bamba Dieng,Forward,26,22,2,Lorient,0.0,0.0,0.3899,4.0,True,0.0,0.2599,0.1467,0.3035,0.1607
+Switzerland,Michel Aebischer,Midfielder,29,40,2,Pisa,0.0,2.0,0.054,4.5,False,0.0,0.036,0.2667,0.3215,0.1606
+Panama,José Luis Rodríguez,Midfielder,27,70,8,Juárez,0.0,6.2,0.025,2.0,False,0.0,0.0167,0.4667,0.2072,0.1605
+Curaçao,Juriën Gaari,Defender,32,59,1,Abha,0.0,0.0,0.0735,0.45,True,0.0,0.049,0.3933,0.0701,0.1604
+Iraq,Mohanad Ali,Forward,25,71,27,Dibba,0.0,0.0,0.3899,0.35,True,0.0,0.2599,0.4733,0.0566,0.1603
+Uzbekistan,Igor Sergeev,Forward,33,82,24,Persepolis,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.5467,0.0,0.16
+Ecuador,Alan Minda,Midfielder,23,19,2,Atlético Mineiro,0.0,0.0,0.278,3.0,False,0.0,0.1853,0.1267,0.2614,0.1594
+Morocco,Samir El Mourabet,Midfielder,20,3,0,Strasbourg,0.0,0.0,0.155,8.0,True,0.0,0.1033,0.02,0.4143,0.1593
+Ghana,Kamaldeen Sulemana,Forward,24,28,1,Atalanta,0.0,0.7,0.1,18.0,False,0.0,0.0667,0.1867,0.5552,0.1591
+Uzbekistan,Rustam Ashurmatov,Defender,29,48,1,Esteghlal,0.0,0.0,0.0735,0.8,True,0.0,0.049,0.32,0.1108,0.1588
+Argentina,Valentín Barco,Midfielder,21,2,1,Strasbourg,0.0,0.0,0.032,13.0,False,0.0,0.0213,0.0133,0.4976,0.1583
+Mexico,Armando González,Forward,23,7,1,Guadalajara,0.0,0.0,0.755,0.0,False,0.0,0.5033,0.0467,0.0,0.158
+DR Congo,Noah Sadiki,Midfielder,21,19,0,Sunderland,0.0,0.0,0.155,5.0,True,0.0,0.1033,0.1267,0.3379,0.1577
+Canada,Jonathan Osorio,Midfielder,33,90,10,Toronto FC,0.0,2.7,0.188,0.0,False,0.0,0.1253,0.6,0.0,0.1576
+DR Congo,Charles Pickel,Midfielder,29,34,1,Espanyol,0.0,3.0,0.155,3.2,True,0.0,0.1033,0.2267,0.2706,0.1575
+Ghana,Abdul Fatawu,Forward,22,28,3,Leicester City,0.0,0.0,0.073,20.0,False,0.0,0.0487,0.1867,0.5741,0.1574
+Switzerland,Cedric Itten,Forward,29,15,5,Fortuna Düsseldorf,0.0,0.0,0.3899,4.5,True,0.0,0.2599,0.1,0.3215,0.1573
+Belgium,Nathan Ngoy,Defender,23,4,0,Lille,0.0,0.0,0.0735,3.5,True,0.0,0.049,0.0267,0.2836,0.1572
+Canada,Richie Laryea,Defender,31,75,1,Toronto FC,0.0,5.4,0.072,0.0,False,0.0,0.048,0.5,0.0,0.1572
+Haiti,Carlens Arcus,Defender,29,53,1,Angers,0.0,0.0,0.002,0.7,False,0.0,0.0013,0.3533,0.1001,0.1562
+Czech Republic,Vladimír Darida,Midfielder,35,79,8,Hradec Králové,0.0,0.0,0.155,0.4,True,0.0,0.1033,0.5267,0.0634,0.1553
+Turkey,Yunus Akgün,Forward,25,18,3,Galatasaray,0.0,0.0,0.348,5.0,False,0.0,0.232,0.12,0.3379,0.1552
+Tunisia,Yan Valery,Defender,27,22,0,Young Boys,0.0,0.0,0.0735,2.0,True,0.0,0.049,0.1467,0.2072,0.155
+Austria,Phillipp Mwene,Defender,32,30,0,Mainz 05,0.0,0.0,0.0735,1.5,True,0.0,0.049,0.2,0.1728,0.1538
+Ecuador,Jordy Caicedo,Forward,28,19,3,Huracán,0.0,0.0,0.3899,3.5,True,0.0,0.2599,0.1267,0.2836,0.1537
+Ivory Coast,Oumar Diakité,Forward,22,29,6,Cercle Brugge,0.0,3.0,0.285,5.0,False,0.0,0.19,0.1933,0.3379,0.1536
+Switzerland,Eray Cömert,Defender,28,22,0,Valencia,0.0,0.0,0.06,2.0,False,0.0,0.04,0.1467,0.2072,0.1536
+Ivory Coast,Alban Lafont,Goalkeeper,27,4,0,Panathinaikos,0.0,0.0,0.002,3.0,True,0.0,0.0013,0.0267,0.2614,0.1532
+Japan,Junya Itō,Midfielder,33,69,15,Genk,0.0,0.0,0.305,0.0,False,0.0,0.2033,0.46,0.0,0.153
+Scotland,Kenny McLean,Midfielder,34,58,3,Norwich City,0.0,0.0,0.155,1.2,True,0.0,0.1033,0.3867,0.1487,0.1529
+Colombia,Andrés Gómez,Forward,23,7,2,Vasco da Gama,0.0,0.0,0.3899,5.0,True,0.0,0.2599,0.0467,0.3379,0.1526
+Saudi Arabia,Saleh Al-Shehri,Forward,32,55,18,Al-Ittihad,0.0,0.0,0.3899,0.65,True,0.0,0.2599,0.3667,0.0944,0.1519
+Senegal,Assane Diao,Forward,20,5,0,Como,0.0,0.0,0.25,12.0,False,0.0,0.1667,0.0333,0.4837,0.1517
+DR Congo,Samuel Moutoussamy,Midfielder,29,57,0,Atromitos,0.0,7.0,0.155,1.2,True,0.0,0.1033,0.38,0.1487,0.1516
+Ghana,Ernest Nuamah,Forward,22,18,4,Lyon,0.0,0.0,0.183,12.0,False,0.0,0.122,0.12,0.4837,0.1513
+Paraguay,Antonio Sanabria,Forward,30,48,7,Cremonese,0.0,0.0,0.124,7.0,False,0.0,0.0827,0.32,0.3921,0.1512
+Colombia,Kevin Castaño,Midfielder,25,25,0,River Plate,0.0,0.0,0.073,5.0,False,0.0,0.0487,0.1667,0.3379,0.1493
+Ecuador,Nilson Angulo,Forward,22,13,1,Sunderland,0.0,0.0,0.286,7.0,False,0.0,0.1907,0.0867,0.3921,0.1486
+Colombia,Gustavo Puerta,Defender,22,5,1,Racing Santander,0.0,0.0,0.0735,3.0,True,0.0,0.049,0.0333,0.2614,0.148
+Scotland,Anthony Ralston,Defender,27,27,1,Celtic,0.0,0.0,0.0735,1.5,True,0.0,0.049,0.18,0.1728,0.1478
+Curaçao,Tahith Chong,Midfielder,26,5,3,Sheffield United,0.0,0.0,0.155,6.0,True,0.0,0.1033,0.0333,0.3669,0.1477
+Australia,Awer Mabil,Forward,30,38,10,Castellón,0.0,0.0,0.3899,1.3,True,0.0,0.2599,0.2533,0.1571,0.1474
+Norway,Morten Thorsby,Midfielder,30,31,0,Cremonese,0.0,0.0,0.137,3.0,False,0.0,0.0913,0.2067,0.2614,0.1472
+Mexico,Santiago Giménez,Forward,25,47,6,Milan,0.0,0.0,0.501,0.0,False,0.0,0.334,0.3133,0.0,0.1472
+Saudi Arabia,Mohammed Al-Owais,Goalkeeper,34,63,0,Al-Ula,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.42,0.0,0.1471
+Saudi Arabia,Firas Al-Buraikan,Forward,26,69,15,Al-Ahli,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.46,0.0,0.147
+DR Congo,Gaël Kakuta,Forward,34,30,5,AEL,0.0,8.0,0.3899,1.8,True,0.0,0.2599,0.2,0.1941,0.1468
+Uruguay,Rodrigo Aguirre,Forward,31,10,3,UANL,0.0,0.0,0.36,4.5,False,0.0,0.24,0.0667,0.3215,0.1463
+Ghana,Augustine Boakye,Midfielder,25,0,0,Saint-Étienne,0.0,0.0,0.275,4.0,False,0.0,0.1833,0.0,0.3035,0.146
+Qatar,Ahmed Alaaeldin,Forward,33,68,9,Al-Rayyan,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.4533,0.0,0.146
+Panama,José Fajardo,Forward,32,68,17,Universidad Católica,0.0,8.0,0.3899,0.0,True,0.0,0.2599,0.4533,0.0,0.146
+Austria,Florian Grillitsch,Midfielder,30,58,1,Braga,0.0,5.0,0.032,2.0,False,0.0,0.0213,0.3867,0.2072,0.1459
+Sweden,Ken Sema,Midfielder,32,33,5,Pafos,0.0,0.0,0.155,2.5,True,0.0,0.1033,0.22,0.2362,0.1458
+Brazil,Danilo Luiz,Defender,34,69,1,Flamengo,0.0,2.4,0.0735,0.0,True,0.0,0.049,0.46,0.0,0.1454
+Qatar,Mohammed Muntari,Forward,32,67,16,Al-Gharafa,0.0,2.0999999999999996,0.3899,0.0,True,0.0,0.2599,0.4467,0.0,0.145
+Algeria,Jaouen Hadjam,Defender,23,17,3,Young Boys,0.0,0.0,0.0735,2.0,True,0.0,0.049,0.1133,0.2072,0.1449
+South Africa,Ronwen Williams,Goalkeeper,34,62,0,Mamelodi Sundowns,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.4133,0.0,0.1448
+New Zealand,Tyler Bindon,Defender,21,25,3,Sheffield United,0.0,0.0,0.0735,1.5,True,0.0,0.049,0.1667,0.1728,0.1438
+Ghana,Christopher Bonsu Baah,Forward,21,9,0,Al-Qadsiah,0.0,0.0,0.3899,3.5,True,0.0,0.2599,0.06,0.2836,0.1437
+Ecuador,Denil Castillo,Midfielder,22,5,0,Midtjylland,0.0,0.0,0.155,5.5,True,0.0,0.1033,0.0333,0.353,0.1435
+Qatar,Homam Ahmed,Defender,26,68,3,Cultural Leonesa,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.4533,0.0,0.1433
+Australia,Cristian Volpato,Forward,22,1,0,Sassuolo,0.0,0.0,0.3899,4.5,True,0.0,0.2599,0.0067,0.3215,0.1433
+Jordan,Ali Olwan,Forward,26,65,29,Al-Sailiya,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.4333,0.0,0.143
+Ghana,Marvin Senaya,Defender,25,2,0,Auxerre,0.0,0.0,0.0735,3.0,True,0.0,0.049,0.0133,0.2614,0.142
+Canada,Liam Millar,Midfielder,26,41,1,Hull City,0.0,5.0,0.155,1.7,True,0.0,0.1033,0.2733,0.1873,0.1418
+Iraq,Zidane Iqbal,Midfielder,23,24,2,Utrecht,0.0,0.0,0.155,3.0,True,0.0,0.1033,0.16,0.2614,0.1414
+Curaçao,Riechedly Bazoer,Defender,29,4,0,Konyaspor,0.0,0.0,0.0735,2.8,True,0.0,0.049,0.0267,0.2517,0.1412
+Ivory Coast,Parfait Guiagon,Midfielder,25,5,0,Charleroi,0.0,0.0,0.212,4.0,False,0.0,0.1413,0.0333,0.3035,0.1401
+Haiti,Louicius Deedson,Forward,25,32,10,FC Dallas,0.0,0.0,0.3899,1.2,True,0.0,0.2599,0.2133,0.1487,0.1397
+Austria,Alexander Prass,Midfielder,25,19,0,TSG Hoffenheim,0.0,0.0,0.062,5.0,False,0.0,0.0413,0.1267,0.3379,0.1391
+Iraq,Ali Al-Hamadi,Forward,24,19,5,Luton Town,0.0,0.0,0.3899,2.0,True,0.0,0.2599,0.1267,0.2072,0.1384
+Senegal,Abdoulaye Seck,Defender,34,22,4,Maccabi Haifa,0.0,5.0,0.0735,1.5,True,0.0,0.049,0.1467,0.1728,0.1378
+Iran,Hossein Kanaanizadegan,Defender,32,65,6,Persepolis,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.4333,0.0,0.1373
+Bosnia and Herzegovina,Sead Kolašinac,Defender,32,65,0,Atalanta,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.4333,0.0,0.1373
+Curaçao,Kenji Gorré,Forward,31,37,6,Maccabi Haifa,0.0,0.0,0.3899,0.8,True,0.0,0.2599,0.2467,0.1108,0.1371
+South Korea,Hwang Hee-chan,Midfielder,30,79,17,Wolverhampton Wanderers,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.5267,0.0,0.1363
+Mexico,Álvaro Fidalgo,Midfielder,29,4,0,Real Betis,0.0,0.0,0.066,7.0,False,0.0,0.044,0.0267,0.3921,0.1362
+Austria,Alessandro Schöpf,Midfielder,32,35,6,Wolfsberger AC,0.0,0.0,0.155,1.8,True,0.0,0.1033,0.2333,0.1941,0.1359
+New Zealand,Callum McCowatt,Midfielder,27,32,4,Silkeborg,0.0,0.0,0.155,2.0,True,0.0,0.1033,0.2133,0.2072,0.1358
+Jordan,Abdallah Nasib,Defender,32,64,3,Al-Zawraa,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.4267,0.0,0.1354
+Curaçao,Sontje Hansen,Forward,24,5,1,Middlesbrough,0.0,0.0,0.3899,3.0,True,0.0,0.2599,0.0333,0.2614,0.1352
+Sweden,Gustaf Nilsson,Forward,29,10,4,Club Brugge,0.0,0.0,0.3899,2.5,True,0.0,0.2599,0.0667,0.2362,0.1352
+Croatia,Nikola Moro,Midfielder,28,10,0,Bologna,0.0,0.0,0.034,6.5,False,0.0,0.0227,0.0667,0.3799,0.1341
+DR Congo,Meschak Elia,Forward,28,68,12,Alanyaspor,0.0,6.0,0.33,0.0,False,0.0,0.22,0.4533,0.0,0.134
+Germany,Pascal Groß,Midfielder,34,18,1,Brighton & Hove Albion,0.0,1.0,0.122,3.5,False,0.0,0.0813,0.12,0.2836,0.1335
+Algeria,Anis Hadj Moussa,Forward,24,14,1,Feyenoord,0.0,0.0,0.389,2.0,False,0.0,0.2593,0.0933,0.2072,0.1332
+Haiti,Danley Jean Jacques,Midfielder,26,30,6,Philadelphia Union,0.0,0.0,0.155,2.0,True,0.0,0.1033,0.2,0.2072,0.1332
+Panama,Cecilio Waterman,Forward,35,55,15,Universidad de Concepción,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.3667,0.0,0.133
+Ghana,Jerome Opoku,Defender,27,11,1,İstanbul Başakşehir,0.0,0.0,0.0735,2.0,True,0.0,0.049,0.0733,0.2072,0.1329
+Cape Verde,Jovane Cabral,Midfielder,27,26,2,Estrela Amadora,0.0,0.0,0.323,0.8,False,0.0,0.2153,0.1733,0.1108,0.1325
+Saudi Arabia,Mohamed Kanno,Midfielder,31,76,8,Al-Hilal,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.5067,0.0,0.1323
+Cape Verde,Jamiro Monteiro,Midfielder,32,54,5,PEC Zwolle,0.0,0.0,0.142,0.75,False,0.0,0.0947,0.36,0.1055,0.1321
+Ghana,Abdul Mumin,Defender,28,5,0,Rayo Vallecano,0.0,0.0,0.034,2.5,False,0.0,0.0227,0.0333,0.2362,0.1315
+Scotland,Ross Stewart,Forward,29,3,0,Southampton,0.0,0.0,0.3899,2.8,True,0.0,0.2599,0.02,0.2517,0.1313
+Turkey,Salih Özcan,Midfielder,28,29,1,Borussia Dortmund,0.0,1.0,0.037,3.5,False,0.0,0.0247,0.1933,0.2836,0.1312
+Iraq,Ibrahim Bayesh,Midfielder,26,75,8,Al Dhafra,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.5,0.0,0.131
+Panama,Luis Mejía,Goalkeeper,35,56,0,Nacional,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.3733,0.0,0.1308
+Senegal,Édouard Mendy,Goalkeeper,34,56,0,Al-Ahli,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.3733,0.0,0.1308
+Egypt,Emam Ashour,Midfielder,28,28,0,Al Ahly,0.0,7.0,0.155,2.0,True,0.0,0.1033,0.1867,0.2072,0.1305
+Algeria,Luca Zidane,Goalkeeper,28,7,0,Granada,0.0,0.0,0.002,2.0,True,0.0,0.0013,0.0467,0.2072,0.1304
+Tunisia,Mortadha Ben Ouanes,Defender,31,18,0,Kasımpaşa,0.0,0.0,0.079,1.5,False,0.0,0.0527,0.12,0.1728,0.1303
+Sweden,Jesper Karlström,Midfielder,30,25,0,Udinese,0.0,0.0,0.029,4.0,False,0.0,0.0193,0.1667,0.3035,0.1302
+Curaçao,Jürgen Locadia,Forward,32,13,1,Miami FC,0.0,0.0,0.3899,1.8,True,0.0,0.2599,0.0867,0.1941,0.1298
+Canada,Alfie Jones,Defender,28,2,0,Middlesbrough,0.0,0.0,0.0735,2.5,True,0.0,0.049,0.0133,0.2362,0.1294
+Cape Verde,Stopira,Defender,38,61,4,Torreense,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.4067,0.0,0.1294
+New Zealand,Michael Boxall,Defender,37,63,1,Minnesota United FC,0.0,0.0,0.034,0.0,False,0.0,0.0227,0.42,0.0,0.1294
+Argentina,Julián Alvarez,Forward,26,51,14,Atlético Madrid,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.34,0.0,0.129
+Turkey,Mert Günok,Goalkeeper,37,37,0,Fenerbahçe,0.0,0.0,0.002,0.5,True,0.0,0.0013,0.2467,0.0765,0.1286
+Cape Verde,Steven Moreira,Defender,31,19,0,Columbus Crew,0.0,1.0,0.037,1.5,False,0.0,0.0247,0.1267,0.1728,0.1281
+Japan,Kento Shiogai,Forward,21,2,0,VfL Wolfsburg,0.0,0.0,0.3899,2.5,True,0.0,0.2599,0.0133,0.2362,0.1272
+Egypt,Ramy Rabia,Defender,33,44,5,Al Ain,0.0,0.0,0.0735,0.4,True,0.0,0.049,0.2933,0.0634,0.127
+Jordan,Rajaei Ayed,Midfielder,32,72,0,Al-Hussein,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.48,0.0,0.127
+Saudi Arabia,Abdullah Al-Hamdan,Forward,26,49,12,Al-Nassr,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.3267,0.0,0.127
+Mexico,César Huerta,Forward,25,26,3,Anderlecht,0.0,0.0,0.167,5.0,False,0.0,0.1113,0.1733,0.3379,0.127
+Uzbekistan,Odiljon Hamrobekov,Midfielder,30,72,1,Tractor,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.48,0.0,0.127
+Curaçao,Jeremy Antonisse,Forward,24,26,3,Kifisia,0.0,0.0,0.3899,0.8,True,0.0,0.2599,0.1733,0.1108,0.1261
+Haiti,Derrick Etienne Jr.,Forward,29,48,8,Toronto FC,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.32,0.0,0.126
+Australia,Mohamed Touré,Forward,22,10,2,Norwich City,0.0,0.0,0.3899,1.7,True,0.0,0.2599,0.0667,0.1873,0.1254
+Cape Verde,Garry Rodrigues,Midfielder,35,59,9,Apollon Limassol,0.0,0.0,0.155,0.32,True,0.0,0.1033,0.3933,0.0524,0.1254
+Haiti,Ricardo Adé,Defender,36,59,2,LDU Quito,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.3933,0.0,0.1253
+Curaçao,Shurandy Sambo,Defender,24,7,0,Sparta Rotterdam,0.0,0.0,0.0735,2.0,True,0.0,0.049,0.0467,0.2072,0.125
+Uzbekistan,Oston Urunov,Midfielder,25,41,10,Persepolis,0.0,0.0,0.155,1.0,True,0.0,0.1033,0.2733,0.1307,0.1249
+South Korea,Oh Hyeon-gyu,Forward,25,27,6,Beşiktaş,0.0,0.0,0.488,0.0,False,0.0,0.3253,0.18,0.0,0.1246
+Panama,Roderick Miller,Defender,34,50,2,Turan Tovuz,0.0,0.0,0.0735,0.2,True,0.0,0.049,0.3333,0.0344,0.1245
+Australia,Aiden O'Neill,Midfielder,27,31,0,New York City FC,0.0,0.0,0.155,1.5,True,0.0,0.1033,0.2067,0.1728,0.1242
+Morocco,Munir Mohamedi,Goalkeeper,37,53,0,RS Berkane,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.3533,0.0,0.1238
+Iran,Shojae Khalilzadeh,Defender,37,58,2,Tractor,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.3867,0.0,0.1234
+South Korea,Cho Gue-sung,Forward,28,44,12,Midtjylland,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.2933,0.0,0.122
+Senegal,Pathé Ciss,Midfielder,32,29,0,Rayo Vallecano,0.0,0.0,0.106,2.0,False,0.0,0.0707,0.1933,0.2072,0.122
+Norway,Jens Petter Hauge,Midfielder,26,15,1,Bodø/Glimt,0.0,0.0,0.155,2.5,True,0.0,0.1033,0.1,0.2362,0.1218
+Qatar,Meshaal Barsham,Goalkeeper,28,52,0,Al-Sadd,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.3467,0.0,0.1215
+Australia,Miloš Degenek,Defender,32,57,1,APOEL,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.38,0.0,0.1213
+Canada,Tani Oluwaseyi,Forward,26,24,2,Villarreal,0.0,0.0,0.485,0.0,False,0.0,0.3233,0.16,0.0,0.121
+Czech Republic,Adam Hložek,Forward,23,43,5,TSG Hoffenheim,0.0,4.0,0.3899,0.0,True,0.0,0.2599,0.2867,0.0,0.121
+Jordan,Noor Al-Rawabdeh,Midfielder,29,67,3,Selangor,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.4467,0.0,0.1203
+Turkey,Samet Akaydin,Defender,32,19,1,Çaykur Rizespor,0.0,2.0,0.0735,1.2,True,0.0,0.049,0.1267,0.1487,0.1197
+Panama,Cristian Martínez,Midfielder,29,66,2,Ironi Kiryat Shmona,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.44,0.0,0.119
+Senegal,Mory Diaw,Goalkeeper,32,5,0,Le Havre,0.0,0.0,0.002,1.8,True,0.0,0.0013,0.0333,0.1941,0.1185
+New Zealand,Joe Bell,Midfielder,27,32,1,Viking,0.0,0.0,0.155,1.2,True,0.0,0.1033,0.2133,0.1487,0.1183
+Iran,Ali Alipour,Forward,30,14,1,Persepolis,0.0,0.0,0.3899,1.0,True,0.0,0.2599,0.0933,0.1307,0.1181
+Jordan,Mohammad Abu Zrayq,Forward,28,40,5,Raja Casablanca,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.2667,0.0,0.118
+Bosnia and Herzegovina,Ermedin Demirović,Forward,28,40,4,VfB Stuttgart,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.2667,0.0,0.118
+Japan,Ritsu Dōan,Midfielder,27,65,11,Eintracht Frankfurt,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.4333,0.0,0.1177
+Jordan,Mohammad Abu Hashish,Defender,31,55,1,Al-Karma,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.3667,0.0,0.1174
+Iraq,Rebin Sulaka,Defender,34,55,1,Port,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.3667,0.0,0.1174
+DR Congo,Nathanaël Mbuku,Midfielder,24,18,2,Montpellier,0.0,0.0,0.155,2.0,True,0.0,0.1033,0.12,0.2072,0.1172
+Qatar,Yusuf Abdurisag,Forward,26,39,3,Al-Wakrah,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.26,0.0,0.117
+Iran,Amirhossein Hosseinzadeh,Forward,25,18,5,Tractor,0.0,0.0,0.3899,0.7,True,0.0,0.2599,0.12,0.1001,0.116
+South Korea,Hwang In-beom,Midfielder,29,73,6,Feyenoord,0.0,0.0,0.092,0.0,False,0.0,0.0613,0.4867,0.0,0.1157
+Egypt,Haissem Hassan,Forward,24,3,0,Oviedo,0.0,0.0,0.3899,1.5,True,0.0,0.2599,0.02,0.1728,0.1155
+Ecuador,Ángelo Preciado,Defender,28,54,0,Atlético Mineiro,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.36,0.0,0.1154
+DR Congo,Fiston Mayele,Forward,31,37,6,Pyramids,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.2467,0.0,0.115
+Panama,Edgardo Fariña,Defender,24,18,0,Pari Nizhny Novgorod,0.0,0.0,0.132,1.0,False,0.0,0.088,0.12,0.1307,0.1146
+Japan,Kōki Ogawa,Forward,28,15,11,NEC,0.0,0.0,0.496,0.0,False,0.0,0.3307,0.1,0.0,0.1142
+Croatia,Ivor Pandur,Goalkeeper,26,0,0,Hull City,0.0,0.0,0.002,2.0,True,0.0,0.0013,0.0,0.2072,0.1141
+Iraq,Ali Jasim,Forward,22,36,2,Al-Najma,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.24,0.0,0.114
+Morocco,Soufiane Rahimi,Forward,30,36,12,Al Ain,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.24,0.0,0.114
+Qatar,Assim Madibo,Midfielder,29,51,0,Al-Wakrah,0.0,0.0,0.155,0.3,True,0.0,0.1033,0.34,0.0495,0.1138
+Egypt,Hamdy Fathy,Midfielder,31,62,3,Al-Wakrah,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.4133,0.0,0.1137
+Curaçao,Gervane Kastaneer,Forward,30,28,9,Terengganu,0.0,0.0,0.3899,0.2,True,0.0,0.2599,0.1867,0.0344,0.1129
+Cape Verde,Telmo Arcanjo,Midfielder,24,15,1,Vitória de Guimarães,0.0,0.0,0.072,3.0,False,0.0,0.048,0.1,0.2614,0.1128
+Curaçao,Sherel Floranus,Defender,27,27,0,PEC Zwolle,0.0,0.0,0.032,0.8,False,0.0,0.0213,0.18,0.1108,0.1126
+Uruguay,Brian Rodríguez,Forward,26,32,4,América,0.0,0.0,0.403,0.0,False,0.0,0.2687,0.2133,0.0,0.1126
+Panama,Orlando Mosquera,Goalkeeper,31,48,0,Al-Fayha,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.32,0.0,0.1121
+Panama,Adalberto Carrasquilla,Midfielder,27,73,3,UNAM,0.0,0.0,0.074,0.0,False,0.0,0.0493,0.4867,0.0,0.1121
+South Korea,Jo Hyeon-woo,Goalkeeper,34,48,0,Ulsan HD,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.32,0.0,0.1121
+Uruguay,Giorgian de Arrascaeta,Midfielder,32,60,13,Flamengo,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.4,0.0,0.111
+Paraguay,Kaku,Forward,31,33,6,Al Ain,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.22,0.0,0.111
+Argentina,Nicolás González,Midfielder,28,50,6,Atlético Madrid,0.0,0.0,0.221,0.0,False,0.0,0.1473,0.3333,0.0,0.1108
+Cape Verde,Willy Semedo,Midfielder,32,37,2,Omonia,0.0,0.0,0.155,0.7,True,0.0,0.1033,0.2467,0.1001,0.1104
+Cape Verde,Deroy Duarte,Midfielder,26,30,0,Ludogorets Razgrad,0.0,5.0,0.155,1.0,True,0.0,0.1033,0.2,0.1307,0.1102
+Bosnia and Herzegovina,Tarik Muharemović,Defender,23,14,1,Sassuolo,0.0,0.0,0.0735,1.2,True,0.0,0.049,0.0933,0.1487,0.1097
+Croatia,Marco Pašalić,Forward,25,14,1,Orlando City SC,0.0,0.0,0.421,0.35,False,0.0,0.2807,0.0933,0.0566,0.1095
+Saudi Arabia,Hassan Al-Tambakti,Defender,27,51,1,Al-Hilal,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.34,0.0,0.1094
+New Zealand,Tim Payne,Defender,32,51,3,Wellington Phoenix,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.34,0.0,0.1094
+South Korea,Lee Kang-in,Midfielder,25,47,11,Paris Saint-Germain,0.0,0.0,0.232,0.0,False,0.0,0.1547,0.3133,0.0,0.1091
+New Zealand,Ben Waine,Forward,25,31,9,Port Vale,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.2067,0.0,0.109
+Scotland,Findlay Curtis,Forward,20,3,1,Kilmarnock,0.0,0.0,0.42,0.75,False,0.0,0.28,0.02,0.1055,0.1081
+Tunisia,Firas Chaouat,Forward,30,30,6,Club Africain,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.2,0.0,0.108
+Iran,Mehdi Ghayedi,Forward,27,30,10,Al Nasr,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.2,0.0,0.108
+South Korea,Jens Castrop,Defender,22,7,0,Borussia Mönchengladbach,0.0,0.0,0.0735,1.5,True,0.0,0.049,0.0467,0.1728,0.1078
+Belgium,Matias Fernandez-Pardo,Forward,21,2,0,Lille,0.0,0.0,0.267,3.0,False,0.0,0.178,0.0133,0.2614,0.1077
+Ecuador,Alan Franco,Midfielder,27,57,1,Atlético Mineiro,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.38,0.0,0.107
+Uzbekistan,Dostonbek Khamdamov,Midfielder,29,33,5,Pakhtakor,0.0,0.0,0.155,0.75,True,0.0,0.1033,0.22,0.1055,0.1066
+New Zealand,Elijah Just,Midfielder,26,44,9,Motherwell,0.0,0.0,0.155,0.35,True,0.0,0.1033,0.2933,0.0566,0.1066
+Canada,Jacob Shaffelburg,Midfielder,26,31,6,Los Angeles FC,0.0,5.0,0.325,0.0,False,0.0,0.2167,0.2067,0.0,0.1064
+Jordan,Ibrahim Sadeh,Midfielder,26,56,3,Al-Karma,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.3733,0.0,0.1056
+Panama,César Yanis,Midfielder,30,56,5,Cobresal,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.3733,0.0,0.1056
+Canada,Stephen Eustáquio,Midfielder,29,56,4,Los Angeles FC,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.3733,0.0,0.1056
+Mexico,Guillermo Martínez,Forward,31,12,3,Pumas,0.0,3.0,0.467,0.0,False,0.0,0.3113,0.08,0.0,0.1054
+Argentina,José Manuel López,Forward,25,3,0,Palmeiras,0.0,0.0,0.3899,0.9,True,0.0,0.2599,0.02,0.121,0.1052
+Saudi Arabia,Ayman Yahya,Forward,25,26,0,Al-Nassr,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1733,0.0,0.104
+South Africa,Evidence Makgopa,Forward,26,26,6,Orlando Pirates,0.0,12.0,0.3899,0.0,True,0.0,0.2599,0.1733,0.0,0.104
+Ecuador,Félix Torres,Defender,29,48,5,Internacional,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.32,0.0,0.1034
+New Zealand,Matthew Garbett,Midfielder,24,37,5,Peterborough United,0.0,0.0,0.155,0.5,True,0.0,0.1033,0.2467,0.0765,0.1033
+Cape Verde,Nuno da Costa,Midfielder,35,8,1,İstanbul Başakşehir,0.0,0.0,0.297,0.8,False,0.0,0.198,0.0533,0.1108,0.1033
+South Africa,Oswin Appollis,Forward,24,25,8,Orlando Pirates,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1667,0.0,0.103
+Haiti,Ruben Providence,Forward,24,15,3,Almere City,0.0,0.0,0.3899,0.3,True,0.0,0.2599,0.1,0.0495,0.1029
+Cape Verde,Hélio Varela,Midfielder,24,20,0,Maccabi Tel Aviv,0.0,0.0,0.155,1.2,True,0.0,0.1033,0.1333,0.1487,0.1023
+Canada,Ali Ahmed,Forward,25,24,1,Norwich City,0.0,1.0,0.3899,0.0,True,0.0,0.2599,0.16,0.0,0.102
+South Africa,Themba Zwane,Midfielder,36,53,12,Mamelodi Sundowns,0.0,3.0,0.155,0.0,True,0.0,0.1033,0.3533,0.0,0.1016
+Croatia,Joško Gvardiol,Defender,24,47,4,Manchester City,0.0,3.4,0.0735,0.0,True,0.0,0.049,0.3133,0.0,0.1013
+Switzerland,Christian Fassnacht,Forward,32,23,5,Young Boys,0.0,0.7,0.3899,0.0,True,0.0,0.2599,0.1533,0.0,0.101
+Egypt,Ibrahim Adel,Forward,25,23,3,Nordsjælland,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1533,0.0,0.101
+Paraguay,Gabriel Ávalos,Forward,35,23,2,Independiente,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1533,0.0,0.101
+Ghana,Elisha Owusu,Midfielder,28,20,0,Auxerre,0.0,0.0,0.017,2.5,False,0.0,0.0113,0.1333,0.2362,0.1009
+Norway,Egil Selvik,Goalkeeper,28,6,0,Watford,0.0,0.0,0.002,1.3,True,0.0,0.0013,0.04,0.1571,0.1005
+Iran,Mehdi Torabi,Midfielder,31,52,7,Tractor,0.0,1.4,0.155,0.0,True,0.0,0.1033,0.3467,0.0,0.1003
+Czech Republic,Mojmír Chytil,Forward,27,22,6,Slavia Prague,0.0,2.0,0.3899,0.0,True,0.0,0.2599,0.1467,0.0,0.1
+Austria,Saša Kalajdžić,Forward,28,22,4,LASK,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1467,0.0,0.1
+Mexico,Julián Quiñones,Forward,29,22,2,Al-Qadsiah,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1467,0.0,0.1
+Czech Republic,Tomáš Chorý,Forward,31,22,7,Slavia Prague,0.0,1.0,0.3899,0.0,True,0.0,0.2599,0.1467,0.0,0.1
+Mexico,Roberto Alvarado,Forward,27,67,5,Guadalajara,0.0,0.0,0.164,0.0,False,0.0,0.1093,0.4467,0.0,0.0998
+Curaçao,Jearl Margaritha,Forward,26,21,5,Beveren,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.14,0.0,0.099
+Czech Republic,Pavel Šulc,Forward,25,21,5,Lyon,0.0,1.0,0.3899,0.0,True,0.0,0.2599,0.14,0.0,0.099
+Iran,Shahriyar Moghanlou,Forward,31,21,2,Kalba,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.14,0.0,0.099
+Algeria,Nadhir Benbouali,Forward,26,3,1,Győri ETO,0.0,0.0,0.3899,0.6,True,0.0,0.2599,0.02,0.0886,0.0987
+Australia,Cameron Burgess,Defender,30,27,0,Swansea City,0.0,0.0,0.054,0.5,False,0.0,0.036,0.18,0.0765,0.0976
+Iraq,Amir Al-Ammari,Midfielder,28,50,3,Cracovia,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.3333,0.0,0.0976
+Cape Verde,Roberto Lopes,Defender,33,45,0,Shamrock Rovers,0.0,1.0,0.0735,0.0,True,0.0,0.049,0.3,0.0,0.0973
+South Africa,Teboho Mokoena,Midfielder,29,51,9,Mamelodi Sundowns,0.0209,18.0,0.0627,0.0,True,0.0836,0.0418,0.34,0.0,0.0973
+Uzbekistan,Farrukh Sayfiev,Defender,35,45,1,Neftchi Fergana,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.3,0.0,0.0973
+Tunisia,Hazem Mastouri,Forward,28,19,4,Dynamo Makhachkala,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1267,0.0,0.097
+Haiti,Josué Casimir,Forward,24,7,0,Auxerre,0.0,0.0,0.165,3.5,False,0.0,0.11,0.0467,0.2836,0.0967
+Algeria,Farès Ghedjemis,Forward,23,1,1,Frosinone,0.0,0.0,0.3899,0.6,True,0.0,0.2599,0.0067,0.0886,0.0967
+Ecuador,Anthony Valencia,Midfielder,22,2,1,Antwerp,0.0,0.0,0.27,1.0,False,0.0,0.18,0.0133,0.1307,0.0959
+Colombia,Camilo Vargas,Goalkeeper,37,41,0,Atlas,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.2733,0.0,0.0958
+Qatar,Lucas Mendes,Defender,35,25,1,Al-Wakrah,0.0,0.0,0.0735,0.5,True,0.0,0.049,0.1667,0.0765,0.0956
+New Zealand,Ben Old,Midfielder,23,23,2,Saint-Étienne,0.0,0.0,0.191,0.6,False,0.0,0.1273,0.1533,0.0886,0.0954
+Haiti,Lenny Joseph,Forward,25,2,1,Ferencváros,0.0,0.0,0.3899,0.5,True,0.0,0.2599,0.0133,0.0765,0.0953
+South Africa,Aubrey Modiba,Defender,30,44,3,Mamelodi Sundowns,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2933,0.0,0.0953
+Qatar,Ahmed Fathy,Midfielder,33,48,0,Al-Arabi,0.0,0.4,0.155,0.0,True,0.0,0.1033,0.32,0.0,0.095
+New Zealand,Sarpreet Singh,Midfielder,27,28,3,Wellington Phoenix,0.0,0.0,0.155,0.6,True,0.0,0.1033,0.1867,0.0886,0.0949
+Haiti,Yassin Fortuné,Forward,27,4,0,Vizela,0.0,0.0,0.3899,0.4,True,0.0,0.2599,0.0267,0.0634,0.0947
+Ecuador,John Yeboah,Forward,25,22,3,Venezia,0.0,3.0,0.19,1.5,False,0.0,0.1267,0.1467,0.1728,0.0946
+Bosnia and Herzegovina,Esmir Bajraktarević,Forward,21,16,1,PSV Eindhoven,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1067,0.0,0.094
+Brazil,Endrick,Forward,19,16,3,Lyon,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1067,0.0,0.094
+Qatar,Edmilson Junior,Forward,31,16,0,Al-Duhail,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1067,0.0,0.094
+France,Théo Hernandez,Defender,28,43,2,Al-Hilal,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2867,0.0,0.0934
+Iran,Payam Niazmand,Goalkeeper,31,15,0,Persepolis,0.0,0.0,0.002,0.75,True,0.0,0.0013,0.1,0.1055,0.0932
+Paraguay,Álex Arce,Forward,30,15,1,Independiente Rivadavia,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.1,0.0,0.093
+Jordan,Nizar Al-Rashdan,Midfielder,27,46,4,Qatar SC,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.3067,0.0,0.0923
+Mexico,Luis Romo,Midfielder,31,63,4,Guadalajara,0.0,0.0,0.04,0.0,False,0.0,0.0267,0.42,0.0,0.092
+Curaçao,Roshon van Eijma,Defender,28,27,1,RKC Waalwijk,0.0,0.0,0.0735,0.38,True,0.0,0.049,0.18,0.0607,0.0917
+France,Lucas Hernandez,Defender,30,42,0,Paris Saint-Germain,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.28,0.0,0.0914
+Saudi Arabia,Abdulelah Al-Amri,Defender,29,42,1,Al-Nassr,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.28,0.0,0.0914
+Uzbekistan,Utkir Yusupov,Goalkeeper,35,39,0,Navbahor,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.26,0.0,0.0911
+Iraq,Hussein Ali,Defender,24,26,1,Pogoń Szczecin,0.0,0.0,0.0735,0.4,True,0.0,0.049,0.1733,0.0634,0.091
+Panama,Tomás Rodríguez,Forward,27,13,4,Saprissa,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0867,0.0,0.091
+South Africa,Iqraam Rayners,Forward,30,13,4,Mamelodi Sundowns,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0867,0.0,0.091
+Tunisia,Hannibal Mejbri,Midfielder,23,45,1,Burnley,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.3,0.0,0.091
+Bosnia and Herzegovina,Samed Baždar,Forward,22,13,1,Jagiellonia Białystok,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0867,0.0,0.091
+Uzbekistan,Azizbek Amonov,Forward,28,12,2,Dinamo Samarqand,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.08,0.0,0.09
+South Africa,Relebohile Mofokeng,Forward,21,12,0,Orlando Pirates,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.08,0.0,0.09
+Curaçao,Livano Comenencia,Midfielder,22,19,1,Zürich,0.0,0.0,0.155,0.8,True,0.0,0.1033,0.1267,0.1108,0.0896
+Cape Verde,Gilson Benchimol,Forward,24,22,6,Akron Tolyatti,0.0,6.0,0.337,0.0,False,0.0,0.2247,0.1467,0.0,0.0894
+Czech Republic,Tomáš Holeš,Defender,33,41,2,Slavia Prague,0.0,1.0,0.0735,0.0,True,0.0,0.049,0.2733,0.0,0.0893
+Egypt,Mohamed Hany,Defender,30,41,0,Al Ahly,0.0,1.0,0.0735,0.0,True,0.0,0.049,0.2733,0.0,0.0893
+Panama,Azarias Londoño,Forward,24,11,0,Universidad Católica,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0733,0.0,0.089
+Algeria,Adil Boulbina,Forward,23,11,6,Al-Duhail,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0733,0.0,0.089
+New Zealand,Jesse Randall,Forward,23,11,2,Auckland FC,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0733,0.0,0.089
+Iraq,Marko Farji,Forward,22,11,0,Venezia,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0733,0.0,0.089
+Uruguay,Federico Viñas,Forward,27,11,2,Oviedo,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0733,0.0,0.089
+Mexico,Alexis Vega,Forward,28,52,7,Toluca,0.0,0.0,0.182,0.0,False,0.0,0.1213,0.3467,0.0,0.0884
+Saudi Arabia,Nasser Al-Dawsari,Midfielder,27,43,0,Al-Hilal,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.2867,0.0,0.0883
+Bosnia and Herzegovina,Haris Tabaković,Forward,31,10,4,Borussia Mönchengladbach,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0667,0.0,0.088
+Bosnia and Herzegovina,Kerim Alajbegović,Forward,18,10,1,Red Bull Salzburg,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0667,0.0,0.088
+Qatar,Mohamed Manai,Forward,23,10,0,Al-Shamal,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0667,0.0,0.088
+Brazil,Léo Pereira,Defender,30,3,0,Flamengo,0.0,0.0,0.0735,1.2,True,0.0,0.049,0.02,0.1487,0.0877
+Cape Verde,Laros Duarte,Midfielder,29,13,1,Puskás Akadémia,0.0,0.0,0.155,1.0,True,0.0,0.1033,0.0867,0.1307,0.0875
+Panama,César Blackman,Defender,28,40,3,Slovan Bratislava,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2667,0.0,0.0874
+Uzbekistan,Khojiakbar Alijonov,Defender,29,40,2,Pakhtakor,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2667,0.0,0.0874
+Japan,Kō Itakura,Defender,29,40,2,Ajax,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2667,0.0,0.0874
+South Africa,Thapelo Maseko,Forward,22,9,1,AEL Limassol,0.0,2.0,0.3899,0.0,True,0.0,0.2599,0.06,0.0,0.087
+Colombia,Jaminton Campaz,Forward,26,9,1,Rosario Central,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.06,0.0,0.087
+Jordan,Odeh Al-Fakhouri,Forward,20,9,1,Pyramids,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.06,0.0,0.087
+South Africa,Tshepang Moremi,Forward,25,9,1,Orlando Pirates,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.06,0.0,0.087
+Tunisia,Aymen Dahmen,Goalkeeper,29,37,0,CS Sfaxien,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.2467,0.0,0.0865
+Curaçao,Ar'jany Martha,Midfielder,22,8,2,Rotherham United,0.0,0.0,0.155,1.2,True,0.0,0.1033,0.0533,0.1487,0.0863
+Ghana,Brandon Thomas-Asante,Forward,27,8,1,Coventry City,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0533,0.0,0.086
+Curaçao,Godfried Roemeratoe,Midfielder,26,27,1,RKC Waalwijk,0.0,0.0,0.155,0.4,True,0.0,0.1033,0.18,0.0634,0.086
+Croatia,Igor Matanović,Forward,23,8,2,SC Freiburg,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0533,0.0,0.086
+Tunisia,Anis Ben Slimane,Midfielder,25,41,4,Norwich City,0.0,3.7,0.155,0.0,True,0.0,0.1033,0.2733,0.0,0.0856
+DR Congo,Brian Cipenga,Forward,28,7,0,Castellón,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0467,0.0,0.085
+Australia,Nishan Velupillay,Forward,25,7,3,Melbourne Victory,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0467,0.0,0.085
+Iran,Rouzbeh Cheshmi,Midfielder,32,40,3,Esteghlal,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.2667,0.0,0.0843
+United States,Miles Robinson,Defender,29,40,3,FC Cincinnati,0.0,0.0,0.04,0.0,False,0.0,0.0267,0.2667,0.0,0.084
+Saudi Arabia,Sultan Mandash,Forward,31,6,2,Al-Hilal,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.04,0.0,0.084
+Iraq,Ali Yousif,Forward,30,6,1,Al-Talaba,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.04,0.0,0.084
+Saudi Arabia,Khalid Al-Ghannam,Forward,25,6,0,Al-Ettifaq,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.04,0.0,0.084
+Ghana,Derrick Luckassen,Defender,30,1,0,Pafos,0.0,0.0,0.0735,1.2,True,0.0,0.049,0.0067,0.1487,0.0837
+Croatia,Duje Ćaleta-Car,Defender,29,38,1,Real Sociedad,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2533,0.0,0.0833
+Egypt,Ahmed Fatouh,Defender,28,38,1,Zamalek,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2533,0.0,0.0833
+Japan,Shōgo Taniguchi,Defender,34,38,1,Sint-Truiden,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2533,0.0,0.0833
+Ghana,Prince Kwabena Adu,Forward,22,5,0,Viktoria Plzeň,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0333,0.0,0.083
+Saudi Arabia,Abdullah Al-Khaibari,Midfielder,29,39,0,Al-Nassr,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.26,0.0,0.083
+Paraguay,Isidro Pitta,Forward,26,5,0,Red Bull Bragantino,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0333,0.0,0.083
+Tunisia,Rayan Elloumi,Forward,18,4,0,Vancouver Whitecaps FC,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0267,0.0,0.082
+Czech Republic,Lukáš Provod,Midfielder,29,38,3,Slavia Prague,0.0,3.0,0.155,0.0,True,0.0,0.1033,0.2533,0.0,0.0817
+Japan,Ao Tanaka,Midfielder,27,38,8,Leeds United,0.0,0.7,0.155,0.0,True,0.0,0.1033,0.2533,0.0,0.0817
+Sweden,Besfort Zeneli,Midfielder,23,8,0,Union Saint-Gilloise,0.0,0.0,0.353,0.0,False,0.0,0.2353,0.0533,0.0,0.0812
+DR Congo,Dylan Batubinsika,Defender,30,14,1,AEL,0.0,0.0,0.031,0.7,False,0.0,0.0207,0.0933,0.1001,0.0811
+Ecuador,Jeremy Arévalo,Forward,21,3,0,VfB Stuttgart,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.02,0.0,0.081
+Jordan,Ali Azaizeh,Forward,22,3,0,Al-Shabab,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.02,0.0,0.081
+Bosnia and Herzegovina,Jovo Lukić,Forward,27,3,0,Universitatea Cluj,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.02,0.0,0.081
+Qatar,Tahsin Jamshid,Forward,19,3,0,Al-Duhail,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.02,0.0,0.081
+Colombia,Richard Ríos,Midfielder,26,31,2,Benfica,0.0,0.0,0.198,0.0,False,0.0,0.132,0.2067,0.0,0.0809
+Colombia,Jhon Arias,Midfielder,28,37,4,Palmeiras,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.2467,0.0,0.0803
+Uzbekistan,Jamshid Iskanderov,Midfielder,32,37,4,Neftchi Fergana,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.2467,0.0,0.0803
+Czech Republic,Denis Višinský,Forward,23,2,1,Viktoria Plzeň,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0133,0.0,0.08
+Sweden,Taha Ali,Forward,27,2,0,Malmö FF,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0133,0.0,0.08
+Brazil,Rayan,Forward,19,2,1,Bournemouth,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0133,0.0,0.08
+Spain,Víctor Muñoz,Forward,22,2,1,Osasuna,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0133,0.0,0.08
+South Africa,Kamogelo Sebelebele,Forward,23,2,0,Orlando Pirates,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0133,0.0,0.08
+Ecuador,Hernán Galíndez,Goalkeeper,39,34,0,Huracán,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.2267,0.0,0.0795
+Bosnia and Herzegovina,Amir Hadžiahmetović,Midfielder,29,36,0,Hull City,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.24,0.0,0.079
+Australia,Connor Metcalfe,Midfielder,26,36,1,FC St. Pauli,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.24,0.0,0.079
+Morocco,Ayoube Amaimouni,Forward,21,1,0,Eintracht Frankfurt,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0067,0.0,0.079
+Egypt,Hamza Abdelkarim,Forward,18,1,0,Barcelona,0.0,0.0,0.3899,0.0,True,0.0,0.2599,0.0067,0.0,0.079
+Algeria,Ibrahim Maza,Midfielder,20,16,2,Bayer Leverkusen,0.0,0.0,0.155,0.6,True,0.0,0.1033,0.1067,0.0886,0.0789
+Iran,Mohammad Ghorbani,Midfielder,24,16,0,Al Wahda,0.0,0.0,0.117,0.8,False,0.0,0.078,0.1067,0.1108,0.078
+New Zealand,Ryan Thomas,Midfielder,31,25,3,PEC Zwolle,0.0,0.0,0.042,0.9,False,0.0,0.028,0.1667,0.121,0.078
+Uruguay,Maximiliano Araújo,Midfielder,26,28,3,Sporting CP,0.0,0.0,0.203,0.0,False,0.0,0.1353,0.1867,0.0,0.0779
+Iran,Dennis Eckert,Forward,29,0,0,Standard Liège,0.0,0.0,0.182,2.0,False,0.0,0.1213,0.0,0.2072,0.0778
+South Korea,Kim Moon-hwan,Defender,30,35,0,Daejeon Hana Citizen,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2333,0.0,0.0773
+Sweden,Kristoffer Nordfeldt,Goalkeeper,36,21,0,AIK,0.0,0.0,0.002,0.3,True,0.0,0.0013,0.14,0.0495,0.0764
+Saudi Arabia,Musab Al-Juwayr,Midfielder,22,34,6,Al-Qadsiah,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.2267,0.0,0.0763
+Uruguay,Nicolás de la Cruz,Midfielder,29,34,5,Flamengo,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.2267,0.0,0.0763
+United States,Alejandro Zendejas,Forward,28,14,2,América,0.0,0.0,0.311,0.0,False,0.0,0.2073,0.0933,0.0,0.0762
+Mexico,Israel Reyes,Defender,26,34,2,América,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2267,0.0,0.0754
+South Korea,Seol Young-woo,Defender,27,34,0,Red Star Belgrade,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2267,0.0,0.0754
+Haiti,Leverton Pierre,Midfielder,28,33,0,Vizela,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.22,0.0,0.075
+Egypt,Marwan Attia,Midfielder,27,33,1,Al Ahly,0.0,2.0,0.155,0.0,True,0.0,0.1033,0.22,0.0,0.075
+Tunisia,Rani Khedira,Midfielder,32,3,0,Union Berlin,0.0,0.0,0.044,2.0,False,0.0,0.0293,0.02,0.2072,0.0749
+Curaçao,Brandley Kuwas,Forward,33,34,2,Volendam,0.0,0.0,0.134,0.45,False,0.0,0.0893,0.2267,0.0701,0.0748
+Canada,Maxime Crépeau,Goalkeeper,32,32,0,Orlando City SC,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.2133,0.0,0.0748
+Mexico,Gilberto Mora,Midfielder,17,8,0,Tijuana,0.0,0.0,0.317,0.0,False,0.0,0.2113,0.0533,0.0,0.074
+DR Congo,Aaron Tshibola,Midfielder,31,16,1,Kilmarnock,0.0,0.0,0.155,0.45,True,0.0,0.1033,0.1067,0.0701,0.0734
+Iraq,Manaf Younis,Defender,29,33,1,Al-Shorta,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.22,0.0,0.0734
+Curaçao,Kevin Felida,Midfielder,26,19,1,Den Bosch,0.0,0.0,0.155,0.35,True,0.0,0.1033,0.1267,0.0566,0.0733
+New Zealand,Nando Pijnaker,Defender,27,25,0,Auckland FC,0.0,0.0,0.0735,0.18,True,0.0,0.049,0.1667,0.0312,0.073
+Paraguay,Gatito Fernández,Goalkeeper,38,31,0,Cerro Porteño,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.2067,0.0,0.0725
+Belgium,Mike Penders,Goalkeeper,20,0,0,Strasbourg,0.0,0.0,0.002,1.0,True,0.0,0.0013,0.0,0.1307,0.072
+Cape Verde,João Paulo,Midfielder,28,41,1,FCSB,0.0,4.0,0.071,0.05,False,0.0,0.0473,0.2733,0.0092,0.0716
+Norway,Marcus Holmgren Pedersen,Defender,25,32,0,Torino,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2133,0.0,0.0713
+Panama,José Córdoba,Defender,25,32,1,Norwich City,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2133,0.0,0.0713
+Qatar,Jassem Gaber,Defender,24,32,1,Al-Rayyan,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2133,0.0,0.0713
+South Africa,Khuliso Mudau,Defender,31,32,1,Mamelodi Sundowns,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2133,0.0,0.0713
+Croatia,Josip Šutalo,Defender,26,32,0,Ajax,0.0,1.0,0.0735,0.0,True,0.0,0.049,0.2133,0.0,0.0713
+Bosnia and Herzegovina,Dennis Hadžikadunić,Defender,27,32,0,Sampdoria,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2133,0.0,0.0713
+Mexico,Brian Gutiérrez,Midfielder,22,7,2,Guadalajara,0.0,0.0,0.308,0.0,False,0.0,0.2053,0.0467,0.0,0.0709
+Iraq,Aimar Sher,Midfielder,23,6,0,Sarpsborg 08,0.0,0.0,0.155,0.75,True,0.0,0.1033,0.04,0.1055,0.0706
+Austria,Michael Svoboda,Defender,27,4,0,Venezia,0.0,0.0,0.014,0.9,False,0.0,0.0093,0.0267,0.121,0.0699
+United States,Cristian Roldan,Midfielder,31,47,0,Seattle Sounders FC,0.0,0.0,0.034,0.0,False,0.0,0.0227,0.3133,0.0,0.0695
+Tunisia,Elias Saad,Forward,26,15,4,Hannover 96,0.0,0.0,0.272,0.0,False,0.0,0.1813,0.1,0.0,0.0694
+Iraq,Merchas Doski,Defender,26,31,1,Viktoria Plzeň,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2067,0.0,0.0694
+Norway,Thelo Aasgaard,Midfielder,24,7,5,Rangers,0.0,0.0,0.3,0.0,False,0.0,0.2,0.0467,0.0,0.0693
+Jordan,Mohannad Abu Taha,Midfielder,23,28,1,Al-Quwa Al-Jawiya,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1867,0.0,0.0683
+Iraq,Kevin Yakob,Midfielder,25,8,0,AGF,0.0,0.0,0.155,0.6,True,0.0,0.1033,0.0533,0.0886,0.0682
+Scotland,Liam Kelly,Goalkeeper,30,3,0,Rangers,0.0,0.0,0.002,0.8,True,0.0,0.0013,0.02,0.1108,0.0681
+Turkey,Deniz Gül,Forward,21,7,2,Porto,0.0,0.0,0.305,0.0,False,0.0,0.2033,0.0467,0.0,0.068
+Panama,Carlos Harvey,Defender,26,28,3,Minnesota United FC,0.0,0.0,0.118,0.0,False,0.0,0.0787,0.1867,0.0,0.0678
+Ghana,Lawrence Ati-Zigi,Goalkeeper,29,29,0,St. Gallen,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1933,0.0,0.0678
+Uruguay,Ronald Araújo,Defender,27,27,1,Barcelona,0.0,0.0,0.136,0.0,False,0.0,0.0907,0.18,0.0,0.0676
+Egypt,Karim Hafez,Defender,30,8,0,Pyramids,0.0,0.0,0.0735,0.6,True,0.0,0.049,0.0533,0.0886,0.0676
+Cape Verde,Dailon Livramento,Forward,25,21,7,Casa Pia,0.0,0.0,0.233,0.0,False,0.0,0.1553,0.14,0.0,0.0676
+Cape Verde,Diney,Defender,31,30,2,Al Bataeh,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2,0.0,0.0673
+Uzbekistan,Sherzod Nasrullaev,Defender,27,30,2,Nasaf,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.2,0.0,0.0673
+Croatia,Josip Stanišić,Defender,26,30,0,Bayern Munich,0.0,1.7,0.0735,0.0,True,0.0,0.049,0.2,0.0,0.0673
+South Korea,Paik Seung-ho,Midfielder,29,27,3,Birmingham City,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.18,0.0,0.067
+Senegal,El Hadji Malick Diouf,Defender,21,19,1,West Ham United,0.0,0.0,0.0735,0.25,True,0.0,0.049,0.1267,0.0421,0.0664
+Algeria,Mohamed Amine Tougai,Defender,26,29,2,Espérance de Tunis,0.0,0.0,0.0735,0.01,True,0.0,0.049,0.1933,0.0019,0.0663
+Australia,Cammy Devlin,Midfielder,28,5,0,Heart of Midlothian,0.0,0.0,0.075,1.2,False,0.0,0.05,0.0333,0.1487,0.0663
+Iraq,Youssef Amyn,Midfielder,22,26,2,AEK Larnaca,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1733,0.0,0.0656
+New Zealand,Alex Rufer,Midfielder,29,26,0,Wellington Phoenix,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1733,0.0,0.0656
+Haiti,Carl Sainté,Midfielder,23,26,0,El Paso Locomotive FC,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1733,0.0,0.0656
+DR Congo,Lionel Mpasi,Goalkeeper,31,28,0,Le Havre,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1867,0.0,0.0655
+Uzbekistan,Umar Eshmurodov,Defender,33,29,0,Nasaf,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1933,0.0,0.0653
+Ecuador,Kendry Páez,Midfielder,19,25,2,River Plate,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1667,0.0,0.0643
+Mexico,Érik Lira,Midfielder,26,25,0,Cruz Azul,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1667,0.0,0.0643
+Tunisia,Omar Rekik,Defender,24,6,0,Maribor,0.0,0.0,0.0735,0.6,True,0.0,0.049,0.04,0.0886,0.0636
+DR Congo,Matthieu Epolo,Goalkeeper,21,1,0,Standard Liège,0.0,0.0,0.002,0.8,True,0.0,0.0013,0.0067,0.1108,0.0634
+Uzbekistan,Akmal Mozgovoy,Midfielder,27,24,1,Pakhtakor,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.16,0.0,0.063
+Australia,Ajdin Hrustic,Forward,29,37,4,Heracles Almelo,0.0,0.7,0.04,0.6,False,0.0,0.0267,0.2467,0.0886,0.0627
+Canada,Mathieu Choinière,Midfielder,27,23,0,Los Angeles FC,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1533,0.0,0.0616
+Iraq,Zaid Tahseen,Defender,25,27,1,Pakhtakor,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.18,0.0,0.0614
+Iraq,Frans Putros,Defender,32,27,0,Persib,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.18,0.0,0.0614
+Ivory Coast,Mohamed Koné,Goalkeeper,24,0,0,Charleroi,0.0,0.0,0.002,0.8,True,0.0,0.0013,0.0,0.1108,0.0611
+Austria,Alexander Schlager,Goalkeeper,30,26,0,Red Bull Salzburg,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1733,0.0,0.0608
+Bosnia and Herzegovina,Amar Dedić,Defender,23,28,1,Benfica,0.0,0.0,0.047,0.0,False,0.0,0.0313,0.1867,0.0,0.0607
+Belgium,Joaquin Seys,Defender,21,5,0,Club Brugge,0.0,0.0,0.061,0.6,False,0.0,0.0407,0.0333,0.0886,0.0604
+South Korea,Kim Jin-gyu,Midfielder,29,22,3,Jeonbuk Hyundai Motors,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1467,0.0,0.0603
+Egypt,Mohanad Lasheen,Midfielder,30,22,0,Pyramids,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1467,0.0,0.0603
+Japan,Keisuke Gotō,Forward,21,4,0,Sint-Truiden,0.0,0.0,0.281,0.0,False,0.0,0.1873,0.0267,0.0,0.0602
+Australia,Paul Izzo,Goalkeeper,31,4,0,Randers,0.0,0.0,0.002,0.6,True,0.0,0.0013,0.0267,0.0886,0.0582
+Canada,Luc de Fougerolles,Defender,20,13,0,Dender,0.0,0.0,0.0735,0.3,True,0.0,0.049,0.0867,0.0495,0.0581
+Croatia,Luka Sučić,Midfielder,23,20,1,Real Sociedad,0.0,3.0,0.155,0.0,True,0.0,0.1033,0.1333,0.0,0.0577
+Bosnia and Herzegovina,Armin Gigović,Midfielder,24,20,1,Young Boys,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1333,0.0,0.0577
+Bosnia and Herzegovina,Dženis Burnić,Midfielder,28,20,0,Karlsruher SC,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1333,0.0,0.0577
+Ghana,Kwasi Sibo,Midfielder,27,8,0,Oviedo,0.0,0.0,0.155,0.3,True,0.0,0.1033,0.0533,0.0495,0.0565
+Cape Verde,Kevin Pina,Midfielder,29,31,3,Krasnodar,0.0,0.0,0.075,0.0,False,0.0,0.05,0.2067,0.0,0.0563
+Paraguay,Damián Bobadilla,Midfielder,24,19,1,São Paulo,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1267,0.0,0.0563
+Uzbekistan,Azizjon Ganiev,Midfielder,28,19,0,Al Bataeh,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1267,0.0,0.0563
+Uruguay,Joaquín Piquerez,Midfielder,27,19,0,Palmeiras,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1267,0.0,0.0563
+New Zealand,Max Crocombe,Goalkeeper,32,24,0,Millwall,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.16,0.0,0.0561
+United States,Alex Freeman,Defender,21,17,2,Villarreal,0.0,0.0,0.22,0.0,False,0.0,0.1467,0.1133,0.0,0.056
+Japan,Hiroki Itō,Defender,27,24,1,Bayern Munich,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.16,0.0,0.0554
+Uruguay,Sebastián Cáceres,Defender,26,24,0,América,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.16,0.0,0.0554
+Saudi Arabia,Nawaf Boushal,Defender,26,24,0,Al-Nassr,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.16,0.0,0.0554
+Croatia,Martin Baturina,Midfielder,23,18,1,Como,0.0,1.0,0.155,0.0,True,0.0,0.1033,0.12,0.0,0.055
+South Korea,Lee Dong-gyeong,Midfielder,28,18,4,Ulsan HD,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.12,0.0,0.055
+Jordan,Amer Jamous,Midfielder,23,18,1,Al-Zawraa,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.12,0.0,0.055
+Tunisia,Sebastian Tounekti,Midfielder,23,12,1,Celtic,0.0,0.0,0.12,0.3,False,0.0,0.08,0.08,0.0495,0.0548
+New Zealand,Callan Elliot,Defender,26,11,0,Auckland FC,0.0,0.0,0.0735,0.3,True,0.0,0.049,0.0733,0.0495,0.0541
+Czech Republic,Lukáš Červ,Midfielder,25,17,2,Viktoria Plzeň,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1133,0.0,0.0536
+Bosnia and Herzegovina,Ivan Bašić,Midfielder,24,17,0,Astana,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1133,0.0,0.0536
+Czech Republic,Jaroslav Zelený,Defender,33,23,0,Sparta Prague,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1533,0.0,0.0533
+Panama,Jiovany Ramos,Defender,29,23,2,Puerto Cabello,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1533,0.0,0.0533
+Saudi Arabia,Nawaf Al-Aqidi,Goalkeeper,26,22,0,Al-Nassr,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1467,0.0,0.0515
+Netherlands,Robin Roefs,Goalkeeper,23,1,0,Sunderland,0.0,0.0,0.002,0.6,True,0.0,0.0013,0.0067,0.0886,0.0512
+Uruguay,Agustín Canobbio,Midfielder,27,15,1,Fluminense,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1,0.0,0.051
+Egypt,Mahmoud Saber,Midfielder,24,15,1,ZED,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.1,0.0,0.051
+Paraguay,Maurício,Midfielder,24,3,0,Palmeiras,0.0,0.0,0.155,0.3,True,0.0,0.1033,0.02,0.0495,0.0498
+South Africa,Thalente Mbatha,Midfielder,26,14,3,Orlando Pirates,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0933,0.0,0.0496
+Saudi Arabia,Ali Majrashi,Defender,26,21,0,Al-Ahli,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.14,0.0,0.0494
+Haiti,Martin Expérience,Defender,27,21,0,Nancy,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.14,0.0,0.0494
+Saudi Arabia,Ali Lajami,Defender,30,21,1,Al-Hilal,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.14,0.0,0.0494
+Iraq,Fahad Talib,Goalkeeper,31,21,0,Al-Talaba,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.14,0.0,0.0491
+United States,Sebastian Berhalter,Midfielder,25,13,1,Vancouver Whitecaps FC,0.0,0.0,0.157,0.0,False,0.0,0.1047,0.0867,0.0,0.0488
+Uzbekistan,Abdulla Abdullaev,Defender,28,17,0,Dibba,0.0,0.0,0.0735,0.08,True,0.0,0.049,0.1133,0.0145,0.0486
+South Korea,Bae Jun-ho,Midfielder,22,13,2,Stoke City,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0867,0.0,0.0483
+Japan,Kaishū Sano,Midfielder,25,13,0,Mainz 05,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0867,0.0,0.0483
+Bosnia and Herzegovina,Amar Memić,Midfielder,25,13,1,Viktoria Plzeň,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0867,0.0,0.0483
+Qatar,Ahmed Al-Ganehi,Midfielder,25,13,1,Al-Gharafa,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0867,0.0,0.0483
+Australia,Tete Yengi,Forward,25,1,1,Machida Zelvia,0.0,0.0,0.171,0.4,False,0.0,0.114,0.0067,0.0634,0.0479
+South Africa,Sphephelo Sithole,Midfielder,27,27,1,Tondela,0.0,0.0,0.058,0.0,False,0.0,0.0387,0.18,0.0,0.0476
+Norway,Fredrik André Bjørkan,Defender,27,20,1,Bodø/Glimt,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1333,0.0,0.0473
+United States,Maximilian Arfsten,Defender,25,20,1,Columbus Crew,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1333,0.0,0.0473
+Iraq,Ahmed Yahya,Defender,30,20,0,Al-Shorta,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1333,0.0,0.0473
+Jordan,Saed Al-Rosan,Defender,29,20,2,Al-Hussein,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1333,0.0,0.0473
+Saudi Arabia,Hassan Kadesh,Defender,33,20,2,Al-Ittihad,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1333,0.0,0.0473
+New Zealand,Francis de Vries,Defender,31,20,1,Auckland FC,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1333,0.0,0.0473
+Saudi Arabia,Ziyad Al-Johani,Midfielder,24,12,0,Al-Ahli,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.08,0.0,0.047
+Ivory Coast,Ange-Yoan Bonny,Forward,22,1,0,Inter Milan,0.0,0.0,0.23,0.0,False,0.0,0.1533,0.0067,0.0,0.047
+Jordan,Mohammad Al-Dawoud,Midfielder,34,12,1,Al-Wehdat,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.08,0.0,0.047
+Egypt,Nabil Emad,Midfielder,30,12,0,Al-Najma,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.08,0.0,0.047
+Czech Republic,Matěj Kovář,Goalkeeper,26,20,0,PSV Eindhoven,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1333,0.0,0.0468
+Canada,Dayne St. Clair,Goalkeeper,29,20,0,Inter Miami CF,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1333,0.0,0.0468
+Ghana,Caleb Yirenkyi,Midfielder,20,11,1,Nordsjælland,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0733,0.0,0.0457
+Bosnia and Herzegovina,Ivan Šunjić,Midfielder,29,11,0,Pafos,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0733,0.0,0.0457
+Germany,Aleksandar Pavlović,Midfielder,22,11,1,Bayern Munich,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0733,0.0,0.0457
+Croatia,Marin Pongračić,Defender,28,19,0,Fiorentina,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1267,0.0,0.0454
+New Zealand,Finn Surman,Defender,22,19,2,Portland Timbers,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1267,0.0,0.0454
+Canada,Niko Sigur,Defender,22,19,2,Hajduk Split,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1267,0.0,0.0454
+South Africa,Nkosinathi Sibisi,Defender,30,19,0,Orlando Pirates,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1267,0.0,0.0454
+Haiti,Alexandre Pierre,Goalkeeper,25,15,0,Sochaux,0.0,0.0,0.002,0.1,True,0.0,0.0013,0.1,0.018,0.045
+Ecuador,Jordy Alcívar,Midfielder,26,10,1,Independiente del Valle,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0667,0.0,0.0443
+Cape Verde,Yannick Semedo,Midfielder,30,10,1,Farense,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0667,0.0,0.0443
+Morocco,Youssef Belammari,Defender,27,18,0,Al Ahly,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.12,0.0,0.0434
+Iran,Saleh Hardani,Defender,27,18,1,Esteghlal,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.12,0.0,0.0434
+Canada,Nathan Saliba,Midfielder,22,15,2,Anderlecht,0.0,0.0,0.117,0.0,False,0.0,0.078,0.1,0.0,0.0434
+Panama,Jorge Gutiérrez,Defender,27,18,0,Deportivo La Guaira,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.12,0.0,0.0434
+South Korea,Yang Hyun-jun,Midfielder,24,9,0,Celtic,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.06,0.0,0.043
+South Korea,Eom Ji-sung,Midfielder,24,9,2,Swansea City,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.06,0.0,0.043
+Tunisia,Hadj Mahmoud,Midfielder,26,9,0,Lugano,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.06,0.0,0.043
+Colombia,Juan Portilla,Midfielder,27,9,0,Athletico Paranaense,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.06,0.0,0.043
+Brazil,Gabriel Magalhães,Defender,28,17,1,Arsenal,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Qatar,Sultan Al-Brake,Defender,30,17,0,Al-Duhail,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Canada,Joel Waterman,Defender,30,17,0,Chicago Fire FC,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Bosnia and Herzegovina,Nikola Katić,Defender,29,17,2,Schalke 04,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Iran,Ali Nemati,Defender,30,17,0,Foolad,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Jordan,Mo Abualnadi,Defender,25,17,0,Selangor,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Jordan,Husam Abu Dahab,Defender,26,17,0,Al-Faisaly,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Croatia,Kristijan Jakić,Defender,29,17,2,FC Augsburg,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Czech Republic,David Douděra,Defender,28,17,2,Slavia Prague,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1133,0.0,0.0413
+Croatia,Toni Fruk,Midfielder,25,7,1,Rijeka,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0467,0.0,0.0403
+Paraguay,Braian Ojeda,Midfielder,25,17,0,Orlando City SC,0.0,0.0,0.085,0.0,False,0.0,0.0567,0.1133,0.0,0.0397
+Iraq,Mustafa Saadoon,Defender,25,16,0,Al-Shorta,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1067,0.0,0.0394
+Haiti,Duke Lacroix,Defender,32,16,3,Colorado Springs Switchbacks FC,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1067,0.0,0.0394
+Egypt,Yasser Ibrahim,Defender,33,16,1,Al Ahly,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1067,0.0,0.0394
+Iraq,Zaid Ismail,Midfielder,24,6,0,Al-Talaba,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.04,0.0,0.039
+Australia,Paul Okon-Engstler,Midfielder,21,6,0,Sydney FC,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.04,0.0,0.039
+Algeria,Yacine Titraoui,Midfielder,22,5,0,Charleroi,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0333,0.0,0.0377
+Morocco,Gessime Yassine,Midfielder,20,5,0,Strasbourg,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0333,0.0,0.0377
+South Korea,Lee Tae-seok,Defender,23,15,1,Austria Wien,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.1,0.0,0.0374
+New Zealand,Michael Woud,Goalkeeper,27,6,0,Auckland FC,0.0,0.0,0.002,0.25,True,0.0,0.0013,0.04,0.0421,0.0373
+Ecuador,Pedro Vite,Midfielder,24,16,1,UNAM,0.0,0.0,0.078,0.0,False,0.0,0.052,0.1067,0.0,0.0369
+Spain,Álex Grimaldo,Defender,30,13,0,Bayer Leverkusen,0.0,0.0,0.106,0.0,False,0.0,0.0707,0.0867,0.0,0.0366
+South Africa,Jayden Adams,Midfielder,25,4,0,Mamelodi Sundowns,0.0,1.0,0.155,0.0,True,0.0,0.1033,0.0267,0.0,0.0363
+Tunisia,Khalil Ayari,Midfielder,21,4,0,Paris Saint-Germain,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0267,0.0,0.0363
+Iran,Amirmohammad Razzaghinia,Midfielder,20,4,0,Esteghlal,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0267,0.0,0.0363
+New Zealand,Lachlan Bayliss,Midfielder,23,4,0,Newcastle Jets,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0267,0.0,0.0363
+Australia,Jason Geria,Defender,33,14,0,Albirex Niigata,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0933,0.0,0.0353
+Iran,Aria Yousefi,Defender,24,14,1,Sepahan,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0933,0.0,0.0353
+Japan,Ayumu Seko,Defender,26,14,0,Le Havre,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0933,0.0,0.0353
+Czech Republic,Robin Hranáč,Defender,26,14,1,TSG Hoffenheim,0.0,2.0,0.0735,0.0,True,0.0,0.049,0.0933,0.0,0.0353
+South Korea,Park Jin-seob,Defender,30,14,1,Zhejiang,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0933,0.0,0.0353
+Norway,Torbjørn Heggem,Defender,27,14,0,Bologna,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0933,0.0,0.0353
+United States,Matt Freese,Goalkeeper,27,15,0,New York City FC,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1,0.0,0.0351
+Iraq,Ahmed Basil,Goalkeeper,29,15,0,Al-Shorta,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.1,0.0,0.0351
+Brazil,Danilo Santos,Midfielder,25,3,2,Botafogo,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.02,0.0,0.035
+South Korea,Lee Gi-hyuk,Midfielder,25,3,0,Gangwon FC,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.02,0.0,0.035
+Tunisia,Mohamed Amine Ben Hamida,Defender,30,13,0,Espérance de Tunis,0.0,0.0,0.0735,0.01,True,0.0,0.049,0.0867,0.0019,0.0343
+Paraguay,Gustavo Caballero,Midfielder,24,2,1,Portsmouth,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0133,0.0,0.0336
+Scotland,Tyler Fletcher,Midfielder,19,2,0,Manchester United,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0133,0.0,0.0336
+Czech Republic,Alexandr Sojka,Midfielder,23,2,0,Viktoria Plzeň,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0133,0.0,0.0336
+Bosnia and Herzegovina,Ermin Mahmić,Midfielder,21,2,0,Slovan Liberec,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0133,0.0,0.0336
+Saudi Arabia,Alaa Al-Hejji,Midfielder,30,2,0,Neom,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0133,0.0,0.0336
+Haiti,Dominique Simon,Midfielder,25,2,0,Tatran Prešov,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0133,0.0,0.0336
+Egypt,Hossam Abdelmaguid,Defender,25,13,0,Zamalek,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0867,0.0,0.0334
+Paraguay,Gustavo Velázquez,Defender,35,13,1,Cerro Porteño,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0867,0.0,0.0334
+Iraq,Akam Hashim,Defender,27,13,1,Al-Zawraa,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0867,0.0,0.0334
+Mexico,Raúl Rangel,Goalkeeper,26,14,0,Guadalajara,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0933,0.0,0.0328
+Czech Republic,Jindřich Staněk,Goalkeeper,30,14,0,Slavia Prague,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0933,0.0,0.0328
+Saudi Arabia,Mohammed Abu Al-Shamat,Defender,23,6,0,Al-Qadsiah,0.0,0.0,0.0735,0.15,True,0.0,0.049,0.04,0.0264,0.0325
+Czech Republic,Hugo Sochůrek,Midfielder,18,1,0,Sparta Prague,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0067,0.0,0.0323
+Uzbekistan,Sherzod Esanov,Midfielder,23,1,0,Bukhara,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0067,0.0,0.0323
+Germany,Assan Ouédraogo,Midfielder,20,1,1,RB Leipzig,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0067,0.0,0.0323
+Egypt,Mostafa Ziko,Midfielder,29,1,1,Pyramids,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0067,0.0,0.0323
+Haiti,Woodensky Pierre,Midfielder,21,1,0,Violette,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0067,0.0,0.0323
+Senegal,Bara Sapoko Ndiaye,Midfielder,18,1,0,Bayern Munich,0.0,0.0,0.155,0.0,True,0.0,0.1033,0.0067,0.0,0.0323
+Mexico,Obed Vargas,Midfielder,20,6,0,Atlético Madrid,0.0,0.0,0.119,0.0,False,0.0,0.0793,0.04,0.0,0.0318
+Cape Verde,Sidny Lopes Cabral,Defender,23,9,3,Benfica,0.0,0.0,0.136,0.0,False,0.0,0.0907,0.06,0.0,0.0316
+Ivory Coast,Christopher Opéri,Defender,29,12,0,İstanbul Başakşehir,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.08,0.0,0.0314
+Saudi Arabia,Moteb Al-Harbi,Defender,26,12,0,Al-Hilal,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.08,0.0,0.0314
+Bosnia and Herzegovina,Nihad Mujakić,Defender,28,12,1,Gaziantep,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.08,0.0,0.0314
+Iraq,Ahmed Qasem,Forward,22,2,0,Nashville SC,0.0,0.0,0.147,0.0,False,0.0,0.098,0.0133,0.0,0.0314
+Mexico,Mateo Chávez,Defender,22,10,0,AZ,0.0,0.0,0.109,0.0,False,0.0,0.0727,0.0667,0.0,0.0309
+Iran,Hossein Hosseini,Goalkeeper,33,13,0,Sepahan,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0867,0.0,0.0305
+Ghana,Joseph Anang,Goalkeeper,26,1,0,St Patrick's Athletic,0.0,0.0,0.002,0.3,True,0.0,0.0013,0.0067,0.0495,0.0297
+Ivory Coast,Christ Inao Oulaï,Midfielder,20,9,0,Trabzonspor,0.0,0.0,0.087,0.0,False,0.0,0.058,0.06,0.0,0.0294
+Australia,Alessandro Circati,Defender,22,13,1,Parma,0.0,0.0,0.03,0.0,False,0.0,0.02,0.0867,0.0,0.029
+Sweden,Viktor Johansson,Goalkeeper,27,12,0,Stoke City,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.08,0.0,0.0281
+South Africa,Mbekezeli Mbokazi,Defender,20,10,1,Chicago Fire FC,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0667,0.0,0.0274
+Algeria,Zineddine Belaïd,Defender,27,10,1,JS Kabylie,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0667,0.0,0.0274
+Switzerland,Miro Muheim,Defender,28,10,0,Hamburger SV,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0667,0.0,0.0274
+Ghana,Jonas Adjetey,Defender,22,10,0,VfL Wolfsburg,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0667,0.0,0.0274
+Jordan,Salim Obaid,Defender,34,10,0,Al-Hussein,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0667,0.0,0.0274
+Curaçao,Trevor Doornbusch,Goalkeeper,26,7,0,VVV-Venlo,0.0,0.0,0.002,0.1,True,0.0,0.0013,0.0467,0.018,0.0264
+Colombia,Álvaro Montero,Goalkeeper,31,11,0,Vélez Sarsfield,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0733,0.0,0.0258
+Ghana,Benjamin Asare,Goalkeeper,33,11,0,Hearts of Oak,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0733,0.0,0.0258
+Jordan,Abdallah Al-Fakhouri,Goalkeeper,26,11,0,Al-Wehdat,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0733,0.0,0.0258
+Japan,Keisuke Ōsako,Goalkeeper,26,11,0,Sanfrecce Hiroshima,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0733,0.0,0.0258
+Cape Verde,Márcio Rosa,Goalkeeper,29,10,0,Montana,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0667,0.0,0.0235
+Brazil,Weverton,Goalkeeper,38,10,0,Grêmio,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0667,0.0,0.0235
+Qatar,Al-Hashmi Al-Hussain,Defender,22,8,0,Al-Arabi,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0533,0.0,0.0233
+South Korea,Lee Han-beom,Defender,23,8,0,Midtjylland,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0533,0.0,0.0233
+Haiti,Wilguens Paugain,Defender,24,8,0,Zulte Waregem,0.0,0.0,0.07,0.0,False,0.0,0.0467,0.0533,0.0,0.023
+Curaçao,Tyrese Noslin,Forward,23,6,1,Telstar,0.0,0.0,0.078,0.0,False,0.0,0.052,0.04,0.0,0.0216
+Saudi Arabia,Jehad Thakri,Defender,24,7,0,Al-Qadsiah,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0467,0.0,0.0214
+South Africa,Ime Okon,Defender,22,7,1,Hannover 96,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0467,0.0,0.0214
+Brazil,Wesley,Defender,22,7,0,Roma,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0467,0.0,0.0214
+Algeria,Achref Abada,Defender,26,7,1,USM Alger,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0467,0.0,0.0214
+South Korea,Kim Tae-hyeon,Defender,25,7,0,Kashima Antlers,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0467,0.0,0.0214
+Saudi Arabia,Ahmed Al-Kassar,Goalkeeper,35,9,0,Al-Qadsiah,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.06,0.0,0.0211
+Australia,Kai Trewin,Defender,25,6,0,New York City FC,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.04,0.0,0.0194
+Qatar,Ayoub Al-Oui,Defender,21,6,0,Al-Gharafa,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.04,0.0,0.0194
+Japan,Junnosuke Suzuki,Defender,22,6,0,Copenhagen,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.04,0.0,0.0194
+Egypt,Mostafa Shobeir,Goalkeeper,26,8,0,Al Ahly,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0533,0.0,0.0188
+Qatar,Salah Zakaria,Goalkeeper,27,8,0,Al-Duhail,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0533,0.0,0.0188
+Uzbekistan,Abduvohid Nematov,Goalkeeper,25,8,0,Nasaf,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0533,0.0,0.0188
+Uruguay,Santiago Mele,Goalkeeper,28,8,0,Monterrey,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0533,0.0,0.0188
+New Zealand,Alex Paulsen,Goalkeeper,23,8,0,Lechia Gdańsk,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0533,0.0,0.0188
+Australia,Jacob Italiano,Defender,24,5,0,Grazer AK,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+South Africa,Khulumani Ndamane,Defender,22,5,0,Mamelodi Sundowns,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+Tunisia,Moutaz Neffati,Defender,21,5,0,IFK Norrköping,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+Cape Verde,Kelvin Pires,Defender,26,5,1,SJK,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+Croatia,Luka Vušković,Defender,19,5,1,Hamburger SV,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+Czech Republic,Štěpán Chaloupek,Defender,23,5,0,Slavia Prague,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+Bosnia and Herzegovina,Stjepan Radeljić,Defender,28,5,0,Rijeka,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+South Africa,Samukele Kabini,Defender,22,5,0,Molde,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0333,0.0,0.0173
+Mexico,Carlos Acevedo,Goalkeeper,30,7,0,Santos Laguna,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0467,0.0,0.0165
+Ecuador,Moisés Ramírez,Goalkeeper,25,7,0,Kifisia,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0467,0.0,0.0165
+Morocco,Redouane Halhal,Defender,23,2,0,Mechelen,0.0,0.0,0.032,0.1,False,0.0,0.0213,0.0133,0.018,0.0162
+Ghana,Kojo Peprah Oppong,Defender,22,4,0,Nice,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0267,0.0,0.0154
+Australia,Lucas Herrington,Defender,18,4,0,Colorado Rapids,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0267,0.0,0.0154
+Colombia,Willer Ditta,Defender,28,4,0,Cruz Azul,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0267,0.0,0.0154
+DR Congo,Steve Kapuadi,Defender,28,4,0,Widzew Łódź,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0267,0.0,0.0154
+Algeria,Samir Chergui,Defender,27,4,0,Paris FC,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0267,0.0,0.0154
+Qatar,Issa Laye,Defender,28,4,0,Al-Arabi,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0267,0.0,0.0154
+Scotland,Dominic Hyam,Defender,30,4,0,Wrexham,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0267,0.0,0.0154
+Canada,Owen Goodman,Goalkeeper,22,0,0,Barnsley,0.0,0.0,0.002,0.15,True,0.0,0.0013,0.0,0.0264,0.0147
+Paraguay,Orlando Gill,Goalkeeper,26,6,0,San Lorenzo,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.04,0.0,0.0141
+Haiti,Josué Duverger,Goalkeeper,26,6,0,Cosmos Koblenz,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.04,0.0,0.0141
+Uzbekistan,Jakhongir Urozov,Defender,22,3,0,Dinamo Samarqand,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.02,0.0,0.0134
+Sweden,Herman Johansson,Defender,28,3,0,FC Dallas,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.02,0.0,0.0134
+Norway,Sondre Langås,Defender,25,3,0,Derby County,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.02,0.0,0.0134
+Qatar,Mahmud Abunada,Goalkeeper,26,5,0,Al-Rayyan,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0333,0.0,0.0118
+Panama,César Samudio,Goalkeeper,32,5,0,Marathón,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0333,0.0,0.0118
+South Africa,Thabang Matuludi,Defender,27,2,0,Polokwane City,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0133,0.0,0.0113
+Paraguay,Alexandro Maidana,Defender,20,2,1,Talleres,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0133,0.0,0.0113
+Bosnia and Herzegovina,Nidal Čelik,Defender,19,2,0,Lens,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0133,0.0,0.0113
+Paraguay,José Canale,Defender,29,2,0,Lanús,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0133,0.0,0.0113
+Uzbekistan,Bekhruz Karimov,Defender,18,2,0,Surkhon Termiz,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0133,0.0,0.0113
+Egypt,Tarek Alaa,Defender,24,2,0,ZED,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0133,0.0,0.0113
+South Africa,Ricardo Goss,Goalkeeper,32,4,0,Siwelele,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0267,0.0,0.0095
+Jordan,Nour Bani Attiah,Goalkeeper,33,4,0,Al-Faisaly,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0267,0.0,0.0095
+Curaçao,Tyrick Bodak,Goalkeeper,24,4,0,Telstar,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0267,0.0,0.0095
+Japan,Tomoki Hayakawa,Goalkeeper,27,4,0,Kashima Antlers,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0267,0.0,0.0095
+Jordan,Anas Badawi,Defender,28,1,0,Al-Faisaly,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0067,0.0,0.0094
+Tunisia,Adem Arous,Defender,21,2,0,Kasımpaşa,0.0,0.0,0.054,0.0,False,0.0,0.036,0.0133,0.0,0.0094
+Sweden,Elliot Stroud,Defender,23,1,0,Mjällby AIF,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0067,0.0,0.0094
+Curaçao,Deveron Fonville,Defender,23,1,0,NEC,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0067,0.0,0.0094
+Norway,Henrik Falchener,Defender,23,1,0,Viking,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0067,0.0,0.0094
+South Korea,Cho Wi-je,Defender,24,1,0,Jeonbuk Hyundai Motors,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0067,0.0,0.0094
+Austria,David Affengruber,Defender,25,1,0,Elche,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0067,0.0,0.0094
+Haiti,Keeto Thermoncy,Defender,20,1,0,Young Boys,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0067,0.0,0.0094
+Tunisia,Raed Chikhaoui,Defender,22,0,0,US Monastir,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0,0.0,0.0074
+South Africa,Bradley Cross,Defender,25,0,0,Kaizer Chiefs,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0,0.0,0.0074
+Uzbekistan,Avazbek Ulmasaliev,Defender,26,0,0,AGMK,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0,0.0,0.0074
+Iran,Danial Eiri,Defender,22,0,0,Malavan,0.0,0.0,0.0735,0.0,True,0.0,0.049,0.0,0.0,0.0074
+Bosnia and Herzegovina,Martin Zlomislić,Goalkeeper,27,3,0,Rijeka,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.02,0.0,0.0071
+Sweden,Jacob Widell Zetterström,Goalkeeper,27,3,0,Derby County,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.02,0.0,0.0071
+South Africa,Sipho Chaine,Goalkeeper,29,3,0,Orlando Pirates,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.02,0.0,0.0071
+Ecuador,Gonzalo Valle,Goalkeeper,30,3,0,LDU Quito,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.02,0.0,0.0071
+South Korea,Song Bum-keun,Goalkeeper,28,3,0,Jeonbuk Hyundai Motors,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.02,0.0,0.0071
+Morocco,Ahmed Reda Tagnaouti,Goalkeeper,30,3,0,AS FAR,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.02,0.0,0.0071
+DR Congo,Timothy Fayulu,Goalkeeper,26,3,0,Noah,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.02,0.0,0.0071
+Tunisia,Mouhib Chamakh,Goalkeeper,24,2,0,Club Africain,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0133,0.0,0.0048
+Tunisia,Sabri Ben Hessen,Goalkeeper,29,2,0,Étoile du Sahel,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0133,0.0,0.0048
+Algeria,Oussama Benbot,Goalkeeper,31,2,0,USM Alger,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0133,0.0,0.0048
+Australia,Patrick Beach,Goalkeeper,22,2,0,Melbourne City,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0133,0.0,0.0048
+Spain,Joan Garcia,Goalkeeper,25,2,0,Barcelona,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0133,0.0,0.0048
+Uzbekistan,Botirali Ergashev,Goalkeeper,30,2,0,Neftchi Fergana,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0133,0.0,0.0048
+South Africa,Olwethu Makhanya,Defender,22,0,0,Philadelphia Union,0.0,0.0,0.042,0.0,False,0.0,0.028,0.0,0.0,0.0042
+Cape Verde,CJ dos Santos,Goalkeeper,25,1,0,San Diego FC,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0067,0.0,0.0025
+Algeria,Melvin Mastil,Goalkeeper,26,1,0,Stade Nyonnais,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0067,0.0,0.0025
+Czech Republic,Lukáš Horníček,Goalkeeper,23,1,0,Braga,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0067,0.0,0.0025
+Switzerland,Marvin Keller,Goalkeeper,23,1,0,Young Boys,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0067,0.0,0.0025
+Austria,Florian Wiegele,Goalkeeper,25,1,0,Viktoria Plzeň,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0067,0.0,0.0025
+United States,Chris Brady,Goalkeeper,22,1,0,Chicago Fire FC,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0067,0.0,0.0025
+Paraguay,Gastón Olveira,Goalkeeper,33,1,0,Olimpia,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0067,0.0,0.0025
+Egypt,Mohamed Alaa,Goalkeeper,27,0,0,El Gouna,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0,0.0,0.0001
+Norway,Sander Tangvik,Goalkeeper,23,0,0,Hamburger SV,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0,0.0,0.0001
+Egypt,El Mahdy Soliman,Goalkeeper,39,0,0,Zamalek,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0,0.0,0.0001
+Bosnia and Herzegovina,Mladen Jurkas,Goalkeeper,18,0,0,Borac Banja Luka,0.0,0.0,0.002,0.0,True,0.0,0.0013,0.0,0.0,0.0001

@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { API, flag, pct } from '../utils'
+import { Bar, CountNum, CountPct, Reveal } from '../motion'
 
 const PROB_META = [
   { key: 'p_win_tournament', label: 'Win Tournament' },
@@ -19,6 +20,7 @@ export default function TeamPage() {
     fetch(`${API}/api/match/teams`)
       .then(r => r.json())
       .then(d => setTeams(d.teams ?? []))
+      .catch(() => {})
   }, [])
 
   const load = async (name) => {
@@ -76,7 +78,7 @@ export default function TeamPage() {
               </div>
               {elo != null && (
                 <div className="th-elo">
-                  <div className="th-elo-val">{Math.round(elo)}</div>
+                  <div className="th-elo-val"><CountNum value={Math.round(elo)} duration={1100} /></div>
                   <div className="th-elo-lbl">Elo Rating</div>
                 </div>
               )}
@@ -92,11 +94,9 @@ export default function TeamPage() {
                       <div key={key} className="pbar">
                         <div className="pbar-head">
                           <span>{label}</span>
-                          <span style={{ color: 'var(--gold)' }}>{pct(probs[key])}</span>
+                          <span style={{ color: 'var(--gold)' }}><CountPct value={probs[key]} /></span>
                         </div>
-                        <div className="pbar-track">
-                          <div className="pbar-fill" style={{ width: `${probs[key] * 100}%` }} />
-                        </div>
+                        <Bar frac={probs[key]} height={8} />
                       </div>
                     ) : null
                   )}
@@ -123,6 +123,7 @@ export default function TeamPage() {
 
             {/* Squad table */}
             {data.squad?.length > 0 && (
+              <Reveal>
               <div className="squad-wrap">
                 <div className="t-card-title" style={{ marginBottom: 16 }}>
                   Full squad — {data.squad.length} players
@@ -152,6 +153,7 @@ export default function TeamPage() {
                   </tbody>
                 </table>
               </div>
+              </Reveal>
             )}
           </>
         )}

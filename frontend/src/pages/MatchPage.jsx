@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { API, flag, pct } from '../utils'
+import { Bar, CountNum, CountPct } from '../motion'
 
 const OUTCOME_BARS = (res, teamA, teamB) => {
   const op = res.outcome_probabilities
@@ -25,6 +26,7 @@ export default function MatchPage() {
     fetch(`${API}/api/match/teams`)
       .then(r => r.json())
       .then(d => setTeams(d.teams ?? []))
+      .catch(() => {})
   }, [])
 
   const predict = async () => {
@@ -49,7 +51,7 @@ export default function MatchPage() {
   return (
     <div className="page">
       <h1 className="pg-title">Match <span className="accent">Predictor</span></h1>
-      <p className="pg-sub">XGBoost · Bivariate Poisson · 15 engineered features</p>
+      <p className="pg-sub">XGBoost + Elo prior · Bivariate Poisson scorelines · 15 engineered features</p>
 
       <div style={{ marginTop: 32 }}>
         <div className="match-grid">
@@ -132,12 +134,12 @@ export default function MatchPage() {
             {/* xG */}
             <div className="res-xg">
               <div className="xg-block">
-                <div className="xg-val">{xg.team_a_xg}</div>
+                <div className="xg-val"><CountNum value={xg.team_a_xg} decimals={2} /></div>
                 <div className="xg-lbl">{teamA} xG</div>
               </div>
               <div style={{ width: 1, background: 'var(--border)' }} />
               <div className="xg-block">
-                <div className="xg-val">{xg.team_b_xg}</div>
+                <div className="xg-val"><CountNum value={xg.team_b_xg} decimals={2} /></div>
                 <div className="xg-lbl">{teamB} xG</div>
               </div>
             </div>
@@ -148,10 +150,10 @@ export default function MatchPage() {
               {bars.map(bar => (
                 <div key={bar.label} className="res-prob-row">
                   <span className="rplab">{bar.label}</span>
-                  <div className="rptrack">
-                    <div className="rpfill" style={{ width: `${bar.val * 100}%`, background: bar.color }} />
-                  </div>
-                  <span className="rppct" style={{ color: bar.color }}>{pct(bar.val, 0)}</span>
+                  <Bar frac={bar.val} height={9} color={bar.color} />
+                  <span className="rppct" style={{ color: bar.color }}>
+                    <CountPct value={bar.val} decimals={0} />
+                  </span>
                 </div>
               ))}
             </div>

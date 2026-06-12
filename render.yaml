@@ -1,0 +1,18 @@
+# Render Blueprint — deploys the FastAPI backend.
+# https://render.com/docs/blueprint-spec
+#
+# After connecting this repo on Render (New > Blueprint), Render reads this
+# file automatically. Update ALLOWED_ORIGINS once you know your Vercel URL.
+services:
+  - type: web
+    name: fifa-2026-predictor-api
+    runtime: python
+    plan: free
+    branch: main
+    buildCommand: pip install -r requirements-api.txt
+    startCommand: uvicorn src.api.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: ALLOWED_ORIGINS
+        value: http://localhost:3000
+      - key: PYTHON_VERSION
+        value: 3.11.9

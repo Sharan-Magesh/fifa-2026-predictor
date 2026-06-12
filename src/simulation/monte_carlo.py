@@ -34,6 +34,10 @@ from src.simulation.bracket import (
     simulate_group_stage,
     get_advancing_teams,
     build_r32_bracket,
+    route_round,
+    R16_FROM_R32,
+    QF_FROM_R16,
+    SF_FROM_QF,
     _sample_outcome,
 )
 
@@ -93,11 +97,14 @@ def _simulate_knockout_match(
     cache: Dict,
 ) -> str:
     """
-    Simulate a single knockout match. No draws — if draw, go to penalties.
+    Simulate a single knockout match. No draws — if draw after 90', the tie
+    is resolved by extra time + penalties.
 
-    Penalty shootout is modelled as a coin flip (50/50) — in reality
-    teams have different penalty records but we don't have reliable data.
-    This is a known simplification.
+    ET/pens winner is NOT a pure coin flip: the stronger side still converts
+    more often (they create more chances in ET and have deeper benches), but
+    the edge is heavily compressed relative to 90-minute probabilities —
+    matching the empirical record of WC shootouts being near-toss-ups.
+    We shrink the team's conditional win share 60% of the way toward 0.5.
 
     Returns the winning team name.
     """
@@ -109,8 +116,11 @@ def _simulate_knockout_match(
     elif outcome == "loss":
         return team_b
     else:
-        # Draw -> penalties (50/50)
-        return team_a if np.random.random() < 0.5 else team_b
+        # Level after 90' -> extra time / penalties.
+        decisive = probs.get("win", 0.4) + probs.get("loss", 0.4)
+        share_a = probs.get("win", 0.4) / decisive if decisive > 0 else 0.5
+        p_a = 0.5 + 0.4 * (share_a - 0.5)   # compressed edge
+        return team_a if np.random.random() < p_a else team_b
 
 
 def _simulate_knockout_round(
@@ -121,9 +131,47 @@ def _simulate_knockout_round(
     return [_simulate_knockout_match(a, b, cache) for a, b in matchups]
 
 
-def _pair_winners(winners: List[str]) -> List[Tuple[str, str]]:
-    """Pair consecutive winners: [A,B,C,D] -> [(A,B), (C,D)]"""
-    return [(winners[i], winners[i+1]) for i in range(0, len(winners), 2)]
+def _simulate_knockout_bracket(
+    groups: Dict[str, List[str]],
+    cache: Dict,
+) -> Dict:
+    """
+    Shared core: simulate group stage + full official knockout bracket once.
+    Winner routing follows the real FIFA match schedule (M73-M104) via the
+    routing tables in bracket.py — every team plays exactly one match per
+    round, and same-group teams cannot meet before the QFs.
+    """
+    def cached_predict(team_a, team_b):
+        return cache.get((team_a, team_b), {"win": 0.40, "draw": 0.25, "loss": 0.35})
+
+    standings = simulate_group_stage(groups, cached_predict)
+    winners, runners, thirds, third_groups = get_advancing_teams(standings)
+    r32_matchups = build_r32_bracket(winners, runners, third_groups)
+
+    r32_winners = _simulate_knockout_round(r32_matchups, cache)
+    r16_matchups = route_round(r32_winners, R16_FROM_R32)
+    r16_winners  = _simulate_knockout_round(r16_matchups, cache)
+    qf_matchups  = route_round(r16_winners, QF_FROM_R16)
+    qf_winners   = _simulate_knockout_round(qf_matchups, cache)
+    sf_matchups  = route_round(qf_winners, SF_FROM_QF)
+    sf_winners   = _simulate_knockout_round(sf_matchups, cache)
+    final_matchup = (sf_winners[0], sf_winners[1])
+    champion = _simulate_knockout_match(*final_matchup, cache)
+
+    return {
+        "standings": standings,
+        "group_winners": winners,
+        "group_runners": runners,
+        "best_thirds": thirds,
+        "rounds": {
+            "round_of_32":  {"matchups": r32_matchups,  "winners": r32_winners},
+            "round_of_16":  {"matchups": r16_matchups,  "winners": r16_winners},
+            "quarterfinal": {"matchups": qf_matchups,   "winners": qf_winners},
+            "semifinal":    {"matchups": sf_matchups,   "winners": sf_winners},
+            "final":        {"matchups": [final_matchup], "winners": [champion]},
+        },
+        "champion": champion,
+    }
 
 
 def run_single_simulation(
@@ -137,50 +185,119 @@ def run_single_simulation(
         "group_stage", "round_of_32", "round_of_16",
         "quarterfinal", "semifinal", "final", "winner"
     """
+    trace = _simulate_knockout_bracket(groups, cache)
     results = {t: "group_stage" for teams in groups.values() for t in teams}
 
-    # --- Group stage ---
-    def cached_predict(team_a, team_b):
-        return cache.get((team_a, team_b), {"win": 0.40, "draw": 0.25, "loss": 0.35})
-
-    standings = simulate_group_stage(groups, cached_predict)
-    winners, runners, thirds = get_advancing_teams(standings)
-    r32_matchups = build_r32_bracket(winners, runners, thirds)
-
-    # Mark advancing teams
-    advancing = set(winners.values()) | set(runners.values()) | set(thirds)
+    advancing = (set(trace["group_winners"].values())
+                 | set(trace["group_runners"].values())
+                 | set(trace["best_thirds"]))
     for team in advancing:
         results[team] = "round_of_32"
 
-    # --- Round of 32 ---
-    r32_winners = _simulate_knockout_round(r32_matchups, cache)
-    for team in r32_winners:
-        results[team] = "round_of_16"
-
-    # --- Round of 16 ---
-    r16_matchups = _pair_winners(r32_winners)
-    r16_winners  = _simulate_knockout_round(r16_matchups, cache)
-    for team in r16_winners:
-        results[team] = "quarterfinal"
-
-    # --- Quarterfinals ---
-    qf_matchups = _pair_winners(r16_winners)
-    qf_winners  = _simulate_knockout_round(qf_matchups, cache)
-    for team in qf_winners:
-        results[team] = "semifinal"
-
-    # --- Semifinals ---
-    sf_matchups = _pair_winners(qf_winners)
-    sf_winners  = _simulate_knockout_round(sf_matchups, cache)
-    for team in sf_winners:
-        results[team] = "final"
-
-    # --- Final ---
-    if len(sf_winners) >= 2:
-        champion = _simulate_knockout_match(sf_winners[0], sf_winners[1], cache)
-        results[champion] = "winner"
+    next_stage = {"round_of_32": "round_of_16", "round_of_16": "quarterfinal",
+                  "quarterfinal": "semifinal", "semifinal": "final",
+                  "final": "winner"}
+    for key, stage in next_stage.items():
+        for team in trace["rounds"][key]["winners"]:
+            results[team] = stage
 
     return results
+
+
+def _fifa_strength_prior(groups: Dict[str, List[str]], decay: float = 0.25) -> Dict[str, float]:
+    """
+    A title-probability prior derived from each team's current FIFA ranking
+    *position* (1st, 2nd, 3rd, ...) rather than raw ranking points.
+
+    Raw FIFA points are extremely tightly clustered for closely-matched teams
+    (e.g. Portugal 1766.17 vs Brazil 1765.86 — a 0.31pt gap), so a points-based
+    prior barely distinguishes them and the simulation's bracket-draw noise
+    dominates the final ordering. Using rank position with an exponential
+    decay gives every adjacent pair of teams a consistent, meaningful gap, so
+    the calibrated table tracks the actual FIFA ranking order much more
+    faithfully while still leaving room for the simulation to add realistic
+    variance among teams of similar caliber.
+    """
+    from src.features.team_features import get_fifa_ranking_feature
+
+    all_teams = [t for teams in groups.values() for t in teams]
+    pts = {t: get_fifa_ranking_feature(t)["fifa_points"] for t in all_teams}
+    ranked = sorted(all_teams, key=lambda t: pts[t], reverse=True)
+    raw = np.array([np.exp(-decay * i) for i in range(len(ranked))])
+    raw = raw / raw.sum()
+    return dict(zip(ranked, raw))
+
+
+def _apply_fifa_calibration(
+    df: pd.DataFrame,
+    groups: Dict[str, List[str]],
+    decay: float = 0.25,
+    top_tier_size: int = 7,
+    top_tier_blend: float = 0.25,
+    low_tier_blend: float = 0.05,
+) -> pd.DataFrame:
+    """
+    Calibrate the raw Monte Carlo title odds toward a FIFA-ranking-based
+    prior, then re-sort.
+
+    Two-tier blend:
+      - The top `top_tier_size` FIFA-ranked teams (the genuine title
+        contenders) keep a sizeable share of the raw simulation signal
+        (`top_tier_blend`). This lets bracket-draw "luck" create realistic,
+        non-monotonic variation among elite teams — exactly like real-world
+        bookmaker odds, where e.g. the #6-ranked side can edge out the
+        #5-ranked side depending on their path to the final.
+      - Every other team is dominated by the rank-based prior
+        (`low_tier_blend`), so lower-Elo sides get realistically crushed
+        title odds — a team ranked #25 has essentially no business winning
+        the tournament, regardless of a lucky bracket-stage simulation run.
+
+    Only the "deep run" columns (p_final, p_advance_sf) are rescaled by the
+    same per-team ratio as p_win_tournament, so winning it all is never more
+    likely than reaching the final/semis. The earlier-stage columns
+    (p_advance_r32/r16/qf) are left as the raw simulation produced them — a
+    lower-ranked team's realistic shot at escaping the group stage or
+    reaching the round of 16 shouldn't be crushed just because its title
+    odds are.
+
+    Finally, p_win_tournament is renormalized so the 48 values sum to ~1.
+    """
+    prior = _fifa_strength_prior(groups, decay)
+    ranked_teams = sorted(prior.keys(), key=lambda t: prior[t], reverse=True)
+    top_tier = set(ranked_teams[:top_tier_size])
+
+    df = df.copy()
+
+    blended = []
+    for _, row in df.iterrows():
+        team = row["team"]
+        sim_p = float(row["p_win_tournament"])
+        prior_p = prior.get(team, 0.0)
+        blend = top_tier_blend if team in top_tier else low_tier_blend
+        blended.append(blend * sim_p + (1 - blend) * prior_p)
+
+    total = sum(blended)
+    blended = [v / total for v in blended]
+    ratios = [
+        b / float(row["p_win_tournament"]) if float(row["p_win_tournament"]) > 1e-9 else 1.0
+        for b, (_, row) in zip(blended, df.iterrows())
+    ]
+
+    df["p_win_tournament"] = [round(v, 4) for v in blended]
+    for col in ["p_final", "p_advance_sf"]:
+        df[col] = [round(min(1.0, v * r), 4) for v, r in zip(df[col], ratios)]
+
+    # Enforce the physical monotonicity chain after calibration:
+    # P(win) <= P(final) <= P(SF) <= P(QF) <= P(R16) <= P(R32).
+    # Rescaling p_final / p_advance_sf can otherwise push a deep-run
+    # probability above the (uncalibrated) earlier-stage probability,
+    # which is impossible in a single-elimination tournament.
+    chain = ["p_advance_r32", "p_advance_r16", "p_advance_qf",
+             "p_advance_sf", "p_final", "p_win_tournament"]
+    for earlier, later in zip(chain, chain[1:]):
+        df[later] = np.minimum(df[later], df[earlier]).round(4)
+
+    return df.sort_values("p_win_tournament", ascending=False).reset_index(drop=True)
 
 
 def run_simulation(
@@ -188,6 +305,7 @@ def run_simulation(
     groups: Dict[str, List[str]] = None,
     predict_fn = None,
     seed: int = 42,
+    calibrate: bool = True,
 ) -> pd.DataFrame:
     """
     Run N Monte Carlo simulations of WC 2026.
@@ -277,7 +395,41 @@ def run_simulation(
 
     df = pd.DataFrame(rows).sort_values("p_win_tournament", ascending=False)
     df = df.reset_index(drop=True)
+
+    if calibrate:
+        df = _apply_fifa_calibration(df, groups)
+
     return df
+
+
+def run_traced_simulation(
+    groups: Dict[str, List[str]],
+    cache: Dict,
+) -> Dict:
+    """
+    Run one complete tournament simulation, returning the FULL trace
+    (group standings + every knockout round's matchups and winners),
+    not just the final-stage-per-team summary that run_single_simulation()
+    returns.
+
+    Used by the live "bracket simulation" API endpoint to animate a single
+    tournament from group stage through to champion.
+
+    Returns:
+        {
+          "standings": {group: [rows...]},
+          "group_winners": {...}, "group_runners": {...}, "best_thirds": [...],
+          "rounds": {
+            "round_of_32":   {"matchups": [(a,b),...], "winners": [...]},
+            "round_of_16":   {...},
+            "quarterfinal":  {...},
+            "semifinal":     {...},
+            "final":         {"matchups": [(a,b)], "winners": [champion]},
+          },
+          "champion": "Team Name",
+        }
+    """
+    return _simulate_knockout_bracket(groups, cache)
 
 
 def save_results(df: pd.DataFrame, path: Path = None) -> None:
@@ -292,17 +444,4 @@ if __name__ == "__main__":
     sys.stdout.reconfigure(encoding="utf-8")
 
     print("=== WC 2026 Monte Carlo Simulation ===\n")
-    print("Using 100,000 runs\n")
-
-    df = run_simulation(n_simulations=10_000)
-    save_results(df)
-
-    print(f"\n{'='*65}")
-    print(f"{'Team':<25} {'Group':<7} {'Win%':>6} {'Final%':>7} {'SF%':>6} {'QF%':>6}")
-    print(f"{'='*65}")
-    for _, row in df.head(20).iterrows():
-        print(f"{row['team']:<25} {row['group']:<7} "
-              f"{row['p_win_tournament']*100:>5.1f}% "
-              f"{row['p_final']*100:>6.1f}% "
-              f"{row['p_advance_sf']*100:>5.1f}% "
-              f"{row['p_advance_qf']*100:>5.1f}%")
+ 
