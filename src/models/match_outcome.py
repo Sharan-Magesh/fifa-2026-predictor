@@ -290,6 +290,70 @@ def _elo_prior(elo_diff_raw: float) -> dict:
     return {"win": p_win, "draw": p_draw, "loss": p_loss}
 
 
+# ---------------------------------------------------------------------------
+# Squad-quality prior — incorporates *current* player quality (player_scores.csv)
+# into the predicted probabilities. Elo and FIFA ranking points are
+# backward-looking (they reflect results over the past 1-4 years), so a team
+# coming off a title win can sit at the top of both while its squad has since
+# aged or weakened (and vice versa for a team that's recently upgraded).
+# This prior is a second, independent signal that's blended in on top of the
+# existing model+Elo blend.
+# ---------------------------------------------------------------------------
+
+# Empirical std of each squad-quality diff across all 48 WC2026 squads
+# (from player_scores.csv via get_matchup_player_features). Used to put
+# attack/star/depth/value diffs on a common z-score-like scale.
+SQUAD_FEATURE_STDS = {
+    "attack_score_diff": 0.0815,
+    "star_score_diff":   0.1196,
+    "depth_score_diff":  0.0696,
+    "value_diff_m":      349.19,
+}
+
+# Weight of each squad-quality signal in the composite squad-strength diff.
+# total_squad_value_m (transfer-market consensus across the whole squad) gets
+# the largest weight — it's a forward-looking aggregate of "how good is this
+# squad right now" that doesn't over-index on a single ageing star's score
+# the way star_score_diff can (e.g. a 38-year-old talisman).
+SQUAD_FEATURE_WEIGHTS = {
+    "attack_score_diff": 0.25,
+    "star_score_diff":   0.15,
+    "depth_score_diff":  0.15,
+    "value_diff_m":      0.45,
+}
+
+# 1 "z-score unit" of composite squad-strength advantage is treated as
+# equivalent to this many Elo points when feeding the same logistic curve
+# _elo_prior uses. 250 is a deliberately moderate weight — squad quality
+# shifts predictions but doesn't override a team's actual results/Elo.
+SQUAD_DIFF_ELO_EQUIV = 250.0
+
+# Weight of the squad-quality prior in the final blend (vs. the existing
+# model+Elo blend).
+SQUAD_BLEND = 0.3
+
+
+def _squad_prior(feats: dict) -> dict:
+    """
+    Squad-quality-based prior for win/draw/loss, derived from current
+    player_scores.csv data (attack/star/depth/squad-value differentials)
+    rather than historical results.
+
+    Combines the four squad-quality diffs into a single z-score-like
+    composite (each normalized by its empirical std across all 48 WC2026
+    squads, see SQUAD_FEATURE_STDS/WEIGHTS), converts that to an
+    "Elo-equivalent" gap (SQUAD_DIFF_ELO_EQUIV per std), and reuses
+    _elo_prior's logistic curve to turn it into win/draw/loss probabilities.
+    """
+    z = 0.0
+    for feat, weight in SQUAD_FEATURE_WEIGHTS.items():
+        std = SQUAD_FEATURE_STDS[feat]
+        z += weight * (feats.get(feat, 0.0) / std)
+
+    equiv_elo_diff = z * SQUAD_DIFF_ELO_EQUIV
+    return _elo_prior(equiv_elo_diff)
+
+
 def predict(team_a: str, team_b: str,
             model: xgb.XGBClassifier = None,
             elo_blend: float = 0.5) -> dict:
@@ -339,17 +403,26 @@ def predict(team_a: str, team_b: str,
     elo_diff_raw = float(feats.get("elo_diff_raw", 0.0))
     elo_probs = _elo_prior(elo_diff_raw)
 
-    blended = {
+    base_blended = {
         k: elo_blend * model_probs[k] + (1 - elo_blend) * elo_probs[k]
         for k in ("win", "draw", "loss")
     }
+
+    # Blend in the squad-quality prior (current player_scores.csv data) on
+    # top of the model+Elo blend — see _squad_prior for rationale.
+    squad_probs = _squad_prior(feats)
+    blended = {
+        k: (1 - SQUAD_BLEND) * base_blended[k] + SQUAD_BLEND * squad_probs[k]
+        for k in ("win", "draw", "loss")
+    }
+
     total = sum(blended.values())
     return {k: round(v / total, 4) for k, v in blended.items()}
 
 
 def predict_score(team_a: str, team_b: str) -> dict:
     """
-    Predict most likely scoreline using Bivariate Poisson.
+    Predict the most likely scoreline using Bivariate Poisson.
     Expected goals are derived from Elo + form + player attack scores.
     Full Bivariate Poisson model lives in models/team_strength.py.
     This is a lightweight approximation for now.
