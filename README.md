@@ -4,7 +4,7 @@ ML-powered predictions for the 2026 FIFA World Cup — match outcomes, expected
 goals/scorelines, player impact, and full Monte Carlo tournament simulations,
 served through a FastAPI backend and a React frontend.
 
-**Live demo:** _add your deployed URL here once live, e.g. https://fifa-2026-predictor.vercel.app_
+**Live demo:** https://fifa-2026-predictor-alpha.vercel.app/
 
 ---
 
@@ -120,7 +120,7 @@ This repo is set up to deploy as two services:
   `frontend/`, and add an env var `VITE_API_URL` pointing at your Render
   backend URL (e.g. `https://fifa-2026-predictor-api.onrender.com`).
 
-Once both are live, update the **Live demo** link at the top of this README.
+Once both are live, update the **Live demo** link at the top of this README (already set above for the deployed instance).
 
 ---
 
