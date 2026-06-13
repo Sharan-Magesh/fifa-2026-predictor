@@ -1,0 +1,4 @@
+# Normalize line endings across platforms.
+# Prevents Windows checkouts from showing every file as "modified"
+# due to CRLF/LF differences with no actual content change.
+* text=auto eol=lf
