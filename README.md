@@ -8,6 +8,34 @@ served through a FastAPI backend and a React frontend.
 
 ---
 
+## Latest update — squad-quality prior fix
+
+The outcome model previously computed squad-quality features (attack score,
+star power, squad depth, market value) but never actually fed them into
+`predict()` — only the historical/Elo/form features were used at inference
+time, even though they were available. This let teams with strong historical
+results but a weaker *current* squad (e.g. Argentina) get over-favored.
+
+`_squad_prior()` now normalizes the squad-quality diffs, converts them to an
+Elo-equivalent gap, and blends them (30%) into the existing model + Elo
+blend. After rerunning the 100,000-simulation Monte Carlo bracket with the
+fix, the title-odds leaderboard now looks like this:
+
+| Team | Title odds |
+|---|---|
+| France | 18.3% |
+| England | 15.1% |
+| Spain | 14.4% |
+| Argentina | 12.6% |
+| Portugal | 6.8% |
+| Germany | 6.2% |
+| Brazil | 5.9% |
+
+These are the **raw** simulation results — no post-hoc calibration toward
+FIFA ranking position is applied.
+
+---
+
 ## What it does
 
 - **Match predictor** — pick any two of the 48 qualified teams and get
