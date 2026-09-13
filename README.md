@@ -1,4 +1,6 @@
-# FIFA 2026 World Cup Predictor
+# FIFA 2026 World Cup Predictor(Mock branch)
+
+New ones with fake issues
 
 ML-powered predictions for the 2026 FIFA World Cup — match outcomes, expected
 goals/scorelines, player impact, and full Monte Carlo tournament simulations,
